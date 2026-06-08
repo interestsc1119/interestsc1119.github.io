@@ -113,39 +113,11 @@ def fetch_zhihu_hot():
         print(f"抓取知乎失败: {e}")
     return news
 
-def fetch_weibo_hot():
-    """抓取微博热搜"""
-    news = []
-    try:
-        url = "https://weibo.com/ajax/statuses/hot_band"
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-            'Accept': 'application/json',
-            'Referer': 'https://weibo.com'
-        }
-        response = requests.get(url, headers=headers, timeout=15)
-        if response.status_code == 200:
-            data = response.json()
-            band_list = data.get('data', {}).get('band_list', [])
-            for i, item in enumerate(band_list[:10], 1):
-                if isinstance(item, dict):
-                    news.append({
-                        'rank': i,
-                        'title': item.get('word', ''),
-                        'url': f"https://s.weibo.com/weibo?q={item.get('word', '')}",
-                        'source': '微博',
-                        'hot_value': item.get('num', ''),
-                        'is_hot': i <= 3
-                    })
-    except Exception as e:
-        print(f"抓取微博失败: {e}")
-    return news
-
 def fetch_36kr_news():
     """抓取 36氪科技新闻"""
     news = []
     try:
-        url = "https://36kr.com/api/newsflash/index?per_page=10&page=1"
+        url = "https://36kr.com/api/newsflash/index?per_page=15&page=1"
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
             'Accept': 'application/json',
@@ -165,6 +137,66 @@ def fetch_36kr_news():
                 })
     except Exception as e:
         print(f"抓取36氪失败: {e}")
+    return news
+
+def fetch_ithome_news():
+    """抓取 IT之家科技新闻"""
+    news = []
+    try:
+        url = "https://www.ithome.com/list/116"
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'text/html,application/xhtml+xml',
+        }
+        response = requests.get(url, headers=headers, timeout=15)
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.text, 'lxml')
+            items = soup.find_all('div', class_='item')[:10]
+            for i, item in enumerate(items, 1):
+                title_elem = item.find('h2', class_='title')
+                if title_elem:
+                    link = title_elem.find('a')
+                    if link:
+                        news.append({
+                            'rank': i,
+                            'title': link.get_text(strip=True),
+                            'url': link.get('href', ''),
+                            'source': 'IT之家',
+                            'hot_value': '',
+                            'is_hot': False
+                        })
+    except Exception as e:
+        print(f"抓取IT之家失败: {e}")
+    return news
+
+def fetch_sohu_tech():
+    """抓取搜狐科技新闻"""
+    news = []
+    try:
+        url = "https://www.sohu.com/tag/23429?pd=tech"
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'text/html,application/xhtml+xml',
+        }
+        response = requests.get(url, headers=headers, timeout=15)
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.text, 'lxml')
+            items = soup.find_all('li', class_='flex-item')[:10]
+            for i, item in enumerate(items, 1):
+                title_elem = item.find('h4')
+                if title_elem:
+                    link = title_elem.find('a')
+                    if link:
+                        news.append({
+                            'rank': i,
+                            'title': link.get_text(strip=True),
+                            'url': link.get('href', ''),
+                            'source': '搜狐科技',
+                            'hot_value': '',
+                            'is_hot': False
+                        })
+    except Exception as e:
+        print(f"抓取搜狐科技失败: {e}")
     return news
 
 def save_data(projects, ai_projects, news_list):
@@ -253,7 +285,7 @@ def main():
     projects = parse_trending_data(html)
     ai_projects = [p for p in projects if p['is_ai_related']]
     
-    # 抓取新闻（多个源）
+    # 抓取科技新闻（多个源）
     print("📰 抓取科技新闻...")
     all_news = []
     
@@ -263,15 +295,21 @@ def main():
     
     time.sleep(0.5)
     
-    weibo_news = fetch_weibo_hot()
-    all_news.extend(weibo_news)
-    print(f"   - 微博: {len(weibo_news)} 条")
-    
-    time.sleep(0.5)
-    
     kr36_news = fetch_36kr_news()
     all_news.extend(kr36_news)
     print(f"   - 36氪: {len(kr36_news)} 条")
+    
+    time.sleep(0.5)
+    
+    ithome_news = fetch_ithome_news()
+    all_news.extend(ithome_news)
+    print(f"   - IT之家: {len(ithome_news)} 条")
+    
+    time.sleep(0.5)
+    
+    sohu_news = fetch_sohu_tech()
+    all_news.extend(sohu_news)
+    print(f"   - 搜狐科技: {len(sohu_news)} 条")
     
     # 按热度排序，取前 20 条
     all_news.sort(key=lambda x: x['rank'])
