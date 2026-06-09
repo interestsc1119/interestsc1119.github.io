@@ -52,5 +52,38 @@
         "source": "微博"
       }
     ]
+  },
+  {
+    "date": "2026-06-09",
+    "ai_count": 13,
+    "news_count": 0,
+    "ai_projects": [
+      {
+        "name": "mvanhorn/last30days-skill",
+        "stars": "35055",
+        "url": "https://github.com/mvanhorn/last30days-skill"
+      },
+      {
+        "name": "RyanCodrai/turbovec",
+        "stars": "9160",
+        "url": "https://github.com/RyanCodrai/turbovec"
+      },
+      {
+        "name": "google/skills",
+        "stars": "12559",
+        "url": "https://github.com/google/skills"
+      },
+      {
+        "name": "Panniantong/Agent-Reach",
+        "stars": "24498",
+        "url": "https://github.com/Panniantong/Agent-Reach"
+      },
+      {
+        "name": "danielmiessler/Personal_AI_Infrastructure",
+        "stars": "15511",
+        "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure"
+      }
+    ],
+    "top_news": []
   }
 ]
