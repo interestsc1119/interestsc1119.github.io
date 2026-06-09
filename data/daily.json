@@ -1,6 +1,6 @@
 {
   "date": "2026-06-09",
-  "updated_at": "2026-06-09T04:28:42.366039",
+  "updated_at": "2026-06-09T05:19:13.133217",
   "count": 13,
   "projects": [
     {
@@ -8,7 +8,7 @@
       "name": "last30days-skill",
       "full_name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "stars": "35055",
+      "stars": "35143",
       "stars_today": "Python",
       "url": "https://github.com/mvanhorn/last30days-skill",
       "is_ai_related": true
@@ -18,7 +18,7 @@
       "name": "turbovec",
       "full_name": "RyanCodrai/turbovec",
       "description": "A vector index built on TurboQuant, written in Rust with Python bindings",
-      "stars": "9160",
+      "stars": "9201",
       "stars_today": "Python",
       "url": "https://github.com/RyanCodrai/turbovec",
       "is_ai_related": true
@@ -28,7 +28,7 @@
       "name": "skills",
       "full_name": "google/skills",
       "description": "Agent Skills for Google products and technologies",
-      "stars": "12559",
+      "stars": "12584",
       "stars_today": "Python",
       "url": "https://github.com/google/skills",
       "is_ai_related": true
@@ -38,7 +38,7 @@
       "name": "Agent-Reach",
       "full_name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "stars": "24498",
+      "stars": "24539",
       "stars_today": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
       "is_ai_related": true
@@ -48,7 +48,7 @@
       "name": "Personal_AI_Infrastructure",
       "full_name": "danielmiessler/Personal_AI_Infrastructure",
       "description": "Agentic AI Infrastructure for magnifying HUMAN capabilities.",
-      "stars": "15511",
+      "stars": "15522",
       "stars_today": "TypeScript",
       "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
       "is_ai_related": true
@@ -58,7 +58,7 @@
       "name": "career-ops",
       "full_name": "santifer/career-ops",
       "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
-      "stars": "50715",
+      "stars": "50741",
       "stars_today": "JavaScript",
       "url": "https://github.com/santifer/career-ops",
       "is_ai_related": true
@@ -68,7 +68,7 @@
       "name": "pm-skills",
       "full_name": "phuryn/pm-skills",
       "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
-      "stars": "12858",
+      "stars": "12876",
       "stars_today": "Built by",
       "url": "https://github.com/phuryn/pm-skills",
       "is_ai_related": true
@@ -78,7 +78,7 @@
       "name": "plugins",
       "full_name": "openai/plugins",
       "description": "OpenAI Plugins",
-      "stars": "2365",
+      "stars": "2377",
       "stars_today": "JavaScript",
       "url": "https://github.com/openai/plugins",
       "is_ai_related": true
@@ -88,7 +88,7 @@
       "name": "whichllm",
       "full_name": "Andyyyy64/whichllm",
       "description": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
-      "stars": "3586",
+      "stars": "3600",
       "stars_today": "Python",
       "url": "https://github.com/Andyyyy64/whichllm",
       "is_ai_related": true
@@ -98,7 +98,7 @@
       "name": "mempalace",
       "full_name": "MemPalace/mempalace",
       "description": "The best-benchmarked open-source AI memory system. And it's free.",
-      "stars": "55021",
+      "stars": "55035",
       "stars_today": "Python",
       "url": "https://github.com/MemPalace/mempalace",
       "is_ai_related": true
@@ -108,7 +108,7 @@
       "name": "CopilotKit",
       "full_name": "CopilotKit/CopilotKit",
       "description": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more. Makers of the AG-UI Protocol",
-      "stars": "34228",
+      "stars": "34247",
       "stars_today": "TypeScript",
       "url": "https://github.com/CopilotKit/CopilotKit",
       "is_ai_related": true
@@ -118,7 +118,7 @@
       "name": "claude-howto",
       "full_name": "luongnv89/claude-howto",
       "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "stars": "35911",
+      "stars": "35936",
       "stars_today": "Python",
       "url": "https://github.com/luongnv89/claude-howto",
       "is_ai_related": true
@@ -128,7 +128,7 @@
       "name": "goose",
       "full_name": "aaif-goose/goose",
       "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
-      "stars": "48177",
+      "stars": "48184",
       "stars_today": "Rust",
       "url": "https://github.com/aaif-goose/goose",
       "is_ai_related": true

@@ -60,27 +60,27 @@
     "ai_projects": [
       {
         "name": "mvanhorn/last30days-skill",
-        "stars": "35055",
+        "stars": "35143",
         "url": "https://github.com/mvanhorn/last30days-skill"
       },
       {
         "name": "RyanCodrai/turbovec",
-        "stars": "9160",
+        "stars": "9201",
         "url": "https://github.com/RyanCodrai/turbovec"
       },
       {
         "name": "google/skills",
-        "stars": "12559",
+        "stars": "12584",
         "url": "https://github.com/google/skills"
       },
       {
         "name": "Panniantong/Agent-Reach",
-        "stars": "24498",
+        "stars": "24539",
         "url": "https://github.com/Panniantong/Agent-Reach"
       },
       {
         "name": "danielmiessler/Personal_AI_Infrastructure",
-        "stars": "15511",
+        "stars": "15522",
         "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure"
       }
     ],
