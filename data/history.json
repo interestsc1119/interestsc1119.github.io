@@ -56,34 +56,55 @@
   {
     "date": "2026-06-09",
     "ai_count": 13,
-    "news_count": 0,
+    "news_count": 20,
     "ai_projects": [
       {
         "name": "mvanhorn/last30days-skill",
-        "stars": "35200",
+        "stars": "35879",
         "url": "https://github.com/mvanhorn/last30days-skill"
       },
       {
         "name": "RyanCodrai/turbovec",
-        "stars": "9225",
+        "stars": "9619",
         "url": "https://github.com/RyanCodrai/turbovec"
       },
       {
         "name": "google/skills",
-        "stars": "12601",
+        "stars": "12765",
         "url": "https://github.com/google/skills"
       },
       {
         "name": "Panniantong/Agent-Reach",
-        "stars": "24567",
+        "stars": "25006",
         "url": "https://github.com/Panniantong/Agent-Reach"
       },
       {
         "name": "danielmiessler/Personal_AI_Infrastructure",
-        "stars": "15528",
+        "stars": "15620",
         "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure"
       }
     ],
-    "top_news": []
+    "top_news": [
+      {
+        "title": "Microsoft's open source tools ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Forever Young: how one molecul",
+        "source": "Hacker News"
+      },
+      {
+        "title": "OpenCV 5 Is Here: The Biggest ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Apple reveals new AI architect",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Eagle Computer: The rise and f",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
