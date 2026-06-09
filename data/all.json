@@ -1,6 +1,6 @@
 {
   "date": "2026-06-09",
-  "updated_at": "2026-06-09T05:19:13.133223",
+  "updated_at": "2026-06-09T05:42:35.195638",
   "total_count": 16,
   "ai_count": 13,
   "projects": [
@@ -9,7 +9,7 @@
       "name": "last30days-skill",
       "full_name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "stars": "35143",
+      "stars": "35200",
       "stars_today": "Python",
       "url": "https://github.com/mvanhorn/last30days-skill",
       "is_ai_related": true
@@ -19,7 +19,7 @@
       "name": "turbovec",
       "full_name": "RyanCodrai/turbovec",
       "description": "A vector index built on TurboQuant, written in Rust with Python bindings",
-      "stars": "9201",
+      "stars": "9225",
       "stars_today": "Python",
       "url": "https://github.com/RyanCodrai/turbovec",
       "is_ai_related": true
@@ -29,7 +29,7 @@
       "name": "skills",
       "full_name": "google/skills",
       "description": "Agent Skills for Google products and technologies",
-      "stars": "12584",
+      "stars": "12601",
       "stars_today": "Python",
       "url": "https://github.com/google/skills",
       "is_ai_related": true
@@ -39,7 +39,7 @@
       "name": "tolaria",
       "full_name": "refactoringhq/tolaria",
       "description": "Desktop app to manage markdown knowledge bases",
-      "stars": "13746",
+      "stars": "13762",
       "stars_today": "TypeScript",
       "url": "https://github.com/refactoringhq/tolaria",
       "is_ai_related": false
@@ -49,7 +49,7 @@
       "name": "Agent-Reach",
       "full_name": "Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "stars": "24539",
+      "stars": "24567",
       "stars_today": "Python",
       "url": "https://github.com/Panniantong/Agent-Reach",
       "is_ai_related": true
@@ -59,7 +59,7 @@
       "name": "Personal_AI_Infrastructure",
       "full_name": "danielmiessler/Personal_AI_Infrastructure",
       "description": "Agentic AI Infrastructure for magnifying HUMAN capabilities.",
-      "stars": "15522",
+      "stars": "15528",
       "stars_today": "TypeScript",
       "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
       "is_ai_related": true
@@ -69,7 +69,7 @@
       "name": "career-ops",
       "full_name": "santifer/career-ops",
       "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
-      "stars": "50741",
+      "stars": "50756",
       "stars_today": "JavaScript",
       "url": "https://github.com/santifer/career-ops",
       "is_ai_related": true
@@ -79,7 +79,7 @@
       "name": "pm-skills",
       "full_name": "phuryn/pm-skills",
       "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
-      "stars": "12876",
+      "stars": "12888",
       "stars_today": "Built by",
       "url": "https://github.com/phuryn/pm-skills",
       "is_ai_related": true
@@ -89,7 +89,7 @@
       "name": "plugins",
       "full_name": "openai/plugins",
       "description": "OpenAI Plugins",
-      "stars": "2377",
+      "stars": "2379",
       "stars_today": "JavaScript",
       "url": "https://github.com/openai/plugins",
       "is_ai_related": true
@@ -99,7 +99,7 @@
       "name": "whichllm",
       "full_name": "Andyyyy64/whichllm",
       "description": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
-      "stars": "3600",
+      "stars": "3612",
       "stars_today": "Python",
       "url": "https://github.com/Andyyyy64/whichllm",
       "is_ai_related": true
@@ -109,7 +109,7 @@
       "name": "mempalace",
       "full_name": "MemPalace/mempalace",
       "description": "The best-benchmarked open-source AI memory system. And it's free.",
-      "stars": "55035",
+      "stars": "55039",
       "stars_today": "Python",
       "url": "https://github.com/MemPalace/mempalace",
       "is_ai_related": true
@@ -119,7 +119,7 @@
       "name": "supervision",
       "full_name": "roboflow/supervision",
       "description": "We write your reusable computer vision tools. 💜",
-      "stars": "42468",
+      "stars": "42476",
       "stars_today": "Python",
       "url": "https://github.com/roboflow/supervision",
       "is_ai_related": false
@@ -129,7 +129,7 @@
       "name": "CopilotKit",
       "full_name": "CopilotKit/CopilotKit",
       "description": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more. Makers of the AG-UI Protocol",
-      "stars": "34247",
+      "stars": "34256",
       "stars_today": "TypeScript",
       "url": "https://github.com/CopilotKit/CopilotKit",
       "is_ai_related": true
@@ -139,7 +139,7 @@
       "name": "ChinaTextbook",
       "full_name": "TapXWorld/ChinaTextbook",
       "description": "所有小初高、大学PDF教材。",
-      "stars": "73119",
+      "stars": "73129",
       "stars_today": "Roff",
       "url": "https://github.com/TapXWorld/ChinaTextbook",
       "is_ai_related": false
@@ -149,7 +149,7 @@
       "name": "claude-howto",
       "full_name": "luongnv89/claude-howto",
       "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "stars": "35936",
+      "stars": "35946",
       "stars_today": "Python",
       "url": "https://github.com/luongnv89/claude-howto",
       "is_ai_related": true
@@ -159,7 +159,7 @@
       "name": "goose",
       "full_name": "aaif-goose/goose",
       "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
-      "stars": "48184",
+      "stars": "48191",
       "stars_today": "Rust",
       "url": "https://github.com/aaif-goose/goose",
       "is_ai_related": true
