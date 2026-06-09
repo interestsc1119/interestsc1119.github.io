@@ -1,43 +1,69 @@
-# 📊 每日精选
+# AI Daily Trending
 
-每日自动更新 AI 热门项目 + 科技热点资讯
+Automated daily digest of trending AI/ML projects on GitHub and top tech news from authoritative sources.
 
-## 📋 功能特点
+## Features
 
-- **🤖 AI 项目模块**：每日抓取 GitHub Trending 中 AI/ML 相关热门项目
-- **📰 科技新闻模块**：聚合知乎热榜、36氪、IT之家、搜狐科技等科技资讯
-- **📈 趋势可视化**：展示近 14 天数据趋势
-- **📅 历史记录**：保留最近 30 天数据
-- **🔄 自动更新**：北京时间每天 9:00 自动抓取
+- **AI Projects** — Scans GitHub Trending for AI/ML/DL related repositories every day
+- **Tech News** — Aggregates headlines from Hacker News, TechCrunch, Ars Technica, and The Verge
+- **Trend Charts** — 14-day visualization of project and news volume trends
+- **History** — Tracks daily data for the past 30 days
+- **Zero-cost Automation** — Runs daily via GitHub Actions, hosted on GitHub Pages
 
-## 🌐 访问地址
+## Live Site
 
 **https://interestsc1119.github.io**
 
-## 🛠️ 技术架构
-
-- **数据源**：GitHub Trending + 知乎/36氪/IT之家/搜狐科技
-- **自动化**：GitHub Actions
-- **托管**：GitHub Pages
-- **语言**：Python + HTML/CSS/JS
-
-## 📁 项目结构
+## Architecture
 
 ```
-├── .github/workflows/     # GitHub Actions 配置
+GitHub Actions (cron)
+  |
+  |-- fetch_trending.py
+  |     |-- GitHub Trending (HTML scraping)
+  |     |-- Hacker News (official Firebase API)
+  |     |-- TechCrunch / Ars Technica / The Verge (RSS feeds)
+  |
+  |-- update_html.py  (inject data into HTML template)
+  |
+  |-- git-auto-commit-action (commit & push)
+  |
+  v
+GitHub Pages serves index.html
+```
+
+| Component | Technology |
+|-----------|-----------|
+| Data sources | GitHub Trending, Hacker News API, RSS feeds |
+| Automation | GitHub Actions (cron: daily 06:01 UTC / 14:01 CST) |
+| Hosting | GitHub Pages |
+| Language | Python, HTML/CSS/JS |
+
+## Project Structure
+
+```
+.
+├── .github/workflows/
+│   └── daily-update.yml      # GitHub Actions workflow
 ├── scripts/
-│   ├── fetch_trending.py  # 抓取 AI 项目 + 新闻
-│   └── update_html.py     # 更新网页
-├── data/                  # JSON 数据文件
-│   ├── daily.json         # 今日 AI 项目
-│   ├── news.json          # 今日科技新闻
-│   └── history.json       # 历史记录
-├── index.template.html    # 网页模板
-└── README.md             # 说明文档
+│   ├── fetch_trending.py     # Scrape GitHub Trending & fetch news
+│   └── update_html.py        # Inject data into HTML template
+├── data/
+│   ├── daily.json            # Today's AI projects
+│   ├── all.json              # All trending projects
+│   ├── news.json             # Today's tech news
+│   └── history.json          # 30-day history
+├── index.template.html       # HTML template with placeholders
+├── index.html                # Generated page (auto-updated)
+└── README.md
 ```
 
-## 🚀 手动触发更新
+## Manual Trigger
 
-1. 进入 Actions 页面
-2. 选择 "Daily AI & News Update"
-3. 点击 "Run workflow"
+1. Go to the **Actions** tab of this repository
+2. Select **Daily AI & News Update**
+3. Click **Run workflow**
+
+## License
+
+MIT
