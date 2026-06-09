@@ -58,7 +58,7 @@ def update_html():
     # 生成新闻列表 HTML
     news_html = ''
     for i, news in enumerate(news_data['news'][:20], 1):
-        hot_badge = '<span class="news-hot">🔥 热搜</span>' if news.get('is_hot') else ''
+        hot_badge = '<span class="news-hot">Hot</span>' if news.get('is_hot') else ''
         
         news_html += f'''
         <div class="news-item">
@@ -70,7 +70,7 @@ def update_html():
                 <div class="news-meta">
                     <span class="news-source">{news['source']}</span>
                     {hot_badge}
-                    {f'<span>🔥 {news["hot_value"]}</span>' if news.get('hot_value') else ''}
+                    {f'<span class="news-score">{news["hot_value"]} pts</span>' if news.get('hot_value') else ''}
                 </div>
             </div>
         </div>
@@ -109,9 +109,9 @@ def update_html():
     with open('index.html', 'w', encoding='utf-8') as f:
         f.write(html_content)
     
-    print(f"✅ index.html 已更新:")
-    print(f"   - AI 项目: {daily_data['count']} 个")
-    print(f"   - 科技新闻: {news_data['count']} 条")
+    print("index.html updated:")
+    print(f"   - AI projects: {daily_data['count']}")
+    print(f"   - Tech news: {news_data['count']}")
 
 if __name__ == '__main__':
     update_html()

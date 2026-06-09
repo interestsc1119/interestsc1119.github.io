@@ -26,6 +26,10 @@ jobs:
         run: |
           pip install requests beautifulsoup4 lxml
 
+      - name: Set today's date
+        id: date
+        run: echo "TODAY=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+
       - name: Fetch GitHub Trending & News
         id: fetch
         run: python scripts/fetch_trending.py
@@ -38,5 +42,5 @@ jobs:
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "📊 Daily Update - $(date +'%Y-%m-%d')"
+          commit_message: "📊 Daily Update - ${{ steps.date.outputs.TODAY }}"
           file_pattern: 'data/*.json index.html'
