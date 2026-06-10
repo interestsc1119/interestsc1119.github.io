@@ -106,5 +106,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-10",
+    "ai_count": 12,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "mvanhorn/last30days-skill",
+        "stars": "38537",
+        "url": "https://github.com/mvanhorn/last30days-skill"
+      },
+      {
+        "name": "RyanCodrai/turbovec",
+        "stars": "10558",
+        "url": "https://github.com/RyanCodrai/turbovec"
+      },
+      {
+        "name": "opencv/opencv",
+        "stars": "88819",
+        "url": "https://github.com/opencv/opencv"
+      },
+      {
+        "name": "aaif-goose/goose",
+        "stars": "48659",
+        "url": "https://github.com/aaif-goose/goose"
+      },
+      {
+        "name": "Andyyyy64/whichllm",
+        "stars": "4317",
+        "url": "https://github.com/Andyyyy64/whichllm"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Mercedes‑Benz starts large‑sca",
+        "source": "Hacker News"
+      },
+      {
+        "title": "macOS Container Machines",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Claude Fable 5",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Port React Compiler to Rust",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Upcoming breaking changes for ",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

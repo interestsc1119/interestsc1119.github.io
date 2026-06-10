@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-09",
-  "updated_at": "2026-06-09T10:00:15.908246",
+  "date": "2026-06-10",
+  "updated_at": "2026-06-10T10:17:39.034724",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Microsoft's open source tools were hacked to steal passwords of AI developers",
-      "url": "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/",
+      "title": "Mercedes‑Benz starts large‑scale production of electric axial flux motor",
+      "url": "https://media.mercedes-benz.com/en/article/bebac2af-acdc-465a-9538-adb0bf3d8ccf",
       "source": "Hacker News",
-      "hot_value": "133",
+      "hot_value": "85",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "Forever Young: how one molecule can lock plants in a youthful state.(2025)",
-      "url": "https://omnia.sas.upenn.edu/story/biologist-scott-poethig-plants-never-age",
+      "title": "macOS Container Machines",
+      "url": "https://github.com/apple/container/blob/main/docs/container-machine.md",
+      "source": "Hacker News",
+      "hot_value": "775",
+      "is_hot": true
+    },
+    {
+      "rank": 3,
+      "title": "Claude Fable 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "source": "Hacker News",
+      "hot_value": "2249",
+      "is_hot": true
+    },
+    {
+      "rank": 4,
+      "title": "Port React Compiler to Rust",
+      "url": "https://github.com/react/react/pull/36173",
+      "source": "Hacker News",
+      "hot_value": "27",
+      "is_hot": false
+    },
+    {
+      "rank": 5,
+      "title": "Upcoming breaking changes for npm v12",
+      "url": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/",
+      "source": "Hacker News",
+      "hot_value": "373",
+      "is_hot": false
+    },
+    {
+      "rank": 6,
+      "title": "Rich Sutton on AI creativity and discovery",
+      "url": "https://twitter.com/RichardSSutton/status/2061216087744946656",
+      "source": "Hacker News",
+      "hot_value": "120",
+      "is_hot": false
+    },
+    {
+      "rank": 7,
+      "title": "German ruling declares Google liable for false answers in AI Overviews",
+      "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+      "source": "Hacker News",
+      "hot_value": "561",
+      "is_hot": false
+    },
+    {
+      "rank": 8,
+      "title": "RIP software hackathons. Long live the hardware hackathon",
+      "url": "https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/",
+      "source": "Hacker News",
+      "hot_value": "179",
+      "is_hot": false
+    },
+    {
+      "rank": 9,
+      "title": "How do you design a $30k electric pickup? Inside Ford's skunkworks",
+      "url": "https://arstechnica.com/cars/2026/05/how-do-you-design-a-30000-electric-pickup-inside-fords-skunkworks/",
+      "source": "Hacker News",
+      "hot_value": "53",
+      "is_hot": false
+    },
+    {
+      "rank": 10,
+      "title": "Reviving Papers with Code",
+      "url": "https://paperswithcode.co/",
       "source": "Hacker News",
       "hot_value": "19",
       "is_hot": false
     },
     {
-      "rank": 3,
-      "title": "OpenCV 5 Is Here: The Biggest Leap in Years for Computer Vision",
-      "url": "https://opencv.org/opencv-5/",
-      "source": "Hacker News",
-      "hot_value": "176",
-      "is_hot": false
-    },
-    {
-      "rank": 4,
-      "title": "Apple reveals new AI architecture built around Google Gemini models",
-      "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
-      "source": "Hacker News",
-      "hot_value": "595",
-      "is_hot": false
-    },
-    {
-      "rank": 5,
-      "title": "Eagle Computer: The rise and fall of an early PC clone",
-      "url": "https://dfarq.homeip.net/eagle-computer-the-rise-and-fall-of-an-early-pc-clone/",
-      "source": "Hacker News",
-      "hot_value": "6",
-      "is_hot": false
-    },
-    {
-      "rank": 6,
-      "title": "Thi.ng – open-source building blocks for computational design and art",
-      "url": "https://thi.ng",
-      "source": "Hacker News",
-      "hot_value": "42",
-      "is_hot": false
-    },
-    {
-      "rank": 7,
-      "title": "Porting the ThinkPad X61 to Coreboot",
-      "url": "https://blog.aheymans.xyz/post/thinkpad_x61/",
-      "source": "Hacker News",
-      "hot_value": "73",
-      "is_hot": false
-    },
-    {
-      "rank": 8,
-      "title": "Siri AI",
-      "url": "https://www.apple.com/apple-intelligence/",
-      "source": "Hacker News",
-      "hot_value": "578",
-      "is_hot": false
-    },
-    {
-      "rank": 9,
-      "title": "xAI is looking more like a datacentre REIT than a frontier lab",
-      "url": "https://martinalderson.com/posts/xais-new-rental-business/",
-      "source": "Hacker News",
-      "hot_value": "567",
-      "is_hot": false
-    },
-    {
-      "rank": 10,
-      "title": "Show HN: Performative-UI – A react component library of design tropes",
-      "url": "https://vorpus.github.io/performativeUI/",
-      "source": "Hacker News",
-      "hot_value": "978",
-      "is_hot": false
-    },
-    {
       "rank": 11,
-      "title": "Old'aVista – The most powerful guide to the old Internet",
-      "url": "https://oldavista.com/",
+      "title": "Vibe coding my way to a healthy family: Introducing Gamow Labs",
+      "url": "https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/",
       "source": "Hacker News",
-      "hot_value": "104",
+      "hot_value": "126",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "EU-banned pesticides found in rice, tea and spices",
-      "url": "https://www.foodwatch.org/en/eu-banned-pesticides-found-in-rice-tea-and-spices",
+      "title": "Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks",
+      "url": "https://aarushgupta.io/posts/kan-fpga/",
       "source": "Hacker News",
-      "hot_value": "418",
+      "hot_value": "227",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "MiMo-v2.5-Pro-UltraSpeed: 1T model with 1000 tokens per second",
-      "url": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+      "title": "What it feels like to work with Mythos",
+      "url": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
       "source": "Hacker News",
-      "hot_value": "571",
+      "hot_value": "282",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Apple Core AI Framework",
-      "url": "https://developer.apple.com/documentation/coreai/",
+      "title": "The oldest surviving animated feature film at 100",
+      "url": "https://www.bbc.com/culture/article/20260603-how-a-26-year-old-german-woman-made-the-worlds-oldest-surviving-animated-feature-film",
       "source": "Hacker News",
-      "hot_value": "301",
+      "hot_value": "107",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Facebook is paying people overseas promoting Alberta separatism",
-      "url": "https://www.cbc.ca/news/canada/facebook-overseas-alberta-separtism-9.7223966",
-      "source": "Hacker News",
-      "hot_value": "130",
+      "title": "Waymo says it built a better benchmark for comparing robotaxis to humans",
+      "url": "https://techcrunch.com/2026/06/10/waymo-says-it-built-a-better-benchmark-for-comparing-robotaxis-to-humans/",
+      "source": "TechCrunch",
+      "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "Evotrex raises $30M to build the RV that doesn’t need a charging station",
-      "url": "https://techcrunch.com/2026/06/09/anker-backed-evotrex-raises-30m-to-build-its-off-grid-rv/",
+      "title": "Meta signs first AI data center deal in India with Reliance",
+      "url": "https://techcrunch.com/2026/06/10/meta-signs-first-ai-data-center-deal-in-india-with-reliance/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Zepto’s IPO filing reveals fast growth, bigger losses, and a valuation question nobody’s answered yet",
-      "url": "https://techcrunch.com/2026/06/08/zeptos-ipo-filing-reveals-fast-growth-bigger-losses-and-a-valuation-question-nobodys-answered-yet/",
+      "title": "Top Lucid Motors executive departs amid new CEO’s leadership shakeup",
+      "url": "https://techcrunch.com/2026/06/09/top-lucid-motors-executive-departs-amid-new-ceos-leadership-shakeup/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Why Apple’s slow-and-steady AI bet is starting to look pretty smart",
-      "url": "https://techcrunch.com/2026/06/08/why-apples-slow-and-steady-ai-bet-is-starting-to-look-pretty-smart/",
+      "title": "Google just fired a warning shot in the AI subscription price wars",
+      "url": "https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Mercor’s Brendan Foody calls out Sequoia, accusing it of ‘dual-pricing’ valuation tricks",
-      "url": "https://techcrunch.com/2026/06/08/mercors-brendan-foody-calls-out-sequoia-over-dual-pricing-valuation-tricks/",
+      "title": "How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund",
+      "url": "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-500m-into-hot-startups-without-a-traditional-vc-fund/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "As OpenAI files for IPO, Sam Altman’s eye-scanning company is doing layoffs, report says",
-      "url": "https://techcrunch.com/2026/06/08/as-openai-files-for-ipo-sam-altmans-eye-scanning-company-is-doing-layoffs-report-says/",
+      "title": "GM joins race to build batteries for AI data centers and the grid",
+      "url": "https://techcrunch.com/2026/06/09/gm-bets-big-on-energy-storage-for-data-centers-and-the-grid/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false

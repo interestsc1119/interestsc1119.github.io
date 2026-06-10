@@ -1,15 +1,15 @@
 {
-  "date": "2026-06-09",
-  "updated_at": "2026-06-09T10:00:15.908239",
-  "count": 13,
+  "date": "2026-06-10",
+  "updated_at": "2026-06-10T10:17:39.034717",
+  "count": 12,
   "projects": [
     {
       "owner": "mvanhorn",
       "name": "last30days-skill",
       "full_name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "stars": "35879",
-      "stars_today": "3558",
+      "stars": "38537",
+      "stars_today": "3191",
       "url": "https://github.com/mvanhorn/last30days-skill",
       "is_ai_related": true
     },
@@ -18,109 +18,19 @@
       "name": "turbovec",
       "full_name": "RyanCodrai/turbovec",
       "description": "A vector index built on TurboQuant, written in Rust with Python bindings",
-      "stars": "9619",
-      "stars_today": "1729",
+      "stars": "10558",
+      "stars_today": "1801",
       "url": "https://github.com/RyanCodrai/turbovec",
       "is_ai_related": true
     },
     {
-      "owner": "google",
-      "name": "skills",
-      "full_name": "google/skills",
-      "description": "Agent Skills for Google products and technologies",
-      "stars": "12765",
-      "stars_today": "461",
-      "url": "https://github.com/google/skills",
-      "is_ai_related": true
-    },
-    {
-      "owner": "Panniantong",
-      "name": "Agent-Reach",
-      "full_name": "Panniantong/Agent-Reach",
-      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "stars": "25006",
-      "stars_today": "679",
-      "url": "https://github.com/Panniantong/Agent-Reach",
-      "is_ai_related": true
-    },
-    {
-      "owner": "danielmiessler",
-      "name": "Personal_AI_Infrastructure",
-      "full_name": "danielmiessler/Personal_AI_Infrastructure",
-      "description": "Agentic AI Infrastructure for magnifying HUMAN capabilities.",
-      "stars": "15620",
-      "stars_today": "62",
-      "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
-      "is_ai_related": true
-    },
-    {
-      "owner": "santifer",
-      "name": "career-ops",
-      "full_name": "santifer/career-ops",
-      "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
-      "stars": "50991",
-      "stars_today": "308",
-      "url": "https://github.com/santifer/career-ops",
-      "is_ai_related": true
-    },
-    {
-      "owner": "phuryn",
-      "name": "pm-skills",
-      "full_name": "phuryn/pm-skills",
-      "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
-      "stars": "13084",
-      "stars_today": "164",
-      "url": "https://github.com/phuryn/pm-skills",
-      "is_ai_related": true
-    },
-    {
-      "owner": "openai",
-      "name": "plugins",
-      "full_name": "openai/plugins",
-      "description": "OpenAI Plugins",
-      "stars": "2437",
-      "stars_today": "296",
-      "url": "https://github.com/openai/plugins",
-      "is_ai_related": true
-    },
-    {
-      "owner": "Andyyyy64",
-      "name": "whichllm",
-      "full_name": "Andyyyy64/whichllm",
-      "description": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
-      "stars": "3740",
-      "stars_today": "143",
-      "url": "https://github.com/Andyyyy64/whichllm",
-      "is_ai_related": true
-    },
-    {
-      "owner": "MemPalace",
-      "name": "mempalace",
-      "full_name": "MemPalace/mempalace",
-      "description": "The best-benchmarked open-source AI memory system. And it's free.",
-      "stars": "55127",
-      "stars_today": "170",
-      "url": "https://github.com/MemPalace/mempalace",
-      "is_ai_related": true
-    },
-    {
-      "owner": "CopilotKit",
-      "name": "CopilotKit",
-      "full_name": "CopilotKit/CopilotKit",
-      "description": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more. Makers of the AG-UI Protocol",
-      "stars": "34364",
-      "stars_today": "378",
-      "url": "https://github.com/CopilotKit/CopilotKit",
-      "is_ai_related": true
-    },
-    {
-      "owner": "luongnv89",
-      "name": "claude-howto",
-      "full_name": "luongnv89/claude-howto",
-      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "stars": "36088",
-      "stars_today": "312",
-      "url": "https://github.com/luongnv89/claude-howto",
+      "owner": "opencv",
+      "name": "opencv",
+      "full_name": "opencv/opencv",
+      "description": "Open Source Computer Vision Library",
+      "stars": "88819",
+      "stars_today": "102",
+      "url": "https://github.com/opencv/opencv",
       "is_ai_related": true
     },
     {
@@ -128,9 +38,89 @@
       "name": "goose",
       "full_name": "aaif-goose/goose",
       "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
-      "stars": "48276",
-      "stars_today": "699",
+      "stars": "48659",
+      "stars_today": "489",
       "url": "https://github.com/aaif-goose/goose",
+      "is_ai_related": true
+    },
+    {
+      "owner": "Andyyyy64",
+      "name": "whichllm",
+      "full_name": "Andyyyy64/whichllm",
+      "description": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
+      "stars": "4317",
+      "stars_today": "633",
+      "url": "https://github.com/Andyyyy64/whichllm",
+      "is_ai_related": true
+    },
+    {
+      "owner": "x1xhlol",
+      "name": "system-prompts-and-models-of-ai-tools",
+      "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+      "stars": "139355",
+      "stars_today": "79",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "is_ai_related": true
+    },
+    {
+      "owner": "yikart",
+      "name": "AiToEarn",
+      "full_name": "yikart/AiToEarn",
+      "description": "Let's use AI to Earn!",
+      "stars": "20348",
+      "stars_today": "402",
+      "url": "https://github.com/yikart/AiToEarn",
+      "is_ai_related": true
+    },
+    {
+      "owner": "phuryn",
+      "name": "pm-skills",
+      "full_name": "phuryn/pm-skills",
+      "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+      "stars": "13808",
+      "stars_today": "806",
+      "url": "https://github.com/phuryn/pm-skills",
+      "is_ai_related": true
+    },
+    {
+      "owner": "santifer",
+      "name": "career-ops",
+      "full_name": "santifer/career-ops",
+      "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+      "stars": "52235",
+      "stars_today": "1110",
+      "url": "https://github.com/santifer/career-ops",
+      "is_ai_related": true
+    },
+    {
+      "owner": "openai",
+      "name": "plugins",
+      "full_name": "openai/plugins",
+      "description": "OpenAI Plugins",
+      "stars": "2713",
+      "stars_today": "284",
+      "url": "https://github.com/openai/plugins",
+      "is_ai_related": true
+    },
+    {
+      "owner": "maziyarpanahi",
+      "name": "openmed",
+      "full_name": "maziyarpanahi/openmed",
+      "description": "open-source healthcare ai",
+      "stars": "2076",
+      "stars_today": "191",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "is_ai_related": true
+    },
+    {
+      "owner": "addyosmani",
+      "name": "agent-skills",
+      "full_name": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "stars": "50104",
+      "stars_today": "443",
+      "url": "https://github.com/addyosmani/agent-skills",
       "is_ai_related": true
     }
   ]
