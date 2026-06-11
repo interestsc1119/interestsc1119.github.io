@@ -3,1263 +3,1356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>每日精选 | Daily Digest</title>
+    <title>InterestSC | AI Daily Radar</title>
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-        
+
         :root {
-            --bg-primary: #0d1117;
-            --bg-secondary: #161b22;
-            --bg-card: #21262d;
-            --text-primary: #e6edf3;
-            --text-secondary: #8b949e;
-            --accent: #58a6ff;
-            --accent-hover: #79c0ff;
-            --border: #30363d;
-            --star-color: #f0c14b;
-            --success: #3fb950;
-            --warning: #d29922;
-            --ai-color: #a371f7;
-            --news-color: #f78166;
+            --ink: #18202f;
+            --muted: #6d7482;
+            --paper: #fbfaf7;
+            --surface: #ffffff;
+            --surface-soft: #f2f6f4;
+            --line: #dfe5e0;
+            --accent: #1f8a70;
+            --accent-strong: #146b57;
+            --blue: #2e5aac;
+            --rose: #b94762;
+            --gold: #b88728;
+            --shadow: 0 18px 42px rgba(30, 38, 48, 0.10);
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
             min-height: 100vh;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
         }
-        
-        .container {
-            max-width: 1200px;
+
+        a {
+            color: inherit;
+        }
+
+        .page-shell {
+            width: min(1160px, calc(100% - 40px));
             margin: 0 auto;
-            padding: 2rem;
         }
-        
-        header {
-            text-align: center;
-            padding: 2rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 2rem;
-        }
-        
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--ai-color) 50%, var(--news-color) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 1rem;
-        }
-        
-        /* 标签页导航 */
-        .tabs {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .tab-btn {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            color: var(--text-secondary);
-            padding: 0.75rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 1rem;
+
+        .topbar {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
         }
-        
-        .tab-btn:hover {
-            border-color: var(--accent);
-            color: var(--text-primary);
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 800;
+            letter-spacing: 0;
         }
-        
-        .tab-btn.active {
+
+        .brand-mark {
+            display: grid;
+            place-items: center;
+            width: 34px;
+            height: 34px;
+            border: 1px solid var(--ink);
+            border-radius: 50%;
+            background: var(--ink);
+            color: #fff;
+            font-size: 0.78rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 0.92rem;
+            color: var(--muted);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-strong);
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+            gap: 38px;
+            align-items: end;
+            padding: 54px 0 40px;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 22px;
+            color: var(--accent-strong);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 34px;
+            height: 2px;
             background: var(--accent);
-            border-color: var(--accent);
+        }
+
+        h1 {
+            max-width: 780px;
+            font-size: clamp(2.35rem, 6vw, 5.65rem);
+            line-height: 0.96;
+            letter-spacing: 0;
+            font-weight: 900;
+        }
+
+        .hero-copy {
+            max-width: 680px;
+            margin-top: 22px;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
+            border: 1px solid var(--ink);
+            border-radius: 999px;
+            padding: 0 18px;
+            background: var(--ink);
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 750;
+            transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+        }
+
+        .button:hover {
+            transform: translateY(-1px);
+            background: var(--accent-strong);
+            border-color: var(--accent-strong);
+        }
+
+        .button.secondary {
+            background: transparent;
+            color: var(--ink);
+        }
+
+        .button.secondary:hover {
+            background: var(--ink);
             color: #fff;
         }
-        
-        .tab-btn .icon {
-            font-size: 1.2rem;
+
+        .profile-block {
+            display: grid;
+            gap: 20px;
+            justify-items: start;
         }
-        
-        /* 更新信息 */
-        .update-info {
+
+        .avatar-wrap {
+            width: min(100%, 290px);
+            aspect-ratio: 1;
+            border-radius: 28px;
+            overflow: hidden;
+            background: var(--surface-soft);
+            box-shadow: var(--shadow);
+        }
+
+        .avatar-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .profile-note {
+            max-width: 330px;
+            color: var(--muted);
+            font-size: 0.96rem;
+        }
+
+        .stats-strip {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            margin: 26px 0 0;
+            border: 1px solid var(--line);
+            background: var(--line);
+        }
+
+        .stat-box {
+            min-height: 108px;
+            padding: 18px;
+            background: var(--surface);
+        }
+
+        .stat-box strong {
+            display: block;
+            color: var(--ink);
+            font-size: clamp(1.5rem, 4vw, 2.4rem);
+            line-height: 1;
+        }
+
+        .stat-box span {
+            display: block;
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 0.86rem;
+        }
+
+        main {
+            padding: 40px 0 56px;
+        }
+
+        .section-heading {
             display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
+            align-items: end;
+            justify-content: space-between;
+            gap: 18px;
+            margin-bottom: 22px;
         }
-        
-        .info-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1rem 1.5rem;
-            text-align: center;
-            min-width: 140px;
+
+        .section-heading h2 {
+            font-size: clamp(1.45rem, 3vw, 2.2rem);
+            letter-spacing: 0;
+            line-height: 1.15;
         }
-        
-        .info-card .value {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--accent);
+
+        .section-heading p {
+            max-width: 520px;
+            color: var(--muted);
+            font-size: 0.95rem;
         }
-        
-        .info-card .label {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
+
+        .control-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin: 28px 0 20px;
         }
-        
-        /* 内容区域 */
+
+        .tabs,
+        .filter-tabs {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--surface);
+        }
+
+        .tab-btn,
+        .filter-tab {
+            border: 0;
+            border-radius: 999px;
+            background: transparent;
+            color: var(--muted);
+            cursor: pointer;
+            font: inherit;
+            font-size: 0.9rem;
+            font-weight: 750;
+            padding: 9px 15px;
+            white-space: nowrap;
+        }
+
+        .tab-btn.active,
+        .filter-tab.active {
+            background: var(--ink);
+            color: #fff;
+        }
+
         .content-section {
             display: none;
         }
-        
+
         .content-section.active {
             display: block;
         }
-        
-        /* 趋势图 */
+
         .chart-section {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 26px;
+            padding: 22px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
         }
-        
+
         .chart-title {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-        
-        .chart-container {
-            height: 160px;
             display: flex;
-            align-items: flex-end;
-            gap: 4px;
-            padding: 1rem 0 2rem 0;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            font-weight: 850;
         }
-        
+
+        .chart-title span {
+            color: var(--muted);
+            font-size: 0.82rem;
+            font-weight: 650;
+        }
+
+        .chart-container {
+            display: flex;
+            align-items: end;
+            gap: 8px;
+            height: 150px;
+            padding-top: 8px;
+        }
+
         .chart-bar {
-            flex: 1;
-            background: linear-gradient(180deg, var(--accent) 0%, #1f6feb 100%);
-            border-radius: 4px 4px 0 0;
-            min-height: 8px;
-            transition: transform 0.2s;
             position: relative;
-            cursor: pointer;
+            flex: 1 1 0;
+            min-width: 8px;
+            min-height: 8px;
+            border-radius: 999px 999px 0 0;
+            background: var(--accent);
+            transition: transform 160ms ease;
         }
-        
+
         .chart-bar:hover {
-            transform: scaleY(1.05);
+            transform: scaleY(1.04);
         }
-        
+
         .chart-bar::after {
             content: attr(data-date);
             position: absolute;
-            bottom: -22px;
             left: 50%;
+            bottom: -24px;
             transform: translateX(-50%);
-            font-size: 0.65rem;
-            color: var(--text-secondary);
+            color: var(--muted);
+            font-size: 0.68rem;
             white-space: nowrap;
         }
-        
-        .chart-labels {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 8px;
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-        }
-        
-        /* 项目网格 */
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-        
-        .section-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-        
-        .filter-tabs {
-            display: flex;
-            gap: 0.5rem;
-        }
-        
-        .filter-tab {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            color: var(--text-secondary);
-            padding: 0.4rem 0.8rem;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 0.85rem;
-        }
-        
-        .filter-tab:hover {
-            border-color: var(--accent);
-            color: var(--text-primary);
-        }
-        
-        .filter-tab.active {
-            background: var(--accent);
-            border-color: var(--accent);
-            color: #fff;
-        }
-        
+
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
+            gap: 16px;
         }
-        
+
+        .project-card,
+        .news-item,
+        .history-item {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
+            transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+        }
+
         .project-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 1.25rem;
-            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            min-height: 238px;
+            padding: 18px;
         }
-        
-        .project-card:hover {
-            border-color: var(--accent);
+
+        .project-card:hover,
+        .news-item:hover {
+            border-color: rgba(31, 138, 112, 0.55);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            box-shadow: var(--shadow);
         }
-        
+
         .project-header {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 0.75rem;
+            gap: 12px;
+            margin-bottom: 12px;
         }
-        
-        .project-rank {
-            background: var(--accent);
-            color: #fff;
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            display: flex;
+
+        .rank {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.8rem;
-            font-weight: 600;
-            flex-shrink: 0;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: var(--surface-soft);
+            color: var(--accent-strong);
+            font-size: 0.82rem;
+            font-weight: 900;
+            flex: 0 0 auto;
         }
-        
+
         .project-name {
+            min-width: 0;
             font-size: 1rem;
-            font-weight: 600;
+            font-weight: 850;
+            line-height: 1.25;
+        }
+
+        .project-name a {
+            display: block;
             overflow: hidden;
+            color: var(--ink);
+            text-decoration: none;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
-        
-        .project-name a {
-            color: var(--accent);
-            text-decoration: none;
+
+        .project-name a:hover,
+        .news-title a:hover {
+            color: var(--accent-strong);
         }
-        
-        .project-name a:hover {
-            text-decoration: underline;
-        }
-        
+
         .project-desc {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
+            min-height: 68px;
+            color: var(--muted);
+            font-size: 0.9rem;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
             overflow: hidden;
         }
-        
+
         .project-stats {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            font-size: 0.85rem;
             flex-wrap: wrap;
+            gap: 8px;
+            margin-top: auto;
+            padding-top: 18px;
         }
-        
-        .stat {
-            display: flex;
+
+        .pill {
+            display: inline-flex;
             align-items: center;
-            gap: 0.25rem;
-            color: var(--text-secondary);
+            min-height: 28px;
+            border-radius: 999px;
+            padding: 0 10px;
+            background: var(--surface-soft);
+            color: var(--muted);
+            font-size: 0.8rem;
+            font-weight: 750;
         }
-        
-        .star-icon {
-            fill: var(--star-color);
+
+        .pill.today {
+            background: rgba(31, 138, 112, 0.12);
+            color: var(--accent-strong);
         }
-        
-        .stat.today {
-            color: var(--success);
-            font-weight: 500;
-        }
-        
+
         .view-btn {
             margin-left: auto;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            color: var(--text-primary);
-            padding: 0.35rem 0.7rem;
-            border-radius: 6px;
+            color: var(--ink);
+            font-size: 0.82rem;
+            font-weight: 850;
             text-decoration: none;
-            font-size: 0.8rem;
-            transition: all 0.2s;
         }
-        
-        .view-btn:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-        }
-        
-        /* 新闻列表 */
+
         .news-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
+            display: grid;
+            gap: 12px;
         }
-        
+
         .news-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 1rem 1.25rem;
-            transition: all 0.2s;
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
+            display: grid;
+            grid-template-columns: 42px minmax(0, 1fr);
+            gap: 12px;
+            padding: 16px;
         }
-        
-        .news-item:hover {
-            border-color: var(--news-color);
-            transform: translateX(4px);
-        }
-        
+
         .news-rank {
-            background: var(--news-color);
-            color: #fff;
-            min-width: 28px;
-            height: 28px;
-            border-radius: 6px;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.85rem;
-            font-weight: 600;
-            flex-shrink: 0;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: rgba(185, 71, 98, 0.12);
+            color: var(--rose);
+            font-weight: 900;
+            font-size: 0.82rem;
         }
-        
-        .news-rank.top {
-            background: linear-gradient(135deg, #ff6b6b 0%, #f0c14b 100%);
-        }
-        
-        .news-content {
-            flex: 1;
-            min-width: 0;
-        }
-        
+
         .news-title {
             font-size: 1rem;
-            font-weight: 500;
-            margin-bottom: 0.4rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+            font-weight: 780;
+            line-height: 1.35;
         }
-        
+
         .news-title a {
-            color: var(--text-primary);
+            color: var(--ink);
             text-decoration: none;
         }
-        
-        .news-title a:hover {
-            color: var(--accent);
-        }
-        
+
         .news-meta {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-        }
-        
-        .news-source {
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-        }
-        
-        .news-hot {
-            background: var(--news-color);
-            color: #fff;
-            padding: 0.15rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.7rem;
-            font-weight: 600;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 0.82rem;
         }
 
-        .news-score {
-            color: var(--star-color);
-            font-weight: 500;
-        }
-        
-        /* 历史记录 */
-        .history-section {
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border);
-        }
-        
-        .history-title {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-        
-        .history-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-        
-        .history-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
+        .empty-state {
+            padding: 32px;
+            border: 1px dashed var(--line);
             border-radius: 8px;
-            padding: 0.75rem 1rem;
-        }
-        
-        .history-item .date {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-        
-        .history-item .count {
-            font-size: 0.85rem;
-        }
-        
-        .history-item .count .ai-count {
-            color: var(--ai-color);
-            font-weight: 600;
-        }
-        
-        .history-item .count .news-count {
-            color: var(--news-color);
-            font-weight: 600;
-        }
-        
-        footer {
+            color: var(--muted);
+            background: var(--surface);
             text-align: center;
-            padding: 2rem;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            margin-top: 3rem;
         }
-        
+
+        .filter-empty {
+            margin-top: 16px;
+        }
+
+        .history-section {
+            margin-top: 42px;
+            padding-top: 34px;
+            border-top: 1px solid var(--line);
+        }
+
+        .history-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .history-item {
+            padding: 16px;
+        }
+
+        .history-item .date {
+            display: block;
+            color: var(--muted);
+            font-size: 0.82rem;
+            margin-bottom: 8px;
+        }
+
+        .history-item .count {
+            font-weight: 850;
+        }
+
+        footer {
+            border-top: 1px solid var(--line);
+            padding: 26px 0 36px;
+            color: var(--muted);
+            font-size: 0.88rem;
+        }
+
         footer a {
-            color: var(--accent);
+            color: var(--accent-strong);
             text-decoration: none;
+            font-weight: 800;
         }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-        /* 响应式 */
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
+
+        @media (max-width: 860px) {
+            .page-shell {
+                width: min(100% - 28px, 1160px);
             }
-            
-            h1 {
-                font-size: 1.6rem;
-            }
-            
-            .tabs {
+
+            .topbar,
+            .section-heading,
+            .control-row {
+                align-items: flex-start;
                 flex-direction: column;
             }
-            
-            .projects-grid {
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding-top: 36px;
+            }
+
+            .profile-block {
+                grid-template-columns: 96px minmax(0, 1fr);
+                align-items: center;
+            }
+
+            .avatar-wrap {
+                width: 96px;
+                border-radius: 22px;
+            }
+
+            .stats-strip {
                 grid-template-columns: 1fr;
             }
-            
-            .update-info {
-                gap: 1rem;
+
+            .tabs,
+            .filter-tabs {
+                width: 100%;
+                overflow-x: auto;
+                justify-content: flex-start;
             }
-            
-            .info-card {
-                min-width: 120px;
+
+            .tab-btn,
+            .filter-tab {
+                flex: 1 0 auto;
             }
-            
-            .info-card .value {
-                font-size: 1.5rem;
+        }
+
+        @media (max-width: 560px) {
+            h1 {
+                font-size: 2.55rem;
             }
-            
-            .news-item {
+
+            .hero-actions {
                 flex-direction: column;
-                gap: 0.5rem;
+            }
+
+            .button {
+                width: 100%;
+            }
+
+            .profile-block {
+                grid-template-columns: 1fr;
+            }
+
+            .news-item {
+                grid-template-columns: 1fr;
+            }
+
+            .chart-container {
+                gap: 5px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>📊 每日精选</h1>
-            <p class="subtitle">AI 热门项目 · 科技热点资讯 · 每日自动更新</p>
+    <div class="page-shell">
+        <nav class="topbar" aria-label="主页导航">
+            <a class="brand" href="https://github.com/interestsc1119" target="_blank" rel="noreferrer">
+                <span class="brand-mark">SC</span>
+                <span>InterestSC</span>
+            </a>
+            <div class="nav-links">
+                <a href="#radar">Daily Radar</a>
+                <a href="https://github.com/interestsc1119" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://github.com/interestsc1119/interestsc1119.github.io" target="_blank" rel="noreferrer">Source</a>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div>
+                <span class="eyebrow">Personal homepage</span>
+                <h1>InterestSC 的 AI 趋势观察站</h1>
+                <p class="hero-copy">
+                    这里是一个自动更新的个人主页，把我每天关注的 AI 开源项目和科技新闻收拢在一起，
+                    像一张面向未来工作的简洁雷达图。
+                </p>
+                <div class="hero-actions">
+                    <a class="button" href="#radar">查看今日趋势</a>
+                    <a class="button secondary" href="https://github.com/interestsc1119" target="_blank" rel="noreferrer">访问 GitHub</a>
+                </div>
+            </div>
+            <aside class="profile-block" aria-label="个人信息">
+                <div class="avatar-wrap">
+                    <img src="https://github.com/interestsc1119.png" alt="InterestSC GitHub avatar" loading="lazy">
+                </div>
+                <p class="profile-note">
+                    以 GitHub Pages 承载的个人信息流。页面每天北京时间 08:57 自动刷新，保留最近 14 天的趋势脉络。
+                </p>
+            </aside>
         </header>
-        
-        <!-- 标签页导航 -->
-        <div class="tabs">
-            <button class="tab-btn active" onclick="switchTab('ai')">
-                <span class="icon">🤖</span>
-                <span>AI 项目</span>
-            </button>
-            <button class="tab-btn" onclick="switchTab('news')">
-                <span class="icon">📰</span>
-                <span>科技新闻</span>
-            </button>
-        </div>
-        
-        <!-- 更新信息 -->
-        <div class="update-info">
-            <div class="info-card">
-                <div class="value">12</div>
-                <div class="label">AI 项目</div>
+
+        <section class="stats-strip" aria-label="今日概览">
+            <div class="stat-box">
+                <strong>12</strong>
+                <span>今日 AI 项目</span>
             </div>
-            <div class="info-card">
-                <div class="value">20</div>
-                <div class="label">科技新闻</div>
+            <div class="stat-box">
+                <strong>20</strong>
+                <span>今日科技新闻</span>
             </div>
-            <div class="info-card">
-                <div class="value">2026-06-10</div>
-                <div class="label">更新日期</div>
-            </div>
-        </div>
-        
-        <!-- AI 项目区域 -->
-        <section class="content-section active" id="ai-section">
-            <div class="chart-section">
-                <h2 class="chart-title">📈 AI 项目趋势（近 14 天）</h2>
-                <div class="chart-container" id="ai-chart"></div>
-                <div class="chart-labels">
-                    <span>较早</span>
-                    <span>较近</span>
-                </div>
-            </div>
-            
-            <div class="section-header">
-                <h3 class="section-title">🔥 热门 AI 项目</h3>
-                <div class="filter-tabs">
-                    <button class="filter-tab active" onclick="filterAIProjects('all')">全部</button>
-                    <button class="filter-tab" onclick="filterAIProjects('today')">今日飙升</button>
-                </div>
-            </div>
-            
-            <div class="projects-grid" id="ai-projects-grid">
-                
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#1</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/mvanhorn/last30days-skill" target="_blank">mvanhorn/last30days-skill</a>
-                </h3>
-            </div>
-            <p class="project-desc">AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    38537
-                </span>
-                <span class="stat today">📈 今日 +3191</span>
-                <a href="https://github.com/mvanhorn/last30days-skill" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#2</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/RyanCodrai/turbovec" target="_blank">RyanCodrai/turbovec</a>
-                </h3>
-            </div>
-            <p class="project-desc">A vector index built on TurboQuant, written in Rust with Python bindings</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    10558
-                </span>
-                <span class="stat today">📈 今日 +1801</span>
-                <a href="https://github.com/RyanCodrai/turbovec" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#3</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/opencv/opencv" target="_blank">opencv/opencv</a>
-                </h3>
-            </div>
-            <p class="project-desc">Open Source Computer Vision Library</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    88819
-                </span>
-                <span class="stat today">📈 今日 +102</span>
-                <a href="https://github.com/opencv/opencv" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#4</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/aaif-goose/goose" target="_blank">aaif-goose/goose</a>
-                </h3>
-            </div>
-            <p class="project-desc">an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    48659
-                </span>
-                <span class="stat today">📈 今日 +489</span>
-                <a href="https://github.com/aaif-goose/goose" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#5</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/Andyyyy64/whichllm" target="_blank">Andyyyy64/whichllm</a>
-                </h3>
-            </div>
-            <p class="project-desc">Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    4317
-                </span>
-                <span class="stat today">📈 今日 +633</span>
-                <a href="https://github.com/Andyyyy64/whichllm" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#6</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools" target="_blank">x1xhlol/system-prompts-and-models-of-ai-tools</a>
-                </h3>
-            </div>
-            <p class="project-desc">FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    139355
-                </span>
-                <span class="stat today">📈 今日 +79</span>
-                <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#7</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/yikart/AiToEarn" target="_blank">yikart/AiToEarn</a>
-                </h3>
-            </div>
-            <p class="project-desc">Let's use AI to Earn!</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    20348
-                </span>
-                <span class="stat today">📈 今日 +402</span>
-                <a href="https://github.com/yikart/AiToEarn" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#8</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/phuryn/pm-skills" target="_blank">phuryn/pm-skills</a>
-                </h3>
-            </div>
-            <p class="project-desc">PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    13808
-                </span>
-                <span class="stat today">📈 今日 +806</span>
-                <a href="https://github.com/phuryn/pm-skills" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#9</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/santifer/career-ops" target="_blank">santifer/career-ops</a>
-                </h3>
-            </div>
-            <p class="project-desc">AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    52235
-                </span>
-                <span class="stat today">📈 今日 +1110</span>
-                <a href="https://github.com/santifer/career-ops" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#10</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/openai/plugins" target="_blank">openai/plugins</a>
-                </h3>
-            </div>
-            <p class="project-desc">OpenAI Plugins</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    2713
-                </span>
-                <span class="stat today">📈 今日 +284</span>
-                <a href="https://github.com/openai/plugins" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#11</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/maziyarpanahi/openmed" target="_blank">maziyarpanahi/openmed</a>
-                </h3>
-            </div>
-            <p class="project-desc">open-source healthcare ai</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    2076
-                </span>
-                <span class="stat today">📈 今日 +191</span>
-                <a href="https://github.com/maziyarpanahi/openmed" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-rank">#12</span>
-                <h3 class="project-name">
-                    <a href="https://github.com/addyosmani/agent-skills" target="_blank">addyosmani/agent-skills</a>
-                </h3>
-            </div>
-            <p class="project-desc">Production-grade engineering skills for AI coding agents.</p>
-            <div class="project-stats">
-                <span class="stat">
-                    <svg class="star-icon" viewBox="0 0 16 16" width="14" height="14">
-                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                    </svg>
-                    50104
-                </span>
-                <span class="stat today">📈 今日 +443</span>
-                <a href="https://github.com/addyosmani/agent-skills" class="view-btn" target="_blank">查看 →</a>
-            </div>
-        </div>
-        
+            <div class="stat-box">
+                <strong>2026-06-10</strong>
+                <span>最近更新日期</span>
             </div>
         </section>
-        
-        <!-- 科技新闻区域 -->
-        <section class="content-section" id="news-section">
-            <div class="chart-section">
-                <h2 class="chart-title">📈 科技新闻趋势（近 14 天）</h2>
-                <div class="chart-container" id="news-chart"></div>
-                <div class="chart-labels">
-                    <span>较早</span>
-                    <span>较近</span>
+
+        <main id="radar">
+            <div class="section-heading">
+                <h2>每日趋势雷达</h2>
+                <p>自动抓取 GitHub Trending 和科技资讯源，过滤出更接近 AI、工具、开发者效率与前沿产品的内容。</p>
+            </div>
+
+            <div class="control-row">
+                <div class="tabs" role="tablist" aria-label="内容类型">
+                    <button class="tab-btn active" type="button" data-tab="ai">AI 项目</button>
+                    <button class="tab-btn" type="button" data-tab="news">科技新闻</button>
                 </div>
             </div>
-            
-            <div class="section-header">
-                <h3 class="section-title">🔥 科技热点</h3>
-                <div class="filter-tabs">
-                    <button class="filter-tab active" onclick="filterNews('all')">全部</button>
-                    <button class="filter-tab" onclick="filterNews('hot')">热门</button>
+
+            <section class="content-section active" id="ai-section">
+                <div class="chart-section">
+                    <h3 class="chart-title">AI 项目趋势 <span>最近 14 天</span></h3>
+                    <div class="chart-container" id="ai-chart" aria-label="AI 项目趋势图"></div>
                 </div>
-            </div>
-            
-            <div class="news-list" id="news-list">
-                
-        <div class="news-item">
-            <span class="news-rank top">#1</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://media.mercedes-benz.com/en/article/bebac2af-acdc-465a-9538-adb0bf3d8ccf" target="_blank">Mercedes‑Benz starts large‑scale production of electric axial flux motor</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">85 pts</span>
+
+                <div class="control-row">
+                    <div class="section-heading">
+                        <h2>热门 AI 项目</h2>
+                    </div>
+                    <div class="filter-tabs" aria-label="AI 项目筛选">
+                        <button class="filter-tab active" type="button" data-filter="all">全部</button>
+                        <button class="filter-tab" type="button" data-filter="today">今日上升</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank top">#2</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://github.com/apple/container/blob/main/docs/container-machine.md" target="_blank">macOS Container Machines</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    <span class="news-hot">Hot</span>
-                    <span class="news-score">775 pts</span>
+
+                <div class="projects-grid" id="ai-projects-grid">
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">1</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noreferrer">mvanhorn/last30days-skill</a>
+                    </h3>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank top">#3</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank">Claude Fable 5</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    <span class="news-hot">Hot</span>
-                    <span class="news-score">2249 pts</span>
+                <p class="project-desc">AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 38537</span>
+                    <span class="pill today">今日 +3191</span>
+                    <a href="https://github.com/mvanhorn/last30days-skill" class="view-btn" target="_blank" rel="noreferrer">查看</a>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#4</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://github.com/react/react/pull/36173" target="_blank">Port React Compiler to Rust</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">27 pts</span>
+            </article>
+
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">2</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/RyanCodrai/turbovec" target="_blank" rel="noreferrer">RyanCodrai/turbovec</a>
+                    </h3>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#5</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/" target="_blank">Upcoming breaking changes for npm v12</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">373 pts</span>
+                <p class="project-desc">A vector index built on TurboQuant, written in Rust with Python bindings</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 10558</span>
+                    <span class="pill today">今日 +1801</span>
+                    <a href="https://github.com/RyanCodrai/turbovec" class="view-btn" target="_blank" rel="noreferrer">查看</a>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#6</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://twitter.com/RichardSSutton/status/2061216087744946656" target="_blank">Rich Sutton on AI creativity and discovery</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">120 pts</span>
+            </article>
+
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">3</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/opencv/opencv" target="_blank" rel="noreferrer">opencv/opencv</a>
+                    </h3>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#7</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/" target="_blank">German ruling declares Google liable for false answers in AI Overviews</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">561 pts</span>
+                <p class="project-desc">Open Source Computer Vision Library</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 88819</span>
+                    <span class="pill today">今日 +102</span>
+                    <a href="https://github.com/opencv/opencv" class="view-btn" target="_blank" rel="noreferrer">查看</a>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#8</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/" target="_blank">RIP software hackathons. Long live the hardware hackathon</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">179 pts</span>
+            </article>
+
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">4</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/aaif-goose/goose" target="_blank" rel="noreferrer">aaif-goose/goose</a>
+                    </h3>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#9</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://arstechnica.com/cars/2026/05/how-do-you-design-a-30000-electric-pickup-inside-fords-skunkworks/" target="_blank">How do you design a $30k electric pickup? Inside Ford's skunkworks</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">53 pts</span>
+                <p class="project-desc">an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 48659</span>
+                    <span class="pill today">今日 +489</span>
+                    <a href="https://github.com/aaif-goose/goose" class="view-btn" target="_blank" rel="noreferrer">查看</a>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#10</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://paperswithcode.co/" target="_blank">Reviving Papers with Code</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">19 pts</span>
+            </article>
+
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">5</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/Andyyyy64/whichllm" target="_blank" rel="noreferrer">Andyyyy64/whichllm</a>
+                    </h3>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#11</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/" target="_blank">Vibe coding my way to a healthy family: Introducing Gamow Labs</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">126 pts</span>
+                <p class="project-desc">Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 4317</span>
+                    <span class="pill today">今日 +633</span>
+                    <a href="https://github.com/Andyyyy64/whichllm" class="view-btn" target="_blank" rel="noreferrer">查看</a>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#12</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://aarushgupta.io/posts/kan-fpga/" target="_blank">Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">227 pts</span>
+            </article>
+
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">6</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools" target="_blank" rel="noreferrer">x1xhlol/system-prompts-and-models-of-ai-tools</a>
+                    </h3>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#13</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos" target="_blank">What it feels like to work with Mythos</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">282 pts</span>
+                <p class="project-desc">FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia &amp; v0. (And other Open Sourced) System Prompts, Internal Tools &amp; AI Models</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 139355</span>
+                    <span class="pill today">今日 +79</span>
+                    <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools" class="view-btn" target="_blank" rel="noreferrer">查看</a>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#14</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://www.bbc.com/culture/article/20260603-how-a-26-year-old-german-woman-made-the-worlds-oldest-surviving-animated-feature-film" target="_blank">The oldest surviving animated feature film at 100</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">Hacker News</span>
-                    
-                    <span class="news-score">107 pts</span>
+            </article>
+
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">7</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/yikart/AiToEarn" target="_blank" rel="noreferrer">yikart/AiToEarn</a>
+                    </h3>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#15</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://techcrunch.com/2026/06/10/waymo-says-it-built-a-better-benchmark-for-comparing-robotaxis-to-humans/" target="_blank">Waymo says it built a better benchmark for comparing robotaxis to humans</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">TechCrunch</span>
-                    
-                    
+                <p class="project-desc">Let&#x27;s use AI to Earn!</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 20348</span>
+                    <span class="pill today">今日 +402</span>
+                    <a href="https://github.com/yikart/AiToEarn" class="view-btn" target="_blank" rel="noreferrer">查看</a>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#16</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://techcrunch.com/2026/06/10/meta-signs-first-ai-data-center-deal-in-india-with-reliance/" target="_blank">Meta signs first AI data center deal in India with Reliance</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">TechCrunch</span>
-                    
-                    
+            </article>
+
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">8</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/phuryn/pm-skills" target="_blank" rel="noreferrer">phuryn/pm-skills</a>
+                    </h3>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#17</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://techcrunch.com/2026/06/09/top-lucid-motors-executive-departs-amid-new-ceos-leadership-shakeup/" target="_blank">Top Lucid Motors executive departs amid new CEO’s leadership shakeup</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">TechCrunch</span>
-                    
-                    
+                <p class="project-desc">PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 13808</span>
+                    <span class="pill today">今日 +806</span>
+                    <a href="https://github.com/phuryn/pm-skills" class="view-btn" target="_blank" rel="noreferrer">查看</a>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#18</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/" target="_blank">Google just fired a warning shot in the AI subscription price wars</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">TechCrunch</span>
-                    
-                    
+            </article>
+
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">9</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/santifer/career-ops" target="_blank" rel="noreferrer">santifer/career-ops</a>
+                    </h3>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#19</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-500m-into-hot-startups-without-a-traditional-vc-fund/" target="_blank">How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">TechCrunch</span>
-                    
-                    
+                <p class="project-desc">AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 52235</span>
+                    <span class="pill today">今日 +1110</span>
+                    <a href="https://github.com/santifer/career-ops" class="view-btn" target="_blank" rel="noreferrer">查看</a>
                 </div>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <span class="news-rank ">#20</span>
-            <div class="news-content">
-                <h4 class="news-title">
-                    <a href="https://techcrunch.com/2026/06/09/gm-bets-big-on-energy-storage-for-data-centers-and-the-grid/" target="_blank">GM joins race to build batteries for AI data centers and the grid</a>
-                </h4>
-                <div class="news-meta">
-                    <span class="news-source">TechCrunch</span>
-                    
-                    
+            </article>
+
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">10</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/openai/plugins" target="_blank" rel="noreferrer">openai/plugins</a>
+                    </h3>
                 </div>
-            </div>
-        </div>
-        
-            </div>
-        </section>
-        
-        <!-- 历史记录 -->
-        <section class="history-section">
-            <h3 class="history-title">📅 历史记录</h3>
-            <div class="history-list" id="history-list"></div>
-        </section>
-        
+                <p class="project-desc">OpenAI Plugins</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 2713</span>
+                    <span class="pill today">今日 +284</span>
+                    <a href="https://github.com/openai/plugins" class="view-btn" target="_blank" rel="noreferrer">查看</a>
+                </div>
+            </article>
+
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">11</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/maziyarpanahi/openmed" target="_blank" rel="noreferrer">maziyarpanahi/openmed</a>
+                    </h3>
+                </div>
+                <p class="project-desc">open-source healthcare ai</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 2076</span>
+                    <span class="pill today">今日 +191</span>
+                    <a href="https://github.com/maziyarpanahi/openmed" class="view-btn" target="_blank" rel="noreferrer">查看</a>
+                </div>
+            </article>
+
+
+            <article class="project-card" data-boost="true">
+                <div class="project-header">
+                    <span class="rank">12</span>
+                    <h3 class="project-name">
+                        <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noreferrer">addyosmani/agent-skills</a>
+                    </h3>
+                </div>
+                <p class="project-desc">Production-grade engineering skills for AI coding agents.</p>
+                <div class="project-stats">
+                    <span class="pill">Stars 50104</span>
+                    <span class="pill today">今日 +443</span>
+                    <a href="https://github.com/addyosmani/agent-skills" class="view-btn" target="_blank" rel="noreferrer">查看</a>
+                </div>
+            </article>
+
+                </div>
+                <div class="empty-state filter-empty" id="ai-filter-empty" hidden>当前数据里还没有明确的今日上升项目。</div>
+            </section>
+
+            <section class="content-section" id="news-section">
+                <div class="chart-section">
+                    <h3 class="chart-title">科技新闻趋势 <span>最近 14 天</span></h3>
+                    <div class="chart-container" id="news-chart" aria-label="科技新闻趋势图"></div>
+                </div>
+
+                <div class="control-row">
+                    <div class="section-heading">
+                        <h2>科技热点</h2>
+                    </div>
+                    <div class="filter-tabs" aria-label="新闻筛选">
+                        <button class="filter-tab active" type="button" data-filter="all">全部</button>
+                        <button class="filter-tab" type="button" data-filter="hot">热门</button>
+                    </div>
+                </div>
+
+                <div class="news-list" id="news-list">
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">1</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://media.mercedes-benz.com/en/article/bebac2af-acdc-465a-9538-adb0bf3d8ccf" target="_blank" rel="noreferrer">Mercedes‑Benz starts large‑scale production of electric axial flux motor</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">85 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="true">
+                <span class="news-rank">2</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://github.com/apple/container/blob/main/docs/container-machine.md" target="_blank" rel="noreferrer">macOS Container Machines</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+                        <span class="pill today">Hot</span>
+                        <span class="pill">775 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="true">
+                <span class="news-rank">3</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noreferrer">Claude Fable 5</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+                        <span class="pill today">Hot</span>
+                        <span class="pill">2249 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">4</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://github.com/react/react/pull/36173" target="_blank" rel="noreferrer">Port React Compiler to Rust</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">27 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">5</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/" target="_blank" rel="noreferrer">Upcoming breaking changes for npm v12</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">373 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">6</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://twitter.com/RichardSSutton/status/2061216087744946656" target="_blank" rel="noreferrer">Rich Sutton on AI creativity and discovery</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">120 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">7</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/" target="_blank" rel="noreferrer">German ruling declares Google liable for false answers in AI Overviews</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">561 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">8</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/" target="_blank" rel="noreferrer">RIP software hackathons. Long live the hardware hackathon</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">179 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">9</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://arstechnica.com/cars/2026/05/how-do-you-design-a-30000-electric-pickup-inside-fords-skunkworks/" target="_blank" rel="noreferrer">How do you design a $30k electric pickup? Inside Ford&#x27;s skunkworks</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">53 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">10</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://paperswithcode.co/" target="_blank" rel="noreferrer">Reviving Papers with Code</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">19 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">11</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/" target="_blank" rel="noreferrer">Vibe coding my way to a healthy family: Introducing Gamow Labs</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">126 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">12</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://aarushgupta.io/posts/kan-fpga/" target="_blank" rel="noreferrer">Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">227 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">13</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos" target="_blank" rel="noreferrer">What it feels like to work with Mythos</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">282 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">14</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://www.bbc.com/culture/article/20260603-how-a-26-year-old-german-woman-made-the-worlds-oldest-surviving-animated-feature-film" target="_blank" rel="noreferrer">The oldest surviving animated feature film at 100</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>Hacker News</span>
+
+                        <span class="pill">107 pts</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">15</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2026/06/10/waymo-says-it-built-a-better-benchmark-for-comparing-robotaxis-to-humans/" target="_blank" rel="noreferrer">Waymo says it built a better benchmark for comparing robotaxis to humans</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>TechCrunch</span>
+
+
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">16</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2026/06/10/meta-signs-first-ai-data-center-deal-in-india-with-reliance/" target="_blank" rel="noreferrer">Meta signs first AI data center deal in India with Reliance</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>TechCrunch</span>
+
+
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">17</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2026/06/09/top-lucid-motors-executive-departs-amid-new-ceos-leadership-shakeup/" target="_blank" rel="noreferrer">Top Lucid Motors executive departs amid new CEO’s leadership shakeup</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>TechCrunch</span>
+
+
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">18</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/" target="_blank" rel="noreferrer">Google just fired a warning shot in the AI subscription price wars</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>TechCrunch</span>
+
+
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">19</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-500m-into-hot-startups-without-a-traditional-vc-fund/" target="_blank" rel="noreferrer">How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>TechCrunch</span>
+
+
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="news-item" data-hot="false">
+                <span class="news-rank">20</span>
+                <div class="news-content">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2026/06/09/gm-bets-big-on-energy-storage-for-data-centers-and-the-grid/" target="_blank" rel="noreferrer">GM joins race to build batteries for AI data centers and the grid</a>
+                    </h3>
+                    <div class="news-meta">
+                        <span>TechCrunch</span>
+
+
+                    </div>
+                </div>
+            </article>
+
+                </div>
+                <div class="empty-state filter-empty" id="news-filter-empty" hidden>当前数据里还没有标记为热门的新闻。</div>
+            </section>
+
+            <section class="history-section">
+                <div class="section-heading">
+                    <h2>最近记录</h2>
+                    <p>保留近期抓取结果，用来观察这个页面每天捕捉到的信息密度。</p>
+                </div>
+                <div class="history-list" id="history-list"></div>
+            </section>
+        </main>
+
         <footer>
-            <p>由 GitHub Actions 自动更新 · <a href="https://github.com/interestsc1119/interestsc1119.github.io" target="_blank">查看源码</a></p>
+            <p>Powered by GitHub Actions. Source on <a href="https://github.com/interestsc1119/interestsc1119.github.io" target="_blank" rel="noreferrer">interestsc1119.github.io</a>.</p>
         </footer>
     </div>
-    
+
     <script>
-        // 切换标签页
-        function switchTab(tab) {
-            // 更新标签按钮状态
-            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.closest('.tab-btn').classList.add('active');
-            
-            // 更新内容区域
-            document.querySelectorAll('.content-section').forEach(section => section.classList.remove('active'));
-            
-            if (tab === 'ai') {
-                document.getElementById('ai-section').classList.add('active');
-            } else {
-                document.getElementById('news-section').classList.add('active');
-            }
-        }
-        
-        // 渲染 AI 趋势图
-        function renderAIChart() {
-            const chartData = {"labels": ["2026-06-08", "2026-06-09", "2026-06-10"], "values": [10, 13, 12]};
-            const chartContainer = document.getElementById('ai-chart');
-            const maxVal = Math.max(...chartData.values, 1);
-            
-            chartData.labels.forEach((label, i) => {
-                const bar = document.createElement('div');
-                bar.className = 'chart-bar';
-                bar.style.background = 'linear-gradient(180deg, #a371f7 0%, #8957e5 100%)';
-                const height = (chartData.values[i] / maxVal) * 100;
-                bar.style.height = Math.max(height, 5) + '%';
-                bar.setAttribute('data-date', label);
-                bar.setAttribute('title', label + ': ' + chartData.values[i] + ' 个项目');
+        const aiHistoryData = {"labels": ["2026-06-08", "2026-06-09", "2026-06-10"], "values": [10, 13, 12]};
+        const newsHistoryData = {"labels": ["2026-06-08", "2026-06-09", "2026-06-10"], "values": [10, 20, 20]};
+        const recentHistory = [{"date": "2026-06-08", "ai_count": 10, "news_count": 10, "ai_projects": [{"name": "mvanhorn/last30days-skill", "stars": "31761", "url": "https://github.com/mvanhorn/last30days-skill"}, {"name": "opencv/opencv", "stars": "88180", "url": "https://github.com/opencv/opencv"}, {"name": "Leonxlnx/taste-skill", "stars": "37177", "url": "https://github.com/Leonxlnx/taste-skill"}, {"name": "NousResearch/hermes-agent", "stars": "186264", "url": "https://github.com/NousResearch/hermes-agent"}, {"name": "yikart/AiToEarn", "stars": "18966", "url": "https://github.com/yikart/AiToEarn"}], "top_news": [{"title": "朝方在机场热情迎接", "source": "微博"}, {"title": "跑男", "source": "微博"}, {"title": "连续16年送考这份坚守令人动容", "source": "微博"}, {"title": "高考物理 选拔牛顿接班人", "source": "微博"}, {"title": "高考历史", "source": "微博"}]}, {"date": "2026-06-09", "ai_count": 13, "news_count": 20, "ai_projects": [{"name": "mvanhorn/last30days-skill", "stars": "35879", "url": "https://github.com/mvanhorn/last30days-skill"}, {"name": "RyanCodrai/turbovec", "stars": "9619", "url": "https://github.com/RyanCodrai/turbovec"}, {"name": "google/skills", "stars": "12765", "url": "https://github.com/google/skills"}, {"name": "Panniantong/Agent-Reach", "stars": "25006", "url": "https://github.com/Panniantong/Agent-Reach"}, {"name": "danielmiessler/Personal_AI_Infrastructure", "stars": "15620", "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure"}], "top_news": [{"title": "Microsoft's open source tools ", "source": "Hacker News"}, {"title": "Forever Young: how one molecul", "source": "Hacker News"}, {"title": "OpenCV 5 Is Here: The Biggest ", "source": "Hacker News"}, {"title": "Apple reveals new AI architect", "source": "Hacker News"}, {"title": "Eagle Computer: The rise and f", "source": "Hacker News"}]}, {"date": "2026-06-10", "ai_count": 12, "news_count": 20, "ai_projects": [{"name": "mvanhorn/last30days-skill", "stars": "38537", "url": "https://github.com/mvanhorn/last30days-skill"}, {"name": "RyanCodrai/turbovec", "stars": "10558", "url": "https://github.com/RyanCodrai/turbovec"}, {"name": "opencv/opencv", "stars": "88819", "url": "https://github.com/opencv/opencv"}, {"name": "aaif-goose/goose", "stars": "48659", "url": "https://github.com/aaif-goose/goose"}, {"name": "Andyyyy64/whichllm", "stars": "4317", "url": "https://github.com/Andyyyy64/whichllm"}], "top_news": [{"title": "Mercedes‑Benz starts large‑sca", "source": "Hacker News"}, {"title": "macOS Container Machines", "source": "Hacker News"}, {"title": "Claude Fable 5", "source": "Hacker News"}, {"title": "Port React Compiler to Rust", "source": "Hacker News"}, {"title": "Upcoming breaking changes for ", "source": "Hacker News"}]}];
+
+        function renderChart(containerId, chartData, color) {
+            const chartContainer = document.getElementById(containerId);
+            chartContainer.innerHTML = "";
+            const maxValue = Math.max(...chartData.values, 1);
+
+            chartData.labels.forEach((label, index) => {
+                const value = chartData.values[index] || 0;
+                const bar = document.createElement("div");
+                bar.className = "chart-bar";
+                bar.style.height = Math.max((value / maxValue) * 100, 6) + "%";
+                bar.style.background = color;
+                bar.dataset.date = label.slice(5);
+                bar.title = `${label}: ${value}`;
                 chartContainer.appendChild(bar);
             });
         }
-        
-        // 渲染新闻趋势图
-        function renderNewsChart() {
-            const chartData = {"labels": ["2026-06-08", "2026-06-09", "2026-06-10"], "values": [10, 20, 20]};
-            const chartContainer = document.getElementById('news-chart');
-            const maxVal = Math.max(...chartData.values, 1);
-            
-            chartData.labels.forEach((label, i) => {
-                const bar = document.createElement('div');
-                bar.className = 'chart-bar';
-                bar.style.background = 'linear-gradient(180deg, #f78166 0%, #e06040 100%)';
-                const height = (chartData.values[i] / maxVal) * 100;
-                bar.style.height = Math.max(height, 5) + '%';
-                bar.setAttribute('data-date', label);
-                bar.setAttribute('title', label + ': ' + chartData.values[i] + ' 条新闻');
-                chartContainer.appendChild(bar);
+
+        function switchTab(tabName) {
+            document.querySelectorAll(".tab-btn").forEach((button) => {
+                button.classList.toggle("active", button.dataset.tab === tabName);
             });
+
+            document.querySelectorAll(".content-section").forEach((section) => {
+                section.classList.remove("active");
+            });
+
+            document.getElementById(`${tabName}-section`).classList.add("active");
         }
-        
-        // 渲染历史记录
+
+        function filterAIProjects(filterName) {
+            document.querySelectorAll("#ai-section .filter-tab").forEach((button) => {
+                button.classList.toggle("active", button.dataset.filter === filterName);
+            });
+
+            document.querySelectorAll("#ai-projects-grid .project-card").forEach((card) => {
+                const hasTodaySignal = card.dataset.boost === "true";
+                card.style.display = filterName === "all" || hasTodaySignal ? "flex" : "none";
+            });
+
+            const visibleCount = document.querySelectorAll('#ai-projects-grid .project-card:not([style*="display: none"])').length;
+            document.getElementById("ai-filter-empty").hidden = filterName === "all" || visibleCount > 0;
+        }
+
+        function filterNews(filterName) {
+            document.querySelectorAll("#news-section .filter-tab").forEach((button) => {
+                button.classList.toggle("active", button.dataset.filter === filterName);
+            });
+
+            document.querySelectorAll("#news-list .news-item").forEach((item) => {
+                const isHot = item.dataset.hot === "true";
+                item.style.display = filterName === "all" || isHot ? "grid" : "none";
+            });
+
+            const visibleCount = document.querySelectorAll('#news-list .news-item:not([style*="display: none"])').length;
+            document.getElementById("news-filter-empty").hidden = filterName === "all" || visibleCount > 0;
+        }
+
         function renderHistory() {
-            const historyList = document.getElementById('history-list');
-            const recentHistory = [{"date": "2026-06-08", "ai_count": 10, "news_count": 10, "ai_projects": [{"name": "mvanhorn/last30days-skill", "stars": "31761", "url": "https://github.com/mvanhorn/last30days-skill"}, {"name": "opencv/opencv", "stars": "88180", "url": "https://github.com/opencv/opencv"}, {"name": "Leonxlnx/taste-skill", "stars": "37177", "url": "https://github.com/Leonxlnx/taste-skill"}, {"name": "NousResearch/hermes-agent", "stars": "186264", "url": "https://github.com/NousResearch/hermes-agent"}, {"name": "yikart/AiToEarn", "stars": "18966", "url": "https://github.com/yikart/AiToEarn"}], "top_news": [{"title": "\u671d\u65b9\u5728\u673a\u573a\u70ed\u60c5\u8fce\u63a5", "source": "\u5fae\u535a"}, {"title": "\u8dd1\u7537", "source": "\u5fae\u535a"}, {"title": "\u8fde\u7eed16\u5e74\u9001\u8003\u8fd9\u4efd\u575a\u5b88\u4ee4\u4eba\u52a8\u5bb9", "source": "\u5fae\u535a"}, {"title": "\u9ad8\u8003\u7269\u7406 \u9009\u62d4\u725b\u987f\u63a5\u73ed\u4eba", "source": "\u5fae\u535a"}, {"title": "\u9ad8\u8003\u5386\u53f2", "source": "\u5fae\u535a"}]}, {"date": "2026-06-09", "ai_count": 13, "news_count": 20, "ai_projects": [{"name": "mvanhorn/last30days-skill", "stars": "35879", "url": "https://github.com/mvanhorn/last30days-skill"}, {"name": "RyanCodrai/turbovec", "stars": "9619", "url": "https://github.com/RyanCodrai/turbovec"}, {"name": "google/skills", "stars": "12765", "url": "https://github.com/google/skills"}, {"name": "Panniantong/Agent-Reach", "stars": "25006", "url": "https://github.com/Panniantong/Agent-Reach"}, {"name": "danielmiessler/Personal_AI_Infrastructure", "stars": "15620", "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure"}], "top_news": [{"title": "Microsoft's open source tools ", "source": "Hacker News"}, {"title": "Forever Young: how one molecul", "source": "Hacker News"}, {"title": "OpenCV 5 Is Here: The Biggest ", "source": "Hacker News"}, {"title": "Apple reveals new AI architect", "source": "Hacker News"}, {"title": "Eagle Computer: The rise and f", "source": "Hacker News"}]}, {"date": "2026-06-10", "ai_count": 12, "news_count": 20, "ai_projects": [{"name": "mvanhorn/last30days-skill", "stars": "38537", "url": "https://github.com/mvanhorn/last30days-skill"}, {"name": "RyanCodrai/turbovec", "stars": "10558", "url": "https://github.com/RyanCodrai/turbovec"}, {"name": "opencv/opencv", "stars": "88819", "url": "https://github.com/opencv/opencv"}, {"name": "aaif-goose/goose", "stars": "48659", "url": "https://github.com/aaif-goose/goose"}, {"name": "Andyyyy64/whichllm", "stars": "4317", "url": "https://github.com/Andyyyy64/whichllm"}], "top_news": [{"title": "Mercedes\u2011Benz starts large\u2011sca", "source": "Hacker News"}, {"title": "macOS Container Machines", "source": "Hacker News"}, {"title": "Claude Fable 5", "source": "Hacker News"}, {"title": "Port React Compiler to Rust", "source": "Hacker News"}, {"title": "Upcoming breaking changes for ", "source": "Hacker News"}]}];
-            recentHistory.slice(-7).reverse().forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'history-item';
+            const historyList = document.getElementById("history-list");
+            historyList.innerHTML = "";
+
+            if (!recentHistory.length) {
+                historyList.innerHTML = '<div class="empty-state">还没有历史记录。</div>';
+                return;
+            }
+
+            recentHistory.slice(-7).reverse().forEach((item) => {
+                const div = document.createElement("div");
+                div.className = "history-item";
                 div.innerHTML = `
                     <span class="date">${item.date}</span>
-                    <span class="count">
-                        <span class="ai-count">AI ${item.ai_count}</span> · 
-                        <span class="news-count">新闻 ${item.news_count}</span>
-                    </span>
+                    <span class="count">AI ${item.ai_count || 0} / 新闻 ${item.news_count || 0}</span>
                 `;
                 historyList.appendChild(div);
             });
         }
-        
-        // 筛选 AI 项目
-        function filterAIProjects(type) {
-            const tabs = document.querySelectorAll('#ai-section .filter-tab');
-            tabs.forEach(t => t.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            const cards = document.querySelectorAll('#ai-projects-grid .project-card');
-            cards.forEach(card => {
-                if (type === 'all') {
-                    card.style.display = 'block';
-                } else if (type === 'today') {
-                    const hasToday = card.querySelector('.stat.today');
-                    card.style.display = hasToday ? 'block' : 'none';
-                }
-            });
-        }
-        
-        // 筛选新闻
-        function filterNews(type) {
-            const tabs = document.querySelectorAll('#news-section .filter-tab');
-            tabs.forEach(t => t.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            const items = document.querySelectorAll('#news-list .news-item');
-            items.forEach(item => {
-                if (type === 'all') {
-                    item.style.display = 'flex';
-                } else if (type === 'hot') {
-                    const hasHot = item.querySelector('.news-hot');
-                    item.style.display = hasHot ? 'flex' : 'none';
-                }
-            });
-        }
-        
-        // 初始化
-        document.addEventListener('DOMContentLoaded', () => {
-            renderAIChart();
-            renderNewsChart();
+
+        document.querySelectorAll(".tab-btn").forEach((button) => {
+            button.addEventListener("click", () => switchTab(button.dataset.tab));
+        });
+
+        document.querySelectorAll("#ai-section .filter-tab").forEach((button) => {
+            button.addEventListener("click", () => filterAIProjects(button.dataset.filter));
+        });
+
+        document.querySelectorAll("#news-section .filter-tab").forEach((button) => {
+            button.addEventListener("click", () => filterNews(button.dataset.filter));
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            renderChart("ai-chart", aiHistoryData, "#1f8a70");
+            renderChart("news-chart", newsHistoryData, "#b94762");
             renderHistory();
         });
     </script>

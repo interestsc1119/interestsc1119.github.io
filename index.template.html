@@ -3,743 +3,866 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>每日精选 | Daily Digest</title>
+    <title>InterestSC | AI Daily Radar</title>
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-        
+
         :root {
-            --bg-primary: #0d1117;
-            --bg-secondary: #161b22;
-            --bg-card: #21262d;
-            --text-primary: #e6edf3;
-            --text-secondary: #8b949e;
-            --accent: #58a6ff;
-            --accent-hover: #79c0ff;
-            --border: #30363d;
-            --star-color: #f0c14b;
-            --success: #3fb950;
-            --warning: #d29922;
-            --ai-color: #a371f7;
-            --news-color: #f78166;
+            --ink: #18202f;
+            --muted: #6d7482;
+            --paper: #fbfaf7;
+            --surface: #ffffff;
+            --surface-soft: #f2f6f4;
+            --line: #dfe5e0;
+            --accent: #1f8a70;
+            --accent-strong: #146b57;
+            --blue: #2e5aac;
+            --rose: #b94762;
+            --gold: #b88728;
+            --shadow: 0 18px 42px rgba(30, 38, 48, 0.10);
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
             min-height: 100vh;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
         }
-        
-        .container {
-            max-width: 1200px;
+
+        a {
+            color: inherit;
+        }
+
+        .page-shell {
+            width: min(1160px, calc(100% - 40px));
             margin: 0 auto;
-            padding: 2rem;
         }
-        
-        header {
-            text-align: center;
-            padding: 2rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 2rem;
-        }
-        
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--ai-color) 50%, var(--news-color) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 1rem;
-        }
-        
-        /* 标签页导航 */
-        .tabs {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .tab-btn {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            color: var(--text-secondary);
-            padding: 0.75rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 1rem;
+
+        .topbar {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
         }
-        
-        .tab-btn:hover {
-            border-color: var(--accent);
-            color: var(--text-primary);
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 800;
+            letter-spacing: 0;
         }
-        
-        .tab-btn.active {
+
+        .brand-mark {
+            display: grid;
+            place-items: center;
+            width: 34px;
+            height: 34px;
+            border: 1px solid var(--ink);
+            border-radius: 50%;
+            background: var(--ink);
+            color: #fff;
+            font-size: 0.78rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 0.92rem;
+            color: var(--muted);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-strong);
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+            gap: 38px;
+            align-items: end;
+            padding: 54px 0 40px;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 22px;
+            color: var(--accent-strong);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 34px;
+            height: 2px;
             background: var(--accent);
-            border-color: var(--accent);
+        }
+
+        h1 {
+            max-width: 780px;
+            font-size: clamp(2.35rem, 6vw, 5.65rem);
+            line-height: 0.96;
+            letter-spacing: 0;
+            font-weight: 900;
+        }
+
+        .hero-copy {
+            max-width: 680px;
+            margin-top: 22px;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
+            border: 1px solid var(--ink);
+            border-radius: 999px;
+            padding: 0 18px;
+            background: var(--ink);
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 750;
+            transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+        }
+
+        .button:hover {
+            transform: translateY(-1px);
+            background: var(--accent-strong);
+            border-color: var(--accent-strong);
+        }
+
+        .button.secondary {
+            background: transparent;
+            color: var(--ink);
+        }
+
+        .button.secondary:hover {
+            background: var(--ink);
             color: #fff;
         }
-        
-        .tab-btn .icon {
-            font-size: 1.2rem;
+
+        .profile-block {
+            display: grid;
+            gap: 20px;
+            justify-items: start;
         }
-        
-        /* 更新信息 */
-        .update-info {
+
+        .avatar-wrap {
+            width: min(100%, 290px);
+            aspect-ratio: 1;
+            border-radius: 28px;
+            overflow: hidden;
+            background: var(--surface-soft);
+            box-shadow: var(--shadow);
+        }
+
+        .avatar-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .profile-note {
+            max-width: 330px;
+            color: var(--muted);
+            font-size: 0.96rem;
+        }
+
+        .stats-strip {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            margin: 26px 0 0;
+            border: 1px solid var(--line);
+            background: var(--line);
+        }
+
+        .stat-box {
+            min-height: 108px;
+            padding: 18px;
+            background: var(--surface);
+        }
+
+        .stat-box strong {
+            display: block;
+            color: var(--ink);
+            font-size: clamp(1.5rem, 4vw, 2.4rem);
+            line-height: 1;
+        }
+
+        .stat-box span {
+            display: block;
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 0.86rem;
+        }
+
+        main {
+            padding: 40px 0 56px;
+        }
+
+        .section-heading {
             display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
+            align-items: end;
+            justify-content: space-between;
+            gap: 18px;
+            margin-bottom: 22px;
         }
-        
-        .info-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1rem 1.5rem;
-            text-align: center;
-            min-width: 140px;
+
+        .section-heading h2 {
+            font-size: clamp(1.45rem, 3vw, 2.2rem);
+            letter-spacing: 0;
+            line-height: 1.15;
         }
-        
-        .info-card .value {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--accent);
+
+        .section-heading p {
+            max-width: 520px;
+            color: var(--muted);
+            font-size: 0.95rem;
         }
-        
-        .info-card .label {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
+
+        .control-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin: 28px 0 20px;
         }
-        
-        /* 内容区域 */
+
+        .tabs,
+        .filter-tabs {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--surface);
+        }
+
+        .tab-btn,
+        .filter-tab {
+            border: 0;
+            border-radius: 999px;
+            background: transparent;
+            color: var(--muted);
+            cursor: pointer;
+            font: inherit;
+            font-size: 0.9rem;
+            font-weight: 750;
+            padding: 9px 15px;
+            white-space: nowrap;
+        }
+
+        .tab-btn.active,
+        .filter-tab.active {
+            background: var(--ink);
+            color: #fff;
+        }
+
         .content-section {
             display: none;
         }
-        
+
         .content-section.active {
             display: block;
         }
-        
-        /* 趋势图 */
+
         .chart-section {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 26px;
+            padding: 22px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
         }
-        
+
         .chart-title {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-        
-        .chart-container {
-            height: 160px;
             display: flex;
-            align-items: flex-end;
-            gap: 4px;
-            padding: 1rem 0 2rem 0;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            font-weight: 850;
         }
-        
+
+        .chart-title span {
+            color: var(--muted);
+            font-size: 0.82rem;
+            font-weight: 650;
+        }
+
+        .chart-container {
+            display: flex;
+            align-items: end;
+            gap: 8px;
+            height: 150px;
+            padding-top: 8px;
+        }
+
         .chart-bar {
-            flex: 1;
-            background: linear-gradient(180deg, var(--accent) 0%, #1f6feb 100%);
-            border-radius: 4px 4px 0 0;
-            min-height: 8px;
-            transition: transform 0.2s;
             position: relative;
-            cursor: pointer;
+            flex: 1 1 0;
+            min-width: 8px;
+            min-height: 8px;
+            border-radius: 999px 999px 0 0;
+            background: var(--accent);
+            transition: transform 160ms ease;
         }
-        
+
         .chart-bar:hover {
-            transform: scaleY(1.05);
+            transform: scaleY(1.04);
         }
-        
+
         .chart-bar::after {
             content: attr(data-date);
             position: absolute;
-            bottom: -22px;
             left: 50%;
+            bottom: -24px;
             transform: translateX(-50%);
-            font-size: 0.65rem;
-            color: var(--text-secondary);
+            color: var(--muted);
+            font-size: 0.68rem;
             white-space: nowrap;
         }
-        
-        .chart-labels {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 8px;
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-        }
-        
-        /* 项目网格 */
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-        
-        .section-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-        
-        .filter-tabs {
-            display: flex;
-            gap: 0.5rem;
-        }
-        
-        .filter-tab {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            color: var(--text-secondary);
-            padding: 0.4rem 0.8rem;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 0.85rem;
-        }
-        
-        .filter-tab:hover {
-            border-color: var(--accent);
-            color: var(--text-primary);
-        }
-        
-        .filter-tab.active {
-            background: var(--accent);
-            border-color: var(--accent);
-            color: #fff;
-        }
-        
+
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
+            gap: 16px;
         }
-        
+
+        .project-card,
+        .news-item,
+        .history-item {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
+            transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+        }
+
         .project-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 1.25rem;
-            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            min-height: 238px;
+            padding: 18px;
         }
-        
-        .project-card:hover {
-            border-color: var(--accent);
+
+        .project-card:hover,
+        .news-item:hover {
+            border-color: rgba(31, 138, 112, 0.55);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            box-shadow: var(--shadow);
         }
-        
+
         .project-header {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 0.75rem;
+            gap: 12px;
+            margin-bottom: 12px;
         }
-        
-        .project-rank {
-            background: var(--accent);
-            color: #fff;
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            display: flex;
+
+        .rank {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.8rem;
-            font-weight: 600;
-            flex-shrink: 0;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: var(--surface-soft);
+            color: var(--accent-strong);
+            font-size: 0.82rem;
+            font-weight: 900;
+            flex: 0 0 auto;
         }
-        
+
         .project-name {
+            min-width: 0;
             font-size: 1rem;
-            font-weight: 600;
+            font-weight: 850;
+            line-height: 1.25;
+        }
+
+        .project-name a {
+            display: block;
             overflow: hidden;
+            color: var(--ink);
+            text-decoration: none;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
-        
-        .project-name a {
-            color: var(--accent);
-            text-decoration: none;
+
+        .project-name a:hover,
+        .news-title a:hover {
+            color: var(--accent-strong);
         }
-        
-        .project-name a:hover {
-            text-decoration: underline;
-        }
-        
+
         .project-desc {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
+            min-height: 68px;
+            color: var(--muted);
+            font-size: 0.9rem;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
             overflow: hidden;
         }
-        
+
         .project-stats {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            font-size: 0.85rem;
             flex-wrap: wrap;
+            gap: 8px;
+            margin-top: auto;
+            padding-top: 18px;
         }
-        
-        .stat {
-            display: flex;
+
+        .pill {
+            display: inline-flex;
             align-items: center;
-            gap: 0.25rem;
-            color: var(--text-secondary);
+            min-height: 28px;
+            border-radius: 999px;
+            padding: 0 10px;
+            background: var(--surface-soft);
+            color: var(--muted);
+            font-size: 0.8rem;
+            font-weight: 750;
         }
-        
-        .star-icon {
-            fill: var(--star-color);
+
+        .pill.today {
+            background: rgba(31, 138, 112, 0.12);
+            color: var(--accent-strong);
         }
-        
-        .stat.today {
-            color: var(--success);
-            font-weight: 500;
-        }
-        
+
         .view-btn {
             margin-left: auto;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            color: var(--text-primary);
-            padding: 0.35rem 0.7rem;
-            border-radius: 6px;
+            color: var(--ink);
+            font-size: 0.82rem;
+            font-weight: 850;
             text-decoration: none;
-            font-size: 0.8rem;
-            transition: all 0.2s;
         }
-        
-        .view-btn:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-        }
-        
-        /* 新闻列表 */
+
         .news-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
+            display: grid;
+            gap: 12px;
         }
-        
+
         .news-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 1rem 1.25rem;
-            transition: all 0.2s;
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
+            display: grid;
+            grid-template-columns: 42px minmax(0, 1fr);
+            gap: 12px;
+            padding: 16px;
         }
-        
-        .news-item:hover {
-            border-color: var(--news-color);
-            transform: translateX(4px);
-        }
-        
+
         .news-rank {
-            background: var(--news-color);
-            color: #fff;
-            min-width: 28px;
-            height: 28px;
-            border-radius: 6px;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.85rem;
-            font-weight: 600;
-            flex-shrink: 0;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: rgba(185, 71, 98, 0.12);
+            color: var(--rose);
+            font-weight: 900;
+            font-size: 0.82rem;
         }
-        
-        .news-rank.top {
-            background: linear-gradient(135deg, #ff6b6b 0%, #f0c14b 100%);
-        }
-        
-        .news-content {
-            flex: 1;
-            min-width: 0;
-        }
-        
+
         .news-title {
             font-size: 1rem;
-            font-weight: 500;
-            margin-bottom: 0.4rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+            font-weight: 780;
+            line-height: 1.35;
         }
-        
+
         .news-title a {
-            color: var(--text-primary);
+            color: var(--ink);
             text-decoration: none;
         }
-        
-        .news-title a:hover {
-            color: var(--accent);
-        }
-        
+
         .news-meta {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-        }
-        
-        .news-source {
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-        }
-        
-        .news-hot {
-            background: var(--news-color);
-            color: #fff;
-            padding: 0.15rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.7rem;
-            font-weight: 600;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 0.82rem;
         }
 
-        .news-score {
-            color: var(--star-color);
-            font-weight: 500;
-        }
-        
-        /* 历史记录 */
-        .history-section {
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border);
-        }
-        
-        .history-title {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-        
-        .history-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-        
-        .history-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
+        .empty-state {
+            padding: 32px;
+            border: 1px dashed var(--line);
             border-radius: 8px;
-            padding: 0.75rem 1rem;
-        }
-        
-        .history-item .date {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-        
-        .history-item .count {
-            font-size: 0.85rem;
-        }
-        
-        .history-item .count .ai-count {
-            color: var(--ai-color);
-            font-weight: 600;
-        }
-        
-        .history-item .count .news-count {
-            color: var(--news-color);
-            font-weight: 600;
-        }
-        
-        footer {
+            color: var(--muted);
+            background: var(--surface);
             text-align: center;
-            padding: 2rem;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            margin-top: 3rem;
         }
-        
+
+        .filter-empty {
+            margin-top: 16px;
+        }
+
+        .history-section {
+            margin-top: 42px;
+            padding-top: 34px;
+            border-top: 1px solid var(--line);
+        }
+
+        .history-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .history-item {
+            padding: 16px;
+        }
+
+        .history-item .date {
+            display: block;
+            color: var(--muted);
+            font-size: 0.82rem;
+            margin-bottom: 8px;
+        }
+
+        .history-item .count {
+            font-weight: 850;
+        }
+
+        footer {
+            border-top: 1px solid var(--line);
+            padding: 26px 0 36px;
+            color: var(--muted);
+            font-size: 0.88rem;
+        }
+
         footer a {
-            color: var(--accent);
+            color: var(--accent-strong);
             text-decoration: none;
+            font-weight: 800;
         }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-        /* 响应式 */
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
+
+        @media (max-width: 860px) {
+            .page-shell {
+                width: min(100% - 28px, 1160px);
             }
-            
-            h1 {
-                font-size: 1.6rem;
-            }
-            
-            .tabs {
+
+            .topbar,
+            .section-heading,
+            .control-row {
+                align-items: flex-start;
                 flex-direction: column;
             }
-            
-            .projects-grid {
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding-top: 36px;
+            }
+
+            .profile-block {
+                grid-template-columns: 96px minmax(0, 1fr);
+                align-items: center;
+            }
+
+            .avatar-wrap {
+                width: 96px;
+                border-radius: 22px;
+            }
+
+            .stats-strip {
                 grid-template-columns: 1fr;
             }
-            
-            .update-info {
-                gap: 1rem;
+
+            .tabs,
+            .filter-tabs {
+                width: 100%;
+                overflow-x: auto;
+                justify-content: flex-start;
             }
-            
-            .info-card {
-                min-width: 120px;
+
+            .tab-btn,
+            .filter-tab {
+                flex: 1 0 auto;
             }
-            
-            .info-card .value {
-                font-size: 1.5rem;
+        }
+
+        @media (max-width: 560px) {
+            h1 {
+                font-size: 2.55rem;
             }
-            
-            .news-item {
+
+            .hero-actions {
                 flex-direction: column;
-                gap: 0.5rem;
+            }
+
+            .button {
+                width: 100%;
+            }
+
+            .profile-block {
+                grid-template-columns: 1fr;
+            }
+
+            .news-item {
+                grid-template-columns: 1fr;
+            }
+
+            .chart-container {
+                gap: 5px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>📊 每日精选</h1>
-            <p class="subtitle">AI 热门项目 · 科技热点资讯 · 每日自动更新</p>
+    <div class="page-shell">
+        <nav class="topbar" aria-label="主页导航">
+            <a class="brand" href="https://github.com/interestsc1119" target="_blank" rel="noreferrer">
+                <span class="brand-mark">SC</span>
+                <span>InterestSC</span>
+            </a>
+            <div class="nav-links">
+                <a href="#radar">Daily Radar</a>
+                <a href="https://github.com/interestsc1119" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://github.com/interestsc1119/interestsc1119.github.io" target="_blank" rel="noreferrer">Source</a>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div>
+                <span class="eyebrow">Personal homepage</span>
+                <h1>InterestSC 的 AI 趋势观察站</h1>
+                <p class="hero-copy">
+                    这里是一个自动更新的个人主页，把我每天关注的 AI 开源项目和科技新闻收拢在一起，
+                    像一张面向未来工作的简洁雷达图。
+                </p>
+                <div class="hero-actions">
+                    <a class="button" href="#radar">查看今日趋势</a>
+                    <a class="button secondary" href="https://github.com/interestsc1119" target="_blank" rel="noreferrer">访问 GitHub</a>
+                </div>
+            </div>
+            <aside class="profile-block" aria-label="个人信息">
+                <div class="avatar-wrap">
+                    <img src="https://github.com/interestsc1119.png" alt="InterestSC GitHub avatar" loading="lazy">
+                </div>
+                <p class="profile-note">
+                    以 GitHub Pages 承载的个人信息流。页面每天北京时间 08:57 自动刷新，保留最近 14 天的趋势脉络。
+                </p>
+            </aside>
         </header>
-        
-        <!-- 标签页导航 -->
-        <div class="tabs">
-            <button class="tab-btn active" onclick="switchTab('ai')">
-                <span class="icon">🤖</span>
-                <span>AI 项目</span>
-            </button>
-            <button class="tab-btn" onclick="switchTab('news')">
-                <span class="icon">📰</span>
-                <span>科技新闻</span>
-            </button>
-        </div>
-        
-        <!-- 更新信息 -->
-        <div class="update-info">
-            <div class="info-card">
-                <div class="value">{{AI_COUNT}}</div>
-                <div class="label">AI 项目</div>
+
+        <section class="stats-strip" aria-label="今日概览">
+            <div class="stat-box">
+                <strong>{{AI_COUNT}}</strong>
+                <span>今日 AI 项目</span>
             </div>
-            <div class="info-card">
-                <div class="value">{{NEWS_COUNT}}</div>
-                <div class="label">科技新闻</div>
+            <div class="stat-box">
+                <strong>{{NEWS_COUNT}}</strong>
+                <span>今日科技新闻</span>
             </div>
-            <div class="info-card">
-                <div class="value">{{UPDATE_DATE}}</div>
-                <div class="label">更新日期</div>
-            </div>
-        </div>
-        
-        <!-- AI 项目区域 -->
-        <section class="content-section active" id="ai-section">
-            <div class="chart-section">
-                <h2 class="chart-title">📈 AI 项目趋势（近 14 天）</h2>
-                <div class="chart-container" id="ai-chart"></div>
-                <div class="chart-labels">
-                    <span>较早</span>
-                    <span>较近</span>
-                </div>
-            </div>
-            
-            <div class="section-header">
-                <h3 class="section-title">🔥 热门 AI 项目</h3>
-                <div class="filter-tabs">
-                    <button class="filter-tab active" onclick="filterAIProjects('all')">全部</button>
-                    <button class="filter-tab" onclick="filterAIProjects('today')">今日飙升</button>
-                </div>
-            </div>
-            
-            <div class="projects-grid" id="ai-projects-grid">
-                {{AI_PROJECTS_HTML}}
+            <div class="stat-box">
+                <strong>{{UPDATE_DATE}}</strong>
+                <span>最近更新日期</span>
             </div>
         </section>
-        
-        <!-- 科技新闻区域 -->
-        <section class="content-section" id="news-section">
-            <div class="chart-section">
-                <h2 class="chart-title">📈 科技新闻趋势（近 14 天）</h2>
-                <div class="chart-container" id="news-chart"></div>
-                <div class="chart-labels">
-                    <span>较早</span>
-                    <span>较近</span>
+
+        <main id="radar">
+            <div class="section-heading">
+                <h2>每日趋势雷达</h2>
+                <p>自动抓取 GitHub Trending 和科技资讯源，过滤出更接近 AI、工具、开发者效率与前沿产品的内容。</p>
+            </div>
+
+            <div class="control-row">
+                <div class="tabs" role="tablist" aria-label="内容类型">
+                    <button class="tab-btn active" type="button" data-tab="ai">AI 项目</button>
+                    <button class="tab-btn" type="button" data-tab="news">科技新闻</button>
                 </div>
             </div>
-            
-            <div class="section-header">
-                <h3 class="section-title">🔥 科技热点</h3>
-                <div class="filter-tabs">
-                    <button class="filter-tab active" onclick="filterNews('all')">全部</button>
-                    <button class="filter-tab" onclick="filterNews('hot')">热门</button>
+
+            <section class="content-section active" id="ai-section">
+                <div class="chart-section">
+                    <h3 class="chart-title">AI 项目趋势 <span>最近 14 天</span></h3>
+                    <div class="chart-container" id="ai-chart" aria-label="AI 项目趋势图"></div>
                 </div>
-            </div>
-            
-            <div class="news-list" id="news-list">
-                {{NEWS_HTML}}
-            </div>
-        </section>
-        
-        <!-- 历史记录 -->
-        <section class="history-section">
-            <h3 class="history-title">📅 历史记录</h3>
-            <div class="history-list" id="history-list"></div>
-        </section>
-        
+
+                <div class="control-row">
+                    <div class="section-heading">
+                        <h2>热门 AI 项目</h2>
+                    </div>
+                    <div class="filter-tabs" aria-label="AI 项目筛选">
+                        <button class="filter-tab active" type="button" data-filter="all">全部</button>
+                        <button class="filter-tab" type="button" data-filter="today">今日上升</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="ai-projects-grid">
+                    {{AI_PROJECTS_HTML}}
+                </div>
+                <div class="empty-state filter-empty" id="ai-filter-empty" hidden>当前数据里还没有明确的今日上升项目。</div>
+            </section>
+
+            <section class="content-section" id="news-section">
+                <div class="chart-section">
+                    <h3 class="chart-title">科技新闻趋势 <span>最近 14 天</span></h3>
+                    <div class="chart-container" id="news-chart" aria-label="科技新闻趋势图"></div>
+                </div>
+
+                <div class="control-row">
+                    <div class="section-heading">
+                        <h2>科技热点</h2>
+                    </div>
+                    <div class="filter-tabs" aria-label="新闻筛选">
+                        <button class="filter-tab active" type="button" data-filter="all">全部</button>
+                        <button class="filter-tab" type="button" data-filter="hot">热门</button>
+                    </div>
+                </div>
+
+                <div class="news-list" id="news-list">
+                    {{NEWS_HTML}}
+                </div>
+                <div class="empty-state filter-empty" id="news-filter-empty" hidden>当前数据里还没有标记为热门的新闻。</div>
+            </section>
+
+            <section class="history-section">
+                <div class="section-heading">
+                    <h2>最近记录</h2>
+                    <p>保留近期抓取结果，用来观察这个页面每天捕捉到的信息密度。</p>
+                </div>
+                <div class="history-list" id="history-list"></div>
+            </section>
+        </main>
+
         <footer>
-            <p>由 GitHub Actions 自动更新 · <a href="https://github.com/interestsc1119/interestsc1119.github.io" target="_blank">查看源码</a></p>
+            <p>Powered by GitHub Actions. Source on <a href="https://github.com/interestsc1119/interestsc1119.github.io" target="_blank" rel="noreferrer">interestsc1119.github.io</a>.</p>
         </footer>
     </div>
-    
+
     <script>
-        // 切换标签页
-        function switchTab(tab) {
-            // 更新标签按钮状态
-            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.closest('.tab-btn').classList.add('active');
-            
-            // 更新内容区域
-            document.querySelectorAll('.content-section').forEach(section => section.classList.remove('active'));
-            
-            if (tab === 'ai') {
-                document.getElementById('ai-section').classList.add('active');
-            } else {
-                document.getElementById('news-section').classList.add('active');
-            }
-        }
-        
-        // 渲染 AI 趋势图
-        function renderAIChart() {
-            const chartData = {{AI_HISTORY_DATA}};
-            const chartContainer = document.getElementById('ai-chart');
-            const maxVal = Math.max(...chartData.values, 1);
-            
-            chartData.labels.forEach((label, i) => {
-                const bar = document.createElement('div');
-                bar.className = 'chart-bar';
-                bar.style.background = 'linear-gradient(180deg, #a371f7 0%, #8957e5 100%)';
-                const height = (chartData.values[i] / maxVal) * 100;
-                bar.style.height = Math.max(height, 5) + '%';
-                bar.setAttribute('data-date', label);
-                bar.setAttribute('title', label + ': ' + chartData.values[i] + ' 个项目');
+        const aiHistoryData = {{AI_HISTORY_DATA}};
+        const newsHistoryData = {{NEWS_HISTORY_DATA}};
+        const recentHistory = {{RECENT_HISTORY}};
+
+        function renderChart(containerId, chartData, color) {
+            const chartContainer = document.getElementById(containerId);
+            chartContainer.innerHTML = "";
+            const maxValue = Math.max(...chartData.values, 1);
+
+            chartData.labels.forEach((label, index) => {
+                const value = chartData.values[index] || 0;
+                const bar = document.createElement("div");
+                bar.className = "chart-bar";
+                bar.style.height = Math.max((value / maxValue) * 100, 6) + "%";
+                bar.style.background = color;
+                bar.dataset.date = label.slice(5);
+                bar.title = `${label}: ${value}`;
                 chartContainer.appendChild(bar);
             });
         }
-        
-        // 渲染新闻趋势图
-        function renderNewsChart() {
-            const chartData = {{NEWS_HISTORY_DATA}};
-            const chartContainer = document.getElementById('news-chart');
-            const maxVal = Math.max(...chartData.values, 1);
-            
-            chartData.labels.forEach((label, i) => {
-                const bar = document.createElement('div');
-                bar.className = 'chart-bar';
-                bar.style.background = 'linear-gradient(180deg, #f78166 0%, #e06040 100%)';
-                const height = (chartData.values[i] / maxVal) * 100;
-                bar.style.height = Math.max(height, 5) + '%';
-                bar.setAttribute('data-date', label);
-                bar.setAttribute('title', label + ': ' + chartData.values[i] + ' 条新闻');
-                chartContainer.appendChild(bar);
+
+        function switchTab(tabName) {
+            document.querySelectorAll(".tab-btn").forEach((button) => {
+                button.classList.toggle("active", button.dataset.tab === tabName);
             });
+
+            document.querySelectorAll(".content-section").forEach((section) => {
+                section.classList.remove("active");
+            });
+
+            document.getElementById(`${tabName}-section`).classList.add("active");
         }
-        
-        // 渲染历史记录
+
+        function filterAIProjects(filterName) {
+            document.querySelectorAll("#ai-section .filter-tab").forEach((button) => {
+                button.classList.toggle("active", button.dataset.filter === filterName);
+            });
+
+            document.querySelectorAll("#ai-projects-grid .project-card").forEach((card) => {
+                const hasTodaySignal = card.dataset.boost === "true";
+                card.style.display = filterName === "all" || hasTodaySignal ? "flex" : "none";
+            });
+
+            const visibleCount = document.querySelectorAll('#ai-projects-grid .project-card:not([style*="display: none"])').length;
+            document.getElementById("ai-filter-empty").hidden = filterName === "all" || visibleCount > 0;
+        }
+
+        function filterNews(filterName) {
+            document.querySelectorAll("#news-section .filter-tab").forEach((button) => {
+                button.classList.toggle("active", button.dataset.filter === filterName);
+            });
+
+            document.querySelectorAll("#news-list .news-item").forEach((item) => {
+                const isHot = item.dataset.hot === "true";
+                item.style.display = filterName === "all" || isHot ? "grid" : "none";
+            });
+
+            const visibleCount = document.querySelectorAll('#news-list .news-item:not([style*="display: none"])').length;
+            document.getElementById("news-filter-empty").hidden = filterName === "all" || visibleCount > 0;
+        }
+
         function renderHistory() {
-            const historyList = document.getElementById('history-list');
-            const recentHistory = {{RECENT_HISTORY}};
-            recentHistory.slice(-7).reverse().forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'history-item';
+            const historyList = document.getElementById("history-list");
+            historyList.innerHTML = "";
+
+            if (!recentHistory.length) {
+                historyList.innerHTML = '<div class="empty-state">还没有历史记录。</div>';
+                return;
+            }
+
+            recentHistory.slice(-7).reverse().forEach((item) => {
+                const div = document.createElement("div");
+                div.className = "history-item";
                 div.innerHTML = `
                     <span class="date">${item.date}</span>
-                    <span class="count">
-                        <span class="ai-count">AI ${item.ai_count}</span> · 
-                        <span class="news-count">新闻 ${item.news_count}</span>
-                    </span>
+                    <span class="count">AI ${item.ai_count || 0} / 新闻 ${item.news_count || 0}</span>
                 `;
                 historyList.appendChild(div);
             });
         }
-        
-        // 筛选 AI 项目
-        function filterAIProjects(type) {
-            const tabs = document.querySelectorAll('#ai-section .filter-tab');
-            tabs.forEach(t => t.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            const cards = document.querySelectorAll('#ai-projects-grid .project-card');
-            cards.forEach(card => {
-                if (type === 'all') {
-                    card.style.display = 'block';
-                } else if (type === 'today') {
-                    const hasToday = card.querySelector('.stat.today');
-                    card.style.display = hasToday ? 'block' : 'none';
-                }
-            });
-        }
-        
-        // 筛选新闻
-        function filterNews(type) {
-            const tabs = document.querySelectorAll('#news-section .filter-tab');
-            tabs.forEach(t => t.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            const items = document.querySelectorAll('#news-list .news-item');
-            items.forEach(item => {
-                if (type === 'all') {
-                    item.style.display = 'flex';
-                } else if (type === 'hot') {
-                    const hasHot = item.querySelector('.news-hot');
-                    item.style.display = hasHot ? 'flex' : 'none';
-                }
-            });
-        }
-        
-        // 初始化
-        document.addEventListener('DOMContentLoaded', () => {
-            renderAIChart();
-            renderNewsChart();
+
+        document.querySelectorAll(".tab-btn").forEach((button) => {
+            button.addEventListener("click", () => switchTab(button.dataset.tab));
+        });
+
+        document.querySelectorAll("#ai-section .filter-tab").forEach((button) => {
+            button.addEventListener("click", () => filterAIProjects(button.dataset.filter));
+        });
+
+        document.querySelectorAll("#news-section .filter-tab").forEach((button) => {
+            button.addEventListener("click", () => filterNews(button.dataset.filter));
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            renderChart("ai-chart", aiHistoryData, "#1f8a70");
+            renderChart("news-chart", newsHistoryData, "#b94762");
             renderHistory();
         });
     </script>

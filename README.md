@@ -1,69 +1,66 @@
-# AI Daily Trending
+# InterestSC AI Daily Radar
 
-Automated daily digest of trending AI/ML projects on GitHub and top tech news from authoritative sources.
+Personal GitHub Pages homepage for InterestSC, with an automated daily digest of trending AI/ML projects and top tech news.
 
 ## Features
 
-- **AI Projects** — Scans GitHub Trending for AI/ML/DL related repositories every day
-- **Tech News** — Aggregates headlines from Hacker News, TechCrunch, Ars Technica, and The Verge
-- **Trend Charts** — 14-day visualization of project and news volume trends
-- **History** — Tracks daily data for the past 30 days
-- **Zero-cost Automation** — Runs daily via GitHub Actions, hosted on GitHub Pages
+- Personal-homepage layout for `interestsc1119.github.io`
+- AI project radar from GitHub Trending
+- Tech news digest from Hacker News and RSS sources
+- 14-day trend charts and recent history
+- Daily automation via GitHub Actions
 
 ## Live Site
 
-**https://interestsc1119.github.io**
+https://interestsc1119.github.io
+
+## Automation
+
+The workflow runs every day at **08:57 Beijing time**.
+
+GitHub Actions schedules use UTC, so the cron expression is:
+
+```yaml
+57 0 * * *
+```
 
 ## Architecture
 
-```
-GitHub Actions (cron)
+```text
+GitHub Actions
   |
-  |-- fetch_trending.py
-  |     |-- GitHub Trending (HTML scraping)
-  |     |-- Hacker News (official Firebase API)
-  |     |-- TechCrunch / Ars Technica / The Verge (RSS feeds)
+  |-- scripts/fetch_trending.py
+  |     |-- GitHub Trending
+  |     |-- Hacker News API
+  |     |-- TechCrunch / Ars Technica / The Verge RSS
   |
-  |-- update_html.py  (inject data into HTML template)
+  |-- scripts/update_html.py
+  |     |-- injects JSON data into index.template.html
   |
-  |-- git-auto-commit-action (commit & push)
+  |-- git-auto-commit-action
   |
   v
 GitHub Pages serves index.html
 ```
 
-| Component | Technology |
-|-----------|-----------|
-| Data sources | GitHub Trending, Hacker News API, RSS feeds |
-| Automation | GitHub Actions (cron: daily 06:01 UTC / 14:01 CST) |
-| Hosting | GitHub Pages |
-| Language | Python, HTML/CSS/JS |
-
 ## Project Structure
 
-```
+```text
 .
-├── .github/workflows/
-│   └── daily-update.yml      # GitHub Actions workflow
-├── scripts/
-│   ├── fetch_trending.py     # Scrape GitHub Trending & fetch news
-│   └── update_html.py        # Inject data into HTML template
-├── data/
-│   ├── daily.json            # Today's AI projects
-│   ├── all.json              # All trending projects
-│   ├── news.json             # Today's tech news
-│   └── history.json          # 30-day history
-├── index.template.html       # HTML template with placeholders
-├── index.html                # Generated page (auto-updated)
-└── README.md
+|-- .github/workflows/daily-update.yml
+|-- data/
+|   |-- all.json
+|   |-- daily.json
+|   |-- history.json
+|   `-- news.json
+|-- scripts/
+|   |-- fetch_trending.py
+|   `-- update_html.py
+|-- index.template.html
+|-- index.html
+`-- README.md
 ```
 
 ## Manual Trigger
 
-1. Go to the **Actions** tab of this repository
-2. Select **Daily AI & News Update**
-3. Click **Run workflow**
-
-## License
-
-MIT
+Open the repository's Actions tab, choose **Daily AI & News Update**, and run the workflow manually.
