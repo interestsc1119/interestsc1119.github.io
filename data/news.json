@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-10",
-  "updated_at": "2026-06-10T10:17:39.034724",
+  "date": "2026-06-11",
+  "updated_at": "2026-06-11T04:18:07.433799",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Mercedes‑Benz starts large‑scale production of electric axial flux motor",
-      "url": "https://media.mercedes-benz.com/en/article/bebac2af-acdc-465a-9538-adb0bf3d8ccf",
+      "title": "AI agent runs amok in Fedora and elsewhere",
+      "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
       "source": "Hacker News",
-      "hot_value": "85",
+      "hot_value": "201",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "macOS Container Machines",
-      "url": "https://github.com/apple/container/blob/main/docs/container-machine.md",
+      "title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
+      "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
       "source": "Hacker News",
-      "hot_value": "775",
-      "is_hot": true
+      "hot_value": "289",
+      "is_hot": false
     },
     {
       "rank": 3,
-      "title": "Claude Fable 5",
-      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "title": "πFS",
+      "url": "https://github.com/philipl/pifs",
       "source": "Hacker News",
-      "hot_value": "2249",
+      "hot_value": "577",
       "is_hot": true
     },
     {
       "rank": 4,
-      "title": "Port React Compiler to Rust",
-      "url": "https://github.com/react/react/pull/36173",
+      "title": "Anthropic requires 30 day data retention for Fable and Mythos",
+      "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
       "source": "Hacker News",
-      "hot_value": "27",
+      "hot_value": "263",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Upcoming breaking changes for npm v12",
-      "url": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/",
+      "title": "Sequoyah’s syllabary created a written language for the Cherokee",
+      "url": "https://www.smithsonianmag.com/innovation/man-created-written-language-cherokee-did-efficiently-elegantly-peers-thought-magic-180988850/",
       "source": "Hacker News",
-      "hot_value": "373",
+      "hot_value": "125",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "Rich Sutton on AI creativity and discovery",
-      "url": "https://twitter.com/RichardSSutton/status/2061216087744946656",
+      "title": "Vacuum-Form Signage",
+      "url": "https://bethmathews.substack.com/p/the-history-behind-the-signs-lighting",
       "source": "Hacker News",
-      "hot_value": "120",
+      "hot_value": "30",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "German ruling declares Google liable for false answers in AI Overviews",
-      "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+      "title": "Klondike Solitaire game for curses in 5k of C",
+      "url": "https://nanochess.org/klondike_in_c.html",
       "source": "Hacker News",
-      "hot_value": "561",
+      "hot_value": "41",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "RIP software hackathons. Long live the hardware hackathon",
-      "url": "https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/",
+      "title": "How JPL keeps the 13-year-old Curiosity rover doing science",
+      "url": "https://spectrum.ieee.org/curiosity-rover-jpl-mars-science",
       "source": "Hacker News",
-      "hot_value": "179",
+      "hot_value": "192",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "How do you design a $30k electric pickup? Inside Ford's skunkworks",
-      "url": "https://arstechnica.com/cars/2026/05/how-do-you-design-a-30000-electric-pickup-inside-fords-skunkworks/",
+      "title": "PgDog is funded and coming to a database near you",
+      "url": "https://pgdog.dev/blog/our-funding-announcement",
       "source": "Hacker News",
-      "hot_value": "53",
+      "hot_value": "418",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "Reviving Papers with Code",
-      "url": "https://paperswithcode.co/",
+      "title": "CSS: Unavoidable Bad Parts",
+      "url": "https://matklad.github.io/2026/06/04/css-unavoidable-bad-parts.html",
       "source": "Hacker News",
-      "hot_value": "19",
+      "hot_value": "20",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "Vibe coding my way to a healthy family: Introducing Gamow Labs",
-      "url": "https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/",
+      "title": "L'Affaire Siloxane",
+      "url": "https://mceglowski.substack.com/p/laffaire-siloxane",
       "source": "Hacker News",
-      "hot_value": "126",
+      "hot_value": "180",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks",
-      "url": "https://aarushgupta.io/posts/kan-fpga/",
+      "title": "GeoLibre 1.0",
+      "url": "https://geolibre.app/",
       "source": "Hacker News",
-      "hot_value": "227",
+      "hot_value": "180",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "What it feels like to work with Mythos",
-      "url": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
+      "title": "The Road to the WASM Component Model 1.0",
+      "url": "https://bytecodealliance.org/articles/the-road-to-component-model-1-0",
       "source": "Hacker News",
-      "hot_value": "282",
+      "hot_value": "7",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "The oldest surviving animated feature film at 100",
-      "url": "https://www.bbc.com/culture/article/20260603-how-a-26-year-old-german-woman-made-the-worlds-oldest-surviving-animated-feature-film",
+      "title": "Show HN: Extend UI – open-source UI kit for modern document apps",
+      "url": "https://www.extend.ai/ui",
       "source": "Hacker News",
-      "hot_value": "107",
+      "hot_value": "174",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Waymo says it built a better benchmark for comparing robotaxis to humans",
-      "url": "https://techcrunch.com/2026/06/10/waymo-says-it-built-a-better-benchmark-for-comparing-robotaxis-to-humans/",
+      "title": "Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
+      "url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "Meta signs first AI data center deal in India with Reliance",
-      "url": "https://techcrunch.com/2026/06/10/meta-signs-first-ai-data-center-deal-in-india-with-reliance/",
+      "title": "Anthropic’s Dario Amodei has just one direct report",
+      "url": "https://techcrunch.com/2026/06/10/anthropics-dario-amodei-has-just-one-direct-report/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Top Lucid Motors executive departs amid new CEO’s leadership shakeup",
-      "url": "https://techcrunch.com/2026/06/09/top-lucid-motors-executive-departs-amid-new-ceos-leadership-shakeup/",
+      "title": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
+      "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Google just fired a warning shot in the AI subscription price wars",
-      "url": "https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/",
+      "title": "Why Andrew Yang is building instead of waiting for Washington",
+      "url": "https://techcrunch.com/video/why-andrew-yang-is-building-instead-of-waiting-for-washington/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund",
-      "url": "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-500m-into-hot-startups-without-a-traditional-vc-fund/",
+      "title": "Cybercriminals claim breach of Oracle PeopleSoft servers at 100-plus organizations",
+      "url": "https://techcrunch.com/2026/06/10/cybercriminals-claim-breach-of-oracle-peoplesoft-servers-at-100-plus-organizations/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "GM joins race to build batteries for AI data centers and the grid",
-      "url": "https://techcrunch.com/2026/06/09/gm-bets-big-on-energy-storage-for-data-centers-and-the-grid/",
+      "title": "Everyone wants a piece of Tesla’s battery business",
+      "url": "https://techcrunch.com/2026/06/10/everyone-wants-a-piece-of-teslas-battery-business/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false

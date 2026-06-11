@@ -160,5 +160,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-11",
+    "ai_count": 13,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "addyosmani/agent-skills",
+        "stars": "52307",
+        "url": "https://github.com/addyosmani/agent-skills"
+      },
+      {
+        "name": "phuryn/pm-skills",
+        "stars": "15228",
+        "url": "https://github.com/phuryn/pm-skills"
+      },
+      {
+        "name": "mvanhorn/last30days-skill",
+        "stars": "39230",
+        "url": "https://github.com/mvanhorn/last30days-skill"
+      },
+      {
+        "name": "soxoj/maigret",
+        "stars": "32129",
+        "url": "https://github.com/soxoj/maigret"
+      },
+      {
+        "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+        "stars": "139589",
+        "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "AI agent runs amok in Fedora a",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Cybersecurity researchers aren",
+        "source": "Hacker News"
+      },
+      {
+        "title": "πFS",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Anthropic requires 30 day data",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Sequoyah’s syllabary created a",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
