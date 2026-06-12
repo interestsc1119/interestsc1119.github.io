@@ -214,5 +214,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-12",
+    "ai_count": 13,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "apple/container",
+        "stars": "33212",
+        "url": "https://github.com/apple/container"
+      },
+      {
+        "name": "addyosmani/agent-skills",
+        "stars": "55255",
+        "url": "https://github.com/addyosmani/agent-skills"
+      },
+      {
+        "name": "maziyarpanahi/openmed",
+        "stars": "2871",
+        "url": "https://github.com/maziyarpanahi/openmed"
+      },
+      {
+        "name": "phuryn/pm-skills",
+        "stars": "16412",
+        "url": "https://github.com/phuryn/pm-skills"
+      },
+      {
+        "name": "NVIDIA/SkillSpector",
+        "stars": "2846",
+        "url": "https://github.com/NVIDIA/SkillSpector"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Nobody ever gets credit for fi",
+        "source": "Hacker News"
+      },
+      {
+        "title": "If you are asking for human at",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Show HN: Homebrew 6.0.0",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Claude Fable is relentlessly p",
+        "source": "Hacker News"
+      },
+      {
+        "title": "How we made hit video game Pri",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
