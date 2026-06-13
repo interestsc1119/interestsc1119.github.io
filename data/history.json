@@ -268,5 +268,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-13",
+    "ai_count": 8,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "addyosmani/agent-skills",
+        "stars": "57057",
+        "url": "https://github.com/addyosmani/agent-skills"
+      },
+      {
+        "name": "apple/container",
+        "stars": "35330",
+        "url": "https://github.com/apple/container"
+      },
+      {
+        "name": "iptv-org/iptv",
+        "stars": "118118",
+        "url": "https://github.com/iptv-org/iptv"
+      },
+      {
+        "name": "obra/superpowers",
+        "stars": "226177",
+        "url": "https://github.com/obra/superpowers"
+      },
+      {
+        "name": "maziyarpanahi/openmed",
+        "stars": "3241",
+        "url": "https://github.com/maziyarpanahi/openmed"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Statement on US government dir",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Open source AI must win",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Electric motors with no rare e",
+        "source": "Hacker News"
+      },
+      {
+        "title": "CRISPR tech selectively shreds",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Our response to the US ban on ",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
