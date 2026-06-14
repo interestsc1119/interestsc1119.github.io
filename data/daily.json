@@ -1,36 +1,36 @@
 {
-  "date": "2026-06-13",
-  "updated_at": "2026-06-13T05:12:42.059153",
-  "count": 8,
+  "date": "2026-06-14",
+  "updated_at": "2026-06-14T05:22:48.640846",
+  "count": 10,
   "projects": [
-    {
-      "owner": "addyosmani",
-      "name": "agent-skills",
-      "full_name": "addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "stars": "57057",
-      "stars_today": "2656",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "is_ai_related": true
-    },
-    {
-      "owner": "apple",
-      "name": "container",
-      "full_name": "apple/container",
-      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
-      "stars": "35330",
-      "stars_today": "3504",
-      "url": "https://github.com/apple/container",
-      "is_ai_related": true
-    },
     {
       "owner": "iptv-org",
       "name": "iptv",
       "full_name": "iptv-org/iptv",
       "description": "Collection of publicly available IPTV channels from all over the world",
-      "stars": "118118",
-      "stars_today": "179",
+      "stars": "119361",
+      "stars_today": "530",
       "url": "https://github.com/iptv-org/iptv",
+      "is_ai_related": true
+    },
+    {
+      "owner": "addyosmani",
+      "name": "agent-skills",
+      "full_name": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "stars": "58639",
+      "stars_today": "1514",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "is_ai_related": true
+    },
+    {
+      "owner": "chatwoot",
+      "name": "chatwoot",
+      "full_name": "chatwoot/chatwoot",
+      "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+      "stars": "30927",
+      "stars_today": "83",
+      "url": "https://github.com/chatwoot/chatwoot",
       "is_ai_related": true
     },
     {
@@ -38,19 +38,29 @@
       "name": "superpowers",
       "full_name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
-      "stars": "226177",
-      "stars_today": "1275",
+      "stars": "227104",
+      "stars_today": "924",
       "url": "https://github.com/obra/superpowers",
       "is_ai_related": true
     },
     {
-      "owner": "maziyarpanahi",
-      "name": "openmed",
-      "full_name": "maziyarpanahi/openmed",
-      "description": "open-source healthcare ai",
-      "stars": "3241",
-      "stars_today": "515",
-      "url": "https://github.com/maziyarpanahi/openmed",
+      "owner": "apple",
+      "name": "container",
+      "full_name": "apple/container",
+      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
+      "stars": "36448",
+      "stars_today": "1487",
+      "url": "https://github.com/apple/container",
+      "is_ai_related": true
+    },
+    {
+      "owner": "kenn-io",
+      "name": "agentsview",
+      "full_name": "kenn-io/agentsview",
+      "description": "Local-first session intelligence and analytics for coding agents, supporting Claude Code, Codex, and more than 20 other agents. Also: 100x faster replacement for ccusage!",
+      "stars": "2428",
+      "stars_today": "190",
+      "url": "https://github.com/kenn-io/agentsview",
       "is_ai_related": true
     },
     {
@@ -58,29 +68,39 @@
       "name": "LMCache",
       "full_name": "LMCache/LMCache",
       "description": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer",
-      "stars": "8670",
-      "stars_today": "28",
+      "stars": "8945",
+      "stars_today": "238",
       "url": "https://github.com/LMCache/LMCache",
       "is_ai_related": true
     },
     {
-      "owner": "phuryn",
-      "name": "pm-skills",
-      "full_name": "phuryn/pm-skills",
-      "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
-      "stars": "17125",
-      "stars_today": "827",
-      "url": "https://github.com/phuryn/pm-skills",
+      "owner": "andrewyng",
+      "name": "aisuite",
+      "full_name": "andrewyng/aisuite",
+      "description": "Simple, unified interface to multiple Generative AI providers",
+      "stars": "14173",
+      "stars_today": "127",
+      "url": "https://github.com/andrewyng/aisuite",
       "is_ai_related": true
     },
     {
-      "owner": "msitarzewski",
-      "name": "agency-agents",
-      "full_name": "msitarzewski/agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "stars": "112523",
-      "stars_today": "1026",
-      "url": "https://github.com/msitarzewski/agency-agents",
+      "owner": "NVIDIA",
+      "name": "SkillSpector",
+      "full_name": "NVIDIA/SkillSpector",
+      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+      "stars": "4585",
+      "stars_today": "804",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "is_ai_related": true
+    },
+    {
+      "owner": "x1xhlol",
+      "name": "system-prompts-and-models-of-ai-tools",
+      "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+      "stars": "140355",
+      "stars_today": "109",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
       "is_ai_related": true
     }
   ]

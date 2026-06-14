@@ -322,5 +322,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-14",
+    "ai_count": 10,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "iptv-org/iptv",
+        "stars": "119361",
+        "url": "https://github.com/iptv-org/iptv"
+      },
+      {
+        "name": "addyosmani/agent-skills",
+        "stars": "58639",
+        "url": "https://github.com/addyosmani/agent-skills"
+      },
+      {
+        "name": "chatwoot/chatwoot",
+        "stars": "30927",
+        "url": "https://github.com/chatwoot/chatwoot"
+      },
+      {
+        "name": "obra/superpowers",
+        "stars": "227104",
+        "url": "https://github.com/obra/superpowers"
+      },
+      {
+        "name": "apple/container",
+        "stars": "36448",
+        "url": "https://github.com/apple/container"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "10th Gen Honda Civic Updates A",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Noise infusion banned from sta",
+        "source": "Hacker News"
+      },
+      {
+        "title": "GLM 5.2 Is Out",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Every Frame Perfect",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Building a serial and VGA \"eve",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
