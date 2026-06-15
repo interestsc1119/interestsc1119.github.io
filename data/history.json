@@ -376,5 +376,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-15",
+    "ai_count": 5,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "iptv-org/iptv",
+        "stars": "121578",
+        "url": "https://github.com/iptv-org/iptv"
+      },
+      {
+        "name": "chatwoot/chatwoot",
+        "stars": "31345",
+        "url": "https://github.com/chatwoot/chatwoot"
+      },
+      {
+        "name": "NVIDIA/SkillSpector",
+        "stars": "5593",
+        "url": "https://github.com/NVIDIA/SkillSpector"
+      },
+      {
+        "name": "GorvGoyl/Clone-Wars",
+        "stars": "35638",
+        "url": "https://github.com/GorvGoyl/Clone-Wars"
+      },
+      {
+        "name": "andrewyng/aisuite",
+        "stars": "14461",
+        "url": "https://github.com/andrewyng/aisuite"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Your ePub Is fine",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Even more batteries included w",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Show HN: Kage – Shadow any web",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Bitsy",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Prove you're human by winning ",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

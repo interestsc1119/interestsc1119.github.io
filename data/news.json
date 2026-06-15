@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-14",
-  "updated_at": "2026-06-14T05:22:48.640854",
+  "date": "2026-06-15",
+  "updated_at": "2026-06-15T06:12:28.044667",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "10th Gen Honda Civic Updates Are Signed with AOSP Test Keys",
-      "url": "https://juniperspring.org/posts/honda-evil-valet/",
+      "title": "Your ePub Is fine",
+      "url": "https://andreklein.net/your-epub-is-fine-kobo-disagrees-blame-adobe/",
       "source": "Hacker News",
-      "hot_value": "145",
+      "hot_value": "404",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "Noise infusion banned from statistical products published by Census Bureau",
-      "url": "https://desfontain.es/blog/banning-noise.html",
+      "title": "Even more batteries included with Emacs",
+      "url": "https://karthinks.com/software/even-more-batteries-included-with-emacs/",
       "source": "Hacker News",
-      "hot_value": "781",
-      "is_hot": true
+      "hot_value": "101",
+      "is_hot": false
     },
     {
       "rank": 3,
-      "title": "GLM 5.2 Is Out",
-      "url": "https://twitter.com/jietang/status/2065784751345287314",
+      "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
+      "url": "https://github.com/tamnd/kage",
       "source": "Hacker News",
-      "hot_value": "453",
+      "hot_value": "492",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "Every Frame Perfect",
-      "url": "https://tonsky.me/blog/every-frame-perfect/",
+      "title": "Bitsy",
+      "url": "https://bitsy.org/",
       "source": "Hacker News",
-      "hot_value": "637",
+      "hot_value": "120",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Building a serial and VGA \"everything console\"",
-      "url": "http://oldvcr.blogspot.com/2026/06/building-serial-and-vga-everything.html",
+      "title": "Prove you're human by winning a claw machine",
+      "url": "https://feralui.vercel.app/#/captcha",
       "source": "Hacker News",
-      "hot_value": "13",
+      "hot_value": "42",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "Software Architecture Guide",
-      "url": "https://martinfowler.com/architecture/",
+      "title": "21 years and counting of 'eight fallacies of distributed computing' (2025)",
+      "url": "https://blog.apnic.net/2025/12/08/21-years-and-counting-of-eight-fallacies-of-distributed-computing/",
       "source": "Hacker News",
-      "hot_value": "15",
+      "hot_value": "55",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "FreeOberon – Open-Source, Cross-Platform, Free Pascal/Turbo Pascal-Like Language",
-      "url": "https://github.com/kekcleader/FreeOberon",
+      "title": "Firewood Splitting Simulator",
+      "url": "https://screen.toys/firewood/",
       "source": "Hacker News",
-      "hot_value": "54",
+      "hot_value": "741",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "Pac-Man, but You're the Ghost",
-      "url": "https://garrit.xyz/posts/2026-06-13-pac-man-but-you-re-the-ghost",
+      "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+      "url": "https://github.com/nex-agi/Nex-N2/issues/4",
       "source": "Hacker News",
-      "hot_value": "6",
+      "hot_value": "322",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "Treating pancreatic tumours may have revealed cancer's master switch",
-      "url": "https://economist.com/science-and-technology/2026/06/12/treating-pancreatic-tumours-may-have-revealed-cancers-master-switch",
+      "title": "Why does paper fold so well?",
+      "url": "https://www.bbc.co.uk/programmes/w3ct8k70",
       "source": "Hacker News",
-      "hot_value": "331",
+      "hot_value": "16",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "Pyodide 314.0: Python packages can now publish WebAssembly wheels to PyPI",
-      "url": "https://blog.pyodide.org/posts/314-release/",
-      "source": "Hacker News",
-      "hot_value": "102",
-      "is_hot": false
-    },
-    {
-      "rank": 11,
-      "title": "Python 3.14 garbage collection rigamarole",
-      "url": "https://theconsensus.dev/p/2026/06/06/python-3-14-garbage-collection-rigamarole.html",
+      "title": "A short history of Cerro Torre, the most controversial mountain (2012)",
+      "url": "https://www.markhorrell.com/blog/2012/a-short-history-of-cerro-torre/",
       "source": "Hacker News",
       "hot_value": "26",
       "is_hot": false
     },
     {
-      "rank": 12,
-      "title": "The Redistribution of Housing Wealth Caused by Rent Control [pdf]",
-      "url": "https://www.rhawa.org/file/secure/shs-the-impact-of-rent-control-in-st-paul.pdf",
+      "rank": 11,
+      "title": "Show HN: Trace – Offline Mac meeting transcripts you can flag mid-call",
+      "url": "https://traceapp.info",
       "source": "Hacker News",
-      "hot_value": "60",
+      "hot_value": "138",
+      "is_hot": false
+    },
+    {
+      "rank": 12,
+      "title": "Formal methods and the future of programming",
+      "url": "https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1",
+      "source": "Hacker News",
+      "hot_value": "233",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "Weave: Merging based on language structure and not lines",
-      "url": "https://ataraxy-labs.github.io/weave/",
+      "title": "Chaosnet (1981)",
+      "url": "https://tumbleweed.nu/r/lm-3/uv/amber.html",
       "source": "Hacker News",
-      "hot_value": "13",
+      "hot_value": "75",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Codex for open source",
-      "url": "https://openai.com/form/codex-for-oss/",
+      "title": "Write for One Person",
+      "url": "https://wizardzines.com/comics/write-for-one-person/",
       "source": "Hacker News",
-      "hot_value": "203",
+      "hot_value": "177",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Apt Encounters of the Third Kind",
-      "url": "https://igor-blue.github.io/2021/03/24/apt1.html",
-      "source": "Hacker News",
-      "hot_value": "17",
+      "title": "Orbio raises $21 million to automate hiring and onboarding for frontline workers",
+      "url": "https://techcrunch.com/2026/06/14/orbio-raises-21-million-to-automate-hiring-and-onboarding-for-frontline-workers/",
+      "source": "TechCrunch",
+      "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "As Anthropic suspends access to new models, India debates its AI future",
-      "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/",
+      "title": "Startup CEO Charlie Javice is reportedly angling for a Trump pardon",
+      "url": "https://techcrunch.com/2026/06/14/startup-ceo-charlie-javice-is-reportedly-angling-for-a-trump-pardon/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand",
-      "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/",
+      "title": "UK may ban social media for children under 16",
+      "url": "https://techcrunch.com/2026/06/14/uk-may-ban-social-media-for-children-under-16/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "KPMG pulls report on AI usage due to apparent hallucinations",
-      "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+      "title": "As AI companies race to go public, who else is along for the ride?",
+      "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Amazon CEO reportedly raised Anthropic model concerns before government crackdown",
-      "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/",
+      "title": "TechCrunch Mobility: SpaceX rockets past Tesla",
+      "url": "https://techcrunch.com/2026/06/14/techcrunch-mobility-spacex-rockets-past-tesla/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "OpenAI faces investigation from state attorneys general",
-      "url": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/",
+      "title": "The new Sonos Play has become my go-to desk and kitchen speaker",
+      "url": "https://techcrunch.com/2026/06/14/the-new-sonos-play-has-become-my-go-to-desk-and-kitchen-speaker/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false

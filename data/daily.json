@@ -1,26 +1,16 @@
 {
-  "date": "2026-06-14",
-  "updated_at": "2026-06-14T05:22:48.640846",
-  "count": 10,
+  "date": "2026-06-15",
+  "updated_at": "2026-06-15T06:12:28.044659",
+  "count": 5,
   "projects": [
     {
       "owner": "iptv-org",
       "name": "iptv",
       "full_name": "iptv-org/iptv",
       "description": "Collection of publicly available IPTV channels from all over the world",
-      "stars": "119361",
-      "stars_today": "530",
+      "stars": "121578",
+      "stars_today": "1528",
       "url": "https://github.com/iptv-org/iptv",
-      "is_ai_related": true
-    },
-    {
-      "owner": "addyosmani",
-      "name": "agent-skills",
-      "full_name": "addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "stars": "58639",
-      "stars_today": "1514",
-      "url": "https://github.com/addyosmani/agent-skills",
       "is_ai_related": true
     },
     {
@@ -28,59 +18,9 @@
       "name": "chatwoot",
       "full_name": "chatwoot/chatwoot",
       "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
-      "stars": "30927",
-      "stars_today": "83",
+      "stars": "31345",
+      "stars_today": "400",
       "url": "https://github.com/chatwoot/chatwoot",
-      "is_ai_related": true
-    },
-    {
-      "owner": "obra",
-      "name": "superpowers",
-      "full_name": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "stars": "227104",
-      "stars_today": "924",
-      "url": "https://github.com/obra/superpowers",
-      "is_ai_related": true
-    },
-    {
-      "owner": "apple",
-      "name": "container",
-      "full_name": "apple/container",
-      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
-      "stars": "36448",
-      "stars_today": "1487",
-      "url": "https://github.com/apple/container",
-      "is_ai_related": true
-    },
-    {
-      "owner": "kenn-io",
-      "name": "agentsview",
-      "full_name": "kenn-io/agentsview",
-      "description": "Local-first session intelligence and analytics for coding agents, supporting Claude Code, Codex, and more than 20 other agents. Also: 100x faster replacement for ccusage!",
-      "stars": "2428",
-      "stars_today": "190",
-      "url": "https://github.com/kenn-io/agentsview",
-      "is_ai_related": true
-    },
-    {
-      "owner": "LMCache",
-      "name": "LMCache",
-      "full_name": "LMCache/LMCache",
-      "description": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer",
-      "stars": "8945",
-      "stars_today": "238",
-      "url": "https://github.com/LMCache/LMCache",
-      "is_ai_related": true
-    },
-    {
-      "owner": "andrewyng",
-      "name": "aisuite",
-      "full_name": "andrewyng/aisuite",
-      "description": "Simple, unified interface to multiple Generative AI providers",
-      "stars": "14173",
-      "stars_today": "127",
-      "url": "https://github.com/andrewyng/aisuite",
       "is_ai_related": true
     },
     {
@@ -88,19 +28,29 @@
       "name": "SkillSpector",
       "full_name": "NVIDIA/SkillSpector",
       "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
-      "stars": "4585",
-      "stars_today": "804",
+      "stars": "5593",
+      "stars_today": "964",
       "url": "https://github.com/NVIDIA/SkillSpector",
       "is_ai_related": true
     },
     {
-      "owner": "x1xhlol",
-      "name": "system-prompts-and-models-of-ai-tools",
-      "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
-      "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
-      "stars": "140355",
-      "stars_today": "109",
-      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "owner": "GorvGoyl",
+      "name": "Clone-Wars",
+      "full_name": "GorvGoyl/Clone-Wars",
+      "description": "100+ open-source clones of popular sites like Airbnb, Amazon, Instagram, Netflix, Tiktok, Spotify, Whatsapp, Youtube etc. See source code, demo links, tech stack, github stars.",
+      "stars": "35638",
+      "stars_today": "269",
+      "url": "https://github.com/GorvGoyl/Clone-Wars",
+      "is_ai_related": true
+    },
+    {
+      "owner": "andrewyng",
+      "name": "aisuite",
+      "full_name": "andrewyng/aisuite",
+      "description": "Simple, unified interface to multiple Generative AI providers",
+      "stars": "14461",
+      "stars_today": "291",
+      "url": "https://github.com/andrewyng/aisuite",
       "is_ai_related": true
     }
   ]
