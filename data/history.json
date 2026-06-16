@@ -430,5 +430,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-16",
+    "ai_count": 8,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "iptv-org/iptv",
+        "stars": "123204",
+        "url": "https://github.com/iptv-org/iptv"
+      },
+      {
+        "name": "teslamate-org/teslamate",
+        "stars": "8292",
+        "url": "https://github.com/teslamate-org/teslamate"
+      },
+      {
+        "name": "Panniantong/Agent-Reach",
+        "stars": "30799",
+        "url": "https://github.com/Panniantong/Agent-Reach"
+      },
+      {
+        "name": "chatwoot/chatwoot",
+        "stars": "31796",
+        "url": "https://github.com/chatwoot/chatwoot"
+      },
+      {
+        "name": "trycua/cua",
+        "stars": "18241",
+        "url": "https://github.com/trycua/cua"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "The time the x86 emulator team",
+        "source": "Hacker News"
+      },
+      {
+        "title": "A backdoor in a LinkedIn job o",
+        "source": "Hacker News"
+      },
+      {
+        "title": "I Could've Rickrolled the FIFA",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Banned Book Library in a Wi-Fi",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Iroh 1.0",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

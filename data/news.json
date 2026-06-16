@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-15",
-  "updated_at": "2026-06-15T06:12:28.044667",
+  "date": "2026-06-16",
+  "updated_at": "2026-06-16T06:20:33.479025",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Your ePub Is fine",
-      "url": "https://andreklein.net/your-epub-is-fine-kobo-disagrees-blame-adobe/",
+      "title": "The time the x86 emulator team found code so bad they fixed it during emulation",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260615-00/?p=112419",
       "source": "Hacker News",
-      "hot_value": "404",
+      "hot_value": "112",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "Even more batteries included with Emacs",
-      "url": "https://karthinks.com/software/even-more-batteries-included-with-emacs/",
+      "title": "A backdoor in a LinkedIn job offer",
+      "url": "https://roman.pt/posts/linkedin-backdoor/",
       "source": "Hacker News",
-      "hot_value": "101",
-      "is_hot": false
+      "hot_value": "969",
+      "is_hot": true
     },
     {
       "rank": 3,
-      "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
-      "url": "https://github.com/tamnd/kage",
+      "title": "I Could've Rickrolled the FIFA World Cup. All I Needed Was My ID",
+      "url": "https://bobdahacker.com/blog/fifa-hack",
       "source": "Hacker News",
-      "hot_value": "492",
+      "hot_value": "60",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "Bitsy",
-      "url": "https://bitsy.org/",
+      "title": "Banned Book Library in a Wi-Fi Smart Light Bulb",
+      "url": "https://www.richardosgood.com/posts/banned-book-library/",
       "source": "Hacker News",
-      "hot_value": "120",
+      "hot_value": "296",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Prove you're human by winning a claw machine",
-      "url": "https://feralui.vercel.app/#/captcha",
+      "title": "Iroh 1.0",
+      "url": "https://www.iroh.computer/blog/v1",
       "source": "Hacker News",
-      "hot_value": "42",
+      "hot_value": "1081",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "21 years and counting of 'eight fallacies of distributed computing' (2025)",
-      "url": "https://blog.apnic.net/2025/12/08/21-years-and-counting-of-eight-fallacies-of-distributed-computing/",
+      "title": "Show HN: Garden of Flowers – an archive of pictorial typography before ASCII art",
+      "url": "https://garden-of-flowers.heikkilotvonen.com/",
       "source": "Hacker News",
-      "hot_value": "55",
+      "hot_value": "21",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "Firewood Splitting Simulator",
-      "url": "https://screen.toys/firewood/",
+      "title": "TinyWind: A pixel pirate sailing game with real wind physics (380k+ kms sailed)",
+      "url": "https://tinywind.io",
       "source": "Hacker News",
-      "hot_value": "741",
+      "hot_value": "728",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
-      "url": "https://github.com/nex-agi/Nex-N2/issues/4",
+      "title": "John Carmack on Fabrice Bellard",
+      "url": "https://twitter.com/ID_AA_Carmack/status/2064095424420487226",
       "source": "Hacker News",
-      "hot_value": "322",
+      "hot_value": "14",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "Why does paper fold so well?",
-      "url": "https://www.bbc.co.uk/programmes/w3ct8k70",
+      "title": "I hacked into the worst e-bike and fixed it [video]",
+      "url": "https://www.youtube.com/watch?v=hPrtVGimBYs",
       "source": "Hacker News",
-      "hot_value": "16",
+      "hot_value": "51",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "A short history of Cerro Torre, the most controversial mountain (2012)",
-      "url": "https://www.markhorrell.com/blog/2012/a-short-history-of-cerro-torre/",
+      "title": "I Love the Computer",
+      "url": "https://michaelenger.com/blog/i-love-the-computer/",
       "source": "Hacker News",
-      "hot_value": "26",
+      "hot_value": "197",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "Show HN: Trace – Offline Mac meeting transcripts you can flag mid-call",
-      "url": "https://traceapp.info",
+      "title": "Amazon Announces Multibillion-Dollar Data Center in Missouri",
+      "url": "https://www.narracomm.com/amazon-announces-multibillion-dollar-data-center-in-missouri/",
       "source": "Hacker News",
-      "hot_value": "138",
+      "hot_value": "93",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "Formal methods and the future of programming",
-      "url": "https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1",
+      "title": "Why I email complete strangers",
+      "url": "https://www.goodinternetmagazine.com/why-i-email-complete-strangers/",
       "source": "Hacker News",
-      "hot_value": "233",
+      "hot_value": "127",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "Chaosnet (1981)",
-      "url": "https://tumbleweed.nu/r/lm-3/uv/amber.html",
+      "title": "Humanity isn't ready for the coming intelligence explosion",
+      "url": "https://www.economist.com/by-invitation/2026/06/15/humanity-isnt-ready-for-the-coming-intelligence-explosion",
       "source": "Hacker News",
-      "hot_value": "75",
+      "hot_value": "37",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Write for One Person",
-      "url": "https://wizardzines.com/comics/write-for-one-person/",
+      "title": "Cohere's First Model for Developers",
+      "url": "https://cohere.com/blog/north-mini-code",
       "source": "Hacker News",
-      "hot_value": "177",
+      "hot_value": "62",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Orbio raises $21 million to automate hiring and onboarding for frontline workers",
-      "url": "https://techcrunch.com/2026/06/14/orbio-raises-21-million-to-automate-hiring-and-onboarding-for-frontline-workers/",
+      "title": "Sundar Pichai faces boos, walkout at Stanford graduation ceremony over Google’s Israel, ICE ties",
+      "url": "https://techcrunch.com/2026/06/15/sundar-pichai-faces-boos-walkout-at-stanford-graduation-ceremony-over-googles-israel-ice-ties/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "Startup CEO Charlie Javice is reportedly angling for a Trump pardon",
-      "url": "https://techcrunch.com/2026/06/14/startup-ceo-charlie-javice-is-reportedly-angling-for-a-trump-pardon/",
+      "title": "The US government’s Anthropic models ban was never about an AI jailbreak",
+      "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "UK may ban social media for children under 16",
-      "url": "https://techcrunch.com/2026/06/14/uk-may-ban-social-media-for-children-under-16/",
+      "title": "Meta’s new ‘AI Mode’ on Facebook pulls from public info across its platforms",
+      "url": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "As AI companies race to go public, who else is along for the ride?",
-      "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/",
+      "title": "SpaceX is public: Everything you need to know post-IPO",
+      "url": "https://techcrunch.com/2026/06/15/spacex-is-public-everything-you-need-to-know-post-ipo/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "TechCrunch Mobility: SpaceX rockets past Tesla",
-      "url": "https://techcrunch.com/2026/06/14/techcrunch-mobility-spacex-rockets-past-tesla/",
+      "title": "These are the countries moving to ban social media for children",
+      "url": "https://techcrunch.com/2026/06/15/social-media-ban-children-countries-list/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "The new Sonos Play has become my go-to desk and kitchen speaker",
-      "url": "https://techcrunch.com/2026/06/14/the-new-sonos-play-has-become-my-go-to-desk-and-kitchen-speaker/",
+      "title": "Cybersecurity vets protest ‘dangerous’ US government ban on Anthropic’s most powerful models",
+      "url": "https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
