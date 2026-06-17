@@ -1,86 +1,36 @@
 {
-  "date": "2026-06-16",
-  "updated_at": "2026-06-16T06:20:33.479017",
-  "count": 8,
+  "date": "2026-06-17",
+  "updated_at": "2026-06-17T05:56:28.205933",
+  "count": 3,
   "projects": [
-    {
-      "owner": "iptv-org",
-      "name": "iptv",
-      "full_name": "iptv-org/iptv",
-      "description": "Collection of publicly available IPTV channels from all over the world",
-      "stars": "123204",
-      "stars_today": "2657",
-      "url": "https://github.com/iptv-org/iptv",
-      "is_ai_related": true
-    },
     {
       "owner": "teslamate-org",
       "name": "teslamate",
       "full_name": "teslamate-org/teslamate",
       "description": "A self-hosted data logger for your Tesla 🚘 [main maintainer=@JakobLichterfeld]",
-      "stars": "8292",
-      "stars_today": "33",
+      "stars": "8440",
+      "stars_today": "215",
       "url": "https://github.com/teslamate-org/teslamate",
       "is_ai_related": true
     },
     {
-      "owner": "Panniantong",
-      "name": "Agent-Reach",
-      "full_name": "Panniantong/Agent-Reach",
-      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "stars": "30799",
-      "stars_today": "1100",
-      "url": "https://github.com/Panniantong/Agent-Reach",
+      "owner": "iptv-org",
+      "name": "iptv",
+      "full_name": "iptv-org/iptv",
+      "description": "Collection of publicly available IPTV channels from all over the world",
+      "stars": "124394",
+      "stars_today": "1197",
+      "url": "https://github.com/iptv-org/iptv",
       "is_ai_related": true
     },
     {
-      "owner": "chatwoot",
-      "name": "chatwoot",
-      "full_name": "chatwoot/chatwoot",
-      "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
-      "stars": "31796",
-      "stars_today": "431",
-      "url": "https://github.com/chatwoot/chatwoot",
-      "is_ai_related": true
-    },
-    {
-      "owner": "trycua",
-      "name": "cua",
-      "full_name": "trycua/cua",
-      "description": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).",
-      "stars": "18241",
-      "stars_today": "70",
-      "url": "https://github.com/trycua/cua",
-      "is_ai_related": true
-    },
-    {
-      "owner": "rohitg00",
-      "name": "ai-engineering-from-scratch",
-      "full_name": "rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "stars": "33303",
-      "stars_today": "562",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "is_ai_related": true
-    },
-    {
-      "owner": "mikeroyal",
-      "name": "Self-Hosting-Guide",
-      "full_name": "mikeroyal/Self-Hosting-Guide",
-      "description": "Self-Hosting Guide. Learn all about locally hosting (on premises & private web servers) and managing software applications by yourself or your organization. Including Cloud, LLMs, WireGuard, Automation, Home Assistant, and Networking.",
-      "stars": "21203",
-      "stars_today": "188",
-      "url": "https://github.com/mikeroyal/Self-Hosting-Guide",
-      "is_ai_related": true
-    },
-    {
-      "owner": "NVIDIA",
-      "name": "SkillSpector",
-      "full_name": "NVIDIA/SkillSpector",
-      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
-      "stars": "6569",
-      "stars_today": "1079",
-      "url": "https://github.com/NVIDIA/SkillSpector",
+      "owner": "alibaba",
+      "name": "zvec",
+      "full_name": "alibaba/zvec",
+      "description": "A lightweight, lightning-fast, in-process vector database",
+      "stars": "10593",
+      "stars_today": "156",
+      "url": "https://github.com/alibaba/zvec",
       "is_ai_related": true
     }
   ]

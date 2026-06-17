@@ -484,5 +484,49 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-17",
+    "ai_count": 3,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "teslamate-org/teslamate",
+        "stars": "8440",
+        "url": "https://github.com/teslamate-org/teslamate"
+      },
+      {
+        "name": "iptv-org/iptv",
+        "stars": "124394",
+        "url": "https://github.com/iptv-org/iptv"
+      },
+      {
+        "name": "alibaba/zvec",
+        "stars": "10593",
+        "url": "https://github.com/alibaba/zvec"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "GrapheneOS has been ported to ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Running local models is good n",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Humiliating IIS servers for fu",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Wolfram Language and Mathemati",
+        "source": "Hacker News"
+      },
+      {
+        "title": "TIL: You can make HTTP request",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

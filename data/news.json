@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-16",
-  "updated_at": "2026-06-16T06:20:33.479025",
+  "date": "2026-06-17",
+  "updated_at": "2026-06-17T05:56:28.205940",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "The time the x86 emulator team found code so bad they fixed it during emulation",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260615-00/?p=112419",
+      "title": "GrapheneOS has been ported to Android 17",
+      "url": "https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon",
       "source": "Hacker News",
-      "hot_value": "112",
-      "is_hot": false
+      "hot_value": "572",
+      "is_hot": true
     },
     {
       "rank": 2,
-      "title": "A backdoor in a LinkedIn job offer",
-      "url": "https://roman.pt/posts/linkedin-backdoor/",
+      "title": "Running local models is good now",
+      "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
       "source": "Hacker News",
-      "hot_value": "969",
+      "hot_value": "1169",
       "is_hot": true
     },
     {
       "rank": 3,
-      "title": "I Could've Rickrolled the FIFA World Cup. All I Needed Was My ID",
-      "url": "https://bobdahacker.com/blog/fifa-hack",
+      "title": "Humiliating IIS servers for fun and jail time",
+      "url": "https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time/",
       "source": "Hacker News",
-      "hot_value": "60",
+      "hot_value": "170",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "Banned Book Library in a Wi-Fi Smart Light Bulb",
-      "url": "https://www.richardosgood.com/posts/banned-book-library/",
+      "title": "Wolfram Language and Mathematica Version 15, AI Assistant, Symbolic Music, More",
+      "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/",
       "source": "Hacker News",
-      "hot_value": "296",
+      "hot_value": "126",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Iroh 1.0",
-      "url": "https://www.iroh.computer/blog/v1",
+      "title": "TIL: You can make HTTP requests without curl using Bash /dev/TCP",
+      "url": "https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/",
       "source": "Hacker News",
-      "hot_value": "1081",
+      "hot_value": "347",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "Show HN: Garden of Flowers – an archive of pictorial typography before ASCII art",
-      "url": "https://garden-of-flowers.heikkilotvonen.com/",
+      "title": "Working in Glass",
+      "url": "https://www.asimov.press/p/glass",
       "source": "Hacker News",
-      "hot_value": "21",
+      "hot_value": "12",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "TinyWind: A pixel pirate sailing game with real wind physics (380k+ kms sailed)",
-      "url": "https://tinywind.io",
+      "title": "Calvin and Hobbes and the price of integrity",
+      "url": "https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of",
       "source": "Hacker News",
-      "hot_value": "728",
+      "hot_value": "350",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "John Carmack on Fabrice Bellard",
-      "url": "https://twitter.com/ID_AA_Carmack/status/2064095424420487226",
+      "title": "GPT‑NL: a sovereign language model for the Netherlands",
+      "url": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
       "source": "Hacker News",
-      "hot_value": "14",
+      "hot_value": "177",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "I hacked into the worst e-bike and fixed it [video]",
-      "url": "https://www.youtube.com/watch?v=hPrtVGimBYs",
+      "title": "Has AI already killed self-help nonfiction books?",
+      "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/",
       "source": "Hacker News",
-      "hot_value": "51",
+      "hot_value": "230",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "I Love the Computer",
-      "url": "https://michaelenger.com/blog/i-love-the-computer/",
+      "title": "Stop Using JWTs",
+      "url": "https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452",
       "source": "Hacker News",
-      "hot_value": "197",
+      "hot_value": "323",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "Amazon Announces Multibillion-Dollar Data Center in Missouri",
-      "url": "https://www.narracomm.com/amazon-announces-multibillion-dollar-data-center-in-missouri/",
+      "title": "Stop Killing Games fails to secure EU law despite 1.3M signatures",
+      "url": "https://www.dexerto.com/gaming/stop-killing-games-fails-to-secure-eu-law-despite-1-3m-signatures-3376431/",
       "source": "Hacker News",
-      "hot_value": "93",
+      "hot_value": "104",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "Why I email complete strangers",
-      "url": "https://www.goodinternetmagazine.com/why-i-email-complete-strangers/",
+      "title": "All about the IBM 1130 Computing System",
+      "url": "http://ibm1130.org/",
       "source": "Hacker News",
-      "hot_value": "127",
+      "hot_value": "26",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "Humanity isn't ready for the coming intelligence explosion",
-      "url": "https://www.economist.com/by-invitation/2026/06/15/humanity-isnt-ready-for-the-coming-intelligence-explosion",
+      "title": "But yak shaving is fun (2019)",
+      "url": "https://parksb.github.io/en/article/32.html",
       "source": "Hacker News",
-      "hot_value": "37",
+      "hot_value": "237",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Cohere's First Model for Developers",
-      "url": "https://cohere.com/blog/north-mini-code",
+      "title": "SpaceX to buy Cursor for $60B",
+      "url": "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/",
       "source": "Hacker News",
-      "hot_value": "62",
+      "hot_value": "962",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Sundar Pichai faces boos, walkout at Stanford graduation ceremony over Google’s Israel, ICE ties",
-      "url": "https://techcrunch.com/2026/06/15/sundar-pichai-faces-boos-walkout-at-stanford-graduation-ceremony-over-googles-israel-ice-ties/",
-      "source": "TechCrunch",
-      "hot_value": "",
+      "title": "Subterranean fungi networks more than 100 quadrillion km in length",
+      "url": "https://www.theguardian.com/science/2026/jun/11/arbuscular-mycorrhizal-fungi-plant-life-climate-global-mapping-study",
+      "source": "Hacker News",
+      "hot_value": "12",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "The US government’s Anthropic models ban was never about an AI jailbreak",
-      "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
+      "title": "Anthropic’s latest feud with the Trump admin may actually help it, sales data suggests",
+      "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Meta’s new ‘AI Mode’ on Facebook pulls from public info across its platforms",
-      "url": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
+      "title": "Apple plans to change its Hide My Email privacy feature that could make it less effective",
+      "url": "https://techcrunch.com/2026/06/16/apple-plans-to-change-its-hide-my-email-privacy-feature-that-could-make-it-less-effective/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "SpaceX is public: Everything you need to know post-IPO",
-      "url": "https://techcrunch.com/2026/06/15/spacex-is-public-everything-you-need-to-know-post-ipo/",
+      "title": "SpaceX valuation balloons to $2.6T, briefly passes Amazon",
+      "url": "https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "These are the countries moving to ban social media for children",
-      "url": "https://techcrunch.com/2026/06/15/social-media-ban-children-countries-list/",
+      "title": "Qualcomm wants to be the chip inside whatever replaces your smartphone, and it just announced two products toward that end",
+      "url": "https://techcrunch.com/2026/06/16/qualcomm-wants-to-be-the-chip-inside-whatever-replaces-your-smartphone-and-it-just-announced-two-products-toward-that-end/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "Cybersecurity vets protest ‘dangerous’ US government ban on Anthropic’s most powerful models",
-      "url": "https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/",
+      "title": "Bug in FIFA World Cup internal system gave anyone ability to modify TV stream",
+      "url": "https://techcrunch.com/2026/06/16/bug-in-fifa-world-cup-internal-system-gave-anyone-ability-to-modify-tv-stream/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
