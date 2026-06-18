@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-17",
-  "updated_at": "2026-06-17T05:56:28.205940",
+  "date": "2026-06-18",
+  "updated_at": "2026-06-18T05:26:48.112559",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "GrapheneOS has been ported to Android 17",
-      "url": "https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon",
+      "title": "Midjourney Medical",
+      "url": "https://www.midjourney.com/medical/blogpost",
       "source": "Hacker News",
-      "hot_value": "572",
-      "is_hot": true
+      "hot_value": "386",
+      "is_hot": false
     },
     {
       "rank": 2,
-      "title": "Running local models is good now",
-      "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
+      "title": "Lore – Open source version control system designed for scalability",
+      "url": "https://lore.org/",
       "source": "Hacker News",
-      "hot_value": "1169",
+      "hot_value": "1064",
       "is_hot": true
     },
     {
       "rank": 3,
-      "title": "Humiliating IIS servers for fun and jail time",
-      "url": "https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time/",
+      "title": "Local Qwen isn't a worse Opus, it's a different tool",
+      "url": "https://blog.alexellis.io/local-ai-is-not-opus/",
       "source": "Hacker News",
-      "hot_value": "170",
+      "hot_value": "55",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "Wolfram Language and Mathematica Version 15, AI Assistant, Symbolic Music, More",
-      "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/",
+      "title": "I Hate Compilers",
+      "url": "https://xeiaso.net/notes/2026/anubis-wasm-vendor-binary/",
       "source": "Hacker News",
-      "hot_value": "126",
+      "hot_value": "7",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "TIL: You can make HTTP requests without curl using Bash /dev/TCP",
-      "url": "https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/",
+      "title": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",
+      "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
       "source": "Hacker News",
-      "hot_value": "347",
+      "hot_value": "416",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "Working in Glass",
-      "url": "https://www.asimov.press/p/glass",
+      "title": "Taxonomy of the Occlupanida (parasitoids on bread bag tags)",
+      "url": "https://www.horg.com/horg/?page_id=921",
       "source": "Hacker News",
-      "hot_value": "12",
+      "hot_value": "113",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "Calvin and Hobbes and the price of integrity",
-      "url": "https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of",
+      "title": "Storied Colors – a catalogue of named colors",
+      "url": "https://storiedcolors.com/",
       "source": "Hacker News",
-      "hot_value": "350",
+      "hot_value": "129",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "GPT‑NL: a sovereign language model for the Netherlands",
-      "url": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
+      "title": "[x86] AI Compute Extensions (ACE) Specification",
+      "url": "https://x86ecosystem.org/resource/ai-compute-extensions-ace-specification/",
       "source": "Hacker News",
-      "hot_value": "177",
+      "hot_value": "22",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "Has AI already killed self-help nonfiction books?",
-      "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/",
+      "title": "Clojure Hosted on Go",
+      "url": "https://github.com/glojurelang/glojure",
       "source": "Hacker News",
-      "hot_value": "230",
+      "hot_value": "74",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "Stop Using JWTs",
-      "url": "https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452",
+      "title": "Loreline – Tools for writing interactive fiction",
+      "url": "https://loreline.app/en/",
       "source": "Hacker News",
-      "hot_value": "323",
+      "hot_value": "109",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "Stop Killing Games fails to secure EU law despite 1.3M signatures",
-      "url": "https://www.dexerto.com/gaming/stop-killing-games-fails-to-secure-eu-law-despite-1-3m-signatures-3376431/",
+      "title": "How we run Firecracker VMs inside EC2 and start browsers in less than 1s",
+      "url": "https://browser-use.com/posts/firecracker-browser-infra",
       "source": "Hacker News",
-      "hot_value": "104",
+      "hot_value": "243",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "All about the IBM 1130 Computing System",
-      "url": "http://ibm1130.org/",
+      "title": "Show HN: We built an 8-bit CPU as 2nd year EE students",
+      "url": "https://github.com/c0rRupT9/STEPLA-1",
       "source": "Hacker News",
-      "hot_value": "26",
+      "hot_value": "54",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "But yak shaving is fun (2019)",
-      "url": "https://parksb.github.io/en/article/32.html",
+      "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+      "url": "https://github.com/Adam-CAD/CADAM",
       "source": "Hacker News",
-      "hot_value": "237",
+      "hot_value": "172",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "SpaceX to buy Cursor for $60B",
-      "url": "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/",
+      "title": "How Madrid built its metro cheaply (2024)",
+      "url": "https://worksinprogress.co/issue/how-madrid-built-its-metro-cheaply/",
       "source": "Hacker News",
-      "hot_value": "962",
+      "hot_value": "75",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Subterranean fungi networks more than 100 quadrillion km in length",
-      "url": "https://www.theguardian.com/science/2026/jun/11/arbuscular-mycorrhizal-fungi-plant-life-climate-global-mapping-study",
+      "title": "Magic Buffers and io_uring Registered Buffers",
+      "url": "https://www.mindfruit.co.uk/posts/2025/10/magic-buffers-and-io-uring-write-fixed/",
       "source": "Hacker News",
-      "hot_value": "12",
+      "hot_value": "8",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "Anthropic’s latest feud with the Trump admin may actually help it, sales data suggests",
-      "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/",
+      "title": "How to turn off AI in your Google Docs",
+      "url": "https://techcrunch.com/2026/06/17/how-to-turn-off-ai-in-your-google-docs/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Apple plans to change its Hide My Email privacy feature that could make it less effective",
-      "url": "https://techcrunch.com/2026/06/16/apple-plans-to-change-its-hide-my-email-privacy-feature-that-could-make-it-less-effective/",
+      "title": "AI is hurting Apple in more ways than one: it may force iPhone price increases",
+      "url": "https://techcrunch.com/2026/06/17/ai-is-hurting-apple-in-more-ways-than-one-it-may-force-iphone-price-increases/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "SpaceX valuation balloons to $2.6T, briefly passes Amazon",
-      "url": "https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/",
+      "title": "Chi-Hua Chien saw Facebook coming — now he says the real AI winners won’t be selling AI",
+      "url": "https://techcrunch.com/2026/06/17/chi-hua-chien-saw-facebook-coming-now-he-says-the-real-ai-winners-wont-be-selling-ai/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Qualcomm wants to be the chip inside whatever replaces your smartphone, and it just announced two products toward that end",
-      "url": "https://techcrunch.com/2026/06/16/qualcomm-wants-to-be-the-chip-inside-whatever-replaces-your-smartphone-and-it-just-announced-two-products-toward-that-end/",
+      "title": "Roelof Botha joins SpaceX’s board of directors",
+      "url": "https://techcrunch.com/2026/06/17/roelof-botha-joins-spacexs-board-of-directors/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "Bug in FIFA World Cup internal system gave anyone ability to modify TV stream",
-      "url": "https://techcrunch.com/2026/06/16/bug-in-fifa-world-cup-internal-system-gave-anyone-ability-to-modify-tv-stream/",
+      "title": "After unveiling ridiculously expensive AR glasses, Snap’s stock takes a dive",
+      "url": "https://techcrunch.com/2026/06/17/after-unveiling-ridiculously-expensive-ar-glasses-snaps-stock-takes-a-dive/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false

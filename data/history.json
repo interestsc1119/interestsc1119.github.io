@@ -528,5 +528,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-18",
+    "ai_count": 10,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "DeusData/codebase-memory-mcp",
+        "stars": "5762",
+        "url": "https://github.com/DeusData/codebase-memory-mcp"
+      },
+      {
+        "name": "Panniantong/Agent-Reach",
+        "stars": "33499",
+        "url": "https://github.com/Panniantong/Agent-Reach"
+      },
+      {
+        "name": "obra/superpowers",
+        "stars": "231358",
+        "url": "https://github.com/obra/superpowers"
+      },
+      {
+        "name": "google-research/timesfm",
+        "stars": "22037",
+        "url": "https://github.com/google-research/timesfm"
+      },
+      {
+        "name": "continuedev/continue",
+        "stars": "33967",
+        "url": "https://github.com/continuedev/continue"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Midjourney Medical",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Lore – Open source version con",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Local Qwen isn't a worse Opus,",
+        "source": "Hacker News"
+      },
+      {
+        "title": "I Hate Compilers",
+        "source": "Hacker News"
+      },
+      {
+        "title": "US holds off blacklisting Deep",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
