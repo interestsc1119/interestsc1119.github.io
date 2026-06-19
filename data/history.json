@@ -582,5 +582,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-19",
+    "ai_count": 10,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "google-research/timesfm",
+        "stars": "23437",
+        "url": "https://github.com/google-research/timesfm"
+      },
+      {
+        "name": "obra/superpowers",
+        "stars": "232597",
+        "url": "https://github.com/obra/superpowers"
+      },
+      {
+        "name": "zai-org/GLM-5",
+        "stars": "4235",
+        "url": "https://github.com/zai-org/GLM-5"
+      },
+      {
+        "name": "DeusData/codebase-memory-mcp",
+        "stars": "7264",
+        "url": "https://github.com/DeusData/codebase-memory-mcp"
+      },
+      {
+        "name": "alibaba/zvec",
+        "stars": "11317",
+        "url": "https://github.com/alibaba/zvec"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Many Let's Encrypt renewals ha",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Ice Water Drowning Survival Af",
+        "source": "Hacker News"
+      },
+      {
+        "title": "To study how chips work, MIT r",
+        "source": "Hacker News"
+      },
+      {
+        "title": "DuckDB Internals: Why Is DuckD",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Gribouille 0.3.0: A Grammar of",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
