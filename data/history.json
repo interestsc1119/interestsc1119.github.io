@@ -636,5 +636,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-20",
+    "ai_count": 13,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "DeusData/codebase-memory-mcp",
+        "stars": "8431",
+        "url": "https://github.com/DeusData/codebase-memory-mcp"
+      },
+      {
+        "name": "google-research/timesfm",
+        "stars": "24141",
+        "url": "https://github.com/google-research/timesfm"
+      },
+      {
+        "name": "palmier-io/palmier-pro",
+        "stars": "2044",
+        "url": "https://github.com/palmier-io/palmier-pro"
+      },
+      {
+        "name": "koala73/worldmonitor",
+        "stars": "57375",
+        "url": "https://github.com/koala73/worldmonitor"
+      },
+      {
+        "name": "aishwaryanr/awesome-generative-ai-guide",
+        "stars": "27690",
+        "url": "https://github.com/aishwaryanr/awesome-generative-ai-guide"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Data Compression Explained (20",
+        "source": "Hacker News"
+      },
+      {
+        "title": "There are no instances in ATPr",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Surprising economics of load-b",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Norway imposes near ban on AI ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Hyundai buys Boston Dynamics",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

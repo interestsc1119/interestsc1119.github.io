@@ -1,26 +1,86 @@
 {
-  "date": "2026-06-19",
-  "updated_at": "2026-06-19T06:04:58.503850",
-  "count": 10,
+  "date": "2026-06-20",
+  "updated_at": "2026-06-20T05:02:15.326112",
+  "count": 13,
   "projects": [
+    {
+      "owner": "DeusData",
+      "name": "codebase-memory-mcp",
+      "full_name": "DeusData/codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "stars": "8431",
+      "stars_today": "1058",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "is_ai_related": true
+    },
     {
       "owner": "google-research",
       "name": "timesfm",
       "full_name": "google-research/timesfm",
       "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
-      "stars": "23437",
-      "stars_today": "844",
+      "stars": "24141",
+      "stars_today": "1510",
       "url": "https://github.com/google-research/timesfm",
       "is_ai_related": true
     },
     {
-      "owner": "obra",
-      "name": "superpowers",
-      "full_name": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "stars": "232597",
-      "stars_today": "1429",
-      "url": "https://github.com/obra/superpowers",
+      "owner": "palmier-io",
+      "name": "palmier-pro",
+      "full_name": "palmier-io/palmier-pro",
+      "description": "macOS video editor built for AI",
+      "stars": "2044",
+      "stars_today": "756",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "is_ai_related": true
+    },
+    {
+      "owner": "koala73",
+      "name": "worldmonitor",
+      "full_name": "koala73/worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "stars": "57375",
+      "stars_today": "156",
+      "url": "https://github.com/koala73/worldmonitor",
+      "is_ai_related": true
+    },
+    {
+      "owner": "aishwaryanr",
+      "name": "awesome-generative-ai-guide",
+      "full_name": "aishwaryanr/awesome-generative-ai-guide",
+      "description": "A one stop repository for generative AI research updates, interview resources, notebooks and much more!",
+      "stars": "27690",
+      "stars_today": "107",
+      "url": "https://github.com/aishwaryanr/awesome-generative-ai-guide",
+      "is_ai_related": true
+    },
+    {
+      "owner": "BuilderIO",
+      "name": "agent-native",
+      "full_name": "BuilderIO/agent-native",
+      "description": "A framework for building agent-native applications.",
+      "stars": "1108",
+      "stars_today": "147",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "is_ai_related": true
+    },
+    {
+      "owner": "chopratejas",
+      "name": "headroom",
+      "full_name": "chopratejas/headroom",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "stars": "39208",
+      "stars_today": "4005",
+      "url": "https://github.com/chopratejas/headroom",
+      "is_ai_related": true
+    },
+    {
+      "owner": "calesthio",
+      "name": "OpenMontage",
+      "full_name": "calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "stars": "6397",
+      "stars_today": "156",
+      "url": "https://github.com/calesthio/OpenMontage",
       "is_ai_related": true
     },
     {
@@ -28,29 +88,9 @@
       "name": "GLM-5",
       "full_name": "zai-org/GLM-5",
       "description": "GLM-5: From Vibe Coding to Agentic Engineering",
-      "stars": "4235",
-      "stars_today": "202",
+      "stars": "4640",
+      "stars_today": "480",
       "url": "https://github.com/zai-org/GLM-5",
-      "is_ai_related": true
-    },
-    {
-      "owner": "DeusData",
-      "name": "codebase-memory-mcp",
-      "full_name": "DeusData/codebase-memory-mcp",
-      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "stars": "7264",
-      "stars_today": "2322",
-      "url": "https://github.com/DeusData/codebase-memory-mcp",
-      "is_ai_related": true
-    },
-    {
-      "owner": "alibaba",
-      "name": "zvec",
-      "full_name": "alibaba/zvec",
-      "description": "A lightweight, lightning-fast, in-process vector database",
-      "stars": "11317",
-      "stars_today": "259",
-      "url": "https://github.com/alibaba/zvec",
       "is_ai_related": true
     },
     {
@@ -58,19 +98,19 @@
       "name": "flue",
       "full_name": "withastro/flue",
       "description": "The sandbox agent framework.",
-      "stars": "5564",
-      "stars_today": "162",
+      "stars": "5880",
+      "stars_today": "309",
       "url": "https://github.com/withastro/flue",
       "is_ai_related": true
     },
     {
-      "owner": "Kilo-Org",
-      "name": "kilocode",
-      "full_name": "Kilo-Org/kilocode",
-      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
-      "stars": "22334",
-      "stars_today": "1345",
-      "url": "https://github.com/Kilo-Org/kilocode",
+      "owner": "obra",
+      "name": "superpowers",
+      "full_name": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars": "233524",
+      "stars_today": "1110",
+      "url": "https://github.com/obra/superpowers",
       "is_ai_related": true
     },
     {
@@ -78,19 +118,9 @@
       "name": "insomnia",
       "full_name": "Kong/insomnia",
       "description": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
-      "stars": "38742",
-      "stars_today": "18",
+      "stars": "39031",
+      "stars_today": "292",
       "url": "https://github.com/Kong/insomnia",
-      "is_ai_related": true
-    },
-    {
-      "owner": "owainlewis",
-      "name": "awesome-artificial-intelligence",
-      "full_name": "owainlewis/awesome-artificial-intelligence",
-      "description": "A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers.",
-      "stars": "14471",
-      "stars_today": "40",
-      "url": "https://github.com/owainlewis/awesome-artificial-intelligence",
       "is_ai_related": true
     },
     {
@@ -98,8 +128,8 @@
       "name": "LTX-2",
       "full_name": "Lightricks/LTX-2",
       "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
-      "stars": "7527",
-      "stars_today": "51",
+      "stars": "7698",
+      "stars_today": "196",
       "url": "https://github.com/Lightricks/LTX-2",
       "is_ai_related": true
     }
