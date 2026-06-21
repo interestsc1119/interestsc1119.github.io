@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-20",
-  "updated_at": "2026-06-20T05:02:15.326122",
+  "date": "2026-06-21",
+  "updated_at": "2026-06-21T05:51:01.036102",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Data Compression Explained (2012)",
-      "url": "https://mattmahoney.net/dc/dce.html",
+      "title": "Renting a sewing machine from the library",
+      "url": "https://www.bbc.com/future/article/20260618-the-weird-and-wonderful-libraries-of-finland",
       "source": "Hacker News",
-      "hot_value": "48",
+      "hot_value": "181",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "There are no instances in ATProto",
-      "url": "https://overreacted.io/there-are-no-instances-in-atproto/",
+      "title": "Developers don't understand CORS (2019)",
+      "url": "https://fosterelli.co/developers-dont-understand-cors",
       "source": "Hacker News",
-      "hot_value": "377",
+      "hot_value": "85",
       "is_hot": false
     },
     {
       "rank": 3,
-      "title": "Surprising economics of load-balanced systems",
-      "url": "https://brooker.co.za/blog/2020/08/06/erlang.html",
+      "title": "Epoll vs. io_uring in Linux",
+      "url": "https://sibexi.co/posts/epoll-vs-io_uring/",
       "source": "Hacker News",
-      "hot_value": "67",
+      "hot_value": "107",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "Norway imposes near ban on AI in elementary school",
-      "url": "https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/",
+      "title": "Building Reliable Agentic AI Systems",
+      "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
       "source": "Hacker News",
-      "hot_value": "539",
+      "hot_value": "12",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Hyundai buys Boston Dynamics",
-      "url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/",
+      "title": "Loupe – A iOS app that raises awareness about what native apps can see",
+      "url": "https://github.com/mysk-research/loupe",
       "source": "Hacker News",
-      "hot_value": "721",
+      "hot_value": "168",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "Bobby Prince, composer for Doom, Wolfenstein 3D, and Duke Nukem 3D, has died",
-      "url": "https://www.legacy.com/legacy/robert-bobby-prince-lll",
+      "title": "Zigzag Decoding with AVX-512",
+      "url": "https://zeux.io/2026/06/17/zigzag-decoding-avx512/",
       "source": "Hacker News",
-      "hot_value": "273",
+      "hot_value": "15",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28",
-      "url": "https://www.jvm-weekly.com/p/project-valhalla-explained-how-a",
-      "source": "Hacker News",
-      "hot_value": "556",
-      "is_hot": false
-    },
-    {
-      "rank": 8,
-      "title": "Snap Smart Glasses",
-      "url": "https://www.specs.com/smart-glasses/specs-27",
-      "source": "Hacker News",
-      "hot_value": "7",
-      "is_hot": false
-    },
-    {
-      "rank": 9,
-      "title": "Hey, n00b, we didn't hire you to complete tasks",
-      "url": "https://newsletter.kentbeck.com/p/hey-n00b-we-didnt-hire-you-to-complete",
+      "title": "Show HN: TownSquare, a tiny presence layer for websites",
+      "url": "https://townsquare.cauenapier.com/",
       "source": "Hacker News",
       "hot_value": "127",
       "is_hot": false
     },
     {
-      "rank": 10,
-      "title": "How many of the 170k English words do you know?",
-      "url": "https://vocabowl-870366514258.us-west1.run.app/",
+      "rank": 8,
+      "title": "Slow breathing modulates brain function and risk behavior",
+      "url": "https://www.cell.com/neuron/fulltext/S0896-6273(26)00339-9",
       "source": "Hacker News",
-      "hot_value": "276",
+      "hot_value": "127",
+      "is_hot": false
+    },
+    {
+      "rank": 9,
+      "title": "15-minute at-home Lyme disease tick test",
+      "url": "https://www.bostonglobe.com/2026/06/17/business/lyme-disease-tick-test/",
+      "source": "Hacker News",
+      "hot_value": "78",
+      "is_hot": false
+    },
+    {
+      "rank": 10,
+      "title": "Your brain was never designed for this much bad news",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260614012006.htm",
+      "source": "Hacker News",
+      "hot_value": "57",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "Meet Nikolai Evreinov, the 19th century Nathan Fielder",
-      "url": "https://mssv.net/2026/06/16/meet-nikolai-evreinov-the-19th-century-nathan-fielder/",
+      "title": "Guide to the TD4 4-bit DIY CPU",
+      "url": "https://www.philipzucker.com/td4-4bit-cpu/",
       "source": "Hacker News",
-      "hot_value": "9",
+      "hot_value": "19",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "The discovery that changed how scientists think about memory – IBM",
-      "url": "https://www.ibm.com/think/news/discovery-changed-how-scientists-think-about-memory-kavli-prize",
+      "title": "When I reject AI code even if it works",
+      "url": "https://vinibrasil.com/when-i-reject-ai-code-even-if-it-works/",
       "source": "Hacker News",
-      "hot_value": "6",
+      "hot_value": "121",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "A Perceptron in Age of Empires II",
-      "url": "https://adewynter.github.io/notes/aoe2-circuits",
+      "title": "SMPTE Makes Its Standards Freely Accessible",
+      "url": "https://www.smpte.org/blog/smpte-makes-its-standards-freely-accessible-openingstandards-library-to-the-global-media-technology-community",
       "source": "Hacker News",
-      "hot_value": "41",
+      "hot_value": "243",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Egyptian Fractions",
-      "url": "https://blog.plover.com/math/egyptian-fractions.html",
+      "title": "UHF X11: X11 Built for VisionOS and Apple Vision Pro",
+      "url": "https://www.lispm.net/apps/uhf-x11/",
       "source": "Hacker News",
-      "hot_value": "74",
+      "hot_value": "188",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "How to feed a dictator",
-      "url": "https://www.theguardian.com/film/2026/jun/09/how-to-feed-a-dictator-film",
+      "title": "Project Fetch: Phase Two",
+      "url": "https://www.anthropic.com/research/project-fetch-phase-two",
       "source": "Hacker News",
-      "hot_value": "109",
+      "hot_value": "50",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "He made your free video player run smoothly. Now he’s doing that for robots.",
-      "url": "https://techcrunch.com/2026/06/19/he-made-your-free-video-player-run-smoothly-now-hes-doing-that-for-robots/",
+      "title": "Signal’s Meredith Whittaker wants you to remember that AI chatbots ‘are not your friends’",
+      "url": "https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "From PGP to Mythos: a brief history of export controls that didn’t stop anyone",
-      "url": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
+      "title": "In the Weights is your new AI-centric vanity search",
+      "url": "https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Go eyes robotaxis and acquisitions after Japan’s biggest IPO of 2026. Here’s why it matters",
-      "url": "https://techcrunch.com/2026/06/19/go-eyes-robotaxis-and-acquisitions-after-japans-biggest-ipo-of-2026-heres-why-it-matters/",
+      "title": "Founders Fund’s outlier bet on humanely killed fish",
+      "url": "https://techcrunch.com/2026/06/20/founders-funds-outlier-bet-on-humanely-killed-fish/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Aura’s impressive e-ink photo frame doesn’t even look digital",
-      "url": "https://techcrunch.com/2026/06/19/auras-impressive-e-ink-photo-frame-doesnt-even-look-digital/",
+      "title": "Nobel laureate John Jumper is leaving DeepMind for rival Anthropic",
+      "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "Every fusion startup that has raised over $100M",
-      "url": "https://techcrunch.com/2026/06/19/every-fusion-startup-that-has-raised-over-100m/",
+      "title": "Every new iOS 27 feature that’s worth knowing about",
+      "url": "https://techcrunch.com/2026/06/20/every-new-ios-27-feature-thats-worth-knowing-about/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false

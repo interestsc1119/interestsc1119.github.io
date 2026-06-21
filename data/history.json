@@ -690,5 +690,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-21",
+    "ai_count": 13,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "palmier-io/palmier-pro",
+        "stars": "3681",
+        "url": "https://github.com/palmier-io/palmier-pro"
+      },
+      {
+        "name": "calesthio/OpenMontage",
+        "stars": "7228",
+        "url": "https://github.com/calesthio/OpenMontage"
+      },
+      {
+        "name": "DeusData/codebase-memory-mcp",
+        "stars": "9540",
+        "url": "https://github.com/DeusData/codebase-memory-mcp"
+      },
+      {
+        "name": "google-research/timesfm",
+        "stars": "24619",
+        "url": "https://github.com/google-research/timesfm"
+      },
+      {
+        "name": "twentyhq/twenty",
+        "stars": "50916",
+        "url": "https://github.com/twentyhq/twenty"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Renting a sewing machine from ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Developers don't understand CO",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Epoll vs. io_uring in Linux",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Building Reliable Agentic AI S",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Loupe – A iOS app that raises ",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

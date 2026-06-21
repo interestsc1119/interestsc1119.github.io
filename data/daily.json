@@ -1,15 +1,35 @@
 {
-  "date": "2026-06-20",
-  "updated_at": "2026-06-20T05:02:15.326112",
+  "date": "2026-06-21",
+  "updated_at": "2026-06-21T05:51:01.036093",
   "count": 13,
   "projects": [
+    {
+      "owner": "palmier-io",
+      "name": "palmier-pro",
+      "full_name": "palmier-io/palmier-pro",
+      "description": "macOS video editor built for AI",
+      "stars": "3681",
+      "stars_today": "902",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "is_ai_related": true
+    },
+    {
+      "owner": "calesthio",
+      "name": "OpenMontage",
+      "full_name": "calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "stars": "7228",
+      "stars_today": "677",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "is_ai_related": true
+    },
     {
       "owner": "DeusData",
       "name": "codebase-memory-mcp",
       "full_name": "DeusData/codebase-memory-mcp",
       "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "stars": "8431",
-      "stars_today": "1058",
+      "stars": "9540",
+      "stars_today": "1271",
       "url": "https://github.com/DeusData/codebase-memory-mcp",
       "is_ai_related": true
     },
@@ -18,99 +38,19 @@
       "name": "timesfm",
       "full_name": "google-research/timesfm",
       "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
-      "stars": "24141",
-      "stars_today": "1510",
+      "stars": "24619",
+      "stars_today": "433",
       "url": "https://github.com/google-research/timesfm",
       "is_ai_related": true
     },
     {
-      "owner": "palmier-io",
-      "name": "palmier-pro",
-      "full_name": "palmier-io/palmier-pro",
-      "description": "macOS video editor built for AI",
-      "stars": "2044",
-      "stars_today": "756",
-      "url": "https://github.com/palmier-io/palmier-pro",
-      "is_ai_related": true
-    },
-    {
-      "owner": "koala73",
-      "name": "worldmonitor",
-      "full_name": "koala73/worldmonitor",
-      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-      "stars": "57375",
-      "stars_today": "156",
-      "url": "https://github.com/koala73/worldmonitor",
-      "is_ai_related": true
-    },
-    {
-      "owner": "aishwaryanr",
-      "name": "awesome-generative-ai-guide",
-      "full_name": "aishwaryanr/awesome-generative-ai-guide",
-      "description": "A one stop repository for generative AI research updates, interview resources, notebooks and much more!",
-      "stars": "27690",
-      "stars_today": "107",
-      "url": "https://github.com/aishwaryanr/awesome-generative-ai-guide",
-      "is_ai_related": true
-    },
-    {
-      "owner": "BuilderIO",
-      "name": "agent-native",
-      "full_name": "BuilderIO/agent-native",
-      "description": "A framework for building agent-native applications.",
-      "stars": "1108",
-      "stars_today": "147",
-      "url": "https://github.com/BuilderIO/agent-native",
-      "is_ai_related": true
-    },
-    {
-      "owner": "chopratejas",
-      "name": "headroom",
-      "full_name": "chopratejas/headroom",
-      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
-      "stars": "39208",
-      "stars_today": "4005",
-      "url": "https://github.com/chopratejas/headroom",
-      "is_ai_related": true
-    },
-    {
-      "owner": "calesthio",
-      "name": "OpenMontage",
-      "full_name": "calesthio/OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
-      "stars": "6397",
-      "stars_today": "156",
-      "url": "https://github.com/calesthio/OpenMontage",
-      "is_ai_related": true
-    },
-    {
-      "owner": "zai-org",
-      "name": "GLM-5",
-      "full_name": "zai-org/GLM-5",
-      "description": "GLM-5: From Vibe Coding to Agentic Engineering",
-      "stars": "4640",
-      "stars_today": "480",
-      "url": "https://github.com/zai-org/GLM-5",
-      "is_ai_related": true
-    },
-    {
-      "owner": "withastro",
-      "name": "flue",
-      "full_name": "withastro/flue",
-      "description": "The sandbox agent framework.",
-      "stars": "5880",
-      "stars_today": "309",
-      "url": "https://github.com/withastro/flue",
-      "is_ai_related": true
-    },
-    {
-      "owner": "obra",
-      "name": "superpowers",
-      "full_name": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "stars": "233524",
-      "stars_today": "1110",
-      "url": "https://github.com/obra/superpowers",
+      "owner": "twentyhq",
+      "name": "twenty",
+      "full_name": "twentyhq/twenty",
+      "description": "The open alternative to Salesforce, designed for AI.",
+      "stars": "50916",
+      "stars_today": "140",
+      "url": "https://github.com/twentyhq/twenty",
       "is_ai_related": true
     },
     {
@@ -118,19 +58,79 @@
       "name": "insomnia",
       "full_name": "Kong/insomnia",
       "description": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
-      "stars": "39031",
-      "stars_today": "292",
+      "stars": "39389",
+      "stars_today": "329",
       "url": "https://github.com/Kong/insomnia",
       "is_ai_related": true
     },
     {
-      "owner": "Lightricks",
-      "name": "LTX-2",
-      "full_name": "Lightricks/LTX-2",
-      "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
-      "stars": "7698",
-      "stars_today": "196",
-      "url": "https://github.com/Lightricks/LTX-2",
+      "owner": "chopratejas",
+      "name": "headroom",
+      "full_name": "chopratejas/headroom",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "stars": "42254",
+      "stars_today": "3795",
+      "url": "https://github.com/chopratejas/headroom",
+      "is_ai_related": true
+    },
+    {
+      "owner": "jamiepine",
+      "name": "voicebox",
+      "full_name": "jamiepine/voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "stars": "31098",
+      "stars_today": "145",
+      "url": "https://github.com/jamiepine/voicebox",
+      "is_ai_related": true
+    },
+    {
+      "owner": "Kilo-Org",
+      "name": "kilocode",
+      "full_name": "Kilo-Org/kilocode",
+      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+      "stars": "23430",
+      "stars_today": "513",
+      "url": "https://github.com/Kilo-Org/kilocode",
+      "is_ai_related": true
+    },
+    {
+      "owner": "mattpocock",
+      "name": "skills",
+      "full_name": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .claude directory.",
+      "stars": "138474",
+      "stars_today": "1395",
+      "url": "https://github.com/mattpocock/skills",
+      "is_ai_related": true
+    },
+    {
+      "owner": "withastro",
+      "name": "flue",
+      "full_name": "withastro/flue",
+      "description": "The sandbox agent framework.",
+      "stars": "6143",
+      "stars_today": "316",
+      "url": "https://github.com/withastro/flue",
+      "is_ai_related": true
+    },
+    {
+      "owner": "owainlewis",
+      "name": "awesome-artificial-intelligence",
+      "full_name": "owainlewis/awesome-artificial-intelligence",
+      "description": "A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers.",
+      "stars": "14845",
+      "stars_today": "48",
+      "url": "https://github.com/owainlewis/awesome-artificial-intelligence",
+      "is_ai_related": true
+    },
+    {
+      "owner": "1jehuang",
+      "name": "jcode",
+      "full_name": "1jehuang/jcode",
+      "description": "Coding Agent Harness",
+      "stars": "7431",
+      "stars_today": "87",
+      "url": "https://github.com/1jehuang/jcode",
       "is_ai_related": true
     }
   ]
