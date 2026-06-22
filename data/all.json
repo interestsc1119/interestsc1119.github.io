@@ -1,87 +1,27 @@
 {
-  "date": "2026-06-21",
-  "updated_at": "2026-06-21T05:51:01.036099",
+  "date": "2026-06-22",
+  "updated_at": "2026-06-22T06:16:53.036439",
   "total_count": 16,
-  "ai_count": 13,
+  "ai_count": 11,
   "projects": [
     {
       "owner": "palmier-io",
       "name": "palmier-pro",
       "full_name": "palmier-io/palmier-pro",
       "description": "macOS video editor built for AI",
-      "stars": "3681",
-      "stars_today": "902",
+      "stars": "5805",
+      "stars_today": "1834",
       "url": "https://github.com/palmier-io/palmier-pro",
       "is_ai_related": true
-    },
-    {
-      "owner": "penpot",
-      "name": "penpot",
-      "full_name": "penpot/penpot",
-      "description": "Penpot: The open-source design tool for design and code collaboration",
-      "stars": "51627",
-      "stars_today": "420",
-      "url": "https://github.com/penpot/penpot",
-      "is_ai_related": false
     },
     {
       "owner": "calesthio",
       "name": "OpenMontage",
       "full_name": "calesthio/OpenMontage",
       "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
-      "stars": "7228",
-      "stars_today": "677",
+      "stars": "9504",
+      "stars_today": "987",
       "url": "https://github.com/calesthio/OpenMontage",
-      "is_ai_related": true
-    },
-    {
-      "owner": "tursodatabase",
-      "name": "turso",
-      "full_name": "tursodatabase/turso",
-      "description": "Turso is an in-process SQL database, compatible with SQLite.",
-      "stars": "20417",
-      "stars_today": "801",
-      "url": "https://github.com/tursodatabase/turso",
-      "is_ai_related": false
-    },
-    {
-      "owner": "DeusData",
-      "name": "codebase-memory-mcp",
-      "full_name": "DeusData/codebase-memory-mcp",
-      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "stars": "9540",
-      "stars_today": "1271",
-      "url": "https://github.com/DeusData/codebase-memory-mcp",
-      "is_ai_related": true
-    },
-    {
-      "owner": "google-research",
-      "name": "timesfm",
-      "full_name": "google-research/timesfm",
-      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
-      "stars": "24619",
-      "stars_today": "433",
-      "url": "https://github.com/google-research/timesfm",
-      "is_ai_related": true
-    },
-    {
-      "owner": "twentyhq",
-      "name": "twenty",
-      "full_name": "twentyhq/twenty",
-      "description": "The open alternative to Salesforce, designed for AI.",
-      "stars": "50916",
-      "stars_today": "140",
-      "url": "https://github.com/twentyhq/twenty",
-      "is_ai_related": true
-    },
-    {
-      "owner": "Kong",
-      "name": "insomnia",
-      "full_name": "Kong/insomnia",
-      "description": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
-      "stars": "39389",
-      "stars_today": "329",
-      "url": "https://github.com/Kong/insomnia",
       "is_ai_related": true
     },
     {
@@ -89,29 +29,129 @@
       "name": "headroom",
       "full_name": "chopratejas/headroom",
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
-      "stars": "42254",
-      "stars_today": "3795",
+      "stars": "45163",
+      "stars_today": "2624",
       "url": "https://github.com/chopratejas/headroom",
       "is_ai_related": true
     },
     {
-      "owner": "jamiepine",
-      "name": "voicebox",
-      "full_name": "jamiepine/voicebox",
-      "description": "The open-source AI voice studio. Clone, dictate, create.",
-      "stars": "31098",
-      "stars_today": "145",
-      "url": "https://github.com/jamiepine/voicebox",
+      "owner": "tursodatabase",
+      "name": "turso",
+      "full_name": "tursodatabase/turso",
+      "description": "Turso is an in-process SQL database, compatible with SQLite.",
+      "stars": "20943",
+      "stars_today": "548",
+      "url": "https://github.com/tursodatabase/turso",
+      "is_ai_related": false
+    },
+    {
+      "owner": "penpot",
+      "name": "penpot",
+      "full_name": "penpot/penpot",
+      "description": "Penpot: The open-source design tool for design and code collaboration",
+      "stars": "52436",
+      "stars_today": "1135",
+      "url": "https://github.com/penpot/penpot",
+      "is_ai_related": false
+    },
+    {
+      "owner": "ZhuLinsen",
+      "name": "daily_stock_analysis",
+      "full_name": "ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "stars": "44931",
+      "stars_today": "568",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
       "is_ai_related": true
     },
     {
-      "owner": "Kilo-Org",
-      "name": "kilocode",
-      "full_name": "Kilo-Org/kilocode",
-      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
-      "stars": "23430",
-      "stars_today": "513",
-      "url": "https://github.com/Kilo-Org/kilocode",
+      "owner": "koala73",
+      "name": "worldmonitor",
+      "full_name": "koala73/worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "stars": "58278",
+      "stars_today": "163",
+      "url": "https://github.com/koala73/worldmonitor",
+      "is_ai_related": true
+    },
+    {
+      "owner": "bytedance",
+      "name": "deer-flow",
+      "full_name": "bytedance/deer-flow",
+      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "stars": "72779",
+      "stars_today": "442",
+      "url": "https://github.com/bytedance/deer-flow",
+      "is_ai_related": true
+    },
+    {
+      "owner": "DeusData",
+      "name": "codebase-memory-mcp",
+      "full_name": "DeusData/codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "stars": "10650",
+      "stars_today": "1032",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "is_ai_related": true
+    },
+    {
+      "owner": "mukul975",
+      "name": "Anthropic-Cybersecurity-Skills",
+      "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
+      "stars": "17912",
+      "stars_today": "361",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "is_ai_related": true
+    },
+    {
+      "owner": "mikumifa",
+      "name": "biliTickerBuy",
+      "full_name": "mikumifa/biliTickerBuy",
+      "description": "b站会员购购票辅助工具",
+      "stars": "3755",
+      "stars_today": "67",
+      "url": "https://github.com/mikumifa/biliTickerBuy",
+      "is_ai_related": false
+    },
+    {
+      "owner": "smicallef",
+      "name": "spiderfoot",
+      "full_name": "smicallef/spiderfoot",
+      "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
+      "stars": "18865",
+      "stars_today": "294",
+      "url": "https://github.com/smicallef/spiderfoot",
+      "is_ai_related": false
+    },
+    {
+      "owner": "topoteretes",
+      "name": "cognee",
+      "full_name": "topoteretes/cognee",
+      "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
+      "stars": "18778",
+      "stars_today": "347",
+      "url": "https://github.com/topoteretes/cognee",
+      "is_ai_related": true
+    },
+    {
+      "owner": "byoungd",
+      "name": "English-level-up-tips",
+      "full_name": "byoungd/English-level-up-tips",
+      "description": "An advanced guide to learn English which might benefit you a lot 🎉 . 人生进阶指南 离谱的人生 离谱的英语学习指南/英语学习教程/英语学习/学英语",
+      "stars": "54135",
+      "stars_today": "125",
+      "url": "https://github.com/byoungd/English-level-up-tips",
+      "is_ai_related": false
+    },
+    {
+      "owner": "asgeirtj",
+      "name": "system_prompts_leaks",
+      "full_name": "asgeirtj/system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "stars": "44645",
+      "stars_today": "282",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
       "is_ai_related": true
     },
     {
@@ -119,49 +159,9 @@
       "name": "skills",
       "full_name": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "stars": "138474",
-      "stars_today": "1395",
+      "stars": "140254",
+      "stars_today": "1443",
       "url": "https://github.com/mattpocock/skills",
-      "is_ai_related": true
-    },
-    {
-      "owner": "withastro",
-      "name": "flue",
-      "full_name": "withastro/flue",
-      "description": "The sandbox agent framework.",
-      "stars": "6143",
-      "stars_today": "316",
-      "url": "https://github.com/withastro/flue",
-      "is_ai_related": true
-    },
-    {
-      "owner": "owainlewis",
-      "name": "awesome-artificial-intelligence",
-      "full_name": "owainlewis/awesome-artificial-intelligence",
-      "description": "A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers.",
-      "stars": "14845",
-      "stars_today": "48",
-      "url": "https://github.com/owainlewis/awesome-artificial-intelligence",
-      "is_ai_related": true
-    },
-    {
-      "owner": "pppscn",
-      "name": "SmsForwarder",
-      "full_name": "pppscn/SmsForwarder",
-      "description": "短信转发器——监控Android手机短信、来电、APP通知，并根据指定规则转发到其他手机：钉钉群自定义机器人、钉钉企业内机器人、企业微信群机器人、飞书机器人、企业微信应用消息、邮箱、bark、webhook、Telegram机器人、Server酱、PushPlus、手机短信等。包括主动控制服务端与客户端，让你轻松远程发短信、查短信、查通话、查话簿、查电量等。（V3.0 新增）PS.这个APK主要是学习与自用，如有BUG请提ISSUE，同时欢迎大家提PR指正",
-      "stars": "26528",
-      "stars_today": "104",
-      "url": "https://github.com/pppscn/SmsForwarder",
-      "is_ai_related": false
-    },
-    {
-      "owner": "1jehuang",
-      "name": "jcode",
-      "full_name": "1jehuang/jcode",
-      "description": "Coding Agent Harness",
-      "stars": "7431",
-      "stars_today": "87",
-      "url": "https://github.com/1jehuang/jcode",
       "is_ai_related": true
     }
   ]

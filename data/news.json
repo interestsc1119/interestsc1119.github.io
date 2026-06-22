@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-21",
-  "updated_at": "2026-06-21T05:51:01.036102",
+  "date": "2026-06-22",
+  "updated_at": "2026-06-22T06:16:53.036441",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Renting a sewing machine from the library",
-      "url": "https://www.bbc.com/future/article/20260618-the-weird-and-wonderful-libraries-of-finland",
+      "title": "Did my old job only exist because of fraud?",
+      "url": "https://david.newgas.net/did-my-old-job-only-exist-because-of-fraud/",
+      "source": "Hacker News",
+      "hot_value": "417",
+      "is_hot": false
+    },
+    {
+      "rank": 2,
+      "title": "Help I accidentally a wigglegram",
+      "url": "https://lmao.center/blog/wiggle-accidents/",
+      "source": "Hacker News",
+      "hot_value": "108",
+      "is_hot": false
+    },
+    {
+      "rank": 3,
+      "title": "Apertus – Open Foundation Model for Sovereign AI",
+      "url": "https://apertvs.ai/",
+      "source": "Hacker News",
+      "hot_value": "309",
+      "is_hot": false
+    },
+    {
+      "rank": 4,
+      "title": "Sakana Fugu",
+      "url": "https://sakana.ai/fugu/",
+      "source": "Hacker News",
+      "hot_value": "89",
+      "is_hot": false
+    },
+    {
+      "rank": 5,
+      "title": "Deno Desktop",
+      "url": "https://docs.deno.com/runtime/desktop/",
+      "source": "Hacker News",
+      "hot_value": "13",
+      "is_hot": false
+    },
+    {
+      "rank": 6,
+      "title": "Danish privacy activist Lars Andersen raided by police",
+      "url": "https://twitter.com/LarsAnders1620/status/2068208864747540516#m",
+      "source": "Hacker News",
+      "hot_value": "93",
+      "is_hot": false
+    },
+    {
+      "rank": 7,
+      "title": "There is minimal downside to switching to open models",
+      "url": "https://www.marble.onl/posts/cancel_claude.html",
+      "source": "Hacker News",
+      "hot_value": "149",
+      "is_hot": false
+    },
+    {
+      "rank": 8,
+      "title": "Memory Safe Inline Assembly",
+      "url": "https://fil-c.org/inlineasm",
+      "source": "Hacker News",
+      "hot_value": "74",
+      "is_hot": false
+    },
+    {
+      "rank": 9,
+      "title": "Everything is logarithms",
+      "url": "https://alexkritchevsky.com/2026/05/25/everything-is-logarithms.html",
       "source": "Hacker News",
       "hot_value": "181",
       "is_hot": false
     },
     {
-      "rank": 2,
-      "title": "Developers don't understand CORS (2019)",
-      "url": "https://fosterelli.co/developers-dont-understand-cors",
+      "rank": 10,
+      "title": "Good results fine tuning a local LLM like Qwen 3:0.6B to categorize questions",
+      "url": "https://www.teachmecoolstuff.com/viewarticle/fine-tuning-a-local-llm-to-categorize-questions",
+      "source": "Hacker News",
+      "hot_value": "87",
+      "is_hot": false
+    },
+    {
+      "rank": 11,
+      "title": "How I play video games with spinal muscular atrophy",
+      "url": "https://www.openassistivetech.org/how-i-actually-play-video-games-with-sma-the-tools-i-use-every-day/",
       "source": "Hacker News",
       "hot_value": "85",
       "is_hot": false
     },
     {
-      "rank": 3,
-      "title": "Epoll vs. io_uring in Linux",
-      "url": "https://sibexi.co/posts/epoll-vs-io_uring/",
-      "source": "Hacker News",
-      "hot_value": "107",
-      "is_hot": false
-    },
-    {
-      "rank": 4,
-      "title": "Building Reliable Agentic AI Systems",
-      "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
-      "source": "Hacker News",
-      "hot_value": "12",
-      "is_hot": false
-    },
-    {
-      "rank": 5,
-      "title": "Loupe – A iOS app that raises awareness about what native apps can see",
-      "url": "https://github.com/mysk-research/loupe",
-      "source": "Hacker News",
-      "hot_value": "168",
-      "is_hot": false
-    },
-    {
-      "rank": 6,
-      "title": "Zigzag Decoding with AVX-512",
-      "url": "https://zeux.io/2026/06/17/zigzag-decoding-avx512/",
-      "source": "Hacker News",
-      "hot_value": "15",
-      "is_hot": false
-    },
-    {
-      "rank": 7,
-      "title": "Show HN: TownSquare, a tiny presence layer for websites",
-      "url": "https://townsquare.cauenapier.com/",
-      "source": "Hacker News",
-      "hot_value": "127",
-      "is_hot": false
-    },
-    {
-      "rank": 8,
-      "title": "Slow breathing modulates brain function and risk behavior",
-      "url": "https://www.cell.com/neuron/fulltext/S0896-6273(26)00339-9",
-      "source": "Hacker News",
-      "hot_value": "127",
-      "is_hot": false
-    },
-    {
-      "rank": 9,
-      "title": "15-minute at-home Lyme disease tick test",
-      "url": "https://www.bostonglobe.com/2026/06/17/business/lyme-disease-tick-test/",
-      "source": "Hacker News",
-      "hot_value": "78",
-      "is_hot": false
-    },
-    {
-      "rank": 10,
-      "title": "Your brain was never designed for this much bad news",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260614012006.htm",
-      "source": "Hacker News",
-      "hot_value": "57",
-      "is_hot": false
-    },
-    {
-      "rank": 11,
-      "title": "Guide to the TD4 4-bit DIY CPU",
-      "url": "https://www.philipzucker.com/td4-4bit-cpu/",
-      "source": "Hacker News",
-      "hot_value": "19",
-      "is_hot": false
-    },
-    {
       "rank": 12,
-      "title": "When I reject AI code even if it works",
-      "url": "https://vinibrasil.com/when-i-reject-ai-code-even-if-it-works/",
+      "title": "Identity verification on Claude",
+      "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
       "source": "Hacker News",
-      "hot_value": "121",
+      "hot_value": "676",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "SMPTE Makes Its Standards Freely Accessible",
-      "url": "https://www.smpte.org/blog/smpte-makes-its-standards-freely-accessible-openingstandards-library-to-the-global-media-technology-community",
+      "title": "1983 Northern Telecom Commodore Phone",
+      "url": "https://www.oldtelephoneroom.ca/1983-northern-telecom-commodore-phone/",
       "source": "Hacker News",
-      "hot_value": "243",
+      "hot_value": "41",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "UHF X11: X11 Built for VisionOS and Apple Vision Pro",
-      "url": "https://www.lispm.net/apps/uhf-x11/",
+      "title": "JSON-LD explained for personal websites",
+      "url": "https://hawksley.dev/blog/json-ld-explained-for-personal-websites/",
       "source": "Hacker News",
-      "hot_value": "188",
+      "hot_value": "191",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Project Fetch: Phase Two",
-      "url": "https://www.anthropic.com/research/project-fetch-phase-two",
+      "title": "Beyond All Reason (Free Total Annihilation Inspired RTS)",
+      "url": "https://www.beyondallreason.info",
       "source": "Hacker News",
-      "hot_value": "50",
+      "hot_value": "465",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "Signal’s Meredith Whittaker wants you to remember that AI chatbots ‘are not your friends’",
-      "url": "https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/",
+      "title": "Ethan Thornton is trying to do everything all at once",
+      "url": "https://techcrunch.com/2026/06/21/ethan-thornton-is-trying-to-do-everything-all-at-once/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "In the Weights is your new AI-centric vanity search",
-      "url": "https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/",
+      "title": "Ubisoft co-founder Claude Guillemot dies in plane crash",
+      "url": "https://techcrunch.com/2026/06/21/ubisoft-co-founder-claude-guillemot-dies-in-plane-crash/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Founders Fund’s outlier bet on humanely killed fish",
-      "url": "https://techcrunch.com/2026/06/20/founders-funds-outlier-bet-on-humanely-killed-fish/",
+      "title": "Polymarket reportedly paid creators to post deceptive videos about fake bets",
+      "url": "https://techcrunch.com/2026/06/21/polymarket-reportedly-paid-creators-to-post-deceptive-videos-about-fake-bets/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Nobel laureate John Jumper is leaving DeepMind for rival Anthropic",
-      "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
+      "title": "TechCrunch Mobility: A new robotaxi scorecard shows China’s dominance",
+      "url": "https://techcrunch.com/2026/06/21/techcrunch-mobility-a-new-robotaxi-scorecard-shows-chinas-dominance/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "Every new iOS 27 feature that’s worth knowing about",
-      "url": "https://techcrunch.com/2026/06/20/every-new-ios-27-feature-thats-worth-knowing-about/",
+      "title": "When the Trump administration cracks down on Anthropic, who benefits?",
+      "url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false

@@ -744,5 +744,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-22",
+    "ai_count": 11,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "palmier-io/palmier-pro",
+        "stars": "5805",
+        "url": "https://github.com/palmier-io/palmier-pro"
+      },
+      {
+        "name": "calesthio/OpenMontage",
+        "stars": "9504",
+        "url": "https://github.com/calesthio/OpenMontage"
+      },
+      {
+        "name": "chopratejas/headroom",
+        "stars": "45163",
+        "url": "https://github.com/chopratejas/headroom"
+      },
+      {
+        "name": "ZhuLinsen/daily_stock_analysis",
+        "stars": "44931",
+        "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+      },
+      {
+        "name": "koala73/worldmonitor",
+        "stars": "58278",
+        "url": "https://github.com/koala73/worldmonitor"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Did my old job only exist beca",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Help I accidentally a wigglegr",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Apertus – Open Foundation Mode",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Sakana Fugu",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Deno Desktop",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
