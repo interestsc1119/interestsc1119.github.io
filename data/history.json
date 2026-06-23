@@ -798,5 +798,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-23",
+    "ai_count": 12,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "calesthio/OpenMontage",
+        "stars": "12750",
+        "url": "https://github.com/calesthio/OpenMontage"
+      },
+      {
+        "name": "palmier-io/palmier-pro",
+        "stars": "7673",
+        "url": "https://github.com/palmier-io/palmier-pro"
+      },
+      {
+        "name": "jamiepine/voicebox",
+        "stars": "32458",
+        "url": "https://github.com/jamiepine/voicebox"
+      },
+      {
+        "name": "mukul975/Anthropic-Cybersecurity-Skills",
+        "stars": "18888",
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+      },
+      {
+        "name": "garrytan/gstack",
+        "stars": "113330",
+        "url": "https://github.com/garrytan/gstack"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Steam Machine launches today",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Will It Mythos?",
+        "source": "Hacker News"
+      },
+      {
+        "title": "VibeThinker: 3B param model th",
+        "source": "Hacker News"
+      },
+      {
+        "title": "GLM-5.2 – How to Run Locally",
+        "source": "Hacker News"
+      },
+      {
+        "title": "In praise of memcached",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
