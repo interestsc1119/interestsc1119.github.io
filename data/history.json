@@ -852,5 +852,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-24",
+    "ai_count": 15,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "calesthio/OpenMontage",
+        "stars": "16386",
+        "url": "https://github.com/calesthio/OpenMontage"
+      },
+      {
+        "name": "ZhuLinsen/daily_stock_analysis",
+        "stars": "47410",
+        "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+      },
+      {
+        "name": "mukul975/Anthropic-Cybersecurity-Skills",
+        "stars": "19932",
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+      },
+      {
+        "name": "garrytan/gstack",
+        "stars": "114289",
+        "url": "https://github.com/garrytan/gstack"
+      },
+      {
+        "name": "bytedance/deer-flow",
+        "stars": "74062",
+        "url": "https://github.com/bytedance/deer-flow"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Vulnerability reports are not ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Jerry's Map",
+        "source": "Hacker News"
+      },
+      {
+        "title": "FUTO Swipe – A new swipe typin",
+        "source": "Hacker News"
+      },
+      {
+        "title": "In memory of the man who put r",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Qwen-AgentWorld: Language Worl",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

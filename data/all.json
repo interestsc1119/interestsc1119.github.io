@@ -1,117 +1,17 @@
 {
-  "date": "2026-06-23",
-  "updated_at": "2026-06-23T04:52:51.531965",
+  "date": "2026-06-24",
+  "updated_at": "2026-06-24T04:56:40.733904",
   "total_count": 16,
-  "ai_count": 12,
+  "ai_count": 15,
   "projects": [
     {
       "owner": "calesthio",
       "name": "OpenMontage",
       "full_name": "calesthio/OpenMontage",
       "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
-      "stars": "12750",
-      "stars_today": "2938",
+      "stars": "16386",
+      "stars_today": "3592",
       "url": "https://github.com/calesthio/OpenMontage",
-      "is_ai_related": true
-    },
-    {
-      "owner": "palmier-io",
-      "name": "palmier-pro",
-      "full_name": "palmier-io/palmier-pro",
-      "description": "macOS video editor built for AI",
-      "stars": "7673",
-      "stars_today": "2463",
-      "url": "https://github.com/palmier-io/palmier-pro",
-      "is_ai_related": true
-    },
-    {
-      "owner": "jamiepine",
-      "name": "voicebox",
-      "full_name": "jamiepine/voicebox",
-      "description": "The open-source AI voice studio. Clone, dictate, create.",
-      "stars": "32458",
-      "stars_today": "529",
-      "url": "https://github.com/jamiepine/voicebox",
-      "is_ai_related": true
-    },
-    {
-      "owner": "mukul975",
-      "name": "Anthropic-Cybersecurity-Skills",
-      "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
-      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
-      "stars": "18888",
-      "stars_today": "956",
-      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-      "is_ai_related": true
-    },
-    {
-      "owner": "penpot",
-      "name": "penpot",
-      "full_name": "penpot/penpot",
-      "description": "Penpot: The open-source design tool for design and code collaboration",
-      "stars": "52968",
-      "stars_today": "728",
-      "url": "https://github.com/penpot/penpot",
-      "is_ai_related": false
-    },
-    {
-      "owner": "Stirling-Tools",
-      "name": "Stirling-PDF",
-      "full_name": "Stirling-Tools/Stirling-PDF",
-      "description": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
-      "stars": "83161",
-      "stars_today": "547",
-      "url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "is_ai_related": false
-    },
-    {
-      "owner": "garrytan",
-      "name": "gstack",
-      "full_name": "garrytan/gstack",
-      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-      "stars": "113330",
-      "stars_today": "573",
-      "url": "https://github.com/garrytan/gstack",
-      "is_ai_related": true
-    },
-    {
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "full_name": "heygen-com/hyperframes",
-      "description": "Write HTML. Render video. Built for agents.",
-      "stars": "30186",
-      "stars_today": "395",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "is_ai_related": true
-    },
-    {
-      "owner": "tursodatabase",
-      "name": "turso",
-      "full_name": "tursodatabase/turso",
-      "description": "Turso is an in-process SQL database, compatible with SQLite.",
-      "stars": "21580",
-      "stars_today": "540",
-      "url": "https://github.com/tursodatabase/turso",
-      "is_ai_related": false
-    },
-    {
-      "owner": "bytedance",
-      "name": "deer-flow",
-      "full_name": "bytedance/deer-flow",
-      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
-      "stars": "73403",
-      "stars_today": "738",
-      "url": "https://github.com/bytedance/deer-flow",
-      "is_ai_related": true
-    },
-    {
-      "owner": "DeusData",
-      "name": "codebase-memory-mcp",
-      "full_name": "DeusData/codebase-memory-mcp",
-      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "stars": "11847",
-      "stars_today": "1185",
-      "url": "https://github.com/DeusData/codebase-memory-mcp",
       "is_ai_related": true
     },
     {
@@ -119,49 +19,149 @@
       "name": "daily_stock_analysis",
       "full_name": "ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "stars": "46080",
-      "stars_today": "1557",
+      "stars": "47410",
+      "stars_today": "1119",
       "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
       "is_ai_related": true
     },
     {
-      "owner": "firecrawl",
-      "name": "firecrawl",
-      "full_name": "firecrawl/firecrawl",
-      "description": "The API to search, scrape, and interact with the web at scale. 🔥",
-      "stars": "137525",
-      "stars_today": "615",
-      "url": "https://github.com/firecrawl/firecrawl",
-      "is_ai_related": false
+      "owner": "mukul975",
+      "name": "Anthropic-Cybersecurity-Skills",
+      "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+      "stars": "19932",
+      "stars_today": "1041",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "is_ai_related": true
+    },
+    {
+      "owner": "garrytan",
+      "name": "gstack",
+      "full_name": "garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "stars": "114289",
+      "stars_today": "1011",
+      "url": "https://github.com/garrytan/gstack",
+      "is_ai_related": true
+    },
+    {
+      "owner": "bytedance",
+      "name": "deer-flow",
+      "full_name": "bytedance/deer-flow",
+      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "stars": "74062",
+      "stars_today": "739",
+      "url": "https://github.com/bytedance/deer-flow",
+      "is_ai_related": true
+    },
+    {
+      "owner": "koala73",
+      "name": "worldmonitor",
+      "full_name": "koala73/worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "stars": "59226",
+      "stars_today": "294",
+      "url": "https://github.com/koala73/worldmonitor",
+      "is_ai_related": true
+    },
+    {
+      "owner": "palmier-io",
+      "name": "palmier-pro",
+      "full_name": "palmier-io/palmier-pro",
+      "description": "macOS video editor built for AI",
+      "stars": "8538",
+      "stars_today": "1630",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "is_ai_related": true
+    },
+    {
+      "owner": "anthropics",
+      "name": "claude-plugins-official",
+      "full_name": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "stars": "30906",
+      "stars_today": "77",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "is_ai_related": true
+    },
+    {
+      "owner": "shanraisshan",
+      "name": "claude-code-best-practice",
+      "full_name": "shanraisshan/claude-code-best-practice",
+      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
+      "stars": "59644",
+      "stars_today": "344",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "is_ai_related": true
+    },
+    {
+      "owner": "revfactory",
+      "name": "harness",
+      "full_name": "revfactory/harness",
+      "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
+      "stars": "7486",
+      "stars_today": "128",
+      "url": "https://github.com/revfactory/harness",
+      "is_ai_related": true
+    },
+    {
+      "owner": "jamiepine",
+      "name": "voicebox",
+      "full_name": "jamiepine/voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "stars": "33332",
+      "stars_today": "1045",
+      "url": "https://github.com/jamiepine/voicebox",
+      "is_ai_related": true
     },
     {
       "owner": "JCodesMore",
       "name": "ai-website-cloner-template",
       "full_name": "JCodesMore/ai-website-cloner-template",
       "description": "Clone any website with one command using AI coding agents",
-      "stars": "17930",
-      "stars_today": "100",
+      "stars": "18687",
+      "stars_today": "826",
       "url": "https://github.com/JCodesMore/ai-website-cloner-template",
       "is_ai_related": true
     },
     {
-      "owner": "lyogavin",
-      "name": "airllm",
-      "full_name": "lyogavin/airllm",
-      "description": "AirLLM 70B inference with single 4GB GPU",
-      "stars": "21127",
-      "stars_today": "193",
-      "url": "https://github.com/lyogavin/airllm",
+      "owner": "byoungd",
+      "name": "English-level-up-tips",
+      "full_name": "byoungd/English-level-up-tips",
+      "description": "An advanced guide to learn English which might benefit you a lot 🎉 . 人生进阶指南 离谱的人生 离谱的英语学习指南/英语学习教程/英语学习/学英语",
+      "stars": "54577",
+      "stars_today": "125",
+      "url": "https://github.com/byoungd/English-level-up-tips",
+      "is_ai_related": false
+    },
+    {
+      "owner": "DeusData",
+      "name": "codebase-memory-mcp",
+      "full_name": "DeusData/codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "stars": "13269",
+      "stars_today": "1300",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
       "is_ai_related": true
     },
     {
-      "owner": "mattpocock",
-      "name": "skills",
-      "full_name": "mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "stars": "142060",
-      "stars_today": "2051",
-      "url": "https://github.com/mattpocock/skills",
+      "owner": "NousResearch",
+      "name": "hermes-agent",
+      "full_name": "NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "stars": "201161",
+      "stars_today": "936",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "is_ai_related": true
+    },
+    {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "full_name": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "stars": "220677",
+      "stars_today": "593",
+      "url": "https://github.com/affaan-m/ECC",
       "is_ai_related": true
     }
   ]

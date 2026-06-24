@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-23",
-  "updated_at": "2026-06-23T04:52:51.531968",
+  "date": "2026-06-24",
+  "updated_at": "2026-06-24T04:56:40.733906",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Steam Machine launches today",
-      "url": "https://store.steampowered.com/news/group/45479024/view/685257114654870245",
+      "title": "Vulnerability reports are not special anymore",
+      "url": "https://words.filippo.io/vuln-reports/",
       "source": "Hacker News",
-      "hot_value": "1359",
-      "is_hot": true
+      "hot_value": "155",
+      "is_hot": false
     },
     {
       "rank": 2,
-      "title": "Will It Mythos?",
-      "url": "https://swelljoe.com/post/will-it-mythos/",
+      "title": "Jerry's Map",
+      "url": "http://www.jerrysmap.com/the-map",
       "source": "Hacker News",
-      "hot_value": "22",
+      "hot_value": "378",
       "is_hot": false
     },
     {
       "rank": 3,
-      "title": "VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO",
-      "url": "https://arxiv.org/abs/2606.16140",
+      "title": "FUTO Swipe – A new swipe typing model",
+      "url": "https://swipe.futo.tech/",
       "source": "Hacker News",
-      "hot_value": "60",
+      "hot_value": "383",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "GLM-5.2 – How to Run Locally",
-      "url": "https://unsloth.ai/docs/models/glm-5.2",
+      "title": "In memory of the man who put red and green squiggles under words",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
       "source": "Hacker News",
-      "hot_value": "264",
+      "hot_value": "237",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "In praise of memcached",
-      "url": "https://jchri.st/blog/in-praise-of-memcached/",
+      "title": "Qwen-AgentWorld: Language World Models for General Agents",
+      "url": "https://arxiv.org/abs/2606.24597",
       "source": "Hacker News",
-      "hot_value": "85",
+      "hot_value": "19",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "Polymarket has flooded social media with deceptive videos by paid creators",
-      "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2",
+      "title": "Show HN: An ASCII 3D Rendering Engine",
+      "url": "https://glyphcss.com",
       "source": "Hacker News",
-      "hot_value": "101",
+      "hot_value": "25",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "An Introduction to YOLO26",
-      "url": "https://blog.roboflow.com/yolo26/",
+      "title": "Printing Gaussian Splats",
+      "url": "https://www.patreon.com/DanyBittel/posts/printing-splats-161333338",
       "source": "Hacker News",
-      "hot_value": "24",
+      "hot_value": "229",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "Giant Banana Pulled Over: Driver Says Cops Have Stopped Him 100s of Times",
-      "url": "https://cowboystatedaily.com/2026/06/18/giant-banana-pulled-over-in-montana-driver-says-cops-have-stopped-him-100s-of-times/",
+      "title": "DiffusionBench: Towards Holistic Evaluation of Generative Diffusion Transformers",
+      "url": "https://github.com/End2End-Diffusion/diffusion-bench",
       "source": "Hacker News",
-      "hot_value": "24",
+      "hot_value": "17",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "Cyberdecks, going analog, and convivial technology",
-      "url": "https://blog.hydroponictrash.solar/cyberdecks-going-analog-and-convivial-technology/",
+      "title": "Usbliter8: an A12/A13 SecureROM Exploit",
+      "url": "https://ps.tc/pages/blog-usbliter8.html",
       "source": "Hacker News",
-      "hot_value": "73",
+      "hot_value": "113",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "Optocam Zero: a Pi Zero based digital camera made using off the shelf components",
-      "url": "https://github.com/dorukkumkumoglu/optocamzero",
+      "title": "Swift Package Index joins Apple",
+      "url": "https://swiftpackageindex.com/blog/swift-package-index-joins-apple",
       "source": "Hacker News",
-      "hot_value": "134",
+      "hot_value": "190",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "Package Managers need global hooks",
-      "url": "https://captnemo.in/blog/2026/06/17/package-managers-need-hooks/",
+      "title": "Rhombus Language 1.0",
+      "url": "https://blog.racket-lang.org/2026/06/rhombus-v1.0.html",
       "source": "Hacker News",
-      "hot_value": "10",
+      "hot_value": "112",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "My Mathematical Regression",
-      "url": "https://blog.dahl.dev/posts/my-mathematical-regression/",
+      "title": "Meta Pauses Employee-Tracking Program Following Internal Data Leak",
+      "url": "https://www.wired.com/story/meta-pauses-employee-tracking-program-following-internal-security-breach/",
       "source": "Hacker News",
-      "hot_value": "242",
+      "hot_value": "143",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "Japanese symbols that speak without words",
-      "url": "https://arun.is/blog/japan-symbols/",
+      "title": "Raspberry Pi Pico W as USB Wi-Fi Adapter",
+      "url": "https://gitlab.com/baiyibai/pico-usb-wifi",
       "source": "Hacker News",
-      "hot_value": "138",
+      "hot_value": "17",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Windows NT for GameCube/Wii",
-      "url": "https://github.com/Wack0/entii-for-workcubes",
+      "title": "Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX",
+      "url": "https://tikz.dev/editor/",
       "source": "Hacker News",
-      "hot_value": "37",
+      "hot_value": "357",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
-      "url": "https://hustvl.github.io/Moebius/",
+      "title": "The Coming Loop",
+      "url": "https://lucumr.pocoo.org/2026/6/23/the-coming-loop/",
       "source": "Hacker News",
-      "hot_value": "257",
+      "hot_value": "362",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "The running list: major tech layoffs in 2026 where employers cited AI",
-      "url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+      "title": "Walmart-backed Flipkart expands quick-commerce push as Amazon ramps up in India",
+      "url": "https://techcrunch.com/2026/06/23/walmart-backed-flipkart-expands-quick-commerce-push-as-amazon-ramps-up-in-india/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "OpenAI launches new initiative to help find and patch open-source bugs",
-      "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/",
+      "title": "India’s MoEngage bets that the future of marketing is millions of AI agents",
+      "url": "https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Tesla pushes back on Autopilot narrative after fatal Texas crash",
-      "url": "https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/",
+      "title": "Superhuman acquires AI detection startup GPTZero",
+      "url": "https://techcrunch.com/2026/06/23/superhuman-acquires-ai-detection-startup-gptzero/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Shareholders sue Uber’s board over sexual assaults, other incidents",
-      "url": "https://techcrunch.com/2026/06/22/shareholders-sue-ubers-board-over-sexual-assaults-other-incidents/",
+      "title": "After betting the firm on Anthropic, Menlo Ventures raises victorious $3B fund",
+      "url": "https://techcrunch.com/2026/06/23/after-betting-the-firm-on-anthropic-menlo-ventures-raises-victorious-3b-fund/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "The AI world is getting ‘loopy’",
-      "url": "https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/",
+      "title": "Klue says hackers stole credential from 2022 that led to customer data breaches",
+      "url": "https://techcrunch.com/2026/06/23/klue-says-hackers-stole-credential-from-2022-that-led-to-customer-data-breaches/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
