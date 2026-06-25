@@ -906,5 +906,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-25",
+    "ai_count": 9,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "calesthio/OpenMontage",
+        "stars": "20070",
+        "url": "https://github.com/calesthio/OpenMontage"
+      },
+      {
+        "name": "ZhuLinsen/daily_stock_analysis",
+        "stars": "48819",
+        "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+      },
+      {
+        "name": "apple/container",
+        "stars": "42473",
+        "url": "https://github.com/apple/container"
+      },
+      {
+        "name": "interviewstreet/hiring-agent",
+        "stars": "2365",
+        "url": "https://github.com/interviewstreet/hiring-agent"
+      },
+      {
+        "name": "JCodesMore/ai-website-cloner-template",
+        "stars": "19528",
+        "url": "https://github.com/JCodesMore/ai-website-cloner-template"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Anthropic says Alibaba illicit",
+        "source": "Hacker News"
+      },
+      {
+        "title": "OpenAI unveils its first custo",
+        "source": "Hacker News"
+      },
+      {
+        "title": "LuaJIT 3.0 proposed syntax ext",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Cloudflare launched self-manag",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Blogging can just be stating t",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

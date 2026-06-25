@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-24",
-  "updated_at": "2026-06-24T04:56:40.733906",
+  "date": "2026-06-25",
+  "updated_at": "2026-06-25T04:55:54.250478",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Vulnerability reports are not special anymore",
-      "url": "https://words.filippo.io/vuln-reports/",
+      "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
+      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
       "source": "Hacker News",
-      "hot_value": "155",
+      "hot_value": "200",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "Jerry's Map",
-      "url": "http://www.jerrysmap.com/the-map",
+      "title": "OpenAI unveils its first custom chip, built by Broadcom",
+      "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
       "source": "Hacker News",
-      "hot_value": "378",
-      "is_hot": false
+      "hot_value": "621",
+      "is_hot": true
     },
     {
       "rank": 3,
-      "title": "FUTO Swipe – A new swipe typing model",
-      "url": "https://swipe.futo.tech/",
+      "title": "LuaJIT 3.0 proposed syntax extensions",
+      "url": "https://github.com/LuaJIT/LuaJIT/issues/1475",
       "source": "Hacker News",
-      "hot_value": "383",
+      "hot_value": "100",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "In memory of the man who put red and green squiggles under words",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
+      "title": "Cloudflare launched self-managed OAuth for all",
+      "url": "https://blog.cloudflare.com/oauth-for-all/",
       "source": "Hacker News",
-      "hot_value": "237",
+      "hot_value": "57",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Qwen-AgentWorld: Language World Models for General Agents",
-      "url": "https://arxiv.org/abs/2606.24597",
+      "title": "Blogging can just be stating the obvious",
+      "url": "https://blog.jim-nielsen.com/2026/blogging-stating-the-obvious/",
       "source": "Hacker News",
-      "hot_value": "19",
+      "hot_value": "125",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "Show HN: An ASCII 3D Rendering Engine",
-      "url": "https://glyphcss.com",
+      "title": "Zombie unicorns are haunting Silicon Valley",
+      "url": "https://www.economist.com/business/2026/06/21/zombie-unicorns-are-haunting-silicon-valley",
+      "source": "Hacker News",
+      "hot_value": "31",
+      "is_hot": false
+    },
+    {
+      "rank": 7,
+      "title": "Show HN: Write SaaS apps where users control where their data is stored",
+      "url": "https://github.com/wolfoo2931/linkedrecords/",
       "source": "Hacker News",
       "hot_value": "25",
       "is_hot": false
     },
     {
-      "rank": 7,
-      "title": "Printing Gaussian Splats",
-      "url": "https://www.patreon.com/DanyBittel/posts/printing-splats-161333338",
-      "source": "Hacker News",
-      "hot_value": "229",
-      "is_hot": false
-    },
-    {
       "rank": 8,
-      "title": "DiffusionBench: Towards Holistic Evaluation of Generative Diffusion Transformers",
-      "url": "https://github.com/End2End-Diffusion/diffusion-bench",
+      "title": "Dostoyevsky isn't difficult",
+      "url": "https://www.autodidacts.io/dostoyevsky-isnt-difficult/",
       "source": "Hacker News",
-      "hot_value": "17",
+      "hot_value": "86",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "Usbliter8: an A12/A13 SecureROM Exploit",
-      "url": "https://ps.tc/pages/blog-usbliter8.html",
+      "title": "Qualcomm to Acquire Modular",
+      "url": "https://www.reuters.com/business/qualcomm-buy-ai-startup-modular-2026-06-24/",
       "source": "Hacker News",
-      "hot_value": "113",
+      "hot_value": "173",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "Swift Package Index joins Apple",
-      "url": "https://swiftpackageindex.com/blog/swift-package-index-joins-apple",
+      "title": "Mixing Visual and Textual Code",
+      "url": "https://arxiv.org/abs/2603.15855",
       "source": "Hacker News",
-      "hot_value": "190",
+      "hot_value": "26",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "Rhombus Language 1.0",
-      "url": "https://blog.racket-lang.org/2026/06/rhombus-v1.0.html",
+      "title": "RubyLLM: A Ruby framework for all major AI providers",
+      "url": "https://rubyllm.com/",
       "source": "Hacker News",
-      "hot_value": "112",
+      "hot_value": "364",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "Meta Pauses Employee-Tracking Program Following Internal Data Leak",
-      "url": "https://www.wired.com/story/meta-pauses-employee-tracking-program-following-internal-security-breach/",
+      "title": "45°C cooling design cuts data center water use to near zero",
+      "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
       "source": "Hacker News",
-      "hot_value": "143",
+      "hot_value": "253",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "Raspberry Pi Pico W as USB Wi-Fi Adapter",
-      "url": "https://gitlab.com/baiyibai/pico-usb-wifi",
+      "title": "PR spam today looks like email spam in the early 2000s",
+      "url": "https://www.greptile.com/blog/prs-on-openclaw",
       "source": "Hacker News",
-      "hot_value": "17",
+      "hot_value": "197",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX",
-      "url": "https://tikz.dev/editor/",
+      "title": "Show HN: Brain Frog – Can you be random enough for 11 lines of JavaScript?",
+      "url": "https://brainfrog.lol",
       "source": "Hacker News",
-      "hot_value": "357",
+      "hot_value": "16",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "The Coming Loop",
-      "url": "https://lucumr.pocoo.org/2026/6/23/the-coming-loop/",
+      "title": "GLM-5.2 is a step change for open agents",
+      "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
       "source": "Hacker News",
-      "hot_value": "362",
+      "hot_value": "169",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "Walmart-backed Flipkart expands quick-commerce push as Amazon ramps up in India",
-      "url": "https://techcrunch.com/2026/06/23/walmart-backed-flipkart-expands-quick-commerce-push-as-amazon-ramps-up-in-india/",
+      "title": "Europe is pushing back on Washington’s chip war",
+      "url": "https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "India’s MoEngage bets that the future of marketing is millions of AI agents",
-      "url": "https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/",
+      "title": "Former Infosys chief has a new startup that wants to challenge the IT services world",
+      "url": "https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Superhuman acquires AI detection startup GPTZero",
-      "url": "https://techcrunch.com/2026/06/23/superhuman-acquires-ai-detection-startup-gptzero/",
+      "title": "Elon suffers another day short of trillionaire status",
+      "url": "https://techcrunch.com/2026/06/24/elon-suffers-another-day-short-of-trillionaire-status/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "After betting the firm on Anthropic, Menlo Ventures raises victorious $3B fund",
-      "url": "https://techcrunch.com/2026/06/23/after-betting-the-firm-on-anthropic-menlo-ventures-raises-victorious-3b-fund/",
+      "title": "Cerebras stock plunges after earnings as CEO says margin outlook was misunderstood",
+      "url": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "Klue says hackers stole credential from 2022 that led to customer data breaches",
-      "url": "https://techcrunch.com/2026/06/23/klue-says-hackers-stole-credential-from-2022-that-led-to-customer-data-breaches/",
+      "title": "AI was supposed to kill engineering jobs, but new data suggests they’re the most resilient",
+      "url": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
