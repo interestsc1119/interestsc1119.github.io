@@ -960,5 +960,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-26",
+    "ai_count": 11,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "google-labs-code/design.md",
+        "stars": "19676",
+        "url": "https://github.com/google-labs-code/design.md"
+      },
+      {
+        "name": "calesthio/OpenMontage",
+        "stars": "22419",
+        "url": "https://github.com/calesthio/OpenMontage"
+      },
+      {
+        "name": "xbtlin/ai-berkshire",
+        "stars": "2227",
+        "url": "https://github.com/xbtlin/ai-berkshire"
+      },
+      {
+        "name": "apple/container",
+        "stars": "43315",
+        "url": "https://github.com/apple/container"
+      },
+      {
+        "name": "JCodesMore/ai-website-cloner-template",
+        "stars": "20668",
+        "url": "https://github.com/JCodesMore/ai-website-cloner-template"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Om Malik has died",
+        "source": "Hacker News"
+      },
+      {
+        "title": "An entire Herculaneum scroll h",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Libre Barcode Project",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Framework's 10G Ethernet modul",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Apple to skip high-end M6 Mac ",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
