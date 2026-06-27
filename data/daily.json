@@ -1,96 +1,26 @@
 {
-  "date": "2026-06-26",
-  "updated_at": "2026-06-26T05:00:57.490525",
-  "count": 11,
+  "date": "2026-06-27",
+  "updated_at": "2026-06-27T04:42:50.702300",
+  "count": 10,
   "projects": [
     {
       "owner": "google-labs-code",
       "name": "design.md",
       "full_name": "google-labs-code/design.md",
       "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
-      "stars": "19676",
-      "stars_today": "1475",
+      "stars": "21487",
+      "stars_today": "2407",
       "url": "https://github.com/google-labs-code/design.md",
       "is_ai_related": true
     },
     {
-      "owner": "calesthio",
-      "name": "OpenMontage",
-      "full_name": "calesthio/OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
-      "stars": "22419",
-      "stars_today": "3434",
-      "url": "https://github.com/calesthio/OpenMontage",
-      "is_ai_related": true
-    },
-    {
-      "owner": "xbtlin",
-      "name": "ai-berkshire",
-      "full_name": "xbtlin/ai-berkshire",
-      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
-      "stars": "2227",
-      "stars_today": "309",
-      "url": "https://github.com/xbtlin/ai-berkshire",
-      "is_ai_related": true
-    },
-    {
-      "owner": "apple",
-      "name": "container",
-      "full_name": "apple/container",
-      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
-      "stars": "43315",
-      "stars_today": "1351",
-      "url": "https://github.com/apple/container",
-      "is_ai_related": true
-    },
-    {
-      "owner": "JCodesMore",
-      "name": "ai-website-cloner-template",
-      "full_name": "JCodesMore/ai-website-cloner-template",
-      "description": "Clone any website with one command using AI coding agents",
-      "stars": "20668",
-      "stars_today": "1024",
-      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
-      "is_ai_related": true
-    },
-    {
-      "owner": "garrytan",
-      "name": "gstack",
-      "full_name": "garrytan/gstack",
-      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-      "stars": "115960",
-      "stars_today": "767",
-      "url": "https://github.com/garrytan/gstack",
-      "is_ai_related": true
-    },
-    {
-      "owner": "aws",
-      "name": "agent-toolkit-for-aws",
-      "full_name": "aws/agent-toolkit-for-aws",
-      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
-      "stars": "1180",
-      "stars_today": "47",
-      "url": "https://github.com/aws/agent-toolkit-for-aws",
-      "is_ai_related": true
-    },
-    {
-      "owner": "mukul975",
-      "name": "Anthropic-Cybersecurity-Skills",
-      "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
-      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
-      "stars": "21374",
-      "stars_today": "571",
-      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-      "is_ai_related": true
-    },
-    {
-      "owner": "alibaba",
-      "name": "page-agent",
-      "full_name": "alibaba/page-agent",
-      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
-      "stars": "19953",
-      "stars_today": "163",
-      "url": "https://github.com/alibaba/page-agent",
+      "owner": "commaai",
+      "name": "openpilot",
+      "full_name": "commaai/openpilot",
+      "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
+      "stars": "61837",
+      "stars_today": "80",
+      "url": "https://github.com/commaai/openpilot",
       "is_ai_related": true
     },
     {
@@ -98,19 +28,79 @@
       "name": "MinerU",
       "full_name": "opendatalab/MinerU",
       "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
-      "stars": "69758",
-      "stars_today": "644",
+      "stars": "70536",
+      "stars_today": "960",
       "url": "https://github.com/opendatalab/MinerU",
       "is_ai_related": true
     },
     {
-      "owner": "shanraisshan",
-      "name": "claude-code-best-practice",
-      "full_name": "shanraisshan/claude-code-best-practice",
-      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
-      "stars": "60754",
-      "stars_today": "287",
-      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "owner": "alchaincyf",
+      "name": "zhangxuefeng-skill",
+      "full_name": "alchaincyf/zhangxuefeng-skill",
+      "description": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+      "stars": "9306",
+      "stars_today": "160",
+      "url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+      "is_ai_related": true
+    },
+    {
+      "owner": "xbtlin",
+      "name": "ai-berkshire",
+      "full_name": "xbtlin/ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
+      "stars": "3225",
+      "stars_today": "1274",
+      "url": "https://github.com/xbtlin/ai-berkshire",
+      "is_ai_related": true
+    },
+    {
+      "owner": "calesthio",
+      "name": "OpenMontage",
+      "full_name": "calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "stars": "23856",
+      "stars_today": "1754",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "is_ai_related": true
+    },
+    {
+      "owner": "aws",
+      "name": "agent-toolkit-for-aws",
+      "full_name": "aws/agent-toolkit-for-aws",
+      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
+      "stars": "1387",
+      "stars_today": "243",
+      "url": "https://github.com/aws/agent-toolkit-for-aws",
+      "is_ai_related": true
+    },
+    {
+      "owner": "garrytan",
+      "name": "gstack",
+      "full_name": "garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "stars": "116702",
+      "stars_today": "950",
+      "url": "https://github.com/garrytan/gstack",
+      "is_ai_related": true
+    },
+    {
+      "owner": "JCodesMore",
+      "name": "ai-website-cloner-template",
+      "full_name": "JCodesMore/ai-website-cloner-template",
+      "description": "Clone any website with one command using AI coding agents",
+      "stars": "21460",
+      "stars_today": "1088",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "is_ai_related": true
+    },
+    {
+      "owner": "Panniantong",
+      "name": "Agent-Reach",
+      "full_name": "Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "stars": "42545",
+      "stars_today": "1194",
+      "url": "https://github.com/Panniantong/Agent-Reach",
       "is_ai_related": true
     }
   ]

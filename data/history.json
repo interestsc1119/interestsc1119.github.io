@@ -1014,5 +1014,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-27",
+    "ai_count": 10,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "google-labs-code/design.md",
+        "stars": "21487",
+        "url": "https://github.com/google-labs-code/design.md"
+      },
+      {
+        "name": "commaai/openpilot",
+        "stars": "61837",
+        "url": "https://github.com/commaai/openpilot"
+      },
+      {
+        "name": "opendatalab/MinerU",
+        "stars": "70536",
+        "url": "https://github.com/opendatalab/MinerU"
+      },
+      {
+        "name": "alchaincyf/zhangxuefeng-skill",
+        "stars": "9306",
+        "url": "https://github.com/alchaincyf/zhangxuefeng-skill"
+      },
+      {
+        "name": "xbtlin/ai-berkshire",
+        "stars": "3225",
+        "url": "https://github.com/xbtlin/ai-berkshire"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Previewing GPT‑5.6 Sol: a next",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Why does kinetic energy increa",
+        "source": "Hacker News"
+      },
+      {
+        "title": "WordStar: A Writer's Word Proc",
+        "source": "Hacker News"
+      },
+      {
+        "title": "U.S. allows Anthropic to relea",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Hellishly Slow Level 13 Deflat",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

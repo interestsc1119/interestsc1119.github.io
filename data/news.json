@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-26",
-  "updated_at": "2026-06-26T05:00:57.490534",
+  "date": "2026-06-27",
+  "updated_at": "2026-06-27T04:42:50.702311",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Om Malik has died",
-      "url": "https://om.co/2026/06/24/1966-2026/",
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
       "source": "Hacker News",
-      "hot_value": "669",
+      "hot_value": "901",
       "is_hot": true
     },
     {
       "rank": 2,
-      "title": "An entire Herculaneum scroll has been read for the first time",
-      "url": "https://scrollprize.org/firstscroll",
+      "title": "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+      "url": "https://physics.stackexchange.com/questions/535/why-does-kinetic-energy-increase-quadratically-not-linearly-with-speed",
       "source": "Hacker News",
-      "hot_value": "1106",
-      "is_hot": true
+      "hot_value": "148",
+      "is_hot": false
     },
     {
       "rank": 3,
-      "title": "Libre Barcode Project",
-      "url": "https://graphicore.github.io/librebarcode/",
+      "title": "WordStar: A Writer's Word Processor (1996)",
+      "url": "https://www.sfwriter.com/wordstar.htm",
       "source": "Hacker News",
-      "hot_value": "41",
+      "hot_value": "11",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "Framework's 10G Ethernet module exposes USB-C's complexity",
-      "url": "https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/",
+      "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
+      "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
       "source": "Hacker News",
-      "hot_value": "90",
+      "hot_value": "303",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-25/apple-to-skip-high-end-m6-mac-chips-to-launch-m7-pro-m7-max-m7-ultra-instead?embedded-checkout=true",
+      "title": "Hellishly Slow Level 13 Deflate Compression",
+      "url": "https://kirill.korins.ky/articles/hellishly-slow-level-13-deflate-compression/",
       "source": "Hacker News",
-      "hot_value": "164",
+      "hot_value": "19",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "The 'papers, please' era of the internet will decimate your privacy",
-      "url": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
+      "title": "MicroVMs: Run isolated sandboxes with full lifecycle control",
+      "url": "https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/",
       "source": "Hacker News",
-      "hot_value": "527",
+      "hot_value": "290",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "The Garbage Collection Handbook: The Art of Automatic Memory Management (2nd Ed) (2023)",
-      "url": "https://gchandbook.org/",
+      "title": "AI in mathematics is forcing big questions",
+      "url": "https://spectrum.ieee.org/ai-in-mathematics",
       "source": "Hacker News",
-      "hot_value": "85",
+      "hot_value": "78",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "What happened after 2k people tried to hack my AI assistant",
-      "url": "https://www.fernandoi.cl/posts/hackmyclaw/",
+      "title": "Show HN: Hacker News on a train station-style flip board",
+      "url": "https://popflame.quickish.space/hn-flipboard/",
       "source": "Hacker News",
-      "hot_value": "28",
+      "hot_value": "33",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "Oxide computer 3D rack guided tour",
-      "url": "https://explorer.oxide.computer/",
+      "title": "U.S. government will decide who gets to use GPT-5.6",
+      "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
       "source": "Hacker News",
-      "hot_value": "330",
+      "hot_value": "909",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "A game where you're an OS and have to manage processes, memory and I/O events",
-      "url": "https://github.com/plbrault/youre-the-os",
+      "title": "The gap between open weights LLMs and closed source LLMs",
+      "url": "https://blog.doubleword.ai/frontier-os-llm",
       "source": "Hacker News",
-      "hot_value": "139",
+      "hot_value": "152",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "Un-0: Generating Images with Coupled Oscillators",
-      "url": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
+      "title": "A C++ implementation of a fast hash map and hash set using hopscotch hashing",
+      "url": "https://github.com/Tessil/hopscotch-map",
       "source": "Hacker News",
-      "hot_value": "129",
+      "hot_value": "76",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "IBM debuts sub-1 nanometer chip technology",
-      "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
+      "title": "Show HN: DBOSify – Drop-in Temporal replacement built on Postgres",
+      "url": "https://github.com/dbos-inc/dbosify-py",
       "source": "Hacker News",
-      "hot_value": "287",
+      "hot_value": "36",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
-      "url": "https://github.com/inkeep/open-knowledge",
+      "title": "Om",
+      "url": "https://daringfireball.net/2026/06/om",
       "source": "Hacker News",
-      "hot_value": "232",
+      "hot_value": "215",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "A data race that doesn't compile",
-      "url": "https://corentin-core.github.io/posts/ruxe-type-level-disjointness/",
+      "title": "We can still stop California's 3D printer surveillance scheme",
+      "url": "https://www.eff.org/deeplinks/2026/06/we-can-still-stop-californias-3d-printer-surveillance-scheme",
       "source": "Hacker News",
-      "hot_value": "23",
+      "hot_value": "293",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "The White House is asking OpenAI to slow roll the release of its new model over safety concerns",
-      "url": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
-      "source": "TechCrunch",
-      "hot_value": "",
+      "title": "Fusion Programming Language",
+      "url": "https://fusion-lang.org/",
+      "source": "Hacker News",
+      "hot_value": "15",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "YouTube Shorts are getting even shorter with an update that lets you double the playback speed",
-      "url": "https://techcrunch.com/2026/06/25/youtube-shorts-are-getting-even-shorter-with-an-update-that-lets-you-double-the-playback-speed/",
+      "title": "Trump Admin releases Anthropic  Mythos to be used by more than 100 US companies, agencies",
+      "url": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Patronus AI lands $50M to build ‘digital worlds’ that stress-test AI agents",
-      "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
+      "title": "FTC gives Musk the OK to acquire SpaceX alumni startup Mesh",
+      "url": "https://techcrunch.com/2026/06/26/ftc-gives-musk-the-ok-to-acquire-spacex-alumni-startup-mesh/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Polymarket says hackers stole users’ funds",
-      "url": "https://techcrunch.com/2026/06/25/polymarket-says-hackers-stole-users-funds/",
+      "title": "Corgi, the buzzy Y Combinator-backed insurance tech startup, says it didn’t steal an open source product",
+      "url": "https://techcrunch.com/2026/06/26/corgi-the-buzzy-y-combinator-backed-insurance-tech-startup-says-it-didnt-steal-an-open-source-product/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Xbox follows Apple with price increases",
-      "url": "https://techcrunch.com/2026/06/25/xbox-follows-apple-with-price-increases/",
+      "title": "Novak Djokovic has a new job —  advisor to private equity firm General Atlantic",
+      "url": "https://techcrunch.com/2026/06/26/novak-djokovic-has-a-new-job-advisor-to-private-equity-firm-general-atlantic/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "Notion Mail shuts down amid agent takeover",
-      "url": "https://techcrunch.com/2026/06/25/notion-mail-shuts-down-amid-agent-takeover/",
+      "title": "OpenAI limits GPT-5.6 rollout after government request, says restrictions shouldn’t be the norm",
+      "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
