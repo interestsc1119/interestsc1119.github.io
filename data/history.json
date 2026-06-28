@@ -1068,5 +1068,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-28",
+    "ai_count": 12,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "xbtlin/ai-berkshire",
+        "stars": "4401",
+        "url": "https://github.com/xbtlin/ai-berkshire"
+      },
+      {
+        "name": "commaai/openpilot",
+        "stars": "62114",
+        "url": "https://github.com/commaai/openpilot"
+      },
+      {
+        "name": "google-labs-code/design.md",
+        "stars": "22453",
+        "url": "https://github.com/google-labs-code/design.md"
+      },
+      {
+        "name": "hugohe3/ppt-master",
+        "stars": "33236",
+        "url": "https://github.com/hugohe3/ppt-master"
+      },
+      {
+        "name": "JCodesMore/ai-website-cloner-template",
+        "stars": "22245",
+        "url": "https://github.com/JCodesMore/ai-website-cloner-template"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Marfa Public Radio Puts You to",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Show HN: Decomp Academy – Lear",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Wayfinder Router: deterministi",
+        "source": "Hacker News"
+      },
+      {
+        "title": "AMD Strix Halo RDMA Cluster Se",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Anonymous GitHub account mass-",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
