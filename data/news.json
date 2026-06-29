@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-28",
-  "updated_at": "2026-06-28T05:10:05.207576",
+  "date": "2026-06-29",
+  "updated_at": "2026-06-29T05:21:23.993778",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Marfa Public Radio Puts You to Sleep",
-      "url": "https://www.marfapublicradio.org/podcast/marfa-public-radio-puts-you-to-sleep",
+      "title": "GLM 5.2 beats Claude in our benchmarks",
+      "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
       "source": "Hacker News",
-      "hot_value": "96",
-      "is_hot": false
+      "hot_value": "632",
+      "is_hot": true
     },
     {
       "rank": 2,
-      "title": "Show HN: Decomp Academy – Learn to decompile GameCube games into matching C",
-      "url": "https://decomp-academy.dev",
+      "title": "Age verification is just a precursor to automated attribution of speech",
+      "url": "https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-speech-06-29-2026",
       "source": "Hacker News",
-      "hot_value": "70",
+      "hot_value": "183",
       "is_hot": false
     },
     {
       "rank": 3,
-      "title": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
-      "url": "https://github.com/itsthelore/wayfinder-router",
+      "title": "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88",
+      "url": "https://danunparsed.com/p/hackerrank-open-source-ats",
       "source": "Hacker News",
-      "hot_value": "8",
+      "hot_value": "51",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "AMD Strix Halo RDMA Cluster Setup Guide",
-      "url": "https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md",
+      "title": "Some Simple Economics of AGI",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6298838",
       "source": "Hacker News",
-      "hot_value": "78",
+      "hot_value": "12",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
-      "url": "https://github.com/bikini/exploitarium",
+      "title": "Historical memory prices 1960-2026",
+      "url": "https://dam.stanford.edu/memory-prices.html",
       "source": "Hacker News",
-      "hot_value": "727",
+      "hot_value": "246",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "OpenRA",
-      "url": "https://www.openra.net/",
+      "title": "5k menus from the New York Public Library’s Buttolph Collection (1880-1920)",
+      "url": "https://pudding.cool/2026/06/menu-story/",
       "source": "Hacker News",
-      "hot_value": "628",
+      "hot_value": "347",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "Choosing a Public DNS Resolver",
-      "url": "https://evilbit.de/dns-resolver-guide.html",
+      "title": "I used Claude Code to get a second opinion on my MRI",
+      "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
       "source": "Hacker News",
-      "hot_value": "104",
+      "hot_value": "387",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "Ford hired AI and sacked humans. It backfired badly",
-      "url": "https://www.the-independent.com/tech/ford-ai-automation-human-workers-b3003787.html",
+      "title": "Knowledge Distillation of Black-Box Large Language Models (2024)",
+      "url": "https://arxiv.org/abs/2401.07013",
       "source": "Hacker News",
       "hot_value": "69",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "Space Shuttle Endeavour's 20-story vertical display",
-      "url": "https://californiasciencecenter.org/about-us/samuel-oschin-air-and-space-center/go-for-stack",
+      "title": "Deciphering Basmala",
+      "url": "https://blog.plover.com/lang/bismillah.html",
       "source": "Hacker News",
-      "hot_value": "35",
+      "hot_value": "29",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "Ancient Tablets Show Markets Worked 4k Years Before Economists Explained Them",
-      "url": "https://thedailyeconomy.org/article/ancient-clay-tablets-show-markets-worked-4000-years-before-economists-explained-them/",
+      "title": "Show HN: Zanagrams",
+      "url": "https://zanagrams.com/",
       "source": "Hacker News",
-      "hot_value": "16",
+      "hot_value": "235",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "Regular expressions that work \"everywhere\"",
-      "url": "https://www.johndcook.com/blog/2026/06/23/regex-everywhere/",
+      "title": "TOP500 at ISC’26: We have a New Number 1 Supercomputer",
+      "url": "https://chipsandcheese.com/p/top500-at-isc26-we-have-a-new-number",
       "source": "Hacker News",
-      "hot_value": "31",
+      "hot_value": "90",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "Fintech Engineering Handbook",
-      "url": "https://w.pitula.me/fintech-engineering-handbook/",
+      "title": "The Boeing 747 begins its final descent",
+      "url": "https://www.theatlantic.com/magazine/2026/07/boeing-747-retirement/687304/",
       "source": "Hacker News",
-      "hot_value": "506",
+      "hot_value": "168",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "AI learns the “dark art” of RFIC design",
-      "url": "https://spectrum.ieee.org/ai-radio-chip-design",
+      "title": "Tokenmaxxing is dead, long live tokenmaxxing",
+      "url": "https://12gramsofcarbon.com/p/agentics-tech-things-tokenmaxxing",
       "source": "Hacker News",
-      "hot_value": "207",
+      "hot_value": "126",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Enhancing X11 Application Security with LXC",
-      "url": "https://dobrowolski.dev/article/enhancing-x11-application-security-with-lxc/",
+      "title": "Professor denounces mass AI fraud on an exam at Brown",
+      "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
       "source": "Hacker News",
-      "hot_value": "55",
+      "hot_value": "333",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Turn your site into a place people can bump into each other",
-      "url": "https://cauenapier.com/blog/townsquare_release/",
+      "title": "Idler Magazine",
+      "url": "https://www.idler.co.uk/",
       "source": "Hacker News",
-      "hot_value": "184",
+      "hot_value": "13",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "Indian payments chief thinks AI will be heavily involved in next era of digital payment growth",
-      "url": "https://techcrunch.com/2026/06/27/indian-payments-chief-thinks-ai-will-be-heavily-involved-in-next-era-of-digital-payment-growth/",
+      "title": "California law targeting loud streaming ads takes effect on July 1",
+      "url": "https://techcrunch.com/2026/06/28/california-law-targeting-loud-streaming-ads-takes-effect-on-july-1/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Instagram is testing more ways to customize ‘Your Algorithm’",
-      "url": "https://techcrunch.com/2026/06/27/instagram-is-testing-more-ways-for-users-to-customize-your-algorithm/",
+      "title": "Ford rehires ‘gray beard’ engineers after AI falls short",
+      "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "SoftBank’s CEO isn’t the only one with questions about Elon Musk’s orbital data center hype",
-      "url": "https://techcrunch.com/2026/06/27/softbanks-ceo-isnt-the-only-one-with-questions-about-elon-musks-orbital-data-center-hype/",
+      "title": "Writer Ian Bogost says ‘The Small Stuff’ can help us reclaim our lives from too much convenience",
+      "url": "https://techcrunch.com/2026/06/28/writer-ian-bogost-says-the-small-stuff-can-help-us-reclaim-our-lives-from-dematerialization/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Apple Vision Pro exec is reportedly leaving for OpenAI",
-      "url": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
+      "title": "TechCrunch Mobility: All eyes on Tesla FSD",
+      "url": "https://techcrunch.com/2026/06/28/techcrunch-mobility-all-eyes-on-tesla-fsd/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "The fittest founder in the room got cancer. Here’s how he used AI to fight back.",
-      "url": "https://techcrunch.com/2026/06/27/the-fittest-founder-in-the-room-got-cancer-heres-how-he-used-ai-to-fight-back/",
+      "title": "Why Wall Street thinks US memory maker Micron is the next Nvidia",
+      "url": "https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false

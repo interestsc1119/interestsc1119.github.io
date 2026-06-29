@@ -1122,5 +1122,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-29",
+    "ai_count": 8,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "commaai/openpilot",
+        "stars": "62514",
+        "url": "https://github.com/commaai/openpilot"
+      },
+      {
+        "name": "xbtlin/ai-berkshire",
+        "stars": "5692",
+        "url": "https://github.com/xbtlin/ai-berkshire"
+      },
+      {
+        "name": "DeusData/codebase-memory-mcp",
+        "stars": "20148",
+        "url": "https://github.com/DeusData/codebase-memory-mcp"
+      },
+      {
+        "name": "opendatalab/MinerU",
+        "stars": "71835",
+        "url": "https://github.com/opendatalab/MinerU"
+      },
+      {
+        "name": "HKUDS/Vibe-Trading",
+        "stars": "14503",
+        "url": "https://github.com/HKUDS/Vibe-Trading"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "GLM 5.2 beats Claude in our be",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Age verification is just a pre",
+        "source": "Hacker News"
+      },
+      {
+        "title": "HackerRank open sourced its AT",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Some Simple Economics of AGI",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Historical memory prices 1960-",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
