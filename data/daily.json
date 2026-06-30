@@ -1,16 +1,46 @@
 {
-  "date": "2026-06-29",
-  "updated_at": "2026-06-29T05:21:23.993770",
-  "count": 8,
+  "date": "2026-06-30",
+  "updated_at": "2026-06-30T04:55:59.817722",
+  "count": 9,
   "projects": [
+    {
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "full_name": "msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "stars": "119242",
+      "stars_today": "1425",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "is_ai_related": true
+    },
+    {
+      "owner": "soxoj",
+      "name": "maigret",
+      "full_name": "soxoj/maigret",
+      "description": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
+      "stars": "34495",
+      "stars_today": "224",
+      "url": "https://github.com/soxoj/maigret",
+      "is_ai_related": true
+    },
     {
       "owner": "commaai",
       "name": "openpilot",
       "full_name": "commaai/openpilot",
       "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
-      "stars": "62514",
-      "stars_today": "266",
+      "stars": "62817",
+      "stars_today": "458",
       "url": "https://github.com/commaai/openpilot",
+      "is_ai_related": true
+    },
+    {
+      "owner": "logto-io",
+      "name": "logto",
+      "full_name": "logto-io/logto",
+      "description": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.",
+      "stars": "12778",
+      "stars_today": "158",
+      "url": "https://github.com/logto-io/logto",
       "is_ai_related": true
     },
     {
@@ -18,59 +48,9 @@
       "name": "ai-berkshire",
       "full_name": "xbtlin/ai-berkshire",
       "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
-      "stars": "5692",
-      "stars_today": "1445",
+      "stars": "6861",
+      "stars_today": "1386",
       "url": "https://github.com/xbtlin/ai-berkshire",
-      "is_ai_related": true
-    },
-    {
-      "owner": "DeusData",
-      "name": "codebase-memory-mcp",
-      "full_name": "DeusData/codebase-memory-mcp",
-      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "stars": "20148",
-      "stars_today": "2190",
-      "url": "https://github.com/DeusData/codebase-memory-mcp",
-      "is_ai_related": true
-    },
-    {
-      "owner": "opendatalab",
-      "name": "MinerU",
-      "full_name": "opendatalab/MinerU",
-      "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
-      "stars": "71835",
-      "stars_today": "380",
-      "url": "https://github.com/opendatalab/MinerU",
-      "is_ai_related": true
-    },
-    {
-      "owner": "HKUDS",
-      "name": "Vibe-Trading",
-      "full_name": "HKUDS/Vibe-Trading",
-      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "stars": "14503",
-      "stars_today": "492",
-      "url": "https://github.com/HKUDS/Vibe-Trading",
-      "is_ai_related": true
-    },
-    {
-      "owner": "ByteByteGoHq",
-      "name": "system-design-101",
-      "full_name": "ByteByteGoHq/system-design-101",
-      "description": "Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.",
-      "stars": "84667",
-      "stars_today": "250",
-      "url": "https://github.com/ByteByteGoHq/system-design-101",
-      "is_ai_related": true
-    },
-    {
-      "owner": "usestrix",
-      "name": "strix",
-      "full_name": "usestrix/strix",
-      "description": "Open-source AI hackers to find and fix your app’s vulnerabilities.",
-      "stars": "26893",
-      "stars_today": "122",
-      "url": "https://github.com/usestrix/strix",
       "is_ai_related": true
     },
     {
@@ -78,9 +58,39 @@
       "name": "video-use",
       "full_name": "browser-use/video-use",
       "description": "Edit videos with coding agents",
-      "stars": "11279",
-      "stars_today": "196",
+      "stars": "12058",
+      "stars_today": "967",
       "url": "https://github.com/browser-use/video-use",
+      "is_ai_related": true
+    },
+    {
+      "owner": "Unclecheng-li",
+      "name": "VulnClaw",
+      "full_name": "Unclecheng-li/VulnClaw",
+      "description": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
+      "stars": "1239",
+      "stars_today": "129",
+      "url": "https://github.com/Unclecheng-li/VulnClaw",
+      "is_ai_related": true
+    },
+    {
+      "owner": "0xNyk",
+      "name": "council-of-high-intelligence",
+      "full_name": "0xNyk/council-of-high-intelligence",
+      "description": "18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Kahneman, Torvalds & more — structured multi-round deliberation with genuine model diversity. One command: /council",
+      "stars": "2029",
+      "stars_today": "331",
+      "url": "https://github.com/0xNyk/council-of-high-intelligence",
+      "is_ai_related": true
+    },
+    {
+      "owner": "HKUDS",
+      "name": "Vibe-Trading",
+      "full_name": "HKUDS/Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "stars": "15237",
+      "stars_today": "839",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
       "is_ai_related": true
     }
   ]

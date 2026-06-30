@@ -1176,5 +1176,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-06-30",
+    "ai_count": 9,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "msitarzewski/agency-agents",
+        "stars": "119242",
+        "url": "https://github.com/msitarzewski/agency-agents"
+      },
+      {
+        "name": "soxoj/maigret",
+        "stars": "34495",
+        "url": "https://github.com/soxoj/maigret"
+      },
+      {
+        "name": "commaai/openpilot",
+        "stars": "62817",
+        "url": "https://github.com/commaai/openpilot"
+      },
+      {
+        "name": "logto-io/logto",
+        "stars": "12778",
+        "url": "https://github.com/logto-io/logto"
+      },
+      {
+        "name": "xbtlin/ai-berkshire",
+        "stars": "6861",
+        "url": "https://github.com/xbtlin/ai-berkshire"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "300k-Year-Old Cave Site Explor",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Qwen 3.6 27B is the sweet spot",
+        "source": "Hacker News"
+      },
+      {
+        "title": ".self: A new top-level domain ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Free the Icons",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Memory Safe Context Switching ",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

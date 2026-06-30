@@ -1,164 +1,164 @@
 {
-  "date": "2026-06-29",
-  "updated_at": "2026-06-29T05:21:23.993778",
+  "date": "2026-06-30",
+  "updated_at": "2026-06-30T04:55:59.817728",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "GLM 5.2 beats Claude in our benchmarks",
-      "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
+      "title": "300k-Year-Old Cave Site Explored in Northern Israel",
+      "url": "https://archaeology.org/news/2026/06/18/300000-year-old-cave-site-explored-in-northern-israel/",
       "source": "Hacker News",
-      "hot_value": "632",
-      "is_hot": true
-    },
-    {
-      "rank": 2,
-      "title": "Age verification is just a precursor to automated attribution of speech",
-      "url": "https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-speech-06-29-2026",
-      "source": "Hacker News",
-      "hot_value": "183",
+      "hot_value": "26",
       "is_hot": false
     },
     {
-      "rank": 3,
-      "title": "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88",
-      "url": "https://danunparsed.com/p/hackerrank-open-source-ats",
+      "rank": 2,
+      "title": "Qwen 3.6 27B is the sweet spot for local development",
+      "url": "https://quesma.com/blog/qwen-36-is-awesome/",
       "source": "Hacker News",
-      "hot_value": "51",
+      "hot_value": "731",
+      "is_hot": true
+    },
+    {
+      "rank": 3,
+      "title": ".self: A new top-level domain designed to support self-hosting",
+      "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
+      "source": "Hacker News",
+      "hot_value": "403",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "Some Simple Economics of AGI",
-      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6298838",
+      "title": "Free the Icons",
+      "url": "https://weblog.rogueamoeba.com/2026/06/26/free-the-icons/",
       "source": "Hacker News",
-      "hot_value": "12",
+      "hot_value": "329",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Historical memory prices 1960-2026",
-      "url": "https://dam.stanford.edu/memory-prices.html",
+      "title": "Memory Safe Context Switching (longjmp, setjmp) in Fil-C",
+      "url": "https://fil-c.org/context_switches",
       "source": "Hacker News",
-      "hot_value": "246",
+      "hot_value": "64",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "5k menus from the New York Public Library’s Buttolph Collection (1880-1920)",
-      "url": "https://pudding.cool/2026/06/menu-story/",
+      "title": "LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active",
+      "url": "https://longcat.chat/blog/longcat-2.0/",
       "source": "Hacker News",
-      "hot_value": "347",
+      "hot_value": "61",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "I used Claude Code to get a second opinion on my MRI",
-      "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
+      "title": "Exploring PDP-1 Lisp (1960)",
+      "url": "https://obsolescence.dev/pdp1-lisp-introduction.html",
+      "source": "Hacker News",
+      "hot_value": "36",
+      "is_hot": false
+    },
+    {
+      "rank": 8,
+      "title": "Old Computer Challenge",
+      "url": "http://occ.sdf.org/",
+      "source": "Hacker News",
+      "hot_value": "20",
+      "is_hot": false
+    },
+    {
+      "rank": 9,
+      "title": "Rocketlab acquires Iridium",
+      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
       "source": "Hacker News",
       "hot_value": "387",
       "is_hot": false
     },
     {
-      "rank": 8,
-      "title": "Knowledge Distillation of Black-Box Large Language Models (2024)",
-      "url": "https://arxiv.org/abs/2401.07013",
-      "source": "Hacker News",
-      "hot_value": "69",
-      "is_hot": false
-    },
-    {
-      "rank": 9,
-      "title": "Deciphering Basmala",
-      "url": "https://blog.plover.com/lang/bismillah.html",
-      "source": "Hacker News",
-      "hot_value": "29",
-      "is_hot": false
-    },
-    {
       "rank": 10,
-      "title": "Show HN: Zanagrams",
-      "url": "https://zanagrams.com/",
+      "title": "Scientists find molecular-level evidence for two structures in liquid water",
+      "url": "https://phys.org/news/2026-06-scientists-molecular-evidence-liquid.html",
       "source": "Hacker News",
-      "hot_value": "235",
+      "hot_value": "91",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "TOP500 at ISC’26: We have a New Number 1 Supercomputer",
-      "url": "https://chipsandcheese.com/p/top500-at-isc26-we-have-a-new-number",
+      "title": "Ornith-1.0: self-improving open-source models for agentic coding",
+      "url": "https://github.com/deepreinforce-ai/Ornith-1",
       "source": "Hacker News",
-      "hot_value": "90",
+      "hot_value": "178",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "The Boeing 747 begins its final descent",
-      "url": "https://www.theatlantic.com/magazine/2026/07/boeing-747-retirement/687304/",
+      "title": "30-year sentence for transporting zines is a five-alarm fire for free speech",
+      "url": "https://theintercept.com/2026/06/26/daniel-sanchez-estrada-zines-prairieland-free-speech/",
       "source": "Hacker News",
-      "hot_value": "168",
+      "hot_value": "446",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "Tokenmaxxing is dead, long live tokenmaxxing",
-      "url": "https://12gramsofcarbon.com/p/agentics-tech-things-tokenmaxxing",
+      "title": "Linux for the Sega MegaDrive",
+      "url": "https://github.com/LinuxMD/linuxmd",
       "source": "Hacker News",
-      "hot_value": "126",
+      "hot_value": "39",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Professor denounces mass AI fraud on an exam at Brown",
-      "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
+      "title": "How to corrupt an SQLite database file",
+      "url": "https://www.sqlite.org/howtocorrupt.html",
       "source": "Hacker News",
-      "hot_value": "333",
+      "hot_value": "32",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Idler Magazine",
-      "url": "https://www.idler.co.uk/",
+      "title": "US Supreme Court rules geofence warrants require constitutional protections",
+      "url": "https://www.theguardian.com/us-news/2026/jun/29/supreme-court-geofence-warrants-case-decision",
       "source": "Hacker News",
-      "hot_value": "13",
+      "hot_value": "493",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "California law targeting loud streaming ads takes effect on July 1",
-      "url": "https://techcrunch.com/2026/06/28/california-law-targeting-loud-streaming-ads-takes-effect-on-july-1/",
+      "title": "The AI jobs debate just got messier",
+      "url": "https://techcrunch.com/2026/06/29/the-ai-jobs-debate-just-got-messier/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Ford rehires ‘gray beard’ engineers after AI falls short",
-      "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+      "title": "Vibe coding platform Base44 launches own model as AI startups seek defensibility",
+      "url": "https://techcrunch.com/2026/06/29/vibe-coding-platform-base44-launches-own-model-as-ai-startups-seek-defensibility/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Writer Ian Bogost says ‘The Small Stuff’ can help us reclaim our lives from too much convenience",
-      "url": "https://techcrunch.com/2026/06/28/writer-ian-bogost-says-the-small-stuff-can-help-us-reclaim-our-lives-from-dematerialization/",
+      "title": "Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role",
+      "url": "https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "TechCrunch Mobility: All eyes on Tesla FSD",
-      "url": "https://techcrunch.com/2026/06/28/techcrunch-mobility-all-eyes-on-tesla-fsd/",
+      "title": "Gemini’s personalized AI image generation is now free for US users",
+      "url": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "Why Wall Street thinks US memory maker Micron is the next Nvidia",
-      "url": "https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/",
+      "title": "Watch out, Amazon: The Kobo eReader now has a Goodreads rival",
+      "url": "https://techcrunch.com/2026/06/29/watch-out-amazon-the-kobo-ereader-now-has-a-goodreads-rival/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
