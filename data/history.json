@@ -1230,5 +1230,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-07-01",
+    "ai_count": 13,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "hasaneyldrm/exercises-dataset",
+        "stars": "7146",
+        "url": "https://github.com/hasaneyldrm/exercises-dataset"
+      },
+      {
+        "name": "usestrix/strix",
+        "stars": "28315",
+        "url": "https://github.com/usestrix/strix"
+      },
+      {
+        "name": "msitarzewski/agency-agents",
+        "stars": "121274",
+        "url": "https://github.com/msitarzewski/agency-agents"
+      },
+      {
+        "name": "altic-dev/FluidVoice",
+        "stars": "5048",
+        "url": "https://github.com/altic-dev/FluidVoice"
+      },
+      {
+        "name": "diegosouzapw/OmniRoute",
+        "stars": "8739",
+        "url": "https://github.com/diegosouzapw/OmniRoute"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Claude Sonnet 5",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Claude Code is steganographica",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Google copybara: moving code b",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Firms that adopt AI grow headc",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Department of Commerce has lif",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
