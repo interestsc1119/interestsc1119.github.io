@@ -1284,5 +1284,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-07-02",
+    "ai_count": 17,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "msitarzewski/agency-agents",
+        "stars": "123955",
+        "url": "https://github.com/msitarzewski/agency-agents"
+      },
+      {
+        "name": "usestrix/strix",
+        "stars": "30040",
+        "url": "https://github.com/usestrix/strix"
+      },
+      {
+        "name": "HKUDS/Vibe-Trading",
+        "stars": "16740",
+        "url": "https://github.com/HKUDS/Vibe-Trading"
+      },
+      {
+        "name": "hasaneyldrm/exercises-dataset",
+        "stars": "8582",
+        "url": "https://github.com/hasaneyldrm/exercises-dataset"
+      },
+      {
+        "name": "facebook/astryx",
+        "stars": "2821",
+        "url": "https://github.com/facebook/astryx"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "ZCode – Harness for GLM-5.2",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Senior SWE-Bench: open-source ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Oomwoo, an open-source robot v",
+        "source": "Hacker News"
+      },
+      {
+        "title": "For first time, a cell built f",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Global review confirms mRNA va",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

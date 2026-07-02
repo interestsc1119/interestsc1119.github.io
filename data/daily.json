@@ -1,16 +1,16 @@
 {
-  "date": "2026-07-01",
-  "updated_at": "2026-07-01T05:14:03.379086",
-  "count": 13,
+  "date": "2026-07-02",
+  "updated_at": "2026-07-02T04:50:46.430703",
+  "count": 17,
   "projects": [
     {
-      "owner": "hasaneyldrm",
-      "name": "exercises-dataset",
-      "full_name": "hasaneyldrm/exercises-dataset",
-      "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
-      "stars": "7146",
-      "stars_today": "1343",
-      "url": "https://github.com/hasaneyldrm/exercises-dataset",
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "full_name": "msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "stars": "123955",
+      "stars_today": "2114",
+      "url": "https://github.com/msitarzewski/agency-agents",
       "is_ai_related": true
     },
     {
@@ -18,99 +18,9 @@
       "name": "strix",
       "full_name": "usestrix/strix",
       "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-      "stars": "28315",
-      "stars_today": "515",
+      "stars": "30040",
+      "stars_today": "1211",
       "url": "https://github.com/usestrix/strix",
-      "is_ai_related": true
-    },
-    {
-      "owner": "msitarzewski",
-      "name": "agency-agents",
-      "full_name": "msitarzewski/agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "stars": "121274",
-      "stars_today": "1791",
-      "url": "https://github.com/msitarzewski/agency-agents",
-      "is_ai_related": true
-    },
-    {
-      "owner": "altic-dev",
-      "name": "FluidVoice",
-      "full_name": "altic-dev/FluidVoice",
-      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model - Local Wispr Flow alternative. One ⭐ takes us a long way :)) Windows, iOS and Linux coming soon.",
-      "stars": "5048",
-      "stars_today": "588",
-      "url": "https://github.com/altic-dev/FluidVoice",
-      "is_ai_related": true
-    },
-    {
-      "owner": "diegosouzapw",
-      "name": "OmniRoute",
-      "full_name": "diegosouzapw/OmniRoute",
-      "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-      "stars": "8739",
-      "stars_today": "387",
-      "url": "https://github.com/diegosouzapw/OmniRoute",
-      "is_ai_related": true
-    },
-    {
-      "owner": "browser-use",
-      "name": "video-use",
-      "full_name": "browser-use/video-use",
-      "description": "Edit videos with coding agents",
-      "stars": "12754",
-      "stars_today": "721",
-      "url": "https://github.com/browser-use/video-use",
-      "is_ai_related": true
-    },
-    {
-      "owner": "xbtlin",
-      "name": "ai-berkshire",
-      "full_name": "xbtlin/ai-berkshire",
-      "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
-      "stars": "7680",
-      "stars_today": "969",
-      "url": "https://github.com/xbtlin/ai-berkshire",
-      "is_ai_related": true
-    },
-    {
-      "owner": "google",
-      "name": "agents-cli",
-      "full_name": "google/agents-cli",
-      "description": "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.",
-      "stars": "4337",
-      "stars_today": "445",
-      "url": "https://github.com/google/agents-cli",
-      "is_ai_related": true
-    },
-    {
-      "owner": "ogulcancelik",
-      "name": "herdr",
-      "full_name": "ogulcancelik/herdr",
-      "description": "agent multiplexer that lives in your terminal.",
-      "stars": "9117",
-      "stars_today": "486",
-      "url": "https://github.com/ogulcancelik/herdr",
-      "is_ai_related": true
-    },
-    {
-      "owner": "microsoft",
-      "name": "AI-For-Beginners",
-      "full_name": "microsoft/AI-For-Beginners",
-      "description": "12 Weeks, 24 Lessons, AI for All!",
-      "stars": "49582",
-      "stars_today": "252",
-      "url": "https://github.com/microsoft/AI-For-Beginners",
-      "is_ai_related": true
-    },
-    {
-      "owner": "facebook",
-      "name": "astryx",
-      "full_name": "facebook/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "stars": "1909",
-      "stars_today": "364",
-      "url": "https://github.com/facebook/astryx",
       "is_ai_related": true
     },
     {
@@ -118,19 +28,149 @@
       "name": "Vibe-Trading",
       "full_name": "HKUDS/Vibe-Trading",
       "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "stars": "15917",
-      "stars_today": "721",
+      "stars": "16740",
+      "stars_today": "694",
       "url": "https://github.com/HKUDS/Vibe-Trading",
       "is_ai_related": true
     },
     {
-      "owner": "obra",
-      "name": "superpowers",
-      "full_name": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "stars": "242729",
-      "stars_today": "890",
-      "url": "https://github.com/obra/superpowers",
+      "owner": "hasaneyldrm",
+      "name": "exercises-dataset",
+      "full_name": "hasaneyldrm/exercises-dataset",
+      "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
+      "stars": "8582",
+      "stars_today": "2470",
+      "url": "https://github.com/hasaneyldrm/exercises-dataset",
+      "is_ai_related": true
+    },
+    {
+      "owner": "facebook",
+      "name": "astryx",
+      "full_name": "facebook/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "stars": "2821",
+      "stars_today": "708",
+      "url": "https://github.com/facebook/astryx",
+      "is_ai_related": true
+    },
+    {
+      "owner": "diegosouzapw",
+      "name": "OmniRoute",
+      "full_name": "diegosouzapw/OmniRoute",
+      "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+      "stars": "9701",
+      "stars_today": "1010",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "is_ai_related": true
+    },
+    {
+      "owner": "allenai",
+      "name": "olmocr",
+      "full_name": "allenai/olmocr",
+      "description": "Toolkit for linearizing PDFs for LLM datasets/training",
+      "stars": "18358",
+      "stars_today": "334",
+      "url": "https://github.com/allenai/olmocr",
+      "is_ai_related": true
+    },
+    {
+      "owner": "logto-io",
+      "name": "logto",
+      "full_name": "logto-io/logto",
+      "description": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.",
+      "stars": "13342",
+      "stars_today": "113",
+      "url": "https://github.com/logto-io/logto",
+      "is_ai_related": true
+    },
+    {
+      "owner": "togatoga",
+      "name": "karukan",
+      "full_name": "togatoga/karukan",
+      "description": "Japanese Input Method System for Linux, macOS, Neural Kana-Kanji Conversion Engine",
+      "stars": "603",
+      "stars_today": "42",
+      "url": "https://github.com/togatoga/karukan",
+      "is_ai_related": true
+    },
+    {
+      "owner": "Unclecheng-li",
+      "name": "VulnClaw",
+      "full_name": "Unclecheng-li/VulnClaw",
+      "description": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
+      "stars": "1630",
+      "stars_today": "132",
+      "url": "https://github.com/Unclecheng-li/VulnClaw",
+      "is_ai_related": true
+    },
+    {
+      "owner": "microsoft",
+      "name": "AI-For-Beginners",
+      "full_name": "microsoft/AI-For-Beginners",
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "stars": "50675",
+      "stars_today": "1096",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "is_ai_related": true
+    },
+    {
+      "owner": "ogulcancelik",
+      "name": "herdr",
+      "full_name": "ogulcancelik/herdr",
+      "description": "agent multiplexer that lives in your terminal.",
+      "stars": "9724",
+      "stars_today": "609",
+      "url": "https://github.com/ogulcancelik/herdr",
+      "is_ai_related": true
+    },
+    {
+      "owner": "0xNyk",
+      "name": "council-of-high-intelligence",
+      "full_name": "0xNyk/council-of-high-intelligence",
+      "description": "18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Kahneman, Torvalds & more — structured multi-round deliberation with genuine model diversity. One command: /council",
+      "stars": "2726",
+      "stars_today": "161",
+      "url": "https://github.com/0xNyk/council-of-high-intelligence",
+      "is_ai_related": true
+    },
+    {
+      "owner": "altic-dev",
+      "name": "FluidVoice",
+      "full_name": "altic-dev/FluidVoice",
+      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model - Local Wispr Flow alternative. One ⭐ takes us a long way :)) Windows, iOS and Linux coming soon.",
+      "stars": "5586",
+      "stars_today": "572",
+      "url": "https://github.com/altic-dev/FluidVoice",
+      "is_ai_related": true
+    },
+    {
+      "owner": "TencentCloud",
+      "name": "CubeSandbox",
+      "full_name": "TencentCloud/CubeSandbox",
+      "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
+      "stars": "6870",
+      "stars_today": "79",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "is_ai_related": true
+    },
+    {
+      "owner": "browser-use",
+      "name": "video-use",
+      "full_name": "browser-use/video-use",
+      "description": "Edit videos with coding agents",
+      "stars": "13323",
+      "stars_today": "693",
+      "url": "https://github.com/browser-use/video-use",
+      "is_ai_related": true
+    },
+    {
+      "owner": "yikart",
+      "name": "AiToEarn",
+      "full_name": "yikart/AiToEarn",
+      "description": "Let's use AI to Earn!",
+      "stars": "22669",
+      "stars_today": "116",
+      "url": "https://github.com/yikart/AiToEarn",
       "is_ai_related": true
     }
   ]

@@ -1,164 +1,164 @@
 {
-  "date": "2026-07-01",
-  "updated_at": "2026-07-01T05:14:03.379092",
+  "date": "2026-07-02",
+  "updated_at": "2026-07-02T04:50:46.430711",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Claude Sonnet 5",
-      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "title": "ZCode – Harness for GLM-5.2",
+      "url": "https://zcode.z.ai/en",
       "source": "Hacker News",
-      "hot_value": "994",
-      "is_hot": true
+      "hot_value": "303",
+      "is_hot": false
     },
     {
       "rank": 2,
-      "title": "Claude Code is steganographically marking requests",
-      "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+      "title": "Senior SWE-Bench: open-source benchmark that assesses agents as senior engineers",
+      "url": "https://senior-swe-bench.snorkel.ai/",
       "source": "Hacker News",
-      "hot_value": "1607",
-      "is_hot": true
+      "hot_value": "33",
+      "is_hot": false
     },
     {
       "rank": 3,
-      "title": "Google copybara: moving code between repositories",
-      "url": "https://github.com/google/copybara",
+      "title": "Oomwoo, an open-source robot vacuum you build yourself",
+      "url": "https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/",
       "source": "Hacker News",
-      "hot_value": "127",
+      "hot_value": "110",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "Firms that adopt AI grow headcount 10% over the two years following adoption",
-      "url": "https://ramp.com/data/ai-jobs-impact",
+      "title": "For first time, a cell built from scratch grows and divides",
+      "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
       "source": "Hacker News",
-      "hot_value": "7",
+      "hot_value": "783",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5",
-      "url": "https://twitter.com/AnthropicAI/status/2072106151890809341",
+      "title": "Global review confirms mRNA vaccines are safe, effective and full of promise ",
+      "url": "https://news.ubc.ca/2026/06/mrna-vaccines-are-safe-effective-and-full-of-promise/",
       "source": "Hacker News",
-      "hot_value": "464",
+      "hot_value": "244",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "Forestiere Underground Gardens",
-      "url": "https://en.wikipedia.org/wiki/Forestiere_Underground_Gardens",
+      "title": "Bring back crappy forums",
+      "url": "https://tedium.co/2026/07/01/online-web-forums-retrospective/",
       "source": "Hacker News",
-      "hot_value": "44",
+      "hot_value": "85",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "Claude Science",
-      "url": "https://claude.com/product/claude-science",
+      "title": "What to learn to be a graphics programmer",
+      "url": "https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/",
       "source": "Hacker News",
-      "hot_value": "414",
+      "hot_value": "271",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "Nano Banana 2 Lite",
-      "url": "https://deepmind.google/models/gemini-image/flash-lite/",
+      "title": "Physical disc production ending in Jan 2028 for new games on PlayStation",
+      "url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/",
       "source": "Hacker News",
-      "hot_value": "334",
+      "hot_value": "652",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "How does a pull-back car work? Illustrated teardown",
-      "url": "https://mechanical-pencil.com/products/car",
+      "title": "Opening up 'Zero-Knowledge Proof' technology to promote privacy in age assurance",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/opening-up-zero-knowledge-proof-technology-to-promote-privacy-in-age-assurance/",
       "source": "Hacker News",
-      "hot_value": "144",
+      "hot_value": "89",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "Leanstral 1.5",
-      "url": "https://docs.mistral.ai/models/model-cards/leanstral-1-5-26-06",
+      "title": "FFmpeg 9.1's new AAC encoder",
+      "url": "https://hydrogenaudio.org/index.php/topic,129691.0.html",
       "source": "Hacker News",
-      "hot_value": "141",
+      "hot_value": "320",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "From brain waves to words: a new path to communication without surgery",
-      "url": "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/?_fb_noscript=1",
+      "title": "The Underhanded C Contest",
+      "url": "https://underhanded-c.org/",
       "source": "Hacker News",
-      "hot_value": "133",
+      "hot_value": "60",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "Segmenting Robot Video into Actionable Subtasks",
-      "url": "https://macrodata.co/blog/annotating-robot-video-subtasks",
+      "title": "Database Traffic Control",
+      "url": "https://planetscale.com/blog/introducing-database-traffic-control",
       "source": "Hacker News",
-      "hot_value": "9",
+      "hot_value": "6",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "CERN bids farewell to the LHC and enters Long Shutdown 3",
-      "url": "https://home.cern/cern-bids-farewell-to-the-lhc-and-enters-long-shutdown-3/",
+      "title": "How do wombats poop cubes?",
+      "url": "https://www.science.org/content/article/how-do-wombats-poop-cubes-scientists-get-bottom-mystery",
       "source": "Hacker News",
-      "hot_value": "170",
+      "hot_value": "77",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Ante: A new way to blend borrow checking and reference counting",
-      "url": "https://verdagon.dev/blog/ante-blending-borrowing-rc",
+      "title": "Show HN: Searchable directory of 22k+ products from worker-owned co-ops",
+      "url": "https://www.workerowned.info/",
       "source": "Hacker News",
-      "hot_value": "69",
+      "hot_value": "295",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "I ported Kubernetes to the browser",
-      "url": "https://ngrok.com/blog/i-ported-kubernetes-to-the-browser",
-      "source": "Hacker News",
-      "hot_value": "208",
+      "title": "Apple is reportedly planning new iPad Pro and MacBook Pro releases early next year",
+      "url": "https://techcrunch.com/2026/07/01/apple-is-reportedly-planning-new-ipad-pro-and-macbook-pro-releases-early-next-year/",
+      "source": "TechCrunch",
+      "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "The “Father of the Internet” is finally retiring",
-      "url": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/",
+      "title": "Bending Spoons defies SaaS slump, surges 40% on first day of trading",
+      "url": "https://techcrunch.com/2026/07/01/bending-spoons-defies-saas-slump-surges-40-on-first-day-of-trading/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Trump drops restrictions on Anthropic’s Mythos and Fable models",
-      "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
+      "title": "After $18B IPO, Bending Spoons founder says success comes from minimizing luck",
+      "url": "https://techcrunch.com/2026/07/01/after-18b-ipo-bending-spoons-founder-says-success-comes-from-minimizing-luck/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Wayve launches $85M employee tender offer at $8.5B valuation",
-      "url": "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/",
+      "title": "WhatsApp usernames are already raising impersonation red flags",
+      "url": "https://techcrunch.com/2026/07/01/whatsapp-usernames-are-already-raising-impersonation-red-flags/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Startup Battlefield Australia application closes in days: Apply before July 6",
-      "url": "https://techcrunch.com/2026/06/30/last-chance-to-apply-startup-battlefield-australia-applications-close-july-6/",
+      "title": "Apple’s Hide My Email feature has a bug that’s been exposing real email addresses, researcher claims",
+      "url": "https://techcrunch.com/2026/07/01/apples-hide-my-email-feature-has-a-bug-thats-been-exposing-real-email-addresses-researcher-claims/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "OpenClaw is finally available on Android and iOS",
-      "url": "https://techcrunch.com/2026/06/30/openclaw-is-finally-available-on-android-and-ios/",
+      "title": "SpaceX has an AI device prototype, and it sure sounds phone-ish",
+      "url": "https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
