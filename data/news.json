@@ -1,164 +1,164 @@
 {
-  "date": "2026-07-02",
-  "updated_at": "2026-07-02T04:50:46.430711",
+  "date": "2026-07-03",
+  "updated_at": "2026-07-03T04:33:33.212596",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "ZCode – Harness for GLM-5.2",
-      "url": "https://zcode.z.ai/en",
+      "title": "The Free Market Lie: Why Switzerland Has 25 Gbit Internet and America Doesn't",
+      "url": "https://stefan.schueller.net/posts/the-free-market-lie/",
       "source": "Hacker News",
-      "hot_value": "303",
+      "hot_value": "40",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "Senior SWE-Bench: open-source benchmark that assesses agents as senior engineers",
-      "url": "https://senior-swe-bench.snorkel.ai/",
+      "title": "Virginia bans sale of geolocation data",
+      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
       "source": "Hacker News",
-      "hot_value": "33",
-      "is_hot": false
+      "hot_value": "622",
+      "is_hot": true
     },
     {
       "rank": 3,
-      "title": "Oomwoo, an open-source robot vacuum you build yourself",
-      "url": "https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/",
+      "title": "CarPlay Is Additive",
+      "url": "https://www.caseyliss.com/2026/7/2/carplay-is-additive-you-dolts",
       "source": "Hacker News",
-      "hot_value": "110",
+      "hot_value": "121",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "For first time, a cell built from scratch grows and divides",
-      "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
+      "title": "crustc: entirety of `rustc`, translated to C",
+      "url": "https://github.com/FractalFir/crustc",
       "source": "Hacker News",
-      "hot_value": "783",
+      "hot_value": "189",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Global review confirms mRNA vaccines are safe, effective and full of promise ",
-      "url": "https://news.ubc.ca/2026/06/mrna-vaccines-are-safe-effective-and-full-of-promise/",
+      "title": "Right to Local Intelligence",
+      "url": "https://righttointelligence.org/",
       "source": "Hacker News",
-      "hot_value": "244",
+      "hot_value": "91",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "Bring back crappy forums",
-      "url": "https://tedium.co/2026/07/01/online-web-forums-retrospective/",
+      "title": "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory",
+      "url": "https://mathstodon.xyz/@iblech/116769502749142438",
       "source": "Hacker News",
-      "hot_value": "85",
+      "hot_value": "426",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "What to learn to be a graphics programmer",
-      "url": "https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/",
+      "title": "Reality has a surprising amount of detail (2017)",
+      "url": "https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail",
       "source": "Hacker News",
-      "hot_value": "271",
+      "hot_value": "182",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "Physical disc production ending in Jan 2028 for new games on PlayStation",
-      "url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/",
+      "title": "Exapunks (2018)",
+      "url": "https://www.zachtronics.com/exapunks/",
       "source": "Hacker News",
-      "hot_value": "652",
+      "hot_value": "248",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "Opening up 'Zero-Knowledge Proof' technology to promote privacy in age assurance",
-      "url": "https://blog.google/innovation-and-ai/technology/safety-security/opening-up-zero-knowledge-proof-technology-to-promote-privacy-in-age-assurance/",
+      "title": "An American Privacy Emergency",
+      "url": "https://scottaaronson.blog/?p=9902",
       "source": "Hacker News",
-      "hot_value": "89",
+      "hot_value": "220",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "FFmpeg 9.1's new AAC encoder",
-      "url": "https://hydrogenaudio.org/index.php/topic,129691.0.html",
+      "title": "PeerTube is a free, decentralized and federated video platform",
+      "url": "https://github.com/Chocobozzz/PeerTube",
       "source": "Hacker News",
-      "hot_value": "320",
+      "hot_value": "549",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "The Underhanded C Contest",
-      "url": "https://underhanded-c.org/",
+      "title": "Podman v6.0.0",
+      "url": "https://blog.podman.io/2026/07/introducing-podman-v6-0-0/",
       "source": "Hacker News",
-      "hot_value": "60",
+      "hot_value": "424",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "Database Traffic Control",
-      "url": "https://planetscale.com/blog/introducing-database-traffic-control",
+      "title": "Is the iPhone birth control? Causal evidence from AT&T's 2007-2011 monopoly [pdf]",
+      "url": "https://www.nber.org/system/files/working_papers/w35310/w35310.pdf",
+      "source": "Hacker News",
+      "hot_value": "9",
+      "is_hot": false
+    },
+    {
+      "rank": 13,
+      "title": "Mystery identity of 'Green Boots' climber is finally solved after DNA test",
+      "url": "https://www.dailymail.com/news/article-15943905/Mystery-identity-Green-Boots-climber-macabre-landmark-frozen-ice-dying-Everest-finally-solved-DNA-test.html",
+      "source": "Hacker News",
+      "hot_value": "74",
+      "is_hot": false
+    },
+    {
+      "rank": 14,
+      "title": "How to ask for help from people who don't know you",
+      "url": "https://pradyuprasad.com/writings/how-to-ask-for-help/",
+      "source": "Hacker News",
+      "hot_value": "445",
+      "is_hot": false
+    },
+    {
+      "rank": 15,
+      "title": "Perform DFU Restores on Apple Silicon Macs with Macvdmtool (2021)",
+      "url": "https://www.bkurtz.io/posts/macvdmtool/",
       "source": "Hacker News",
       "hot_value": "6",
       "is_hot": false
     },
     {
-      "rank": 13,
-      "title": "How do wombats poop cubes?",
-      "url": "https://www.science.org/content/article/how-do-wombats-poop-cubes-scientists-get-bottom-mystery",
-      "source": "Hacker News",
-      "hot_value": "77",
-      "is_hot": false
-    },
-    {
-      "rank": 14,
-      "title": "Show HN: Searchable directory of 22k+ products from worker-owned co-ops",
-      "url": "https://www.workerowned.info/",
-      "source": "Hacker News",
-      "hot_value": "295",
-      "is_hot": false
-    },
-    {
-      "rank": 15,
-      "title": "Apple is reportedly planning new iPad Pro and MacBook Pro releases early next year",
-      "url": "https://techcrunch.com/2026/07/01/apple-is-reportedly-planning-new-ipad-pro-and-macbook-pro-releases-early-next-year/",
-      "source": "TechCrunch",
-      "hot_value": "",
-      "is_hot": false
-    },
-    {
       "rank": 16,
-      "title": "Bending Spoons defies SaaS slump, surges 40% on first day of trading",
-      "url": "https://techcrunch.com/2026/07/01/bending-spoons-defies-saas-slump-surges-40-on-first-day-of-trading/",
+      "title": "Last chance to apply — Startup Battlefield Australia applications close July 6",
+      "url": "https://techcrunch.com/2026/07/02/last-chance-to-apply-startup-battlefield-australia-applications-close-july-6-2/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "After $18B IPO, Bending Spoons founder says success comes from minimizing luck",
-      "url": "https://techcrunch.com/2026/07/01/after-18b-ipo-bending-spoons-founder-says-success-comes-from-minimizing-luck/",
+      "title": "Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped",
+      "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "WhatsApp usernames are already raising impersonation red flags",
-      "url": "https://techcrunch.com/2026/07/01/whatsapp-usernames-are-already-raising-impersonation-red-flags/",
+      "title": "Private space pilots are flying orbital missions for the US Space Force",
+      "url": "https://techcrunch.com/2026/07/02/private-space-pilots-are-flying-orbital-missions-for-the-us-space-force/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Apple’s Hide My Email feature has a bug that’s been exposing real email addresses, researcher claims",
-      "url": "https://techcrunch.com/2026/07/01/apples-hide-my-email-feature-has-a-bug-thats-been-exposing-real-email-addresses-researcher-claims/",
+      "title": "Thiel Capital’s Jack Selby nabs stakes in hot startups like Etched through Arizona connections",
+      "url": "https://techcrunch.com/2026/07/02/thiel-capitals-jack-selby-nabs-stakes-in-hot-startups-like-etched-through-arizona-connections/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "SpaceX has an AI device prototype, and it sure sounds phone-ish",
-      "url": "https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/",
+      "title": "IQM, Europe’s first public quantum company, admits the future of the tech is uncertain",
+      "url": "https://techcrunch.com/2026/07/02/iqm-europes-first-public-quantum-company-admits-the-future-of-the-tech-is-uncertain/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false

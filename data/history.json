@@ -1338,5 +1338,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-07-03",
+    "ai_count": 14,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "usestrix/strix",
+        "stars": "32611",
+        "url": "https://github.com/usestrix/strix"
+      },
+      {
+        "name": "JuliusBrussee/caveman",
+        "stars": "81382",
+        "url": "https://github.com/JuliusBrussee/caveman"
+      },
+      {
+        "name": "msitarzewski/agency-agents",
+        "stars": "125727",
+        "url": "https://github.com/msitarzewski/agency-agents"
+      },
+      {
+        "name": "hasaneyldrm/exercises-dataset",
+        "stars": "9389",
+        "url": "https://github.com/hasaneyldrm/exercises-dataset"
+      },
+      {
+        "name": "santifer/career-ops",
+        "stars": "58007",
+        "url": "https://github.com/santifer/career-ops"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "The Free Market Lie: Why Switz",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Virginia bans sale of geolocat",
+        "source": "Hacker News"
+      },
+      {
+        "title": "CarPlay Is Additive",
+        "source": "Hacker News"
+      },
+      {
+        "title": "crustc: entirety of `rustc`, t",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Right to Local Intelligence",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
