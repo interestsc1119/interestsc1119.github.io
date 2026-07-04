@@ -1392,5 +1392,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-07-04",
+    "ai_count": 14,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "usestrix/strix",
+        "stars": "34837",
+        "url": "https://github.com/usestrix/strix"
+      },
+      {
+        "name": "openai/codex-plugin-cc",
+        "stars": "23337",
+        "url": "https://github.com/openai/codex-plugin-cc"
+      },
+      {
+        "name": "JuliusBrussee/caveman",
+        "stars": "83075",
+        "url": "https://github.com/JuliusBrussee/caveman"
+      },
+      {
+        "name": "ChromeDevTools/chrome-devtools-mcp",
+        "stars": "45530",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+      },
+      {
+        "name": "ansible/ansible",
+        "stars": "69236",
+        "url": "https://github.com/ansible/ansible"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Giant trees have no trouble pu",
+        "source": "Hacker News"
+      },
+      {
+        "title": "GLM5.2 on AMD MI355X at 2626 t",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Leanstral 1.5: Proof abundance",
+        "source": "Hacker News"
+      },
+      {
+        "title": "MSI Center – How to gain SYSTE",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Steam Controller Auto-Charge –",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
