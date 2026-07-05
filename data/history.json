@@ -1446,5 +1446,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-07-05",
+    "ai_count": 14,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "openai/codex-plugin-cc",
+        "stars": "24699",
+        "url": "https://github.com/openai/codex-plugin-cc"
+      },
+      {
+        "name": "JuliusBrussee/caveman",
+        "stars": "84110",
+        "url": "https://github.com/JuliusBrussee/caveman"
+      },
+      {
+        "name": "alibaba/page-agent",
+        "stars": "23237",
+        "url": "https://github.com/alibaba/page-agent"
+      },
+      {
+        "name": "usestrix/strix",
+        "stars": "36240",
+        "url": "https://github.com/usestrix/strix"
+      },
+      {
+        "name": "ChromeDevTools/chrome-devtools-mcp",
+        "stars": "45825",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Command and Conquer Generals n",
+        "source": "Hacker News"
+      },
+      {
+        "title": "GPT-5.5 Codex reasoning-token ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Jellyfish can heal wounds in m",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Google Books (or similar) all ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "If you're a button, you have o",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]
