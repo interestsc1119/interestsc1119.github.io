@@ -1500,5 +1500,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-07-06",
+    "ai_count": 18,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "Zackriya-Solutions/meetily",
+        "stars": "17489",
+        "url": "https://github.com/Zackriya-Solutions/meetily"
+      },
+      {
+        "name": "openai/codex-plugin-cc",
+        "stars": "25682",
+        "url": "https://github.com/openai/codex-plugin-cc"
+      },
+      {
+        "name": "asgeirtj/system_prompts_leaks",
+        "stars": "50248",
+        "url": "https://github.com/asgeirtj/system_prompts_leaks"
+      },
+      {
+        "name": "Leonxlnx/taste-skill",
+        "stars": "57804",
+        "url": "https://github.com/Leonxlnx/taste-skill"
+      },
+      {
+        "name": "alirezarezvani/claude-skills",
+        "stars": "20710",
+        "url": "https://github.com/alirezarezvani/claude-skills"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "GPT-5.6 Sol Ultra will be in C",
+        "source": "Hacker News"
+      },
+      {
+        "title": "OpenPrinter",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Has_not_been_viewed_much",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Organic Maps",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Building relationships with cu",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

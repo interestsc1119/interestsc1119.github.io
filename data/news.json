@@ -1,164 +1,164 @@
 {
-  "date": "2026-07-05",
-  "updated_at": "2026-07-05T04:47:07.459363",
+  "date": "2026-07-06",
+  "updated_at": "2026-07-06T05:01:20.763480",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable",
-      "url": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main",
+      "title": "GPT-5.6 Sol Ultra will be in Codex",
+      "url": "https://twitter.com/thsottiaux/status/2073933490513752151",
       "source": "Hacker News",
-      "hot_value": "427",
+      "hot_value": "152",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance",
-      "url": "https://github.com/openai/codex/issues/30364",
+      "title": "OpenPrinter",
+      "url": "https://www.opentools.studio/",
       "source": "Hacker News",
-      "hot_value": "195",
-      "is_hot": false
+      "hot_value": "579",
+      "is_hot": true
     },
     {
       "rank": 3,
-      "title": "Jellyfish can heal wounds in minutes. Scientists want their secrets",
-      "url": "https://www.mbl.edu/news/jellyfish-can-heal-wounds-minutes-scientists-want-their-secrets",
+      "title": "Has_not_been_viewed_much",
+      "url": "https://iamwillwang.com/notes/has-not-been-viewed-much/",
       "source": "Hacker News",
-      "hot_value": "72",
+      "hot_value": "149",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "Google Books (or similar) all book scans – $200k bounty (2025)",
-      "url": "https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234",
+      "title": "Organic Maps",
+      "url": "https://organicmaps.app/",
       "source": "Hacker News",
-      "hot_value": "384",
+      "hot_value": "862",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "If you're a button, you have one job",
-      "url": "https://unsung.aresluna.org/if-youre-a-button-you-have-one-job/",
+      "title": "Building relationships with customers through support didn't turn out as hoped",
+      "url": "https://www.uncommonapps.nyc/p/castro-podcasts-things-i-got-wrong-support",
       "source": "Hacker News",
-      "hot_value": "42",
+      "hot_value": "37",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "Leaking YouTube creators' private videos",
-      "url": "https://javoriuski.com/post/youtube",
+      "title": "Does Code Cleanliness Affect Coding Agents?",
+      "url": "https://arxiv.org/abs/2605.20049",
       "source": "Hacker News",
-      "hot_value": "533",
+      "hot_value": "69",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "Atomic Force Microscope high-speed video, stainless etching, bacteria, and more",
-      "url": "https://www.youtube.com/watch?v=DyIQkqBXhS0",
+      "title": "The Age of Personalized Hardware Is Coming",
+      "url": "https://geastack.com/blog-the-age-of-personalized-hardware-is-coming",
       "source": "Hacker News",
-      "hot_value": "27",
+      "hot_value": "22",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "Artful Cats: Feline-Inspired Art and Artifacts",
-      "url": "https://www.si.edu/spotlight/art-cats",
+      "title": "Completing a computer science degree on Coursera",
+      "url": "https://notesbylex.com/completing-a-computer-science-degree-on-coursera",
       "source": "Hacker News",
-      "hot_value": "5",
+      "hot_value": "143",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "Explanation of everything you can see in htop/top on Linux (2019)",
-      "url": "https://peteris.rocks/blog/htop/",
+      "title": "Show HN: Homegames. An open-source game platform I've been making for 8 years",
+      "url": "https://homegames.io",
       "source": "Hacker News",
-      "hot_value": "439",
+      "hot_value": "115",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "Better Models: Worse Tools",
-      "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "title": "It's not about physical vs. digital games, it's about ownership",
+      "url": "https://popcar.bearblog.dev/its-about-ownership/",
       "source": "Hacker News",
-      "hot_value": "129",
+      "hot_value": "366",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "Meta's Un-Stable Signature",
-      "url": "https://hackerfactor.com/blog/index.php?/archives/1098-Metas-Un-Stable-Signature.html",
+      "title": "The future of Flipper Zero development",
+      "url": "https://blog.flipper.net/future-of-flipper-zero-development/",
       "source": "Hacker News",
-      "hot_value": "45",
+      "hot_value": "269",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "Return of the Nigerian Prince Redux: Beware Book Club and Book Review Scams (2025)",
-      "url": "https://writerbeware.blog/2025/09/19/return-of-the-nigerian-prince-redux-beware-book-club-and-book-review-scams/",
+      "title": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
+      "url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
       "source": "Hacker News",
-      "hot_value": "30",
+      "hot_value": "146",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "Potential session/cache leakage between workspace instances or consumer accounts",
-      "url": "https://github.com/anthropics/claude-code/issues/74066",
+      "title": "Mr. Baby Paint and accidentally discovering a new cellular automata",
+      "url": "https://tekstien-marginaalien-keskus.aalto.fi/residenssi/heikki/blog/004-december-2/",
       "source": "Hacker News",
-      "hot_value": "282",
+      "hot_value": "134",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Zig: All Package Management Functionality Moved from Compiler to Build System",
-      "url": "https://ziglang.org/devlog/2026/#2026-06-30",
+      "title": "Delta flight hit by firework while landing at Midway Airport on Fourth of July",
+      "url": "https://www.nbcchicago.com/news/local/delta-flight-hit-by-firework-while-landing-at-midway-airport-on-fourth-of-july/3957451/",
       "source": "Hacker News",
-      "hot_value": "163",
+      "hot_value": "101",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "\"Beyond the limit\": Satellites and mirrors in space pose threat to the night sky",
-      "url": "https://www.eso.org/public/news/eso2607/",
+      "title": "Starring the Computer",
+      "url": "https://www.starringthecomputer.com/computers.html",
       "source": "Hacker News",
-      "hot_value": "117",
+      "hot_value": "182",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "New Google commercial imagines a Declaration of Independence written with help from AI",
-      "url": "https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/",
+      "title": "Uber’s European expansion plans may have hit a speed bump",
+      "url": "https://techcrunch.com/2026/07/05/ubers-european-expansion-plans-may-have-hit-a-speed-bump/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Midjourney wants Hollywood studios to reveal the details of their AI usage",
-      "url": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
+      "title": "Trump memecoin investors lost $3.8 billion, analysis finds",
+      "url": "https://techcrunch.com/2026/07/05/trump-memecoin-investors-lost-3-8-billion-analysis-finds/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Alibaba reportedly bans employees from using Claude Code",
-      "url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
+      "title": "Amazon will stop accepting new customers for Mechanical Turk",
+      "url": "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "What is Mistral AI? Everything to know about the OpenAI competitor",
-      "url": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/",
+      "title": "5 desk gadgets that can make your workday better",
+      "url": "https://techcrunch.com/2026/07/05/5-desk-gadgets-that-can-make-your-workday-better/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "The only AI glossary you’ll need this year",
-      "url": "https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+      "title": "What is Bending Spoons? The little-known AOL and Vimeo owner that’s now public",
+      "url": "https://techcrunch.com/2026/07/05/what-is-bending-spoons-everything-to-know-about-aols-acquirer/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
