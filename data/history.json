@@ -1554,5 +1554,59 @@
         "source": "Hacker News"
       }
     ]
+  },
+  {
+    "date": "2026-07-07",
+    "ai_count": 13,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "asgeirtj/system_prompts_leaks",
+        "stars": "51836",
+        "url": "https://github.com/asgeirtj/system_prompts_leaks"
+      },
+      {
+        "name": "addyosmani/agent-skills",
+        "stars": "71060",
+        "url": "https://github.com/addyosmani/agent-skills"
+      },
+      {
+        "name": "Zackriya-Solutions/meetily",
+        "stars": "19630",
+        "url": "https://github.com/Zackriya-Solutions/meetily"
+      },
+      {
+        "name": "Leonxlnx/taste-skill",
+        "stars": "59233",
+        "url": "https://github.com/Leonxlnx/taste-skill"
+      },
+      {
+        "name": "alirezarezvani/claude-skills",
+        "stars": "21254",
+        "url": "https://github.com/alirezarezvani/claude-skills"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Fable turned reMarkable into T",
+        "source": "Hacker News"
+      },
+      {
+        "title": "OpenWrt One – Open Hardware Ro",
+        "source": "Hacker News"
+      },
+      {
+        "title": "How to sequence your own DNA a",
+        "source": "Hacker News"
+      },
+      {
+        "title": "CoMaps – FOSS Offline Maps",
+        "source": "Hacker News"
+      },
+      {
+        "title": "GLM 5.2 and the coming AI marg",
+        "source": "Hacker News"
+      }
+    ]
   }
 ]

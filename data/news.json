@@ -1,164 +1,164 @@
 {
-  "date": "2026-07-06",
-  "updated_at": "2026-07-06T05:01:20.763480",
+  "date": "2026-07-07",
+  "updated_at": "2026-07-07T04:40:28.828905",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "GPT-5.6 Sol Ultra will be in Codex",
-      "url": "https://twitter.com/thsottiaux/status/2073933490513752151",
+      "title": "Fable turned reMarkable into Tom Riddle's diary from Harry Potter",
+      "url": "https://github.com/MaximeRivest/Riddle",
       "source": "Hacker News",
-      "hot_value": "152",
+      "hot_value": "248",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "OpenPrinter",
-      "url": "https://www.opentools.studio/",
+      "title": "OpenWrt One – Open Hardware Router",
+      "url": "https://openwrt.org/toh/openwrt/one",
       "source": "Hacker News",
-      "hot_value": "579",
-      "is_hot": true
+      "hot_value": "491",
+      "is_hot": false
     },
     {
       "rank": 3,
-      "title": "Has_not_been_viewed_much",
-      "url": "https://iamwillwang.com/notes/has-not-been-viewed-much/",
+      "title": "How to sequence your own DNA at home",
+      "url": "https://bradleywoolf.com/links-1/sequencing-my-own-dna-at-home",
       "source": "Hacker News",
-      "hot_value": "149",
+      "hot_value": "107",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "Organic Maps",
-      "url": "https://organicmaps.app/",
+      "title": "CoMaps – FOSS Offline Maps",
+      "url": "https://www.comaps.app/",
       "source": "Hacker News",
-      "hot_value": "862",
+      "hot_value": "374",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Building relationships with customers through support didn't turn out as hoped",
-      "url": "https://www.uncommonapps.nyc/p/castro-podcasts-things-i-got-wrong-support",
+      "title": "GLM 5.2 and the coming AI margin collapse",
+      "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
       "source": "Hacker News",
-      "hot_value": "37",
+      "hot_value": "241",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "Does Code Cleanliness Affect Coding Agents?",
-      "url": "https://arxiv.org/abs/2605.20049",
+      "title": "Small AI Models Gain Traction In places with unreliable networks",
+      "url": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
       "source": "Hacker News",
-      "hot_value": "69",
+      "hot_value": "59",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "The Age of Personalized Hardware Is Coming",
-      "url": "https://geastack.com/blog-the-age-of-personalized-hardware-is-coming",
+      "title": "Ternlight – 7 MB embedding model that runs in browser (WASM)",
+      "url": "https://ternlight-demo.vercel.app/",
       "source": "Hacker News",
-      "hot_value": "22",
+      "hot_value": "132",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "Completing a computer science degree on Coursera",
-      "url": "https://notesbylex.com/completing-a-computer-science-degree-on-coursera",
+      "title": "A global workspace in language models",
+      "url": "https://www.anthropic.com/research/global-workspace",
       "source": "Hacker News",
-      "hot_value": "143",
+      "hot_value": "309",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "Show HN: Homegames. An open-source game platform I've been making for 8 years",
-      "url": "https://homegames.io",
+      "title": "Pruning RAG context down to what the answer actually needs",
+      "url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
       "source": "Hacker News",
-      "hot_value": "115",
+      "hot_value": "68",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "It's not about physical vs. digital games, it's about ownership",
-      "url": "https://popcar.bearblog.dev/its-about-ownership/",
+      "title": "Resetting Xbox",
+      "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
       "source": "Hacker News",
-      "hot_value": "366",
+      "hot_value": "529",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "The future of Flipper Zero development",
-      "url": "https://blog.flipper.net/future-of-flipper-zero-development/",
+      "title": "Linux on the Atari Jaguar",
+      "url": "https://cakehonolulu.github.io/linux-for-jaguar/",
       "source": "Hacker News",
-      "hot_value": "269",
+      "hot_value": "121",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
-      "url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
+      "title": "A 2048-spin bulk acoustic wave Ising machine for number partitioning and Sudoku",
+      "url": "https://arxiv.org/abs/2607.02112",
       "source": "Hacker News",
-      "hot_value": "146",
+      "hot_value": "33",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "Mr. Baby Paint and accidentally discovering a new cellular automata",
-      "url": "https://tekstien-marginaalien-keskus.aalto.fi/residenssi/heikki/blog/004-december-2/",
+      "title": "AMD Ryzen AI Halo – $4k AI Dev Kit",
+      "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
       "source": "Hacker News",
-      "hot_value": "134",
+      "hot_value": "294",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Delta flight hit by firework while landing at Midway Airport on Fourth of July",
-      "url": "https://www.nbcchicago.com/news/local/delta-flight-hit-by-firework-while-landing-at-midway-airport-on-fourth-of-july/3957451/",
+      "title": "OpenSSH 10.4/10.4p1 Released",
+      "url": "https://www.openssh.org/txt/release-10.4",
       "source": "Hacker News",
-      "hot_value": "101",
+      "hot_value": "45",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Starring the Computer",
-      "url": "https://www.starringthecomputer.com/computers.html",
+      "title": "Acronym Fatigue Series Introduction: why I'm wary of acronyms",
+      "url": "https://devz.cl/posts/acryonym-fatigue-series-why-i-m-wary-of-engineering-acronyms/",
       "source": "Hacker News",
-      "hot_value": "182",
+      "hot_value": "36",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "Uber’s European expansion plans may have hit a speed bump",
-      "url": "https://techcrunch.com/2026/07/05/ubers-european-expansion-plans-may-have-hit-a-speed-bump/",
+      "title": "Netflix invented binge-watching. Now it may have outgrown it.",
+      "url": "https://techcrunch.com/2026/07/06/netflix-invented-binge-watching-now-it-may-have-outgrown-it/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Trump memecoin investors lost $3.8 billion, analysis finds",
-      "url": "https://techcrunch.com/2026/07/05/trump-memecoin-investors-lost-3-8-billion-analysis-finds/",
+      "title": "The ‘first’ AI-run ransomware attack still needed a human",
+      "url": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Amazon will stop accepting new customers for Mechanical Turk",
-      "url": "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/",
+      "title": "US investors will soon get access to SK Hynix, another memory maker riding the AI boom",
+      "url": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "5 desk gadgets that can make your workday better",
-      "url": "https://techcrunch.com/2026/07/05/5-desk-gadgets-that-can-make-your-workday-better/",
+      "title": "Vercel CEO Guillermo Rauch on the fight to split off models from agents",
+      "url": "https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "What is Bending Spoons? The little-known AOL and Vimeo owner that’s now public",
-      "url": "https://techcrunch.com/2026/07/05/what-is-bending-spoons-everything-to-know-about-aols-acquirer/",
+      "title": "You can now customize Siri’s pace and expressivity in the latest iOS 27 beta",
+      "url": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
