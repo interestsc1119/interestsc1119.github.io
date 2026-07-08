@@ -1,59 +1,5 @@
 [
   {
-    "date": "2026-06-08",
-    "ai_count": 10,
-    "news_count": 10,
-    "ai_projects": [
-      {
-        "name": "mvanhorn/last30days-skill",
-        "stars": "31761",
-        "url": "https://github.com/mvanhorn/last30days-skill"
-      },
-      {
-        "name": "opencv/opencv",
-        "stars": "88180",
-        "url": "https://github.com/opencv/opencv"
-      },
-      {
-        "name": "Leonxlnx/taste-skill",
-        "stars": "37177",
-        "url": "https://github.com/Leonxlnx/taste-skill"
-      },
-      {
-        "name": "NousResearch/hermes-agent",
-        "stars": "186264",
-        "url": "https://github.com/NousResearch/hermes-agent"
-      },
-      {
-        "name": "yikart/AiToEarn",
-        "stars": "18966",
-        "url": "https://github.com/yikart/AiToEarn"
-      }
-    ],
-    "top_news": [
-      {
-        "title": "朝方在机场热情迎接",
-        "source": "微博"
-      },
-      {
-        "title": "跑男",
-        "source": "微博"
-      },
-      {
-        "title": "连续16年送考这份坚守令人动容",
-        "source": "微博"
-      },
-      {
-        "title": "高考物理 选拔牛顿接班人",
-        "source": "微博"
-      },
-      {
-        "title": "高考历史",
-        "source": "微博"
-      }
-    ]
-  },
-  {
     "date": "2026-06-09",
     "ai_count": 13,
     "news_count": 20,
@@ -1605,6 +1551,60 @@
       },
       {
         "title": "GLM 5.2 and the coming AI marg",
+        "source": "Hacker News"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-08",
+    "ai_count": 11,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "MadsLorentzen/ai-job-search",
+        "stars": "11566",
+        "url": "https://github.com/MadsLorentzen/ai-job-search"
+      },
+      {
+        "name": "Zackriya-Solutions/meetily",
+        "stars": "20926",
+        "url": "https://github.com/Zackriya-Solutions/meetily"
+      },
+      {
+        "name": "addyosmani/agent-skills",
+        "stars": "72328",
+        "url": "https://github.com/addyosmani/agent-skills"
+      },
+      {
+        "name": "asgeirtj/system_prompts_leaks",
+        "stars": "53190",
+        "url": "https://github.com/asgeirtj/system_prompts_leaks"
+      },
+      {
+        "name": "TencentCloud/CubeSandbox",
+        "stars": "8540",
+        "url": "https://github.com/TencentCloud/CubeSandbox"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Is The Economist Always Wrong?",
+        "source": "Hacker News"
+      },
+      {
+        "title": "GAO: DOE Is Prematurely Exclud",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Tenda firmware (multiple versi",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Canada's only watchmaking scho",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Structure and Interpretation o",
         "source": "Hacker News"
       }
     ]
