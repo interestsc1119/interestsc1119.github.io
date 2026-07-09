@@ -1,76 +1,36 @@
 {
-  "date": "2026-07-08",
-  "updated_at": "2026-07-08T04:00:11.535223",
-  "count": 11,
+  "date": "2026-07-09",
+  "updated_at": "2026-07-09T04:40:01.161701",
+  "count": 10,
   "projects": [
-    {
-      "owner": "MadsLorentzen",
-      "name": "ai-job-search",
-      "full_name": "MadsLorentzen/ai-job-search",
-      "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
-      "stars": "11566",
-      "stars_today": "2514",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "is_ai_related": true
-    },
-    {
-      "owner": "Zackriya-Solutions",
-      "name": "meetily",
-      "full_name": "Zackriya-Solutions/meetily",
-      "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai -https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows.",
-      "stars": "20926",
-      "stars_today": "1777",
-      "url": "https://github.com/Zackriya-Solutions/meetily",
-      "is_ai_related": true
-    },
     {
       "owner": "addyosmani",
       "name": "agent-skills",
       "full_name": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
-      "stars": "72328",
-      "stars_today": "1317",
+      "stars": "74534",
+      "stars_today": "1297",
       "url": "https://github.com/addyosmani/agent-skills",
       "is_ai_related": true
     },
     {
-      "owner": "asgeirtj",
-      "name": "system_prompts_leaks",
-      "full_name": "asgeirtj/system_prompts_leaks",
-      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
-      "stars": "53190",
-      "stars_today": "1691",
-      "url": "https://github.com/asgeirtj/system_prompts_leaks",
-      "is_ai_related": true
-    },
-    {
       "owner": "TencentCloud",
-      "name": "CubeSandbox",
-      "full_name": "TencentCloud/CubeSandbox",
-      "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
-      "stars": "8540",
-      "stars_today": "664",
-      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "name": "TencentDB-Agent-Memory",
+      "full_name": "TencentCloud/TencentDB-Agent-Memory",
+      "description": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.",
+      "stars": "7771",
+      "stars_today": "318",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
       "is_ai_related": true
     },
     {
-      "owner": "steipete",
-      "name": "CodexBar",
-      "full_name": "steipete/CodexBar",
-      "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
-      "stars": "17075",
-      "stars_today": "376",
-      "url": "https://github.com/steipete/CodexBar",
-      "is_ai_related": true
-    },
-    {
-      "owner": "dotnet",
-      "name": "skills",
-      "full_name": "dotnet/skills",
-      "description": "Repository for skills to assist AI coding agents with .NET and C#",
-      "stars": "4341",
-      "stars_today": "64",
-      "url": "https://github.com/dotnet/skills",
+      "owner": "mvanhorn",
+      "name": "last30days-skill",
+      "full_name": "mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "stars": "50889",
+      "stars_today": "352",
+      "url": "https://github.com/mvanhorn/last30days-skill",
       "is_ai_related": true
     },
     {
@@ -78,9 +38,49 @@
       "name": "OfficeCLI",
       "full_name": "iOfficeAI/OfficeCLI",
       "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
-      "stars": "10293",
-      "stars_today": "893",
+      "stars": "12233",
+      "stars_today": "1717",
       "url": "https://github.com/iOfficeAI/OfficeCLI",
+      "is_ai_related": true
+    },
+    {
+      "owner": "asgeirtj",
+      "name": "system_prompts_leaks",
+      "full_name": "asgeirtj/system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "stars": "54396",
+      "stars_today": "1218",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "is_ai_related": true
+    },
+    {
+      "owner": "obra",
+      "name": "superpowers",
+      "full_name": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars": "250050",
+      "stars_today": "1116",
+      "url": "https://github.com/obra/superpowers",
+      "is_ai_related": true
+    },
+    {
+      "owner": "alibaba",
+      "name": "zvec",
+      "full_name": "alibaba/zvec",
+      "description": "A lightweight, lightning-fast, in-process vector database",
+      "stars": "14486",
+      "stars_today": "395",
+      "url": "https://github.com/alibaba/zvec",
+      "is_ai_related": true
+    },
+    {
+      "owner": "wonderwhy-er",
+      "name": "DesktopCommanderMCP",
+      "full_name": "wonderwhy-er/DesktopCommanderMCP",
+      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+      "stars": "6413",
+      "stars_today": "28",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
       "is_ai_related": true
     },
     {
@@ -88,29 +88,19 @@
       "name": "claude-video",
       "full_name": "bradautomates/claude-video",
       "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
-      "stars": "5316",
-      "stars_today": "965",
+      "stars": "6174",
+      "stars_today": "951",
       "url": "https://github.com/bradautomates/claude-video",
       "is_ai_related": true
     },
     {
-      "owner": "kyutai-labs",
-      "name": "pocket-tts",
-      "full_name": "kyutai-labs/pocket-tts",
-      "description": "A TTS that fits in your CPU (and pocket)",
-      "stars": "6287",
-      "stars_today": "531",
-      "url": "https://github.com/kyutai-labs/pocket-tts",
-      "is_ai_related": true
-    },
-    {
-      "owner": "hesreallyhim",
-      "name": "awesome-claude-code",
-      "full_name": "hesreallyhim/awesome-claude-code",
-      "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
-      "stars": "49234",
-      "stars_today": "144",
-      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "owner": "TencentCloud",
+      "name": "CubeSandbox",
+      "full_name": "TencentCloud/CubeSandbox",
+      "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
+      "stars": "9027",
+      "stars_today": "564",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
       "is_ai_related": true
     }
   ]
