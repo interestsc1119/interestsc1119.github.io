@@ -1,164 +1,164 @@
 {
-  "date": "2026-07-09",
-  "updated_at": "2026-07-09T04:40:01.161707",
+  "date": "2026-07-10",
+  "updated_at": "2026-07-10T04:42:04.101482",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "John Deere owners will get the right to repair equipment under FTC settlement",
-      "url": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02",
+      "title": "Ben Bernanke Joins Anthropic Oversight Trust",
+      "url": "https://www.anthropic.com/news/ben-bernanke",
       "source": "Hacker News",
-      "hot_value": "499",
+      "hot_value": "44",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "Chatto is now open source",
-      "url": "https://www.hmans.dev/blog/chatto-is-open-source",
+      "title": "Show HN: Getting GLM 5.2 running on my slow computer",
+      "url": "https://github.com/JustVugg/colibri",
       "source": "Hacker News",
-      "hot_value": "823",
-      "is_hot": true
-    },
-    {
-      "rank": 3,
-      "title": "Separating signal from noise in coding evaluations",
-      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations/",
-      "source": "Hacker News",
-      "hot_value": "185",
+      "hot_value": "465",
       "is_hot": false
     },
     {
-      "rank": 4,
-      "title": "Cloudflare Drop",
-      "url": "https://www.cloudflare.com/drop/",
+      "rank": 3,
+      "title": "EU Parliament greenlights Chat Control 1.0",
+      "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
       "source": "Hacker News",
-      "hot_value": "325",
+      "hot_value": "1087",
+      "is_hot": true
+    },
+    {
+      "rank": 4,
+      "title": "Show HN: 18 Words",
+      "url": "https://18words.com/",
+      "source": "Hacker News",
+      "hot_value": "884",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "Remote Attestation",
-      "url": "https://www.liamcvw.com/p/remote-attestation",
+      "title": "GPT-5.6",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "source": "Hacker News",
+      "hot_value": "1141",
+      "is_hot": false
+    },
+    {
+      "rank": 6,
+      "title": "Train sim created by just one person is being called the best ever made",
+      "url": "https://kotaku.com/a-train-sim-created-by-just-one-person-is-being-called-the-best-ever-made-2000699429",
+      "source": "Hacker News",
+      "hot_value": "376",
+      "is_hot": false
+    },
+    {
+      "rank": 7,
+      "title": "Hy3",
+      "url": "https://hy.tencent.com/research/hy3",
+      "source": "Hacker News",
+      "hot_value": "415",
+      "is_hot": false
+    },
+    {
+      "rank": 8,
+      "title": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
+      "url": "https://github.com/malisper/pgrust",
+      "source": "Hacker News",
+      "hot_value": "463",
+      "is_hot": false
+    },
+    {
+      "rank": 9,
+      "title": "Interview with Mitchell Hashimoto about Ghostty and Zig",
+      "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/",
+      "source": "Hacker News",
+      "hot_value": "168",
+      "is_hot": false
+    },
+    {
+      "rank": 10,
+      "title": "Focus",
+      "url": "https://boz.com/articles/focus",
+      "source": "Hacker News",
+      "hot_value": "82",
+      "is_hot": false
+    },
+    {
+      "rank": 11,
+      "title": "Study: \"Mommy, do you love your phone more than me?\"",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1766665/full",
+      "source": "Hacker News",
+      "hot_value": "38",
+      "is_hot": false
+    },
+    {
+      "rank": 12,
+      "title": "Life with Hazard Ratios",
+      "url": "https://dynomight.net/hazard-ratios/",
+      "source": "Hacker News",
+      "hot_value": "19",
+      "is_hot": false
+    },
+    {
+      "rank": 13,
+      "title": "My Story of 3D Realms / Apogee Part I (2020)",
+      "url": "https://joesiegler.blog/2020/11/my-story-of-apogee-3dr/",
       "source": "Hacker News",
       "hot_value": "51",
       "is_hot": false
     },
     {
-      "rank": 6,
-      "title": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
-      "url": "https://mistral.ai/news/robostral-navigate/",
-      "source": "Hacker News",
-      "hot_value": "437",
-      "is_hot": false
-    },
-    {
-      "rank": 7,
-      "title": "I think I have LLM burnout",
-      "url": "https://www.alecscollon.com/blog/llm-burnout/",
-      "source": "Hacker News",
-      "hot_value": "217",
-      "is_hot": false
-    },
-    {
-      "rank": 8,
-      "title": "Patching MechCommander's \"left arm bug\" for fun and profit",
-      "url": "https://mhloppy.com/2026/05/mechcommander-weapons-left-arm-bug-fix/",
-      "source": "Hacker News",
-      "hot_value": "36",
-      "is_hot": false
-    },
-    {
-      "rank": 9,
-      "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
-      "url": "https://microsoft.github.io/flint-chart/#/",
-      "source": "Hacker News",
-      "hot_value": "235",
-      "is_hot": false
-    },
-    {
-      "rank": 10,
-      "title": "Unicode's transliteration rules are Turing-complete",
-      "url": "https://seriot.ch/computation/uts35/",
-      "source": "Hacker News",
-      "hot_value": "59",
-      "is_hot": false
-    },
-    {
-      "rank": 11,
-      "title": "We made Grok 4.5, GPT-5.5, and Claude build the same apps",
-      "url": "https://www.tryai.dev/blog/grok-4.5-vs-gpt-5.5-vs-claude-build-off",
-      "source": "Hacker News",
-      "hot_value": "111",
-      "is_hot": false
-    },
-    {
-      "rank": 12,
-      "title": "Benchmarking coding agents on Databricks' multi-million line codebase",
-      "url": "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase",
-      "source": "Hacker News",
-      "hot_value": "29",
-      "is_hot": false
-    },
-    {
-      "rank": 13,
-      "title": "Show HN: Yamanote.fun – A complete soundscape for Tokyo's Yamanote line",
-      "url": "https://www.yamanote.fun/",
-      "source": "Hacker News",
-      "hot_value": "87",
-      "is_hot": false
-    },
-    {
       "rank": 14,
-      "title": "Grok 4.5",
-      "url": "https://x.ai/news/grok-4-5",
+      "title": "Apple Silicon Exec Explains Mac Mini AI Demand and On-Device Future",
+      "url": "https://www.macrumors.com/2026/07/06/apple-silicon-exec-explains-mac-mini-ai-demand/",
       "source": "Hacker News",
-      "hot_value": "527",
+      "hot_value": "13",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Cargo-nextest: 3x faster than cargo test, per-test isolation, first-class CI",
-      "url": "https://nexte.st/",
+      "title": "No leap second will be introduced at the end of December 2026",
+      "url": "https://datacenter.iers.org/data/latestVersion/bulletinC.txt",
       "source": "Hacker News",
-      "hot_value": "12",
+      "hot_value": "258",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "Truecaller clashes with India’s telecom regulator over anti-spam rules",
-      "url": "https://techcrunch.com/2026/07/08/truecaller-clashes-with-indias-telecom-regulator-over-anti-spam-rules/",
+      "title": "After Apple, India’s smartphone manufacturing boom enters new phase with Vivo JV",
+      "url": "https://techcrunch.com/2026/07/09/after-apple-indias-smartphone-manufacturing-boom-enters-new-phase-with-vivo-jv/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Despite ‘misgivings,’ judge approves Elon Musk’s $1.5M SEC settlement",
-      "url": "https://techcrunch.com/2026/07/08/despite-misgivings-judge-approves-elon-musks-1-5-million-sec-settlement/",
+      "title": "OpenAI says GPT 5.6 is the ‘preferred model’ for Microsoft Copilot 365 amid breakup chatter",
+      "url": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Lovable reportedly in talks to double its valuation to $13.2B",
-      "url": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/",
+      "title": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "url": "https://techcrunch.com/2026/07/09/dont-want-to-invest-in-elon-musk-two-new-etfs-explicitly-exclude-him/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Feds demand autonomous vehicle companies stop interfering with first responders",
-      "url": "https://techcrunch.com/2026/07/08/feds-demand-autonomous-vehicle-companies-stop-interfering-with-first-responders/",
+      "title": "Fidji Simo steps down from OpenAI’s no. 2 role",
+      "url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "Google’s deepfake detector system used to debunk McConnell hoax pic",
-      "url": "https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/",
+      "title": "OpenAI launches its new family of models with GPT-5.6",
+      "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false

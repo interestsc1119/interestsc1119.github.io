@@ -1,59 +1,5 @@
 [
   {
-    "date": "2026-06-10",
-    "ai_count": 12,
-    "news_count": 20,
-    "ai_projects": [
-      {
-        "name": "mvanhorn/last30days-skill",
-        "stars": "38537",
-        "url": "https://github.com/mvanhorn/last30days-skill"
-      },
-      {
-        "name": "RyanCodrai/turbovec",
-        "stars": "10558",
-        "url": "https://github.com/RyanCodrai/turbovec"
-      },
-      {
-        "name": "opencv/opencv",
-        "stars": "88819",
-        "url": "https://github.com/opencv/opencv"
-      },
-      {
-        "name": "aaif-goose/goose",
-        "stars": "48659",
-        "url": "https://github.com/aaif-goose/goose"
-      },
-      {
-        "name": "Andyyyy64/whichllm",
-        "stars": "4317",
-        "url": "https://github.com/Andyyyy64/whichllm"
-      }
-    ],
-    "top_news": [
-      {
-        "title": "Mercedes‑Benz starts large‑sca",
-        "source": "Hacker News"
-      },
-      {
-        "title": "macOS Container Machines",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Claude Fable 5",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Port React Compiler to Rust",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Upcoming breaking changes for ",
-        "source": "Hacker News"
-      }
-    ]
-  },
-  {
     "date": "2026-06-11",
     "ai_count": 13,
     "news_count": 20,
@@ -1605,6 +1551,60 @@
       },
       {
         "title": "Remote Attestation",
+        "source": "Hacker News"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-10",
+    "ai_count": 11,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "MadsLorentzen/ai-job-search",
+        "stars": "19511",
+        "url": "https://github.com/MadsLorentzen/ai-job-search"
+      },
+      {
+        "name": "addyosmani/agent-skills",
+        "stars": "76081",
+        "url": "https://github.com/addyosmani/agent-skills"
+      },
+      {
+        "name": "VoltAgent/awesome-design-md",
+        "stars": "99973",
+        "url": "https://github.com/VoltAgent/awesome-design-md"
+      },
+      {
+        "name": "iOfficeAI/OfficeCLI",
+        "stars": "13686",
+        "url": "https://github.com/iOfficeAI/OfficeCLI"
+      },
+      {
+        "name": "wonderwhy-er/DesktopCommanderMCP",
+        "stars": "6606",
+        "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Ben Bernanke Joins Anthropic O",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Show HN: Getting GLM 5.2 runni",
+        "source": "Hacker News"
+      },
+      {
+        "title": "EU Parliament greenlights Chat",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Show HN: 18 Words",
+        "source": "Hacker News"
+      },
+      {
+        "title": "GPT-5.6",
         "source": "Hacker News"
       }
     ]
