@@ -1,59 +1,5 @@
 [
   {
-    "date": "2026-06-11",
-    "ai_count": 13,
-    "news_count": 20,
-    "ai_projects": [
-      {
-        "name": "addyosmani/agent-skills",
-        "stars": "52307",
-        "url": "https://github.com/addyosmani/agent-skills"
-      },
-      {
-        "name": "phuryn/pm-skills",
-        "stars": "15228",
-        "url": "https://github.com/phuryn/pm-skills"
-      },
-      {
-        "name": "mvanhorn/last30days-skill",
-        "stars": "39230",
-        "url": "https://github.com/mvanhorn/last30days-skill"
-      },
-      {
-        "name": "soxoj/maigret",
-        "stars": "32129",
-        "url": "https://github.com/soxoj/maigret"
-      },
-      {
-        "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
-        "stars": "139589",
-        "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
-      }
-    ],
-    "top_news": [
-      {
-        "title": "AI agent runs amok in Fedora a",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Cybersecurity researchers aren",
-        "source": "Hacker News"
-      },
-      {
-        "title": "πFS",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Anthropic requires 30 day data",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Sequoyah’s syllabary created a",
-        "source": "Hacker News"
-      }
-    ]
-  },
-  {
     "date": "2026-06-12",
     "ai_count": 13,
     "news_count": 20,
@@ -1605,6 +1551,60 @@
       },
       {
         "title": "GPT-5.6",
+        "source": "Hacker News"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-11",
+    "ai_count": 11,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "wonderwhy-er/DesktopCommanderMCP",
+        "stars": "7386",
+        "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
+      },
+      {
+        "name": "addyosmani/agent-skills",
+        "stars": "76905",
+        "url": "https://github.com/addyosmani/agent-skills"
+      },
+      {
+        "name": "jbeder/yaml-cpp",
+        "stars": "6091",
+        "url": "https://github.com/jbeder/yaml-cpp"
+      },
+      {
+        "name": "mattpocock/skills",
+        "stars": "164788",
+        "url": "https://github.com/mattpocock/skills"
+      },
+      {
+        "name": "obra/superpowers",
+        "stars": "251874",
+        "url": "https://github.com/obra/superpowers"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Einstein's relativity rules ch",
+        "source": "Hacker News"
+      },
+      {
+        "title": "QuadRF can spot drones and see",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Apple sues OpenAI, accuses ex-",
+        "source": "Hacker News"
+      },
+      {
+        "title": "An iroh powered smart fan",
+        "source": "Hacker News"
+      },
+      {
+        "title": "An update on residential proxi",
         "source": "Hacker News"
       }
     ]

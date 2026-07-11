@@ -1,16 +1,16 @@
 {
-  "date": "2026-07-10",
-  "updated_at": "2026-07-10T04:42:04.101472",
+  "date": "2026-07-11",
+  "updated_at": "2026-07-11T03:58:06.860141",
   "count": 11,
   "projects": [
     {
-      "owner": "MadsLorentzen",
-      "name": "ai-job-search",
-      "full_name": "MadsLorentzen/ai-job-search",
-      "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
-      "stars": "19511",
-      "stars_today": "3716",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "owner": "wonderwhy-er",
+      "name": "DesktopCommanderMCP",
+      "full_name": "wonderwhy-er/DesktopCommanderMCP",
+      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+      "stars": "7386",
+      "stars_today": "328",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
       "is_ai_related": true
     },
     {
@@ -18,19 +18,79 @@
       "name": "agent-skills",
       "full_name": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
-      "stars": "76081",
-      "stars_today": "2554",
+      "stars": "76905",
+      "stars_today": "1116",
       "url": "https://github.com/addyosmani/agent-skills",
       "is_ai_related": true
     },
     {
-      "owner": "VoltAgent",
-      "name": "awesome-design-md",
-      "full_name": "VoltAgent/awesome-design-md",
-      "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
-      "stars": "99973",
-      "stars_today": "1391",
-      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "owner": "jbeder",
+      "name": "yaml-cpp",
+      "full_name": "jbeder/yaml-cpp",
+      "description": "A YAML parser and emitter in C++",
+      "stars": "6091",
+      "stars_today": "69",
+      "url": "https://github.com/jbeder/yaml-cpp",
+      "is_ai_related": true
+    },
+    {
+      "owner": "mattpocock",
+      "name": "skills",
+      "full_name": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .claude directory.",
+      "stars": "164788",
+      "stars_today": "1712",
+      "url": "https://github.com/mattpocock/skills",
+      "is_ai_related": true
+    },
+    {
+      "owner": "obra",
+      "name": "superpowers",
+      "full_name": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars": "251874",
+      "stars_today": "1013",
+      "url": "https://github.com/obra/superpowers",
+      "is_ai_related": true
+    },
+    {
+      "owner": "TencentCloud",
+      "name": "TencentDB-Agent-Memory",
+      "full_name": "TencentCloud/TencentDB-Agent-Memory",
+      "description": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.",
+      "stars": "8283",
+      "stars_today": "123",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "is_ai_related": true
+    },
+    {
+      "owner": "davila7",
+      "name": "claude-code-templates",
+      "full_name": "davila7/claude-code-templates",
+      "description": "CLI tool for configuring and monitoring Claude Code",
+      "stars": "28795",
+      "stars_today": "118",
+      "url": "https://github.com/davila7/claude-code-templates",
+      "is_ai_related": true
+    },
+    {
+      "owner": "tailscale",
+      "name": "tailscale",
+      "full_name": "tailscale/tailscale",
+      "description": "The easiest, most secure way to use WireGuard and 2FA.",
+      "stars": "33702",
+      "stars_today": "143",
+      "url": "https://github.com/tailscale/tailscale",
+      "is_ai_related": true
+    },
+    {
+      "owner": "google-labs-code",
+      "name": "stitch-skills",
+      "full_name": "google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "stars": "6789",
+      "stars_today": "117",
+      "url": "https://github.com/google-labs-code/stitch-skills",
       "is_ai_related": true
     },
     {
@@ -38,79 +98,19 @@
       "name": "OfficeCLI",
       "full_name": "iOfficeAI/OfficeCLI",
       "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
-      "stars": "13686",
-      "stars_today": "1929",
+      "stars": "14527",
+      "stars_today": "1224",
       "url": "https://github.com/iOfficeAI/OfficeCLI",
       "is_ai_related": true
     },
     {
-      "owner": "wonderwhy-er",
-      "name": "DesktopCommanderMCP",
-      "full_name": "wonderwhy-er/DesktopCommanderMCP",
-      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
-      "stars": "6606",
-      "stars_today": "185",
-      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
-      "is_ai_related": true
-    },
-    {
-      "owner": "anthropics",
-      "name": "claude-cookbooks",
-      "full_name": "anthropics/claude-cookbooks",
-      "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
-      "stars": "47243",
-      "stars_today": "194",
-      "url": "https://github.com/anthropics/claude-cookbooks",
-      "is_ai_related": true
-    },
-    {
-      "owner": "vxcontrol",
-      "name": "pentagi",
-      "full_name": "vxcontrol/pentagi",
-      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
-      "stars": "19535",
-      "stars_today": "535",
-      "url": "https://github.com/vxcontrol/pentagi",
-      "is_ai_related": true
-    },
-    {
-      "owner": "unclecode",
-      "name": "crawl4ai",
-      "full_name": "unclecode/crawl4ai",
-      "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here:https://discord.gg/jP8KfhDhyN",
-      "stars": "71938",
-      "stars_today": "215",
-      "url": "https://github.com/unclecode/crawl4ai",
-      "is_ai_related": true
-    },
-    {
-      "owner": "bradautomates",
-      "name": "claude-video",
-      "full_name": "bradautomates/claude-video",
-      "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
-      "stars": "6805",
-      "stars_today": "718",
-      "url": "https://github.com/bradautomates/claude-video",
-      "is_ai_related": true
-    },
-    {
-      "owner": "kyutai-labs",
-      "name": "pocket-tts",
-      "full_name": "kyutai-labs/pocket-tts",
-      "description": "A TTS that fits in your CPU (and pocket)",
-      "stars": "7051",
-      "stars_today": "235",
-      "url": "https://github.com/kyutai-labs/pocket-tts",
-      "is_ai_related": true
-    },
-    {
-      "owner": "asgeirtj",
-      "name": "system_prompts_leaks",
-      "full_name": "asgeirtj/system_prompts_leaks",
-      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
-      "stars": "55277",
-      "stars_today": "1125",
-      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "owner": "hashicorp",
+      "name": "terraform",
+      "full_name": "hashicorp/terraform",
+      "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.",
+      "stars": "49196",
+      "stars_today": "172",
+      "url": "https://github.com/hashicorp/terraform",
       "is_ai_related": true
     }
   ]
