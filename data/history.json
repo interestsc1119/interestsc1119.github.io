@@ -1,59 +1,5 @@
 [
   {
-    "date": "2026-06-12",
-    "ai_count": 13,
-    "news_count": 20,
-    "ai_projects": [
-      {
-        "name": "apple/container",
-        "stars": "33212",
-        "url": "https://github.com/apple/container"
-      },
-      {
-        "name": "addyosmani/agent-skills",
-        "stars": "55255",
-        "url": "https://github.com/addyosmani/agent-skills"
-      },
-      {
-        "name": "maziyarpanahi/openmed",
-        "stars": "2871",
-        "url": "https://github.com/maziyarpanahi/openmed"
-      },
-      {
-        "name": "phuryn/pm-skills",
-        "stars": "16412",
-        "url": "https://github.com/phuryn/pm-skills"
-      },
-      {
-        "name": "NVIDIA/SkillSpector",
-        "stars": "2846",
-        "url": "https://github.com/NVIDIA/SkillSpector"
-      }
-    ],
-    "top_news": [
-      {
-        "title": "Nobody ever gets credit for fi",
-        "source": "Hacker News"
-      },
-      {
-        "title": "If you are asking for human at",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Show HN: Homebrew 6.0.0",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Claude Fable is relentlessly p",
-        "source": "Hacker News"
-      },
-      {
-        "title": "How we made hit video game Pri",
-        "source": "Hacker News"
-      }
-    ]
-  },
-  {
     "date": "2026-06-13",
     "ai_count": 8,
     "news_count": 20,
@@ -1605,6 +1551,60 @@
       },
       {
         "title": "An update on residential proxi",
+        "source": "Hacker News"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-12",
+    "ai_count": 9,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "davila7/claude-code-templates",
+        "stars": "29057",
+        "url": "https://github.com/davila7/claude-code-templates"
+      },
+      {
+        "name": "google-labs-code/stitch-skills",
+        "stars": "7115",
+        "url": "https://github.com/google-labs-code/stitch-skills"
+      },
+      {
+        "name": "hashicorp/terraform",
+        "stars": "49389",
+        "url": "https://github.com/hashicorp/terraform"
+      },
+      {
+        "name": "openai/plugins",
+        "stars": "4443",
+        "url": "https://github.com/openai/plugins"
+      },
+      {
+        "name": "wonderwhy-er/DesktopCommanderMCP",
+        "stars": "7806",
+        "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "We Know Simple Fluids Can Flow",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Mesh LLM: distributed AI compu",
+        "source": "Hacker News"
+      },
+      {
+        "title": "A pure scheme web programming ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Show HN: Ant – A JavaScript ru",
+        "source": "Hacker News"
+      },
+      {
+        "title": "RISCBoy is an open-source port",
         "source": "Hacker News"
       }
     ]

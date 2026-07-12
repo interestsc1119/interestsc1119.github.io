@@ -1,164 +1,164 @@
 {
-  "date": "2026-07-11",
-  "updated_at": "2026-07-11T03:58:06.860148",
+  "date": "2026-07-12",
+  "updated_at": "2026-07-12T04:19:11.981619",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Einstein's relativity rules chemical bonds in heavy elements, new research shows",
-      "url": "https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity",
+      "title": "We Know Simple Fluids Can Flow. Turns Out, Some Can Fracture",
+      "url": "https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/",
       "source": "Hacker News",
-      "hot_value": "141",
+      "hot_value": "37",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "QuadRF can spot drones and see WiFi through my wall",
-      "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
+      "title": "Mesh LLM: distributed AI computing on iroh",
+      "url": "https://www.iroh.computer/blog/mesh-llm",
       "source": "Hacker News",
-      "hot_value": "491",
+      "hot_value": "153",
       "is_hot": false
     },
     {
       "rank": 3,
-      "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
-      "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+      "title": "A pure scheme web programming tool",
+      "url": "https://goeteia.dev",
       "source": "Hacker News",
-      "hot_value": "694",
-      "is_hot": true
+      "hot_value": "37",
+      "is_hot": false
     },
     {
       "rank": 4,
-      "title": "An iroh powered smart fan",
-      "url": "https://www.iroh.computer/blog/an-iroh-powered-smart-fan",
+      "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
+      "url": "https://antjs.org",
       "source": "Hacker News",
-      "hot_value": "45",
+      "hot_value": "209",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "An update on residential proxies and the scraper situation",
-      "url": "https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/",
+      "title": "RISCBoy is an open-source portable games console, designed from scratch",
+      "url": "https://github.com/Wren6991/RISCBoy",
       "source": "Hacker News",
-      "hot_value": "124",
+      "hot_value": "83",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
-      "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+      "title": "I Did Not Kill Stanley Lieber: How to Draw (With 9front)",
+      "url": "https://triapul.cz/automa/i_did_not_kill_stanley_lieber",
       "source": "Hacker News",
-      "hot_value": "384",
+      "hot_value": "29",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "SpaceX wants to launch 100k more Starlink satellites for 100x the bandwidth",
-      "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
+      "title": "The Energetic Costs of Cellular Computation (2012)",
+      "url": "https://arxiv.org/abs/1203.5426",
       "source": "Hacker News",
-      "hot_value": "111",
+      "hot_value": "13",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "Inference Optimization for MiMo v2.5: Pushing Hybrid SWA Efficiency to the Limit",
-      "url": "https://mimo.xiaomi.com/blog/mimo-v2-5-inference",
+      "title": "An agent in 100 lines of Lisp",
+      "url": "https://thebeach.dev/posts/lisp-agent/",
       "source": "Hacker News",
-      "hot_value": "55",
+      "hot_value": "57",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "The tech of 'Terminator 2' – an oral history (2017)",
-      "url": "https://vfxblog.com/2017/08/23/the-tech-of-terminator-2-an-oral-history/",
+      "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
+      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
       "source": "Hacker News",
-      "hot_value": "189",
+      "hot_value": "192",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "Good Tools Are Invisible",
-      "url": "https://www.gingerbill.org/article/2026/07/10/good-tools-are-invisible/",
+      "title": "A Erlang style pure Scheme Webserver and further",
+      "url": "https://igropyr.com",
       "source": "Hacker News",
-      "hot_value": "380",
+      "hot_value": "20",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "Combustion engine web-based simulator",
-      "url": "https://combustionlab.net",
+      "title": "A dock that wakes up reliably",
+      "url": "https://fabiensanglard.net/tb4/index.html",
       "source": "Hacker News",
-      "hot_value": "131",
+      "hot_value": "46",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "Late Bronze Age Collapse",
-      "url": "https://acoup.blog/2026/01/30/collections-the-late-bronze-age-collapse-a-very-brief-introduction/",
+      "title": "Why are US consumers so angry? It's not just high prices",
+      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/jun/04/us-consumer-rage-prices-economy",
       "source": "Hacker News",
-      "hot_value": "341",
+      "hot_value": "24",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "New York City to ban deceptive subscription practices",
-      "url": "https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban",
+      "title": "Long Covid May Physically Damage the Nerves That Control the Stomach",
+      "url": "https://www.ijidonline.com/article/S1201-9712(26)00608-9/fulltext",
       "source": "Hacker News",
-      "hot_value": "455",
+      "hot_value": "71",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "AI 2040: Plan A",
-      "url": "https://ai-2040.com/",
+      "title": "UPI: Anatomy of a Payment Transaction",
+      "url": "https://timeseriesofindia.com/economy/reads/upi-architecture/",
       "source": "Hacker News",
-      "hot_value": "176",
+      "hot_value": "127",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "Alternate clock designs and time systems",
-      "url": "https://serialc.github.io/altClocks/",
+      "title": "We scaled PgBouncer to 4x throughput",
+      "url": "https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres",
       "source": "Hacker News",
-      "hot_value": "117",
+      "hot_value": "187",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "US cybersecurity agency CISA had to build its incident playbook during the incident, agency reveals",
-      "url": "https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/",
+      "title": "Reed Jobs would rather talk about curing cancer than his last name",
+      "url": "https://techcrunch.com/2026/07/11/reed-jobs-would-rather-talk-about-curing-cancer-than-his-last-name/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Phia accused of ‘cookie stuffing,’ taking affiliate credit on purchases it didn’t earn",
-      "url": "https://techcrunch.com/2026/07/10/phia-accused-of-cookie-stuffing-taking-affiliate-credit-on-purchases-it-didnt-earn/",
+      "title": "This slushie machine was a lifesaver during NYC’s heat wave",
+      "url": "https://techcrunch.com/2026/07/11/this-slushie-machine-was-a-lifesaver-during-nycs-heat-wave/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Meta removes controversial AI feature on Instagram after backlash",
-      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
+      "title": "Smart glasses without a camera? Even Realities bets productivity beats recording everyone",
+      "url": "https://techcrunch.com/2026/07/11/smart-glasses-without-a-camera-even-realities-bets-productivity-beats-recording-everyone/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "Bluesky’s interim CEO, Toni Schneider, drops the ‘interim’",
-      "url": "https://techcrunch.com/2026/07/10/blueskys-interim-ceo-toni-schneider-drops-the-interim/",
+      "title": "OpenAI bets on families as ChatGPT goes deeper into households",
+      "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "Apple sues OpenAI over alleged trade secret theft",
-      "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+      "title": "US cybersecurity agency CISA had to build its incident playbook during the incident, agency reveals",
+      "url": "https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
