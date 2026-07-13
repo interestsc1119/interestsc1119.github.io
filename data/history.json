@@ -1,59 +1,5 @@
 [
   {
-    "date": "2026-06-13",
-    "ai_count": 8,
-    "news_count": 20,
-    "ai_projects": [
-      {
-        "name": "addyosmani/agent-skills",
-        "stars": "57057",
-        "url": "https://github.com/addyosmani/agent-skills"
-      },
-      {
-        "name": "apple/container",
-        "stars": "35330",
-        "url": "https://github.com/apple/container"
-      },
-      {
-        "name": "iptv-org/iptv",
-        "stars": "118118",
-        "url": "https://github.com/iptv-org/iptv"
-      },
-      {
-        "name": "obra/superpowers",
-        "stars": "226177",
-        "url": "https://github.com/obra/superpowers"
-      },
-      {
-        "name": "maziyarpanahi/openmed",
-        "stars": "3241",
-        "url": "https://github.com/maziyarpanahi/openmed"
-      }
-    ],
-    "top_news": [
-      {
-        "title": "Statement on US government dir",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Open source AI must win",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Electric motors with no rare e",
-        "source": "Hacker News"
-      },
-      {
-        "title": "CRISPR tech selectively shreds",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Our response to the US ban on ",
-        "source": "Hacker News"
-      }
-    ]
-  },
-  {
     "date": "2026-06-14",
     "ai_count": 10,
     "news_count": 20,
@@ -1605,6 +1551,60 @@
       },
       {
         "title": "RISCBoy is an open-source port",
+        "source": "Hacker News"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-13",
+    "ai_count": 10,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "Dicklesworthstone/destructive_command_guard",
+        "stars": "3114",
+        "url": "https://github.com/Dicklesworthstone/destructive_command_guard"
+      },
+      {
+        "name": "wonderwhy-er/DesktopCommanderMCP",
+        "stars": "8034",
+        "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
+      },
+      {
+        "name": "HKUDS/Vibe-Trading",
+        "stars": "20755",
+        "url": "https://github.com/HKUDS/Vibe-Trading"
+      },
+      {
+        "name": "Shubhamsaboo/awesome-llm-apps",
+        "stars": "118760",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+      },
+      {
+        "name": "anthropics/claude-cookbooks",
+        "stars": "48531",
+        "url": "https://github.com/anthropics/claude-cookbooks"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "GhostLock, a stack-UAF that ha",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Count Binface",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Cyberpunk Comics, Manga and Gr",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Tiny Emulators",
+        "source": "Hacker News"
+      },
+      {
+        "title": "So you want to learn physics (",
         "source": "Hacker News"
       }
     ]

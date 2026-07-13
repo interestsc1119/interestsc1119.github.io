@@ -1,130 +1,122 @@
 {
-  "date": "2026-07-12",
-  "updated_at": "2026-07-12T04:19:11.981619",
+  "date": "2026-07-13",
+  "updated_at": "2026-07-13T04:22:58.670923",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "We Know Simple Fluids Can Flow. Turns Out, Some Can Fracture",
-      "url": "https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/",
+      "title": "GhostLock, a stack-UAF that has existed in all Linux distributions for 15 years",
+      "url": "https://nebusec.ai/research/ionstack-part-2/",
       "source": "Hacker News",
-      "hot_value": "37",
+      "hot_value": "143",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "Mesh LLM: distributed AI computing on iroh",
-      "url": "https://www.iroh.computer/blog/mesh-llm",
+      "title": "Count Binface",
+      "url": "https://countbinface.com",
       "source": "Hacker News",
-      "hot_value": "153",
+      "hot_value": "11",
       "is_hot": false
     },
     {
       "rank": 3,
-      "title": "A pure scheme web programming tool",
-      "url": "https://goeteia.dev",
+      "title": "Cyberpunk Comics, Manga and Graphic Novels",
+      "url": "https://shellzine.net/cyberpunk-comics/",
       "source": "Hacker News",
-      "hot_value": "37",
+      "hot_value": "118",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
-      "url": "https://antjs.org",
+      "title": "Tiny Emulators",
+      "url": "https://floooh.github.io/tiny8bit-preview/index.html",
       "source": "Hacker News",
-      "hot_value": "209",
+      "hot_value": "178",
       "is_hot": false
     },
     {
       "rank": 5,
-      "title": "RISCBoy is an open-source portable games console, designed from scratch",
-      "url": "https://github.com/Wren6991/RISCBoy",
+      "title": "So you want to learn physics (second edition, 2021)",
+      "url": "https://www.susanrigetti.com/physics",
       "source": "Hacker News",
-      "hot_value": "83",
+      "hot_value": "130",
       "is_hot": false
     },
     {
       "rank": 6,
-      "title": "I Did Not Kill Stanley Lieber: How to Draw (With 9front)",
-      "url": "https://triapul.cz/automa/i_did_not_kill_stanley_lieber",
+      "title": "Designing and assembling my first PCB",
+      "url": "https://vilkeliskis.com/b/2026/0711.html",
       "source": "Hacker News",
-      "hot_value": "29",
+      "hot_value": "69",
       "is_hot": false
     },
     {
       "rank": 7,
-      "title": "The Energetic Costs of Cellular Computation (2012)",
-      "url": "https://arxiv.org/abs/1203.5426",
+      "title": "First look at Quest, the final ship of Antarctic explorer Shackleton",
+      "url": "https://www.cbc.ca/news/canada/quest-shipwreck-expedition-images-9.7262229",
       "source": "Hacker News",
-      "hot_value": "13",
+      "hot_value": "12",
       "is_hot": false
     },
     {
       "rank": 8,
-      "title": "An agent in 100 lines of Lisp",
-      "url": "https://thebeach.dev/posts/lisp-agent/",
+      "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+      "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
       "source": "Hacker News",
-      "hot_value": "57",
+      "hot_value": "502",
       "is_hot": false
     },
     {
       "rank": 9,
-      "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
-      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+      "title": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
+      "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
       "source": "Hacker News",
-      "hot_value": "192",
+      "hot_value": "158",
       "is_hot": false
     },
     {
       "rank": 10,
-      "title": "A Erlang style pure Scheme Webserver and further",
-      "url": "https://igropyr.com",
+      "title": "LARP – Revenue infrastructure for serious founders",
+      "url": "https://www.larp.website/",
       "source": "Hacker News",
-      "hot_value": "20",
+      "hot_value": "183",
       "is_hot": false
     },
     {
       "rank": 11,
-      "title": "A dock that wakes up reliably",
-      "url": "https://fabiensanglard.net/tb4/index.html",
+      "title": "Kode Dot Programmable pocket device for makers, pentesters and geeks",
+      "url": "https://kode.diy",
       "source": "Hacker News",
-      "hot_value": "46",
+      "hot_value": "53",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "Why are US consumers so angry? It's not just high prices",
-      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/jun/04/us-consumer-rage-prices-economy",
+      "title": "How we can reduce traffic congestion",
+      "url": "https://research.google/blog/the-power-of-collaboration-how-we-can-reduce-traffic-congestion/",
       "source": "Hacker News",
-      "hot_value": "24",
+      "hot_value": "96",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "Long Covid May Physically Damage the Nerves That Control the Stomach",
-      "url": "https://www.ijidonline.com/article/S1201-9712(26)00608-9/fulltext",
+      "title": "Why write code in 2026",
+      "url": "https://softwaredoug.com/blog/2026/07/09/write-code",
       "source": "Hacker News",
-      "hot_value": "71",
+      "hot_value": "126",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "UPI: Anatomy of a Payment Transaction",
-      "url": "https://timeseriesofindia.com/economy/reads/upi-architecture/",
-      "source": "Hacker News",
-      "hot_value": "127",
+      "title": "TechCrunch Mobility: A robotaxi ultimatum",
+      "url": "https://techcrunch.com/2026/07/12/techcrunch-mobility-a-robotaxi-ultimatum/",
+      "source": "TechCrunch",
+      "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "We scaled PgBouncer to 4x throughput",
-      "url": "https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres",
-      "source": "Hacker News",
-      "hot_value": "187",
-      "is_hot": false
-    },
-    {
-      "rank": 16,
       "title": "Reed Jobs would rather talk about curing cancer than his last name",
       "url": "https://techcrunch.com/2026/07/11/reed-jobs-would-rather-talk-about-curing-cancer-than-his-last-name/",
       "source": "TechCrunch",
@@ -132,7 +124,7 @@
       "is_hot": false
     },
     {
-      "rank": 17,
+      "rank": 16,
       "title": "This slushie machine was a lifesaver during NYC’s heat wave",
       "url": "https://techcrunch.com/2026/07/11/this-slushie-machine-was-a-lifesaver-during-nycs-heat-wave/",
       "source": "TechCrunch",
@@ -140,7 +132,7 @@
       "is_hot": false
     },
     {
-      "rank": 18,
+      "rank": 17,
       "title": "Smart glasses without a camera? Even Realities bets productivity beats recording everyone",
       "url": "https://techcrunch.com/2026/07/11/smart-glasses-without-a-camera-even-realities-bets-productivity-beats-recording-everyone/",
       "source": "TechCrunch",
@@ -148,7 +140,7 @@
       "is_hot": false
     },
     {
-      "rank": 19,
+      "rank": 18,
       "title": "OpenAI bets on families as ChatGPT goes deeper into households",
       "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
       "source": "TechCrunch",
@@ -156,9 +148,17 @@
       "is_hot": false
     },
     {
-      "rank": 20,
+      "rank": 19,
       "title": "US cybersecurity agency CISA had to build its incident playbook during the incident, agency reveals",
       "url": "https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/",
+      "source": "TechCrunch",
+      "hot_value": "",
+      "is_hot": false
+    },
+    {
+      "rank": 20,
+      "title": "Phia accused of ‘cookie stuffing,’ taking affiliate credit on purchases it didn’t earn",
+      "url": "https://techcrunch.com/2026/07/10/phia-accused-of-cookie-stuffing-taking-affiliate-credit-on-purchases-it-didnt-earn/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
