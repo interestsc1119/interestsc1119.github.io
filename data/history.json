@@ -1,59 +1,5 @@
 [
   {
-    "date": "2026-06-14",
-    "ai_count": 10,
-    "news_count": 20,
-    "ai_projects": [
-      {
-        "name": "iptv-org/iptv",
-        "stars": "119361",
-        "url": "https://github.com/iptv-org/iptv"
-      },
-      {
-        "name": "addyosmani/agent-skills",
-        "stars": "58639",
-        "url": "https://github.com/addyosmani/agent-skills"
-      },
-      {
-        "name": "chatwoot/chatwoot",
-        "stars": "30927",
-        "url": "https://github.com/chatwoot/chatwoot"
-      },
-      {
-        "name": "obra/superpowers",
-        "stars": "227104",
-        "url": "https://github.com/obra/superpowers"
-      },
-      {
-        "name": "apple/container",
-        "stars": "36448",
-        "url": "https://github.com/apple/container"
-      }
-    ],
-    "top_news": [
-      {
-        "title": "10th Gen Honda Civic Updates A",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Noise infusion banned from sta",
-        "source": "Hacker News"
-      },
-      {
-        "title": "GLM 5.2 Is Out",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Every Frame Perfect",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Building a serial and VGA \"eve",
-        "source": "Hacker News"
-      }
-    ]
-  },
-  {
     "date": "2026-06-15",
     "ai_count": 5,
     "news_count": 20,
@@ -1605,6 +1551,60 @@
       },
       {
         "title": "So you want to learn physics (",
+        "source": "Hacker News"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-14",
+    "ai_count": 7,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "HKUDS/Vibe-Trading",
+        "stars": "21985",
+        "url": "https://github.com/HKUDS/Vibe-Trading"
+      },
+      {
+        "name": "moeru-ai/airi",
+        "stars": "42019",
+        "url": "https://github.com/moeru-ai/airi"
+      },
+      {
+        "name": "Shubhamsaboo/awesome-llm-apps",
+        "stars": "119845",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+      },
+      {
+        "name": "Nutlope/hallmark",
+        "stars": "5330",
+        "url": "https://github.com/Nutlope/hallmark"
+      },
+      {
+        "name": "Graphify-Labs/graphify",
+        "stars": "85000",
+        "url": "https://github.com/Graphify-Labs/graphify"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Japan develops a method to rec",
+        "source": "Hacker News"
+      },
+      {
+        "title": "The Git history command deserv",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Fundamentals of Wireless Commu",
+        "source": "Hacker News"
+      },
+      {
+        "title": "What will be left for us to wo",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Building and shipping Mac and ",
         "source": "Hacker News"
       }
     ]

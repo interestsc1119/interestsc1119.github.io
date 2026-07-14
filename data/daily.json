@@ -1,36 +1,26 @@
 {
-  "date": "2026-07-13",
-  "updated_at": "2026-07-13T04:22:58.670917",
-  "count": 10,
+  "date": "2026-07-14",
+  "updated_at": "2026-07-14T03:49:55.125415",
+  "count": 7,
   "projects": [
-    {
-      "owner": "Dicklesworthstone",
-      "name": "destructive_command_guard",
-      "full_name": "Dicklesworthstone/destructive_command_guard",
-      "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
-      "stars": "3114",
-      "stars_today": "444",
-      "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
-      "is_ai_related": true
-    },
-    {
-      "owner": "wonderwhy-er",
-      "name": "DesktopCommanderMCP",
-      "full_name": "wonderwhy-er/DesktopCommanderMCP",
-      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
-      "stars": "8034",
-      "stars_today": "210",
-      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
-      "is_ai_related": true
-    },
     {
       "owner": "HKUDS",
       "name": "Vibe-Trading",
       "full_name": "HKUDS/Vibe-Trading",
       "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "stars": "20755",
-      "stars_today": "768",
+      "stars": "21985",
+      "stars_today": "1153",
       "url": "https://github.com/HKUDS/Vibe-Trading",
+      "is_ai_related": true
+    },
+    {
+      "owner": "moeru-ai",
+      "name": "airi",
+      "full_name": "moeru-ai/airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "stars": "42019",
+      "stars_today": "78",
+      "url": "https://github.com/moeru-ai/airi",
       "is_ai_related": true
     },
     {
@@ -38,59 +28,9 @@
       "name": "awesome-llm-apps",
       "full_name": "Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-      "stars": "118760",
-      "stars_today": "408",
+      "stars": "119845",
+      "stars_today": "996",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "is_ai_related": true
-    },
-    {
-      "owner": "anthropics",
-      "name": "claude-cookbooks",
-      "full_name": "anthropics/claude-cookbooks",
-      "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
-      "stars": "48531",
-      "stars_today": "459",
-      "url": "https://github.com/anthropics/claude-cookbooks",
-      "is_ai_related": true
-    },
-    {
-      "owner": "Crosstalk-Solutions",
-      "name": "project-nomad",
-      "full_name": "Crosstalk-Solutions/project-nomad",
-      "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
-      "stars": "33878",
-      "stars_today": "125",
-      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
-      "is_ai_related": true
-    },
-    {
-      "owner": "ColeMurray",
-      "name": "background-agents",
-      "full_name": "ColeMurray/background-agents",
-      "description": "An open-source background agents coding system",
-      "stars": "2307",
-      "stars_today": "16",
-      "url": "https://github.com/ColeMurray/background-agents",
-      "is_ai_related": true
-    },
-    {
-      "owner": "virattt",
-      "name": "ai-hedge-fund",
-      "full_name": "virattt/ai-hedge-fund",
-      "description": "An AI Hedge Fund Team",
-      "stars": "61467",
-      "stars_today": "115",
-      "url": "https://github.com/virattt/ai-hedge-fund",
-      "is_ai_related": true
-    },
-    {
-      "owner": "davila7",
-      "name": "claude-code-templates",
-      "full_name": "davila7/claude-code-templates",
-      "description": "CLI tool for configuring and monitoring Claude Code",
-      "stars": "29279",
-      "stars_today": "274",
-      "url": "https://github.com/davila7/claude-code-templates",
       "is_ai_related": true
     },
     {
@@ -98,9 +38,39 @@
       "name": "hallmark",
       "full_name": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "stars": "4418",
-      "stars_today": "155",
+      "stars": "5330",
+      "stars_today": "794",
       "url": "https://github.com/Nutlope/hallmark",
+      "is_ai_related": true
+    },
+    {
+      "owner": "Graphify-Labs",
+      "name": "graphify",
+      "full_name": "Graphify-Labs/graphify",
+      "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+      "stars": "85000",
+      "stars_today": "1095",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "is_ai_related": true
+    },
+    {
+      "owner": "hasaneyldrm",
+      "name": "exercises-dataset",
+      "full_name": "hasaneyldrm/exercises-dataset",
+      "description": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
+      "stars": "12769",
+      "stars_today": "451",
+      "url": "https://github.com/hasaneyldrm/exercises-dataset",
+      "is_ai_related": true
+    },
+    {
+      "owner": "coreyhaines31",
+      "name": "marketingskills",
+      "full_name": "coreyhaines31/marketingskills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "stars": "38737",
+      "stars_today": "299",
+      "url": "https://github.com/coreyhaines31/marketingskills",
       "is_ai_related": true
     }
   ]
