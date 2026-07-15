@@ -1,59 +1,5 @@
 [
   {
-    "date": "2026-06-15",
-    "ai_count": 5,
-    "news_count": 20,
-    "ai_projects": [
-      {
-        "name": "iptv-org/iptv",
-        "stars": "121578",
-        "url": "https://github.com/iptv-org/iptv"
-      },
-      {
-        "name": "chatwoot/chatwoot",
-        "stars": "31345",
-        "url": "https://github.com/chatwoot/chatwoot"
-      },
-      {
-        "name": "NVIDIA/SkillSpector",
-        "stars": "5593",
-        "url": "https://github.com/NVIDIA/SkillSpector"
-      },
-      {
-        "name": "GorvGoyl/Clone-Wars",
-        "stars": "35638",
-        "url": "https://github.com/GorvGoyl/Clone-Wars"
-      },
-      {
-        "name": "andrewyng/aisuite",
-        "stars": "14461",
-        "url": "https://github.com/andrewyng/aisuite"
-      }
-    ],
-    "top_news": [
-      {
-        "title": "Your ePub Is fine",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Even more batteries included w",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Show HN: Kage – Shadow any web",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Bitsy",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Prove you're human by winning ",
-        "source": "Hacker News"
-      }
-    ]
-  },
-  {
     "date": "2026-06-16",
     "ai_count": 8,
     "news_count": 20,
@@ -1605,6 +1551,60 @@
       },
       {
         "title": "Building and shipping Mac and ",
+        "source": "Hacker News"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-15",
+    "ai_count": 10,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "Shubhamsaboo/awesome-llm-apps",
+        "stars": "121028",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+      },
+      {
+        "name": "mattpocock/skills",
+        "stars": "170642",
+        "url": "https://github.com/mattpocock/skills"
+      },
+      {
+        "name": "Dicklesworthstone/destructive_command_guard",
+        "stars": "4471",
+        "url": "https://github.com/Dicklesworthstone/destructive_command_guard"
+      },
+      {
+        "name": "virattt/ai-hedge-fund",
+        "stars": "61934",
+        "url": "https://github.com/virattt/ai-hedge-fund"
+      },
+      {
+        "name": "Nutlope/hallmark",
+        "stars": "6287",
+        "url": "https://github.com/Nutlope/hallmark"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Vancouver PD website features ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "TS-2026-009: Insecure argument",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Bonsai 27B: A 27B-Class model ",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Jurassic Park computers in exc",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Dependabot version updates int",
         "source": "Hacker News"
       }
     ]

@@ -1,47 +1,57 @@
 {
-  "date": "2026-07-14",
-  "updated_at": "2026-07-14T03:49:55.125422",
-  "total_count": 10,
-  "ai_count": 7,
+  "date": "2026-07-15",
+  "updated_at": "2026-07-15T03:50:59.525789",
+  "total_count": 15,
+  "ai_count": 10,
   "projects": [
-    {
-      "owner": "OpenCut-app",
-      "name": "OpenCut",
-      "full_name": "OpenCut-app/OpenCut",
-      "description": "The open-source CapCut alternative",
-      "stars": "67044",
-      "stars_today": "1229",
-      "url": "https://github.com/OpenCut-app/OpenCut",
-      "is_ai_related": false
-    },
-    {
-      "owner": "HKUDS",
-      "name": "Vibe-Trading",
-      "full_name": "HKUDS/Vibe-Trading",
-      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "stars": "21985",
-      "stars_today": "1153",
-      "url": "https://github.com/HKUDS/Vibe-Trading",
-      "is_ai_related": true
-    },
-    {
-      "owner": "moeru-ai",
-      "name": "airi",
-      "full_name": "moeru-ai/airi",
-      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
-      "stars": "42019",
-      "stars_today": "78",
-      "url": "https://github.com/moeru-ai/airi",
-      "is_ai_related": true
-    },
     {
       "owner": "Shubhamsaboo",
       "name": "awesome-llm-apps",
       "full_name": "Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-      "stars": "119845",
-      "stars_today": "996",
+      "stars": "121028",
+      "stars_today": "1106",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "is_ai_related": true
+    },
+    {
+      "owner": "mattpocock",
+      "name": "skills",
+      "full_name": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .claude directory.",
+      "stars": "170642",
+      "stars_today": "1679",
+      "url": "https://github.com/mattpocock/skills",
+      "is_ai_related": true
+    },
+    {
+      "owner": "Dicklesworthstone",
+      "name": "destructive_command_guard",
+      "full_name": "Dicklesworthstone/destructive_command_guard",
+      "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
+      "stars": "4471",
+      "stars_today": "473",
+      "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
+      "is_ai_related": true
+    },
+    {
+      "owner": "OpenCut-app",
+      "name": "OpenCut",
+      "full_name": "OpenCut-app/OpenCut",
+      "description": "The open-source CapCut alternative",
+      "stars": "69397",
+      "stars_today": "4276",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "is_ai_related": false
+    },
+    {
+      "owner": "virattt",
+      "name": "ai-hedge-fund",
+      "full_name": "virattt/ai-hedge-fund",
+      "description": "An AI Hedge Fund Team",
+      "stars": "61934",
+      "stars_today": "109",
+      "url": "https://github.com/virattt/ai-hedge-fund",
       "is_ai_related": true
     },
     {
@@ -49,9 +59,19 @@
       "name": "hallmark",
       "full_name": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "stars": "5330",
-      "stars_today": "794",
+      "stars": "6287",
+      "stars_today": "1015",
       "url": "https://github.com/Nutlope/hallmark",
+      "is_ai_related": true
+    },
+    {
+      "owner": "HKUDS",
+      "name": "Vibe-Trading",
+      "full_name": "HKUDS/Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "stars": "23005",
+      "stars_today": "1256",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
       "is_ai_related": true
     },
     {
@@ -59,9 +79,59 @@
       "name": "Win11Debloat",
       "full_name": "Raphire/Win11Debloat",
       "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
-      "stars": "50999",
-      "stars_today": "118",
+      "stars": "51826",
+      "stars_today": "783",
       "url": "https://github.com/Raphire/Win11Debloat",
+      "is_ai_related": false
+    },
+    {
+      "owner": "hasaneyldrm",
+      "name": "exercises-dataset",
+      "full_name": "hasaneyldrm/exercises-dataset",
+      "description": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
+      "stars": "13681",
+      "stars_today": "851",
+      "url": "https://github.com/hasaneyldrm/exercises-dataset",
+      "is_ai_related": true
+    },
+    {
+      "owner": "penpot",
+      "name": "penpot",
+      "full_name": "penpot/penpot",
+      "description": "Penpot: The open-source design platform for Product teams that need scalable collaboration.",
+      "stars": "56225",
+      "stars_today": "395",
+      "url": "https://github.com/penpot/penpot",
+      "is_ai_related": false
+    },
+    {
+      "owner": "AIEraDev",
+      "name": "Clypra",
+      "full_name": "AIEraDev/Clypra",
+      "description": "A modern video editor built with Tauri, React, and TypeScript. Focus on building free capabilities of premium capcut functionalities",
+      "stars": "2691",
+      "stars_today": "85",
+      "url": "https://github.com/AIEraDev/Clypra",
+      "is_ai_related": true
+    },
+    {
+      "owner": "par274",
+      "name": "sharpemu",
+      "full_name": "par274/sharpemu",
+      "description": "An experimental PlayStation 5 emulator project.",
+      "stars": "2194",
+      "stars_today": "332",
+      "url": "https://github.com/par274/sharpemu",
+      "is_ai_related": false
+    },
+    {
+      "owner": "chenyme",
+      "name": "grok2api",
+      "full_name": "chenyme/grok2api",
+      "description": "面向 Grok Build、Grok Web 与 Grok Console 的多账号 API 网关",
+      "stars": "5900",
+      "stars_today": "186",
+      "url": "https://github.com/chenyme/grok2api",
       "is_ai_related": false
     },
     {
@@ -69,39 +139,19 @@
       "name": "graphify",
       "full_name": "Graphify-Labs/graphify",
       "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
-      "stars": "85000",
-      "stars_today": "1095",
+      "stars": "86590",
+      "stars_today": "1851",
       "url": "https://github.com/Graphify-Labs/graphify",
       "is_ai_related": true
     },
     {
-      "owner": "hasaneyldrm",
-      "name": "exercises-dataset",
-      "full_name": "hasaneyldrm/exercises-dataset",
-      "description": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
-      "stars": "12769",
-      "stars_today": "451",
-      "url": "https://github.com/hasaneyldrm/exercises-dataset",
-      "is_ai_related": true
-    },
-    {
-      "owner": "github",
-      "name": "spec-kit",
-      "full_name": "github/spec-kit",
-      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
-      "stars": "120738",
-      "stars_today": "543",
-      "url": "https://github.com/github/spec-kit",
-      "is_ai_related": false
-    },
-    {
-      "owner": "coreyhaines31",
-      "name": "marketingskills",
-      "full_name": "coreyhaines31/marketingskills",
-      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-      "stars": "38737",
-      "stars_today": "299",
-      "url": "https://github.com/coreyhaines31/marketingskills",
+      "owner": "HenryNdubuaku",
+      "name": "maths-cs-ai-compendium",
+      "full_name": "HenryNdubuaku/maths-cs-ai-compendium",
+      "description": "Become a cracked AI/ML Research Engineer",
+      "stars": "5354",
+      "stars_today": "112",
+      "url": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium",
       "is_ai_related": true
     }
   ]

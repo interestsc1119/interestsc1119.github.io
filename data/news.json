@@ -1,164 +1,164 @@
 {
-  "date": "2026-07-14",
-  "updated_at": "2026-07-14T03:49:55.125424",
+  "date": "2026-07-15",
+  "updated_at": "2026-07-15T03:50:59.525791",
   "count": 20,
   "news": [
     {
       "rank": 1,
-      "title": "Japan develops a method to recover up to 90% of lithium from used EV batteries",
-      "url": "https://tech.supercarblondie.com/japan-recovers-up-to-90-of-lithium-from-used-ev-batteries/",
+      "title": "Vancouver PD website features Quick Escape button that wipes itself from history",
+      "url": "https://vpd.ca/",
       "source": "Hacker News",
-      "hot_value": "58",
+      "hot_value": "164",
       "is_hot": false
     },
     {
       "rank": 2,
-      "title": "The Git history command deserves more attention",
-      "url": "https://lalitm.com/post/git-history/",
+      "title": "TS-2026-009: Insecure argument handling in Tailscale SSH permitted root access",
+      "url": "https://tailscale.com/security-bulletins",
       "source": "Hacker News",
-      "hot_value": "109",
+      "hot_value": "67",
       "is_hot": false
     },
     {
       "rank": 3,
-      "title": "Fundamentals of Wireless Communication",
-      "url": "https://web.stanford.edu/~dntse/wireless_book.html",
+      "title": "Bonsai 27B: A 27B-Class model that runs on a phone",
+      "url": "https://prismml.com/news/bonsai-27b",
       "source": "Hacker News",
-      "hot_value": "45",
+      "hot_value": "482",
       "is_hot": false
     },
     {
       "rank": 4,
-      "title": "What will be left for us to work on?",
-      "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
-      "source": "Hacker News",
-      "hot_value": "48",
-      "is_hot": false
-    },
-    {
-      "rank": 5,
-      "title": "Building and shipping Mac and iOS apps without opening Xcode",
-      "url": "https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode/",
-      "source": "Hacker News",
-      "hot_value": "350",
-      "is_hot": false
-    },
-    {
-      "rank": 6,
-      "title": "The Economics of Recursive Self-Improvement [pdf]",
-      "url": "https://elasticity.institute/rsi-paper.pdf",
-      "source": "Hacker News",
-      "hot_value": "26",
-      "is_hot": false
-    },
-    {
-      "rank": 7,
-      "title": "Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor",
-      "url": "https://get-inscribe.com/blog/apple-speech-api-benchmark.html",
-      "source": "Hacker News",
-      "hot_value": "486",
-      "is_hot": false
-    },
-    {
-      "rank": 8,
-      "title": "An Englishwoman who sketched India before photography took hold",
-      "url": "https://www.bbc.com/news/articles/cm2drrv6q54o",
-      "source": "Hacker News",
-      "hot_value": "74",
-      "is_hot": false
-    },
-    {
-      "rank": 9,
-      "title": "Is x86 ready to ACE it?",
-      "url": "https://chipsandcheese.com/p/is-x86-ready-to-ace-it",
-      "source": "Hacker News",
-      "hot_value": "20",
-      "is_hot": false
-    },
-    {
-      "rank": 10,
-      "title": "Building Food Metadata with LLM Juries",
-      "url": "https://careersatdoordash.com/blog/building-food-metadata-with-llm-juries-context-optimization-multimodal-ai/",
+      "title": "Jurassic Park computers in excruciating detail",
+      "url": "https://fabiensanglard.net/jurrasic_park_computers/index.html",
       "source": "Hacker News",
       "hot_value": "18",
       "is_hot": false
     },
     {
-      "rank": 11,
-      "title": "World-First 'Super Alloy' Could Transform the Way Metals Are Made",
-      "url": "https://www.sciencealert.com/world-first-super-alloy-could-transform-the-way-metals-are-made",
+      "rank": 5,
+      "title": "Dependabot version updates introduce default package cooldown",
+      "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/",
       "source": "Hacker News",
-      "hot_value": "28",
+      "hot_value": "123",
+      "is_hot": false
+    },
+    {
+      "rank": 6,
+      "title": "Solving 20 Erdős Problems with 20 Codex Accounts Running in Parallel",
+      "url": "https://www.starfleetmath.com/",
+      "source": "Hacker News",
+      "hot_value": "63",
+      "is_hot": false
+    },
+    {
+      "rank": 7,
+      "title": "The Tower Keeps Rising",
+      "url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
+      "source": "Hacker News",
+      "hot_value": "379",
+      "is_hot": false
+    },
+    {
+      "rank": 8,
+      "title": "Financing the AI boom: from cash flows to debt [pdf]",
+      "url": "https://www.bis.org/publ/bisbull120.pdf",
+      "source": "Hacker News",
+      "hot_value": "110",
+      "is_hot": false
+    },
+    {
+      "rank": 9,
+      "title": "Cursor 0day: When Full Disclosure Becomes the Only Protection Left",
+      "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
+      "source": "Hacker News",
+      "hot_value": "277",
+      "is_hot": false
+    },
+    {
+      "rank": 10,
+      "title": "LeMario: Training a JEPA World Model on Super Mario Bros",
+      "url": "https://www.benjamin-bai.com/projects/lemario",
+      "source": "Hacker News",
+      "hot_value": "67",
+      "is_hot": false
+    },
+    {
+      "rank": 11,
+      "title": "The Trade in Looted Antiquities Endures for One Reason: Demand",
+      "url": "https://news.artnet.com/art-world/matt-campbell-cambodia-looted-antiquities-2779870",
+      "source": "Hacker News",
+      "hot_value": "6",
       "is_hot": false
     },
     {
       "rank": 12,
-      "title": "MorphoHDL: A minimalistic language for growing circuits",
-      "url": "https://paradigms-of-intelligence.github.io/morpho/",
+      "title": "How I use HTMX with Go",
+      "url": "https://www.alexedwards.net/blog/how-i-use-htmx-with-go",
       "source": "Hacker News",
-      "hot_value": "31",
+      "hot_value": "145",
       "is_hot": false
     },
     {
       "rank": 13,
-      "title": "Satellite Tracker – Live Map of Starlink and 30k Satellites",
-      "url": "https://satellitemap.space/",
+      "title": "An unusual way for your DHCP server to run out of dynamic IPs",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/sysadmin/DHCPServerAndScreamingHost",
       "source": "Hacker News",
-      "hot_value": "19",
+      "hot_value": "32",
       "is_hot": false
     },
     {
       "rank": 14,
-      "title": "Turn your singing voice into printable notes (in the browser)",
-      "url": "https://om-intelligence.ch/projects/vocal-notation/vocal-notation.html",
+      "title": "Data centers have hiked electricity prices on the public by $23B",
+      "url": "https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/",
       "source": "Hacker News",
-      "hot_value": "29",
+      "hot_value": "105",
       "is_hot": false
     },
     {
       "rank": 15,
-      "title": "The infinite scroll may become endangered if controversial Calif. law passes",
-      "url": "https://www.sfgate.com/politics/article/meta-social-media-teenagers-22337724.php",
+      "title": "Mathematical texts from a Maya site in Guatemala identify an ancient astronomer",
+      "url": "https://www.nature.com/articles/d41586-026-02170-8",
       "source": "Hacker News",
-      "hot_value": "111",
+      "hot_value": "57",
       "is_hot": false
     },
     {
       "rank": 16,
-      "title": "Already rich, already successful, why the last wave of tech winners is grinding again",
-      "url": "https://techcrunch.com/2026/07/13/already-rich-already-successful-why-the-last-wave-of-tech-winners-is-grinding-again/",
+      "title": "OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B",
+      "url": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 17,
-      "title": "Uber’s product chief on hotels, robotaxis, and why the company doesn’t want to be “everything for everyone”",
-      "url": "https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/",
+      "title": "Lorde says AI glasses are ‘not sexy’",
+      "url": "https://techcrunch.com/2026/07/14/lorde-says-ai-glasses-are-not-sexy/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 18,
-      "title": "Video-generation startup PixVerse raises $439M, valuation soars past $2B",
-      "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
+      "title": "OpenAI’s first hardware device is reportedly a screenless speaker that can move",
+      "url": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 19,
-      "title": "X just tweaked its algorithm to make it more friendly, less battleground",
-      "url": "https://techcrunch.com/2026/07/13/x-just-tweaked-its-algorithm-to-make-it-more-friendly-less-battleground/",
+      "title": "OpenAI pushes back on Apple trade secret lawsuit",
+      "url": "https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
     },
     {
       "rank": 20,
-      "title": "Hermes agent maker Nous Research in talks for new funding at $1.5B valuation",
-      "url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
+      "title": "OpenAI’s new flagship model deletes files on its own, people keep warning",
+      "url": "https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/",
       "source": "TechCrunch",
       "hot_value": "",
       "is_hot": false
