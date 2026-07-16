@@ -123,8 +123,7 @@
         td.rank { color: #9aa49f; font-family: Georgia,serif; text-align: left; }
         .company-cell strong, .company-cell span { display: block; }
         .company-cell strong { font-size: .94rem; }
-        .company-cell span { max-width: 310px; overflow: hidden; color: var(--muted); font-size: .72rem;
-            text-overflow: ellipsis; white-space: nowrap; }
+        .company-cell span { max-width: 340px; color: var(--muted); font-size: .72rem; line-height: 1.45; }
         .weight-cell { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
         .weight-cell > span { display: block; width: 62px; height: 4px; overflow: hidden; border-radius: 999px;
             background: var(--line); }
@@ -138,7 +137,7 @@
         .change-card { padding: 17px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
         .change-card > strong, .change-card > p, .change-card > b { display: block; }
         .change-card > strong { margin-top: 11px; font-size: 1rem; }
-        .change-card > p { height: 2.6em; overflow: hidden; color: var(--muted); font-size: .7rem; line-height: 1.3; }
+        .change-card > p { min-height: 3.9em; color: var(--muted); font-size: .7rem; line-height: 1.3; }
         .change-card > b { margin-top: 10px; font-family: Georgia,serif; font-size: 1.2rem; }
         .change-badge { padding: 3px 8px; border-radius: 999px; font-size: .66rem; font-weight: 850; }
         .change-badge.new, .change-badge.up { color: var(--green); background: var(--green-soft); }
@@ -242,7 +241,7 @@
             <aside class="lag-warning"><b>请留意</b><p>13F 最迟可在季度结束后 45 天提交，而且只覆盖规定范围内的美国上市证券。它不包含现金、私有企业、完整海外持仓，也无法证明每笔决策由巴菲特本人作出。</p></aside>
             <div class="holdings-wrap">
                 <table>
-                    <thead><tr><th>#</th><th>公司 / 代码</th><th>组合权重</th><th>披露股数</th><th>申报市值</th></tr></thead>
+                    <thead><tr><th>#</th><th>公司（英文 / 中文）/ 代码</th><th>组合权重</th><th>披露股数</th><th>申报市值</th></tr></thead>
                     <tbody>{{TOP_HOLDINGS}}</tbody>
                 </table>
             </div>

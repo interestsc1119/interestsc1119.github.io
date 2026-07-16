@@ -54,6 +54,47 @@ CUSIP_TICKERS = {
     "H1467J104": "CB",
 }
 
+TICKER_NAMES_ZH = {
+    "AAPL": "苹果公司",
+    "ALLY": "艾利金融",
+    "AMZN": "亚马逊",
+    "AXP": "美国运通",
+    "BAC": "美国银行",
+    "CB": "安达保险",
+    "CHTR": "特许通讯",
+    "COF": "第一资本金融",
+    "CVX": "雪佛龙",
+    "DAL": "达美航空",
+    "DVA": "达维塔",
+    "GOOG": "Alphabet（谷歌母公司）",
+    "GOOGL": "Alphabet（谷歌母公司）",
+    "JEF": "杰富瑞金融集团",
+    "KHC": "卡夫亨氏",
+    "KO": "可口可乐",
+    "KR": "克罗格",
+    "LEN": "莱纳住宅",
+    "LEN.B": "莱纳住宅",
+    "LLYVA": "自由媒体（Liberty Live）",
+    "LLYVK": "自由媒体（Liberty Live）",
+    "LPX": "路易斯安那太平洋",
+    "M": "梅西百货",
+    "MCO": "穆迪",
+    "NUE": "纽柯",
+    "NVR": "NVR住宅",
+    "NYT": "纽约时报",
+    "OXY": "西方石油",
+    "SIRI": "天狼星XM",
+    "STZ": "星座品牌",
+    "VRSN": "威瑞信",
+}
+
+UNKNOWN_NAME_ZH = "中文名待核实"
+
+
+def ticker_name_zh(ticker: str) -> str:
+    return TICKER_NAMES_ZH.get(ticker.upper(), UNKNOWN_NAME_ZH)
+
+
 KNOWN_FILINGS = {
     "2026-03-31": {
         "filing_date": "2026-05-15",
@@ -237,6 +278,7 @@ def parse_13f_xml(content: bytes) -> list[dict]:
                 "cusip": cusip,
                 "ticker": CUSIP_TICKERS.get(cusip, ""),
                 "name": child_text(row, "nameOfIssuer"),
+                "name_zh": ticker_name_zh(CUSIP_TICKERS.get(cusip, "")),
                 "class": child_text(row, "titleOfClass"),
                 "value_decimal": Decimal("0"),
                 "shares_decimal": Decimal("0"),
@@ -254,6 +296,7 @@ def parse_13f_xml(content: bytes) -> list[dict]:
                 "cusip": item["cusip"],
                 "ticker": item["ticker"],
                 "name": item["name"],
+                "name_zh": item["name_zh"],
                 "class": item["class"],
                 "value": int(item["value_decimal"]),
                 "shares": int(item["shares_decimal"]),
@@ -322,6 +365,7 @@ def build_sec_changes(current: list[dict], previous: list[dict]) -> list[dict]:
             {
                 "ticker": item.get("ticker") or item["cusip"],
                 "name": item["name"],
+                "name_zh": item.get("name_zh", UNKNOWN_NAME_ZH),
                 "status": status,
                 "change_pct": round(change, 2) if change is not None else None,
                 "shares": item["shares"],
@@ -334,6 +378,7 @@ def build_sec_changes(current: list[dict], previous: list[dict]) -> list[dict]:
                 {
                     "ticker": old.get("ticker") or old["cusip"],
                     "name": old["name"],
+                    "name_zh": old.get("name_zh", UNKNOWN_NAME_ZH),
                     "status": "exited",
                     "change_pct": -100.0,
                     "shares": 0,
@@ -443,6 +488,7 @@ def fetch_dataroma_portfolio() -> dict:
             "cusip": "",
             "ticker": ticker,
             "name": name,
+            "name_zh": ticker_name_zh(ticker),
             "class": "",
             "value": int(Decimal(str(portfolio_value)) * Decimal(str(weight)) / Decimal("100")),
             "shares": int(shares),
@@ -459,6 +505,7 @@ def fetch_dataroma_portfolio() -> dict:
                 {
                     "ticker": ticker,
                     "name": name,
+                    "name_zh": ticker_name_zh(ticker),
                     "status": status,
                     "change_pct": change_pct,
                     "shares": int(shares),

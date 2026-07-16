@@ -18,6 +18,12 @@ def safe(value: object) -> str:
     return escape(str(value if value is not None else ""), quote=True)
 
 
+def bilingual_name(item: dict) -> str:
+    english = safe(item.get("name"))
+    chinese = safe(item.get("name_zh"))
+    return f"{english} · {chinese}" if chinese else english
+
+
 def number(value: object, decimals: int = 2) -> str:
     if value is None:
         return "—"
@@ -151,7 +157,7 @@ def render_holdings(holdings: list[dict]) -> str:
             '<tr>'
             f'<td class="rank">{rank:02d}</td>'
             '<td><div class="company-cell">'
-            f'<strong>{safe(ticker)}</strong><span>{safe(item.get("name"))}</span>'
+            f'<strong>{safe(ticker)}</strong><span>{bilingual_name(item)}</span>'
             '</div></td>'
             '<td><div class="weight-cell">'
             f'<strong>{weight:.2f}%</strong><span><i style="width:{min(weight * 2.7, 100):.1f}%"></i></span>'
@@ -181,7 +187,7 @@ def render_changes(changes: list[dict]) -> str:
             '<article class="change-card">'
             f'<span class="change-badge {css_class}">{label}</span>'
             f'<strong>{safe(item.get("ticker"))}</strong>'
-            f'<p>{safe(item.get("name"))}</p>'
+            f'<p>{bilingual_name(item)}</p>'
             f'<b>{detail}</b>'
             '</article>'
         )
