@@ -1,66 +1,58 @@
-# InterestSC AI Daily Radar
+# InterestSC Daily Investment Watch
 
-Personal GitHub Pages homepage for InterestSC, with an automated daily digest of trending AI/ML projects and top tech news.
+Personal GitHub Pages dashboard for a daily, rules-based review of mainland China public mutual funds, major market indices, and Berkshire Hathaway's public US equity portfolio.
 
-## Features
+## Pages
 
-- Personal-homepage layout for `interestsc1119.github.io`
-- AI project radar from GitHub Trending
-- Tech news digest from Hacker News and RSS sources
-- 14-day trend charts and recent history
-- Daily automation via GitHub Actions
+- `index.html`: three risk-bucket fund watchlists with return, volatility, drawdown, and consistency scoring
+- `market.html`: daily A-share, Hong Kong, and US index performance plus Berkshire's latest public Form 13F holdings
+- The former news and trending interface has been removed
 
-## Live Site
+## Daily automation
 
-https://interestsc1119.github.io
+The workflow runs every day at **06:30 Beijing/Hong Kong time**, after the previous US close and after most mainland public-fund NAVs have been published.
 
-## Automation
-
-The workflow runs every day at **08:57 Beijing time**.
-
-GitHub Actions schedules use UTC, so the cron expression is:
+GitHub Actions uses UTC:
 
 ```yaml
-57 0 * * *
+30 22 * * *
 ```
 
-## Architecture
+Each run:
 
-```text
-GitHub Actions
-  |
-  |-- scripts/fetch_trending.py
-  |     |-- GitHub Trending
-  |     |-- Hacker News API
-  |     |-- TechCrunch / Ars Technica / The Verge RSS
-  |
-  |-- scripts/update_html.py
-  |     |-- injects JSON data into index.template.html
-  |
-  |-- git-auto-commit-action
-  |
-  v
-GitHub Pages serves index.html
-```
+1. Fetches and scores public funds, then cross-checks the latest NAV with Sina Finance.
+2. Calculates eight major-index return and risk metrics from Sina/Yahoo history, with Tencent quote cross-checks.
+3. Checks for Berkshire Hathaway's latest SEC Form 13F and compares it with the prior quarter.
+4. Renders `index.html` and `market.html`, then commits updated JSON and HTML files.
 
-## Project Structure
+Form 13F is quarterly, can be filed up to 45 days after quarter-end, and covers only specified US-listed securities. The site labels the report and filing dates separately and does not present it as Buffett's personal or real-time trading activity. If SEC access is temporarily unavailable, the collector can use DATAROMA's organized 13F data and labels that fallback on the page.
+
+## Project structure
 
 ```text
 .
 |-- .github/workflows/daily-update.yml
 |-- data/
-|   |-- all.json
-|   |-- daily.json
+|   |-- funds.json
 |   |-- history.json
-|   `-- news.json
+|   |-- market.json
+|   `-- market_history.json
 |-- scripts/
-|   |-- fetch_trending.py
-|   `-- update_html.py
-|-- index.template.html
+|   |-- fetch_funds.py
+|   |-- fetch_markets.py
+|   |-- render_funds.py
+|   `-- render_markets.py
+|-- fund.template.html
+|-- market.template.html
 |-- index.html
+|-- market.html
 `-- README.md
 ```
 
-## Manual Trigger
+## Manual trigger
 
-Open the repository's Actions tab, choose **Daily AI & News Update**, and run the workflow manually.
+Open the repository's Actions tab, choose **Daily Fund & Market Watch Update**, and run the workflow manually.
+
+## Methodology and limitations
+
+This dashboard is an educational screening and research tool, not an investment adviser. Historical return, volatility, drawdown, public holdings, and portfolio changes do not predict future performance. Before making a decision, read official product documents and company filings, verify fees and risks, and match any investment to your own risk tolerance and time horizon.

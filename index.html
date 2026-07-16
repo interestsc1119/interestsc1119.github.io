@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InterestSC | AI Daily Radar</title>
+    <meta name="description" content="InterestSC 每日基金观察：按风险档位进行历史收益、波动与回撤筛选。">
+    <title>InterestSC | 基金每日观察</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --ink: #18202f;
-            --muted: #6d7482;
-            --paper: #fbfaf7;
-            --surface: #ffffff;
-            --surface-soft: #f2f6f4;
-            --line: #dfe5e0;
-            --accent: #1f8a70;
-            --accent-strong: #146b57;
-            --blue: #2e5aac;
-            --rose: #b94762;
-            --gold: #b88728;
-            --shadow: 0 18px 42px rgba(30, 38, 48, 0.10);
+            --ink: #17201d;
+            --muted: #68736e;
+            --paper: #f4f1e8;
+            --surface: #fffdf8;
+            --surface-soft: #f0f4ee;
+            --line: #d9ded7;
+            --green: #1e6f54;
+            --green-soft: #dcece4;
+            --amber: #a86517;
+            --amber-soft: #f6e7cd;
+            --red: #a6403c;
+            --red-soft: #f5dfdc;
+            --blue: #355f8a;
+            --shadow: 0 18px 50px rgba(35, 48, 42, 0.10);
         }
+
+        html { scroll-behavior: smooth; }
 
         body {
             min-height: 100vh;
-            background: var(--paper);
             color: var(--ink);
-            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-            line-height: 1.6;
+            background:
+                radial-gradient(circle at 7% 0%, rgba(30, 111, 84, 0.10), transparent 28rem),
+                radial-gradient(circle at 93% 8%, rgba(168, 101, 23, 0.09), transparent 24rem),
+                var(--paper);
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+            line-height: 1.65;
         }
 
-        a {
-            color: inherit;
-        }
+        a { color: inherit; }
 
         .page-shell {
-            width: min(1160px, calc(100% - 40px));
+            width: min(1180px, calc(100% - 40px));
             margin: 0 auto;
         }
 
@@ -47,599 +49,361 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 20px;
+            gap: 24px;
             padding: 22px 0;
         }
 
         .brand {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            color: var(--ink);
+            gap: 11px;
+            font-weight: 850;
             text-decoration: none;
-            font-weight: 800;
-            letter-spacing: 0;
         }
 
         .brand-mark {
             display: grid;
             place-items: center;
-            width: 34px;
-            height: 34px;
-            border: 1px solid var(--ink);
-            border-radius: 50%;
-            background: var(--ink);
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
             color: #fff;
+            background: var(--ink);
             font-size: 0.78rem;
+            letter-spacing: 0.05em;
         }
 
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            font-size: 0.92rem;
-            color: var(--muted);
-        }
-
+        .nav-links { display: flex; gap: 22px; }
         .nav-links a {
+            color: var(--muted);
+            font-size: 0.9rem;
+            font-weight: 700;
             text-decoration: none;
         }
-
-        .nav-links a:hover {
-            color: var(--accent-strong);
-        }
+        .nav-links a:hover { color: var(--green); }
 
         .hero {
             display: grid;
-            grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
-            gap: 38px;
+            grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.75fr);
+            gap: 36px;
             align-items: end;
-            padding: 54px 0 40px;
-            border-top: 1px solid var(--line);
-            border-bottom: 1px solid var(--line);
+            padding: 66px 0 48px;
         }
 
         .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 22px;
-            color: var(--accent-strong);
-            font-size: 0.82rem;
-            font-weight: 800;
-            letter-spacing: 0.08em;
+            display: inline-block;
+            color: var(--green);
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
-        }
-
-        .eyebrow::before {
-            content: "";
-            width: 34px;
-            height: 2px;
-            background: var(--accent);
         }
 
         h1 {
             max-width: 780px;
-            font-size: clamp(2.35rem, 6vw, 5.65rem);
-            line-height: 0.96;
-            letter-spacing: 0;
-            font-weight: 900;
+            margin-top: 13px;
+            font-family: Georgia, "Noto Serif SC", serif;
+            font-size: clamp(3rem, 7vw, 5.8rem);
+            font-weight: 600;
+            letter-spacing: -0.055em;
+            line-height: 0.98;
         }
 
         .hero-copy {
-            max-width: 680px;
-            margin-top: 22px;
+            max-width: 720px;
+            margin-top: 24px;
             color: var(--muted);
             font-size: 1.05rem;
         }
 
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 30px;
-        }
-
+        .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
         .button {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            min-height: 42px;
+            min-height: 44px;
             border: 1px solid var(--ink);
             border-radius: 999px;
-            padding: 0 18px;
-            background: var(--ink);
+            padding: 0 20px;
             color: #fff;
+            background: var(--ink);
+            font-size: 0.9rem;
+            font-weight: 800;
             text-decoration: none;
-            font-size: 0.92rem;
-            font-weight: 750;
-            transition: transform 160ms ease, background 160ms ease, color 160ms ease;
         }
+        .button.secondary { color: var(--ink); background: transparent; }
 
-        .button:hover {
-            transform: translateY(-1px);
-            background: var(--accent-strong);
-            border-color: var(--accent-strong);
-        }
-
-        .button.secondary {
-            background: transparent;
-            color: var(--ink);
-        }
-
-        .button.secondary:hover {
-            background: var(--ink);
-            color: #fff;
-        }
-
-        .profile-block {
-            display: grid;
-            gap: 20px;
-            justify-items: start;
-        }
-
-        .avatar-wrap {
-            width: min(100%, 290px);
-            aspect-ratio: 1;
-            border-radius: 28px;
-            overflow: hidden;
-            background: var(--surface-soft);
+        .as-of-card {
+            padding: 25px;
+            border: 1px solid rgba(30, 111, 84, 0.28);
+            border-radius: 24px;
+            background: rgba(255, 253, 248, 0.82);
             box-shadow: var(--shadow);
+            backdrop-filter: blur(10px);
         }
 
-        .avatar-wrap img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .as-of-card .date {
             display: block;
+            margin: 6px 0 12px;
+            color: var(--green);
+            font-family: Georgia, serif;
+            font-size: 2rem;
+            font-weight: 700;
         }
-
-        .profile-note {
-            max-width: 330px;
-            color: var(--muted);
-            font-size: 0.96rem;
+        .as-of-card p { color: var(--muted); font-size: 0.9rem; }
+        .as-of-card .scope {
+            display: block;
+            margin-top: 16px;
+            padding-top: 14px;
+            border-top: 1px solid var(--line);
+            color: var(--ink);
+            font-size: 0.82rem;
+            font-weight: 750;
         }
 
         .stats-strip {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1px;
-            margin: 26px 0 0;
-            border: 1px solid var(--line);
-            background: var(--line);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+        .stat { padding: 26px 22px; }
+        .stat + .stat { border-left: 1px solid var(--line); }
+        .stat strong { display: block; font-family: Georgia, serif; font-size: 2.25rem; line-height: 1; }
+        .stat span { display: block; margin-top: 8px; color: var(--muted); font-size: 0.85rem; }
+
+        main { padding: 54px 0 72px; }
+
+        .briefing {
+            display: grid;
+            grid-template-columns: 0.45fr 1fr;
+            gap: 34px;
+            align-items: start;
+            padding: 30px;
+            border-radius: 22px;
+            color: #fff;
+            background: var(--ink);
+        }
+        .briefing h2 { margin-top: 8px; font-family: Georgia, serif; font-size: 2rem; font-weight: 600; }
+        .briefing ul { display: grid; gap: 14px; list-style: none; }
+        .briefing li { position: relative; padding-left: 24px; color: #dce2df; }
+        .briefing li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.72em;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #7fc4a8;
         }
 
-        .stat-box {
-            min-height: 108px;
-            padding: 18px;
-            background: var(--surface);
-        }
-
-        .stat-box strong {
-            display: block;
-            color: var(--ink);
-            font-size: clamp(1.5rem, 4vw, 2.4rem);
-            line-height: 1;
-        }
-
-        .stat-box span {
-            display: block;
-            margin-top: 8px;
-            color: var(--muted);
-            font-size: 0.86rem;
-        }
-
-        main {
-            padding: 40px 0 56px;
-        }
-
-        .section-heading {
+        .watchlist { margin-top: 56px; }
+        .section-intro {
             display: flex;
             align-items: end;
             justify-content: space-between;
-            gap: 18px;
-            margin-bottom: 22px;
+            gap: 30px;
+            margin-bottom: 24px;
         }
-
-        .section-heading h2 {
-            font-size: clamp(1.45rem, 3vw, 2.2rem);
-            letter-spacing: 0;
+        .section-intro h2, .method h2, .history h2 {
+            margin-top: 8px;
+            font-family: Georgia, "Noto Serif SC", serif;
+            font-size: 2.35rem;
+            font-weight: 600;
             line-height: 1.15;
         }
+        .section-intro p { max-width: 560px; color: var(--muted); font-size: 0.93rem; }
 
-        .section-heading p {
-            max-width: 520px;
-            color: var(--muted);
-            font-size: 0.95rem;
-        }
-
-        .control-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            margin: 28px 0 20px;
-        }
-
-        .tabs,
-        .filter-tabs {
+        .tabs {
             display: inline-flex;
-            align-items: center;
-            gap: 6px;
+            gap: 5px;
+            margin-bottom: 26px;
             padding: 5px;
             border: 1px solid var(--line);
             border-radius: 999px;
             background: var(--surface);
         }
-
-        .tab-btn,
-        .filter-tab {
+        .tab-btn {
             border: 0;
             border-radius: 999px;
-            background: transparent;
+            padding: 10px 18px;
             color: var(--muted);
+            background: transparent;
             cursor: pointer;
             font: inherit;
             font-size: 0.9rem;
-            font-weight: 750;
-            padding: 9px 15px;
-            white-space: nowrap;
-        }
-
-        .tab-btn.active,
-        .filter-tab.active {
-            background: var(--ink);
-            color: #fff;
-        }
-
-        .content-section {
-            display: none;
-        }
-
-        .content-section.active {
-            display: block;
-        }
-
-        .chart-section {
-            margin-bottom: 26px;
-            padding: 22px;
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            background: var(--surface);
-        }
-
-        .chart-title {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-            margin-bottom: 18px;
-            font-size: 0.95rem;
-            font-weight: 850;
-        }
-
-        .chart-title span {
-            color: var(--muted);
-            font-size: 0.82rem;
-            font-weight: 650;
-        }
-
-        .chart-container {
-            display: flex;
-            align-items: end;
-            gap: 8px;
-            height: 150px;
-            padding-top: 8px;
-        }
-
-        .chart-bar {
-            position: relative;
-            flex: 1 1 0;
-            min-width: 8px;
-            min-height: 8px;
-            border-radius: 999px 999px 0 0;
-            background: var(--accent);
-            transition: transform 160ms ease;
-        }
-
-        .chart-bar:hover {
-            transform: scaleY(1.04);
-        }
-
-        .chart-bar::after {
-            content: attr(data-date);
-            position: absolute;
-            left: 50%;
-            bottom: -24px;
-            transform: translateX(-50%);
-            color: var(--muted);
-            font-size: 0.68rem;
-            white-space: nowrap;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
-            gap: 16px;
-        }
-
-        .project-card,
-        .news-item,
-        .history-item {
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            background: var(--surface);
-            transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
-        }
-
-        .project-card {
-            display: flex;
-            flex-direction: column;
-            min-height: 238px;
-            padding: 18px;
-        }
-
-        .project-card:hover,
-        .news-item:hover {
-            border-color: rgba(31, 138, 112, 0.55);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow);
-        }
-
-        .project-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
-        }
-
-        .rank {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            background: var(--surface-soft);
-            color: var(--accent-strong);
-            font-size: 0.82rem;
-            font-weight: 900;
-            flex: 0 0 auto;
-        }
-
-        .project-name {
-            min-width: 0;
-            font-size: 1rem;
-            font-weight: 850;
-            line-height: 1.25;
-        }
-
-        .project-name a {
-            display: block;
-            overflow: hidden;
-            color: var(--ink);
-            text-decoration: none;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        .project-name a:hover,
-        .news-title a:hover {
-            color: var(--accent-strong);
-        }
-
-        .project-desc {
-            min-height: 68px;
-            color: var(--muted);
-            font-size: 0.9rem;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
-            overflow: hidden;
-        }
-
-        .project-stats {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: auto;
-            padding-top: 18px;
-        }
-
-        .pill {
-            display: inline-flex;
-            align-items: center;
-            min-height: 28px;
-            border-radius: 999px;
-            padding: 0 10px;
-            background: var(--surface-soft);
-            color: var(--muted);
-            font-size: 0.8rem;
-            font-weight: 750;
-        }
-
-        .pill.today {
-            background: rgba(31, 138, 112, 0.12);
-            color: var(--accent-strong);
-        }
-
-        .view-btn {
-            margin-left: auto;
-            color: var(--ink);
-            font-size: 0.82rem;
-            font-weight: 850;
-            text-decoration: none;
-        }
-
-        .news-list {
-            display: grid;
-            gap: 12px;
-        }
-
-        .news-item {
-            display: grid;
-            grid-template-columns: 42px minmax(0, 1fr);
-            gap: 12px;
-            padding: 16px;
-        }
-
-        .news-rank {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            background: rgba(185, 71, 98, 0.12);
-            color: var(--rose);
-            font-weight: 900;
-            font-size: 0.82rem;
-        }
-
-        .news-title {
-            font-size: 1rem;
-            font-weight: 780;
-            line-height: 1.35;
-        }
-
-        .news-title a {
-            color: var(--ink);
-            text-decoration: none;
-        }
-
-        .news-meta {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 8px;
-            color: var(--muted);
-            font-size: 0.82rem;
-        }
-
-        .empty-state {
-            padding: 32px;
-            border: 1px dashed var(--line);
-            border-radius: 8px;
-            color: var(--muted);
-            background: var(--surface);
-            text-align: center;
-        }
-
-        .filter-empty {
-            margin-top: 16px;
-        }
-
-        .history-section {
-            margin-top: 42px;
-            padding-top: 34px;
-            border-top: 1px solid var(--line);
-        }
-
-        .history-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-            gap: 12px;
-            margin-top: 18px;
-        }
-
-        .history-item {
-            padding: 16px;
-        }
-
-        .history-item .date {
-            display: block;
-            color: var(--muted);
-            font-size: 0.82rem;
-            margin-bottom: 8px;
-        }
-
-        .history-item .count {
-            font-weight: 850;
-        }
-
-        footer {
-            border-top: 1px solid var(--line);
-            padding: 26px 0 36px;
-            color: var(--muted);
-            font-size: 0.88rem;
-        }
-
-        footer a {
-            color: var(--accent-strong);
-            text-decoration: none;
             font-weight: 800;
         }
+        .tab-btn.active { color: #fff; background: var(--green); }
 
-        @media (max-width: 860px) {
-            .page-shell {
-                width: min(100% - 28px, 1160px);
-            }
+        .group-section { display: none; }
+        .group-section.active { display: block; }
+        .group-heading {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 28px;
+            margin-bottom: 20px;
+        }
+        .group-heading h2 { margin-top: 4px; font-family: Georgia, serif; font-size: 1.75rem; font-weight: 600; }
+        .group-heading p { max-width: 560px; color: var(--muted); font-size: 0.9rem; }
 
-            .topbar,
-            .section-heading,
-            .control-row {
-                align-items: flex-start;
-                flex-direction: column;
-            }
+        .fund-list { display: grid; gap: 16px; }
+        .fund-card {
+            padding: 22px;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            background: var(--surface);
+            transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+        }
+        .fund-card:hover { transform: translateY(-2px); border-color: rgba(30, 111, 84, 0.42); box-shadow: var(--shadow); }
 
-            .hero {
-                grid-template-columns: 1fr;
-                padding-top: 36px;
-            }
+        .fund-card-top {
+            display: grid;
+            grid-template-columns: 42px minmax(0, 1fr) auto;
+            gap: 14px;
+            align-items: center;
+        }
+        .fund-rank {
+            display: grid;
+            place-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            color: var(--green);
+            background: var(--green-soft);
+            font-size: 0.8rem;
+            font-weight: 900;
+        }
+        .fund-kicker { color: var(--muted); font-size: 0.74rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+        .fund-identity h3 { margin-top: 3px; font-size: 1.12rem; line-height: 1.3; }
+        .fund-identity a { text-decoration: none; }
+        .fund-identity a:hover { color: var(--green); }
+        .score { min-width: 84px; text-align: right; }
+        .score strong { display: block; color: var(--green); font-family: Georgia, serif; font-size: 2rem; line-height: 1; }
+        .score span { color: var(--muted); font-size: 0.68rem; font-weight: 750; }
 
-            .profile-block {
-                grid-template-columns: 96px minmax(0, 1fr);
-                align-items: center;
-            }
+        .tag-row { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 16px; }
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            min-height: 27px;
+            border-radius: 999px;
+            padding: 0 10px;
+            color: var(--muted);
+            background: var(--surface-soft);
+            font-size: 0.74rem;
+            font-weight: 800;
+        }
+        .tag.signal { color: var(--amber); background: var(--amber-soft); }
+        .verification.verified { color: var(--green); background: var(--green-soft); }
+        .verification.pending { color: var(--amber); background: var(--amber-soft); }
+        .verification.unavailable { color: var(--red); background: var(--red-soft); }
 
-            .avatar-wrap {
-                width: 96px;
-                border-radius: 22px;
-            }
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            gap: 1px;
+            margin-top: 18px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            background: var(--line);
+        }
+        .metric { min-width: 0; padding: 12px; background: #fafaf6; }
+        .metric span { display: block; overflow: hidden; color: var(--muted); font-size: 0.68rem; text-overflow: ellipsis; white-space: nowrap; }
+        .metric strong { display: block; margin-top: 3px; font-size: 0.96rem; }
+        .metric.positive strong { color: var(--green); }
+        .metric.negative strong { color: var(--red); }
 
-            .stats-strip {
-                grid-template-columns: 1fr;
-            }
+        .observation {
+            margin-top: 16px;
+            padding: 14px 16px;
+            border-left: 3px solid var(--amber);
+            color: var(--muted);
+            background: #fbf4e7;
+            font-size: 0.86rem;
+        }
+        .observation strong { margin-right: 8px; color: var(--ink); }
+        .fund-footer {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px 20px;
+            margin-top: 14px;
+            color: var(--muted);
+            font-size: 0.75rem;
+        }
+        .fund-footer a { margin-left: auto; color: var(--green); font-weight: 850; text-decoration: none; }
 
-            .tabs,
-            .filter-tabs {
-                width: 100%;
-                overflow-x: auto;
-                justify-content: flex-start;
-            }
+        .history, .method { margin-top: 68px; padding-top: 48px; border-top: 1px solid var(--line); }
+        .history-copy, .method-copy { max-width: 700px; margin-top: 12px; color: var(--muted); }
+        .chart-card {
+            margin-top: 24px;
+            padding: 22px;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            background: var(--surface);
+        }
+        .chart-legend { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 14px; color: var(--muted); font-size: 0.76rem; font-weight: 700; }
+        .legend-item { display: inline-flex; align-items: center; gap: 7px; }
+        .legend-dot { width: 9px; height: 9px; border-radius: 50%; }
+        .history-chart { width: 100%; height: 240px; overflow: visible; }
+        .history-chart .grid-line { stroke: #e5e8e3; stroke-width: 1; }
+        .history-chart .axis-label { fill: var(--muted); font-size: 10px; }
+        .history-chart .series { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+        .chart-empty { padding: 54px 20px; color: var(--muted); text-align: center; }
 
-            .tab-btn,
-            .filter-tab {
-                flex: 1 0 auto;
-            }
+        .method-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 15px;
+            margin-top: 26px;
+        }
+        .method-card { padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
+        .method-card .number { color: var(--green); font-family: Georgia, serif; font-size: 1.5rem; font-weight: 700; }
+        .method-card h3 { margin: 7px 0 8px; font-size: 1rem; }
+        .method-card p { color: var(--muted); font-size: 0.83rem; }
+
+        .disclaimer {
+            margin-top: 30px;
+            padding: 24px;
+            border: 1px solid #e3c994;
+            border-radius: 16px;
+            background: #fff6e5;
+        }
+        .disclaimer h3 { color: #7d4b13; font-size: 1rem; }
+        .disclaimer p { margin-top: 7px; color: #725d43; font-size: 0.86rem; }
+        .source-links { margin-top: 12px; color: var(--muted); font-size: 0.78rem; }
+        .source-links a { color: var(--green); font-weight: 750; }
+
+        .empty-state { padding: 42px; border: 1px dashed var(--line); border-radius: 16px; color: var(--muted); text-align: center; }
+
+        footer { padding: 28px 0 42px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.8rem; }
+        footer a { color: var(--green); font-weight: 800; text-decoration: none; }
+
+        @media (max-width: 900px) {
+            .hero, .briefing { grid-template-columns: 1fr; }
+            .hero { padding-top: 42px; }
+            .metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            .method-grid { grid-template-columns: 1fr; }
         }
 
-        @media (max-width: 560px) {
-            h1 {
-                font-size: 2.55rem;
-            }
-
-            .hero-actions {
-                flex-direction: column;
-            }
-
-            .button {
-                width: 100%;
-            }
-
-            .profile-block {
-                grid-template-columns: 1fr;
-            }
-
-            .news-item {
-                grid-template-columns: 1fr;
-            }
-
-            .chart-container {
-                gap: 5px;
-            }
+        @media (max-width: 680px) {
+            .page-shell { width: min(100% - 24px, 1180px); }
+            .nav-links { display: none; }
+            h1 { font-size: clamp(3rem, 16vw, 4.5rem); }
+            .stats-strip { grid-template-columns: 1fr; }
+            .stat + .stat { border-left: 0; border-top: 1px solid var(--line); }
+            .section-intro, .group-heading { align-items: flex-start; flex-direction: column; }
+            .tabs { display: flex; width: 100%; overflow-x: auto; }
+            .tab-btn { flex: 1 0 auto; }
+            .fund-card-top { grid-template-columns: 42px minmax(0, 1fr); }
+            .score { grid-column: 2; text-align: left; }
+            .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .fund-footer { align-items: flex-start; flex-direction: column; }
+            .fund-footer a { margin-left: 0; }
         }
     </style>
 </head>
@@ -647,682 +411,560 @@
     <div class="page-shell">
         <nav class="topbar" aria-label="主页导航">
             <a class="brand" href="https://github.com/interestsc1119" target="_blank" rel="noreferrer">
-                <span class="brand-mark">SC</span>
-                <span>InterestSC</span>
+                <span class="brand-mark">SC</span><span>InterestSC</span>
             </a>
             <div class="nav-links">
-                <a href="#radar">Daily Radar</a>
-                <a href="https://github.com/interestsc1119" target="_blank" rel="noreferrer">GitHub</a>
-                <a href="https://github.com/interestsc1119/interestsc1119.github.io" target="_blank" rel="noreferrer">Source</a>
+                <a href="#watchlist">今日清单</a>
+                <a href="#history">历史变化</a>
+                <a href="market.html">指数与持仓</a>
+                <a href="#method">筛选方法</a>
+                <a href="https://github.com/interestsc1119/interestsc1119.github.io" target="_blank" rel="noreferrer">源代码</a>
             </div>
         </nav>
 
         <header class="hero">
             <div>
-                <span class="eyebrow">Personal homepage</span>
-                <h1>InterestSC 的 AI 趋势观察站</h1>
-                <p class="hero-copy">
-                    这里是一个自动更新的个人主页，把我每天关注的 AI 开源项目和科技新闻收拢在一起，
-                    像一张面向未来工作的简洁雷达图。
-                </p>
+                <span class="eyebrow">Daily fund watch · 每日更新</span>
+                <h1>基金每日<br>观察站</h1>
+                <p class="hero-copy">不追逐单日排行榜，用收益、波动率和最大回撤把基金放回同类中比较。这里提供的是一份每天更新的研究起点，不是替你下单的答案。</p>
                 <div class="hero-actions">
-                    <a class="button" href="#radar">查看今日趋势</a>
-                    <a class="button secondary" href="https://github.com/interestsc1119" target="_blank" rel="noreferrer">访问 GitHub</a>
+                    <a class="button" href="#watchlist">查看今日观察</a>
+                    <a class="button secondary" href="market.html">看指数与公开持仓</a>
                 </div>
             </div>
-            <aside class="profile-block" aria-label="个人信息">
-                <div class="avatar-wrap">
-                    <img src="https://github.com/interestsc1119.png" alt="InterestSC GitHub avatar" loading="lazy">
-                </div>
-                <p class="profile-note">
-                    以 GitHub Pages 承载的个人信息流。页面每天北京时间 08:57 自动刷新，保留最近 14 天的趋势脉络。
-                </p>
+            <aside class="as-of-card" aria-label="数据日期">
+                <span class="eyebrow">Data as of</span>
+                <strong class="date">2026-07-16</strong>
+                <p>页面生成日期 2026-07-16。基金净值通常在交易日收盘后陆续披露，节假日会沿用最近可得数据。</p>
+                <span class="scope">中国大陆公募开放式基金（非个性化观察清单）</span>
             </aside>
         </header>
 
-        <section class="stats-strip" aria-label="今日概览">
-            <div class="stat-box">
-                <strong>10</strong>
-                <span>今日 AI 项目</span>
-            </div>
-            <div class="stat-box">
-                <strong>20</strong>
-                <span>今日科技新闻</span>
-            </div>
-            <div class="stat-box">
-                <strong>2026-07-16</strong>
-                <span>最近更新日期</span>
-            </div>
+        <section class="stats-strip" aria-label="今日筛选概览">
+            <div class="stat"><strong>768</strong><span>进入排行候选的基金代码</span></div>
+            <div class="stat"><strong>15</strong><span>三档观察清单合计</span></div>
+            <div class="stat"><strong>10</strong><span>最新净值双源同日核验</span></div>
         </section>
 
-        <main id="radar">
-            <div class="section-heading">
-                <h2>每日趋势雷达</h2>
-                <p>自动抓取 GitHub Trending 和科技资讯源，过滤出更接近 AI、工具、开发者效率与前沿产品的内容。</p>
-            </div>
-
-            <div class="control-row">
-                <div class="tabs" role="tablist" aria-label="内容类型">
-                    <button class="tab-btn active" type="button" data-tab="ai">AI 项目</button>
-                    <button class="tab-btn" type="button" data-tab="news">科技新闻</button>
-                </div>
-            </div>
-
-            <section class="content-section active" id="ai-section">
-                <div class="chart-section">
-                    <h3 class="chart-title">AI 项目趋势 <span>最近 14 天</span></h3>
-                    <div class="chart-container" id="ai-chart" aria-label="AI 项目趋势图"></div>
-                </div>
-
-                <div class="control-row">
-                    <div class="section-heading">
-                        <h2>热门 AI 项目</h2>
-                    </div>
-                    <div class="filter-tabs" aria-label="AI 项目筛选">
-                        <button class="filter-tab active" type="button" data-filter="all">全部</button>
-                        <button class="filter-tab" type="button" data-filter="today">今日上升</button>
-                    </div>
-                </div>
-
-                <div class="projects-grid" id="ai-projects-grid">
-
-            <article class="project-card" data-boost="true">
-                <div class="project-header">
-                    <span class="rank">1</span>
-                    <h3 class="project-name">
-                        <a href="https://github.com/Nutlope/hallmark" target="_blank" rel="noreferrer">Nutlope/hallmark</a>
-                    </h3>
-                </div>
-                <p class="project-desc">Anti-AI-slop design skill for Claude Code, Cursor, and Codex.</p>
-                <div class="project-stats">
-                    <span class="pill">Stars 8935</span>
-                    <span class="pill today">今日 +1277</span>
-                    <a href="https://github.com/Nutlope/hallmark" class="view-btn" target="_blank" rel="noreferrer">查看</a>
-                </div>
-            </article>
-
-
-            <article class="project-card" data-boost="true">
-                <div class="project-header">
-                    <span class="rank">2</span>
-                    <h3 class="project-name">
-                        <a href="https://github.com/mattpocock/skills" target="_blank" rel="noreferrer">mattpocock/skills</a>
-                    </h3>
-                </div>
-                <p class="project-desc">Skills for Real Engineers. Straight from my .claude directory.</p>
-                <div class="project-stats">
-                    <span class="pill">Stars 172579</span>
-                    <span class="pill today">今日 +2130</span>
-                    <a href="https://github.com/mattpocock/skills" class="view-btn" target="_blank" rel="noreferrer">查看</a>
-                </div>
-            </article>
-
-
-            <article class="project-card" data-boost="true">
-                <div class="project-header">
-                    <span class="rank">3</span>
-                    <h3 class="project-name">
-                        <a href="https://github.com/moeru-ai/airi" target="_blank" rel="noreferrer">moeru-ai/airi</a>
-                    </h3>
-                </div>
-                <p class="project-desc">💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama&#x27;s altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.</p>
-                <div class="project-stats">
-                    <span class="pill">Stars 42585</span>
-                    <span class="pill today">今日 +110</span>
-                    <a href="https://github.com/moeru-ai/airi" class="view-btn" target="_blank" rel="noreferrer">查看</a>
-                </div>
-            </article>
-
-
-            <article class="project-card" data-boost="true">
-                <div class="project-header">
-                    <span class="rank">4</span>
-                    <h3 class="project-name">
-                        <a href="https://github.com/Dicklesworthstone/destructive_command_guard" target="_blank" rel="noreferrer">Dicklesworthstone/destructive_command_guard</a>
-                    </h3>
-                </div>
-                <p class="project-desc">The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.</p>
-                <div class="project-stats">
-                    <span class="pill">Stars 4816</span>
-                    <span class="pill today">今日 +471</span>
-                    <a href="https://github.com/Dicklesworthstone/destructive_command_guard" class="view-btn" target="_blank" rel="noreferrer">查看</a>
-                </div>
-            </article>
-
-
-            <article class="project-card" data-boost="true">
-                <div class="project-header">
-                    <span class="rank">5</span>
-                    <h3 class="project-name">
-                        <a href="https://github.com/HKUDS/Vibe-Trading" target="_blank" rel="noreferrer">HKUDS/Vibe-Trading</a>
-                    </h3>
-                </div>
-                <p class="project-desc">&quot;Vibe-Trading: Your Personal Trading Agent&quot;</p>
-                <div class="project-stats">
-                    <span class="pill">Stars 23805</span>
-                    <span class="pill today">今日 +915</span>
-                    <a href="https://github.com/HKUDS/Vibe-Trading" class="view-btn" target="_blank" rel="noreferrer">查看</a>
-                </div>
-            </article>
-
-
-            <article class="project-card" data-boost="true">
-                <div class="project-header">
-                    <span class="rank">6</span>
-                    <h3 class="project-name">
-                        <a href="https://github.com/openinterpreter/openinterpreter" target="_blank" rel="noreferrer">openinterpreter/openinterpreter</a>
-                    </h3>
-                </div>
-                <p class="project-desc">A coding agent for low-cost models</p>
-                <div class="project-stats">
-                    <span class="pill">Stars 65571</span>
-                    <span class="pill today">今日 +299</span>
-                    <a href="https://github.com/openinterpreter/openinterpreter" class="view-btn" target="_blank" rel="noreferrer">查看</a>
-                </div>
-            </article>
-
-
-            <article class="project-card" data-boost="true">
-                <div class="project-header">
-                    <span class="rank">7</span>
-                    <h3 class="project-name">
-                        <a href="https://github.com/HenryNdubuaku/maths-cs-ai-compendium" target="_blank" rel="noreferrer">HenryNdubuaku/maths-cs-ai-compendium</a>
-                    </h3>
-                </div>
-                <p class="project-desc">Become a cracked AI/ML Research Engineer</p>
-                <div class="project-stats">
-                    <span class="pill">Stars 6004</span>
-                    <span class="pill today">今日 +725</span>
-                    <a href="https://github.com/HenryNdubuaku/maths-cs-ai-compendium" class="view-btn" target="_blank" rel="noreferrer">查看</a>
-                </div>
-            </article>
-
-
-            <article class="project-card" data-boost="true">
-                <div class="project-header">
-                    <span class="rank">8</span>
-                    <h3 class="project-name">
-                        <a href="https://github.com/Shubhamsaboo/awesome-llm-apps" target="_blank" rel="noreferrer">Shubhamsaboo/awesome-llm-apps</a>
-                    </h3>
-                </div>
-                <p class="project-desc">100+ AI Agent &amp; RAG apps you can actually run — clone, customize, ship.</p>
-                <div class="project-stats">
-                    <span class="pill">Stars 122048</span>
-                    <span class="pill today">今日 +1236</span>
-                    <a href="https://github.com/Shubhamsaboo/awesome-llm-apps" class="view-btn" target="_blank" rel="noreferrer">查看</a>
-                </div>
-            </article>
-
-
-            <article class="project-card" data-boost="true">
-                <div class="project-header">
-                    <span class="rank">9</span>
-                    <h3 class="project-name">
-                        <a href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noreferrer">coreyhaines31/marketingskills</a>
-                    </h3>
-                </div>
-                <p class="project-desc">Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.</p>
-                <div class="project-stats">
-                    <span class="pill">Stars 39863</span>
-                    <span class="pill today">今日 +340</span>
-                    <a href="https://github.com/coreyhaines31/marketingskills" class="view-btn" target="_blank" rel="noreferrer">查看</a>
-                </div>
-            </article>
-
-
-            <article class="project-card" data-boost="true">
-                <div class="project-header">
-                    <span class="rank">10</span>
-                    <h3 class="project-name">
-                        <a href="https://github.com/hasaneyldrm/exercises-dataset" target="_blank" rel="noreferrer">hasaneyldrm/exercises-dataset</a>
-                    </h3>
-                </div>
-                <p class="project-desc">1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group &amp; equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.</p>
-                <div class="project-stats">
-                    <span class="pill">Stars 14478</span>
-                    <span class="pill today">今日 +949</span>
-                    <a href="https://github.com/hasaneyldrm/exercises-dataset" class="view-btn" target="_blank" rel="noreferrer">查看</a>
-                </div>
-            </article>
-
-                </div>
-                <div class="empty-state filter-empty" id="ai-filter-empty" hidden>当前数据里还没有明确的今日上升项目。</div>
+        <main>
+            <section class="briefing" aria-labelledby="briefing-title">
+                <div><span class="eyebrow">Today&apos;s briefing</span><h2 id="briefing-title">今日观察提示</h2></div>
+                <ul><li>本次从 768 只基金的排行候选中完成历史数据筛选，最终列出 15 只观察标的。</li>
+<li>10 只基金的最新净值已通过东方财富与新浪双源同日校验；5 只因第二数据源日期稍晚同步而标记待确认。</li>
+<li>有 1 只基金触发短期涨幅偏快提示；高排名不等于适合立即申购，避免频繁申赎和追涨杀跌。</li></ul>
             </section>
 
-            <section class="content-section" id="news-section">
-                <div class="chart-section">
-                    <h3 class="chart-title">科技新闻趋势 <span>最近 14 天</span></h3>
-                    <div class="chart-container" id="news-chart" aria-label="科技新闻趋势图"></div>
+            <section class="watchlist" id="watchlist">
+                <div class="section-intro">
+                    <div><span class="eyebrow">Watchlists</span><h2>按风险档位查看</h2></div>
+                    <p>三档清单分别在各自候选池内评分，档位之间的分数不能直接横向比较。即使是“稳健观察”，也可能出现净值下跌。</p>
                 </div>
+                <div class="tabs" role="tablist" aria-label="风险档位"><button class="tab-btn active" type="button" data-group="stable">稳健观察</button>
+<button class="tab-btn" type="button" data-group="balanced">均衡观察</button>
+<button class="tab-btn" type="button" data-group="growth">进取观察</button></div>
 
-                <div class="control-row">
-                    <div class="section-heading">
-                        <h2>科技热点</h2>
-                    </div>
-                    <div class="filter-tabs" aria-label="新闻筛选">
-                        <button class="filter-tab active" type="button" data-filter="all">全部</button>
-                        <button class="filter-tab" type="button" data-filter="hot">热门</button>
-                    </div>
+            <section class="group-section active" id="group-stable">
+                <div class="group-heading">
+                    <div><span class="eyebrow">Risk bucket</span><h2>稳健观察</h2></div>
+                    <p>债券型基金为主，强调回撤与波动控制；稳健不等于保本。</p>
                 </div>
-
-                <div class="news-list" id="news-list">
-
-            <article class="news-item" data-hot="true">
-                <span class="news-rank">1</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://thinkingmachines.ai/news/introducing-inkling/" target="_blank" rel="noreferrer">Inkling: Our Open-Weights Model</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-                        <span class="pill today">Hot</span>
-                        <span class="pill">778 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">2</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://mort.coffee/home/sqlite-editions/" target="_blank" rel="noreferrer">SQLite should have (Rust-style) editions</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">152 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">3</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://davidobando.github.io/gsharp/" target="_blank" rel="noreferrer">G# – A modern .NET language with Go, Kotlin, and Swift ergonomics</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">51 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">4</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://github.com/xai-org/grok-build" target="_blank" rel="noreferrer">Grok Build is open source</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">316 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">5</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://www.siegelendowment.org/wp-content/uploads/2026/07/fortune-david-siegel-open-source-ai.pdf" target="_blank" rel="noreferrer">Governments, companies, nonprofits should invest in free, open source AI [pdf]</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">119 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">6</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://atproto.com/blog/at-protocol-trademark" target="_blank" rel="noreferrer">Bluesky Trademarks ATProto</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">28 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">7</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://www.reuters.com/business/finance/stripe-advent-offer-buy-paypal-more-than-53-billion-sources-say-2026-07-15/" target="_blank" rel="noreferrer">Stripe and Advent have made a joint offer to acquire PayPal – sources</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">384 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">8</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://pmbanugo.me/blog/why-async-await-complect-concurrency" target="_blank" rel="noreferrer">The Tokio/Rayon Trap and Why Async/Await Fails Concurrency</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">10 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">9</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://blog.greg.technology/2026/07/14/llm-networking-with-mikrotik.html" target="_blank" rel="noreferrer">LLM Networking with MikroTik</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">63 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">10</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://chemistry.berkeley.edu/news/meet-metal-organic-frameworks-chemistry%E2%80%99s-new-miracle-materials" target="_blank" rel="noreferrer">Metal-Organic Frameworks, Chemistry&#x27;s New Miracle Materials (2018)</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">44 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">11</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://www.catchcat.lol/" target="_blank" rel="noreferrer">CatchCat – Pokémon Go for Cats, IRL</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">21 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">12</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://typesanitizer.com/blog/job-queues.html" target="_blank" rel="noreferrer">Job queues are deceptively tricky</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">42 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">13</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/" target="_blank" rel="noreferrer">Guerrilla London Bus Ads Mock Kylie Jenner&#x27;s Meta Glasses Campaign</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">7 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">14</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://playonemoreletter.com/" target="_blank" rel="noreferrer">Show HN: One More Letter</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">55 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">15</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://spectrum.ieee.org/high-bandwidth-flash" target="_blank" rel="noreferrer">High-Bandwidth Flash offers efficient storage for model weights</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>Hacker News</span>
-
-                        <span class="pill">5 pts</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">16</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://techcrunch.com/2026/07/15/why-greylock-capped-its-new-fund-at-1-5b-when-it-says-it-could-have-raised-more/" target="_blank" rel="noreferrer">Why Greylock capped its new fund at $1.5B when it says it could have raised more</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>TechCrunch</span>
-
-
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">17</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/" target="_blank" rel="noreferrer">Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>TechCrunch</span>
-
-
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">18</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://techcrunch.com/2026/07/15/tesla-driver-in-fatal-texas-crash-pressed-accelerator-100-ntsb-confirms/" target="_blank" rel="noreferrer">Tesla driver in fatal Texas crash pressed accelerator 100%, NTSB confirms</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>TechCrunch</span>
-
-
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">19</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/" target="_blank" rel="noreferrer">Daniel Ek’s body-scanning startup Neko Health raises another $700M</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>TechCrunch</span>
-
-
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="news-item" data-hot="false">
-                <span class="news-rank">20</span>
-                <div class="news-content">
-                    <h3 class="news-title">
-                        <a href="https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/" target="_blank" rel="noreferrer">Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex</a>
-                    </h3>
-                    <div class="news-meta">
-                        <span>TechCrunch</span>
-
-
-                    </div>
-                </div>
-            </article>
-
-                </div>
-                <div class="empty-state filter-empty" id="news-filter-empty" hidden>当前数据里还没有标记为热门的新闻。</div>
+                <div class="fund-list">
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">01</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">债券型 · 003504</div>
+                <h3><a href="https://fund.eastmoney.com/003504.html" target="_blank" rel="noreferrer">景顺长城景颐丰利债券A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 80.2">
+                <strong>80.2</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">中低历史波动</span>
+            <span class="tag verification pending">第二数据源待同步</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+27.2%</strong></div><div class="metric positive"><span>三年年化</span><strong>+14.2%</strong></div><div class="metric"><span>年化波动</span><strong>8.8%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-3.0%</strong></div><div class="metric"><span>上涨日占比</span><strong>58.1%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-0.59%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 1.6786 · 2026-07-15</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.08%</span>
+            <a href="https://fund.eastmoney.com/003504.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">02</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">债券型 · 002969</div>
+                <h3><a href="https://fund.eastmoney.com/002969.html" target="_blank" rel="noreferrer">易方达丰和债券A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 67.1">
+                <strong>67.1</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">中低历史波动</span>
+            <span class="tag verification pending">第二数据源待同步</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+18.9%</strong></div><div class="metric positive"><span>三年年化</span><strong>+8.6%</strong></div><div class="metric"><span>年化波动</span><strong>6.8%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-2.8%</strong></div><div class="metric"><span>上涨日占比</span><strong>57.7%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-0.45%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 1.6944 · 2026-07-15</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.10%</span>
+            <a href="https://fund.eastmoney.com/002969.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">03</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">债券型 · 720003</div>
+                <h3><a href="https://fund.eastmoney.com/720003.html" target="_blank" rel="noreferrer">财通收益增强债券A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 65.6">
+                <strong>65.6</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">中等历史波动</span>
+            <span class="tag verification verified">双源净值已核验</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+40.9%</strong></div><div class="metric positive"><span>三年年化</span><strong>+16.9%</strong></div><div class="metric"><span>年化波动</span><strong>12.3%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-5.8%</strong></div><div class="metric"><span>上涨日占比</span><strong>57.7%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-0.93%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 2.1334 · 2026-07-16</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.08%</span>
+            <a href="https://fund.eastmoney.com/720003.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">04</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">债券型 · 470010</div>
+                <h3><a href="https://fund.eastmoney.com/470010.html" target="_blank" rel="noreferrer">汇添富多元收益债券A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 63.5">
+                <strong>63.5</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">中低历史波动</span>
+            <span class="tag verification verified">双源净值已核验</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+24.7%</strong></div><div class="metric positive"><span>三年年化</span><strong>+9.9%</strong></div><div class="metric"><span>年化波动</span><strong>7.2%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-3.5%</strong></div><div class="metric"><span>上涨日占比</span><strong>58.9%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-0.45%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 1.5266 · 2026-07-16</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.08%</span>
+            <a href="https://fund.eastmoney.com/470010.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">05</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">债券型 · 160718</div>
+                <h3><a href="https://fund.eastmoney.com/160718.html" target="_blank" rel="noreferrer">嘉实多利收益债券A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 62.3">
+                <strong>62.3</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">中低历史波动</span>
+            <span class="tag verification verified">双源净值已核验</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+21.9%</strong></div><div class="metric positive"><span>三年年化</span><strong>+10.4%</strong></div><div class="metric"><span>年化波动</span><strong>7.2%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-3.4%</strong></div><div class="metric"><span>上涨日占比</span><strong>57.7%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-0.91%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 1.0350 · 2026-07-16</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.08%</span>
+            <a href="https://fund.eastmoney.com/160718.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+    </div>
             </section>
 
-            <section class="history-section">
-                <div class="section-heading">
-                    <h2>最近记录</h2>
-                    <p>保留近期抓取结果，用来观察这个页面每天捕捉到的信息密度。</p>
+
+            <section class="group-section" id="group-balanced">
+                <div class="group-heading">
+                    <div><span class="eyebrow">Risk bucket</span><h2>均衡观察</h2></div>
+                    <p>混合型基金为主，在中期收益和下行风险之间寻找平衡。</p>
                 </div>
-                <div class="history-list" id="history-list"></div>
+                <div class="fund-list">
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">01</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">混合型 · 001184</div>
+                <h3><a href="https://fund.eastmoney.com/001184.html" target="_blank" rel="noreferrer">易方达新常态混合A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 75.2">
+                <strong>75.2</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">较高历史波动</span>
+            <span class="tag verification pending">第二数据源待同步</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+255.4%</strong></div><div class="metric positive"><span>三年年化</span><strong>+57.8%</strong></div><div class="metric"><span>年化波动</span><strong>40.8%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-15.6%</strong></div><div class="metric"><span>上涨日占比</span><strong>59.8%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-2.17%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 2.3030 · 2026-07-15</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.15%</span>
+            <a href="https://fund.eastmoney.com/001184.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">02</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">混合型 · 519770</div>
+                <h3><a href="https://fund.eastmoney.com/519770.html" target="_blank" rel="noreferrer">交银优择回报灵活配置混合A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 69.4">
+                <strong>69.4</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">较高历史波动</span>
+            <span class="tag verification verified">双源净值已核验</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+241.3%</strong></div><div class="metric positive"><span>三年年化</span><strong>+65.5%</strong></div><div class="metric"><span>年化波动</span><strong>45.0%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-14.8%</strong></div><div class="metric"><span>上涨日占比</span><strong>56.8%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-2.78%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 6.2152 · 2026-07-16</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.08%</span>
+            <a href="https://fund.eastmoney.com/519770.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">03</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">混合型 · 001198</div>
+                <h3><a href="https://fund.eastmoney.com/001198.html" target="_blank" rel="noreferrer">东方惠新灵活配置混合A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 63.3">
+                <strong>63.3</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">避免追高</span>
+            <span class="tag">较高历史波动</span>
+            <span class="tag verification pending">第二数据源待同步</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+237.1%</strong></div><div class="metric positive"><span>三年年化</span><strong>+67.8%</strong></div><div class="metric"><span>年化波动</span><strong>44.8%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-21.1%</strong></div><div class="metric"><span>上涨日占比</span><strong>57.7%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-4.97%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>近期涨幅偏快，历史得分不代表未来表现；更适合等待波动回落后继续观察。</p>
+        <div class="fund-footer">
+            <span>净值 3.5779 · 2026-07-15</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.08%</span>
+            <a href="https://fund.eastmoney.com/001198.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">04</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">混合型 · 011369</div>
+                <h3><a href="https://fund.eastmoney.com/011369.html" target="_blank" rel="noreferrer">华商均衡成长混合A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 54.4">
+                <strong>54.4</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">高波动观察</span>
+            <span class="tag">较高历史波动</span>
+            <span class="tag verification verified">双源净值已核验</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+278.1%</strong></div><div class="metric positive"><span>三年年化</span><strong>+62.9%</strong></div><div class="metric"><span>年化波动</span><strong>48.7%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-24.6%</strong></div><div class="metric"><span>上涨日占比</span><strong>56.9%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-4.20%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>历史最大回撤较深，只适合能承受相应本金波动、且投资期限较长的观察者。</p>
+        <div class="fund-footer">
+            <span>净值 3.9044 · 2026-07-16</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.15%</span>
+            <a href="https://fund.eastmoney.com/011369.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">05</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">混合型 · 018358</div>
+                <h3><a href="https://fund.eastmoney.com/018358.html" target="_blank" rel="noreferrer">华富数字经济混合A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 52.9">
+                <strong>52.9</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">较高历史波动</span>
+            <span class="tag verification verified">双源净值已核验</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+227.3%</strong></div><div class="metric positive"><span>三年年化</span><strong>+51.7%</strong></div><div class="metric"><span>年化波动</span><strong>42.7%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-15.6%</strong></div><div class="metric"><span>上涨日占比</span><strong>57.5%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-3.84%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 3.3300 · 2026-07-16</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.15%</span>
+            <a href="https://fund.eastmoney.com/018358.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+    </div>
+            </section>
+
+
+            <section class="group-section" id="group-growth">
+                <div class="group-heading">
+                    <div><span class="eyebrow">Risk bucket</span><h2>进取观察</h2></div>
+                    <p>股票型与指数型基金为主，潜在波动和本金损失风险更高。</p>
+                </div>
+                <div class="fund-list">
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">01</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">股票型 · 005825</div>
+                <h3><a href="https://fund.eastmoney.com/005825.html" target="_blank" rel="noreferrer">申万菱信智能驱动股票A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 80.8">
+                <strong>80.8</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">较高历史波动</span>
+            <span class="tag verification pending">第二数据源待同步</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+243.9%</strong></div><div class="metric positive"><span>三年年化</span><strong>+53.8%</strong></div><div class="metric"><span>年化波动</span><strong>40.8%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-14.4%</strong></div><div class="metric"><span>上涨日占比</span><strong>57.7%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-4.24%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 10.0631 · 2026-07-15</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.15%</span>
+            <a href="https://fund.eastmoney.com/005825.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">02</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">股票型 · 010391</div>
+                <h3><a href="https://fund.eastmoney.com/010391.html" target="_blank" rel="noreferrer">易方达战略新兴产业股票A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 79.2">
+                <strong>79.2</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">较高历史波动</span>
+            <span class="tag verification verified">双源净值已核验</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+216.0%</strong></div><div class="metric positive"><span>三年年化</span><strong>+58.5%</strong></div><div class="metric"><span>年化波动</span><strong>41.3%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-17.5%</strong></div><div class="metric"><span>上涨日占比</span><strong>60.1%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-2.25%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 2.9272 · 2026-07-16</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.15%</span>
+            <a href="https://fund.eastmoney.com/010391.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">03</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">股票型 · 014736</div>
+                <h3><a href="https://fund.eastmoney.com/014736.html" target="_blank" rel="noreferrer">创金合信专精特新股票发起A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 64.6">
+                <strong>64.6</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">较高历史波动</span>
+            <span class="tag verification verified">双源净值已核验</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+212.3%</strong></div><div class="metric positive"><span>三年年化</span><strong>+47.4%</strong></div><div class="metric"><span>年化波动</span><strong>40.2%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-18.7%</strong></div><div class="metric"><span>上涨日占比</span><strong>57.8%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-5.58%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 3.5126 · 2026-07-16</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.15%</span>
+            <a href="https://fund.eastmoney.com/014736.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">04</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">指数型 · 008326</div>
+                <h3><a href="https://fund.eastmoney.com/008326.html" target="_blank" rel="noreferrer">东财通信A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 64.1">
+                <strong>64.1</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">较高历史波动</span>
+            <span class="tag verification verified">双源净值已核验</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+224.5%</strong></div><div class="metric positive"><span>三年年化</span><strong>+61.4%</strong></div><div class="metric"><span>年化波动</span><strong>45.7%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-19.5%</strong></div><div class="metric"><span>上涨日占比</span><strong>57.1%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-2.97%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 4.8582 · 2026-07-16</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.10%</span>
+            <a href="https://fund.eastmoney.com/008326.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+
+
+    <article class="fund-card">
+        <div class="fund-card-top">
+            <div class="fund-rank">05</div>
+            <div class="fund-identity">
+                <div class="fund-kicker">股票型 · 010013</div>
+                <h3><a href="https://fund.eastmoney.com/010013.html" target="_blank" rel="noreferrer">易方达信息行业精选股票A</a></h3>
+            </div>
+            <div class="score" aria-label="同类综合得分 58.9">
+                <strong>58.9</strong><span>同类得分</span>
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag signal">分批观察</span>
+            <span class="tag">较高历史波动</span>
+            <span class="tag verification verified">双源净值已核验</span>
+        </div>
+        <div class="metrics"><div class="metric positive"><span>近1年</span><strong>+187.8%</strong></div><div class="metric positive"><span>三年年化</span><strong>+48.3%</strong></div><div class="metric"><span>年化波动</span><strong>41.0%</strong></div><div class="metric negative"><span>近1年最大回撤</span><strong>-18.3%</strong></div><div class="metric"><span>上涨日占比</span><strong>56.9%</strong></div><div class="metric"><span>最新日涨跌</span><strong>-3.13%</strong></div></div>
+        <p class="observation"><strong>观察说明</strong>风险调整后表现位于候选前列，可纳入备选并继续核对持仓、基金经理与费用。</p>
+        <div class="fund-footer">
+            <span>净值 2.8881 · 2026-07-16</span>
+            <span>申购状态以最新公告为准 · 参考费率 0.15%</span>
+            <a href="https://fund.eastmoney.com/010013.html" target="_blank" rel="noreferrer">查看基金资料 →</a>
+        </div>
+    </article>
+    </div>
+            </section>
+
+            </section>
+
+            <section class="history" id="history">
+                <span class="eyebrow">Thirty-day context</span>
+                <h2>观察清单平均得分</h2>
+                <p class="history-copy">记录每天各档入选基金的平均同类得分。得分回落说明候选的历史风险调整表现减弱，不代表市场涨跌预测。</p>
+                <div class="chart-card">
+                    <div class="chart-legend">
+                        <span class="legend-item"><i class="legend-dot" style="background:#1e6f54"></i>稳健观察</span>
+                        <span class="legend-item"><i class="legend-dot" style="background:#a86517"></i>均衡观察</span>
+                        <span class="legend-item"><i class="legend-dot" style="background:#355f8a"></i>进取观察</span>
+                    </div>
+                    <div id="history-chart"></div>
+                </div>
+            </section>
+
+            <section class="method" id="method">
+                <span class="eyebrow">Transparent methodology</span>
+                <h2>这份清单如何生成</h2>
+                <p class="method-copy">规则偏向长期、可解释和风险意识，不使用大模型编造预测，也不会因为某只基金一天大涨就把它直接放到最前面。</p>
+                <div class="method-grid">
+                    <article class="method-card"><span class="number">01</span><h3>先做可比性筛选</h3><p>限定中国大陆公募开放式基金，要求至少 3 年历史；排除定开、持有期、封闭与养老产品，并合并常见 A/C 份额。</p></article>
+                    <article class="method-card"><span class="number">02</span><h3>收益与风险同时计分</h3><p>收益、三年年化表现、最大回撤、波动率与上涨日占比的同类相对分位；满分100分。短期涨幅超过档位阈值会扣分并触发“避免追高”。</p></article>
+                    <article class="method-card"><span class="number">03</span><h3>关键净值交叉校验</h3><p>排行和历史净值来自天天基金/东方财富，最新单位净值由新浪财经独立交叉校验。同日差异超过 1% 的候选不会进入今日清单。</p></article>
+                </div>
+                <div class="disclaimer">
+                    <h3>重要风险提示</h3>
+                    <p>本页面仅用于投资者教育和基金初筛，不构成个性化投资建议、收益承诺或交易指令。基金有风险，可能损失本金；请阅读基金合同、招募说明书、产品资料概要和最新公告，并根据自身风险承受能力、投资期限和资产配置独立决策。</p>
+                    <p>同一基金不同份额默认优先保留A类或成立更久的份额，实际应按持有期与费率选择。</p>
+                    <div class="source-links">投资者教育参考：<a href="https://investor.amac.org.cn/" target="_blank" rel="noreferrer">中国证券投资基金业协会</a> · 数据页面：<a href="https://fund.eastmoney.com/data/fundranking.html" target="_blank" rel="noreferrer">天天基金排行</a></div>
+                </div>
             </section>
         </main>
 
-        <footer>
-            <p>Powered by GitHub Actions. Source on <a href="https://github.com/interestsc1119/interestsc1119.github.io" target="_blank" rel="noreferrer">interestsc1119.github.io</a>.</p>
-        </footer>
+        <footer>由 GitHub Actions 每日自动更新 · <a href="https://github.com/interestsc1119/interestsc1119.github.io" target="_blank" rel="noreferrer">查看源代码</a></footer>
     </div>
 
     <script>
-        const aiHistoryData = {"labels": ["2026-07-03", "2026-07-04", "2026-07-05", "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10", "2026-07-11", "2026-07-12", "2026-07-13", "2026-07-14", "2026-07-15", "2026-07-16"], "values": [14, 14, 14, 18, 13, 11, 10, 11, 11, 9, 10, 7, 10, 10]};
-        const newsHistoryData = {"labels": ["2026-07-03", "2026-07-04", "2026-07-05", "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10", "2026-07-11", "2026-07-12", "2026-07-13", "2026-07-14", "2026-07-15", "2026-07-16"], "values": [20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]};
-        const recentHistory = [{"date": "2026-07-10", "ai_count": 11, "news_count": 20, "ai_projects": [{"name": "MadsLorentzen/ai-job-search", "stars": "19511", "url": "https://github.com/MadsLorentzen/ai-job-search"}, {"name": "addyosmani/agent-skills", "stars": "76081", "url": "https://github.com/addyosmani/agent-skills"}, {"name": "VoltAgent/awesome-design-md", "stars": "99973", "url": "https://github.com/VoltAgent/awesome-design-md"}, {"name": "iOfficeAI/OfficeCLI", "stars": "13686", "url": "https://github.com/iOfficeAI/OfficeCLI"}, {"name": "wonderwhy-er/DesktopCommanderMCP", "stars": "6606", "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"}], "top_news": [{"title": "Ben Bernanke Joins Anthropic O", "source": "Hacker News"}, {"title": "Show HN: Getting GLM 5.2 runni", "source": "Hacker News"}, {"title": "EU Parliament greenlights Chat", "source": "Hacker News"}, {"title": "Show HN: 18 Words", "source": "Hacker News"}, {"title": "GPT-5.6", "source": "Hacker News"}]}, {"date": "2026-07-11", "ai_count": 11, "news_count": 20, "ai_projects": [{"name": "wonderwhy-er/DesktopCommanderMCP", "stars": "7386", "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"}, {"name": "addyosmani/agent-skills", "stars": "76905", "url": "https://github.com/addyosmani/agent-skills"}, {"name": "jbeder/yaml-cpp", "stars": "6091", "url": "https://github.com/jbeder/yaml-cpp"}, {"name": "mattpocock/skills", "stars": "164788", "url": "https://github.com/mattpocock/skills"}, {"name": "obra/superpowers", "stars": "251874", "url": "https://github.com/obra/superpowers"}], "top_news": [{"title": "Einstein's relativity rules ch", "source": "Hacker News"}, {"title": "QuadRF can spot drones and see", "source": "Hacker News"}, {"title": "Apple sues OpenAI, accuses ex-", "source": "Hacker News"}, {"title": "An iroh powered smart fan", "source": "Hacker News"}, {"title": "An update on residential proxi", "source": "Hacker News"}]}, {"date": "2026-07-12", "ai_count": 9, "news_count": 20, "ai_projects": [{"name": "davila7/claude-code-templates", "stars": "29057", "url": "https://github.com/davila7/claude-code-templates"}, {"name": "google-labs-code/stitch-skills", "stars": "7115", "url": "https://github.com/google-labs-code/stitch-skills"}, {"name": "hashicorp/terraform", "stars": "49389", "url": "https://github.com/hashicorp/terraform"}, {"name": "openai/plugins", "stars": "4443", "url": "https://github.com/openai/plugins"}, {"name": "wonderwhy-er/DesktopCommanderMCP", "stars": "7806", "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"}], "top_news": [{"title": "We Know Simple Fluids Can Flow", "source": "Hacker News"}, {"title": "Mesh LLM: distributed AI compu", "source": "Hacker News"}, {"title": "A pure scheme web programming ", "source": "Hacker News"}, {"title": "Show HN: Ant – A JavaScript ru", "source": "Hacker News"}, {"title": "RISCBoy is an open-source port", "source": "Hacker News"}]}, {"date": "2026-07-13", "ai_count": 10, "news_count": 20, "ai_projects": [{"name": "Dicklesworthstone/destructive_command_guard", "stars": "3114", "url": "https://github.com/Dicklesworthstone/destructive_command_guard"}, {"name": "wonderwhy-er/DesktopCommanderMCP", "stars": "8034", "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"}, {"name": "HKUDS/Vibe-Trading", "stars": "20755", "url": "https://github.com/HKUDS/Vibe-Trading"}, {"name": "Shubhamsaboo/awesome-llm-apps", "stars": "118760", "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"}, {"name": "anthropics/claude-cookbooks", "stars": "48531", "url": "https://github.com/anthropics/claude-cookbooks"}], "top_news": [{"title": "GhostLock, a stack-UAF that ha", "source": "Hacker News"}, {"title": "Count Binface", "source": "Hacker News"}, {"title": "Cyberpunk Comics, Manga and Gr", "source": "Hacker News"}, {"title": "Tiny Emulators", "source": "Hacker News"}, {"title": "So you want to learn physics (", "source": "Hacker News"}]}, {"date": "2026-07-14", "ai_count": 7, "news_count": 20, "ai_projects": [{"name": "HKUDS/Vibe-Trading", "stars": "21985", "url": "https://github.com/HKUDS/Vibe-Trading"}, {"name": "moeru-ai/airi", "stars": "42019", "url": "https://github.com/moeru-ai/airi"}, {"name": "Shubhamsaboo/awesome-llm-apps", "stars": "119845", "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"}, {"name": "Nutlope/hallmark", "stars": "5330", "url": "https://github.com/Nutlope/hallmark"}, {"name": "Graphify-Labs/graphify", "stars": "85000", "url": "https://github.com/Graphify-Labs/graphify"}], "top_news": [{"title": "Japan develops a method to rec", "source": "Hacker News"}, {"title": "The Git history command deserv", "source": "Hacker News"}, {"title": "Fundamentals of Wireless Commu", "source": "Hacker News"}, {"title": "What will be left for us to wo", "source": "Hacker News"}, {"title": "Building and shipping Mac and ", "source": "Hacker News"}]}, {"date": "2026-07-15", "ai_count": 10, "news_count": 20, "ai_projects": [{"name": "Shubhamsaboo/awesome-llm-apps", "stars": "121028", "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"}, {"name": "mattpocock/skills", "stars": "170642", "url": "https://github.com/mattpocock/skills"}, {"name": "Dicklesworthstone/destructive_command_guard", "stars": "4471", "url": "https://github.com/Dicklesworthstone/destructive_command_guard"}, {"name": "virattt/ai-hedge-fund", "stars": "61934", "url": "https://github.com/virattt/ai-hedge-fund"}, {"name": "Nutlope/hallmark", "stars": "6287", "url": "https://github.com/Nutlope/hallmark"}], "top_news": [{"title": "Vancouver PD website features ", "source": "Hacker News"}, {"title": "TS-2026-009: Insecure argument", "source": "Hacker News"}, {"title": "Bonsai 27B: A 27B-Class model ", "source": "Hacker News"}, {"title": "Jurassic Park computers in exc", "source": "Hacker News"}, {"title": "Dependabot version updates int", "source": "Hacker News"}]}, {"date": "2026-07-16", "ai_count": 10, "news_count": 20, "ai_projects": [{"name": "Nutlope/hallmark", "stars": "8935", "url": "https://github.com/Nutlope/hallmark"}, {"name": "mattpocock/skills", "stars": "172579", "url": "https://github.com/mattpocock/skills"}, {"name": "moeru-ai/airi", "stars": "42585", "url": "https://github.com/moeru-ai/airi"}, {"name": "Dicklesworthstone/destructive_command_guard", "stars": "4816", "url": "https://github.com/Dicklesworthstone/destructive_command_guard"}, {"name": "HKUDS/Vibe-Trading", "stars": "23805", "url": "https://github.com/HKUDS/Vibe-Trading"}], "top_news": [{"title": "Inkling: Our Open-Weights Mode", "source": "Hacker News"}, {"title": "SQLite should have (Rust-style", "source": "Hacker News"}, {"title": "G# – A modern .NET language wi", "source": "Hacker News"}, {"title": "Grok Build is open source", "source": "Hacker News"}, {"title": "Governments, companies, nonpro", "source": "Hacker News"}]}];
+        const historyData = [{"date": "2026-07-16", "data_as_of": "2026-07-16", "shortlisted_count": 15, "verified_count": 10, "scores": {"stable": 67.7, "balanced": 63.0, "growth": 69.5}, "average_return_1y": 163.83}];
 
-        function renderChart(containerId, chartData, color) {
-            const chartContainer = document.getElementById(containerId);
-            chartContainer.innerHTML = "";
-            const maxValue = Math.max(...chartData.values, 1);
-
-            chartData.labels.forEach((label, index) => {
-                const value = chartData.values[index] || 0;
-                const bar = document.createElement("div");
-                bar.className = "chart-bar";
-                bar.style.height = Math.max((value / maxValue) * 100, 6) + "%";
-                bar.style.background = color;
-                bar.dataset.date = label.slice(5);
-                bar.title = `${label}: ${value}`;
-                chartContainer.appendChild(bar);
+        document.querySelectorAll(".tab-btn").forEach((button) => {
+            button.addEventListener("click", () => {
+                document.querySelectorAll(".tab-btn").forEach((item) => item.classList.toggle("active", item === button));
+                document.querySelectorAll(".group-section").forEach((section) => section.classList.toggle("active", section.id === `group-${button.dataset.group}`));
             });
-        }
+        });
 
-        function switchTab(tabName) {
-            document.querySelectorAll(".tab-btn").forEach((button) => {
-                button.classList.toggle("active", button.dataset.tab === tabName);
-            });
-
-            document.querySelectorAll(".content-section").forEach((section) => {
-                section.classList.remove("active");
-            });
-
-            document.getElementById(`${tabName}-section`).classList.add("active");
-        }
-
-        function filterAIProjects(filterName) {
-            document.querySelectorAll("#ai-section .filter-tab").forEach((button) => {
-                button.classList.toggle("active", button.dataset.filter === filterName);
-            });
-
-            document.querySelectorAll("#ai-projects-grid .project-card").forEach((card) => {
-                const hasTodaySignal = card.dataset.boost === "true";
-                card.style.display = filterName === "all" || hasTodaySignal ? "flex" : "none";
-            });
-
-            const visibleCount = document.querySelectorAll('#ai-projects-grid .project-card:not([style*="display: none"])').length;
-            document.getElementById("ai-filter-empty").hidden = filterName === "all" || visibleCount > 0;
-        }
-
-        function filterNews(filterName) {
-            document.querySelectorAll("#news-section .filter-tab").forEach((button) => {
-                button.classList.toggle("active", button.dataset.filter === filterName);
-            });
-
-            document.querySelectorAll("#news-list .news-item").forEach((item) => {
-                const isHot = item.dataset.hot === "true";
-                item.style.display = filterName === "all" || isHot ? "grid" : "none";
-            });
-
-            const visibleCount = document.querySelectorAll('#news-list .news-item:not([style*="display: none"])').length;
-            document.getElementById("news-filter-empty").hidden = filterName === "all" || visibleCount > 0;
-        }
-
-        function renderHistory() {
-            const historyList = document.getElementById("history-list");
-            historyList.innerHTML = "";
-
-            if (!recentHistory.length) {
-                historyList.innerHTML = '<div class="empty-state">还没有历史记录。</div>';
+        function renderHistoryChart() {
+            const container = document.getElementById("history-chart");
+            if (!historyData.length) {
+                container.innerHTML = '<div class="chart-empty">首次运行后将开始积累历史得分。</div>';
                 return;
             }
 
-            recentHistory.slice(-7).reverse().forEach((item) => {
-                const div = document.createElement("div");
-                div.className = "history-item";
-                div.innerHTML = `
-                    <span class="date">${item.date}</span>
-                    <span class="count">AI ${item.ai_count || 0} / 新闻 ${item.news_count || 0}</span>
-                `;
-                historyList.appendChild(div);
+            const width = 1000;
+            const height = 240;
+            const padding = { left: 42, right: 22, top: 18, bottom: 34 };
+            const plotWidth = width - padding.left - padding.right;
+            const plotHeight = height - padding.top - padding.bottom;
+            const colors = { stable: "#1e6f54", balanced: "#a86517", growth: "#355f8a" };
+            const x = (index) => padding.left + (historyData.length === 1 ? plotWidth / 2 : index / (historyData.length - 1) * plotWidth);
+            const y = (value) => padding.top + (100 - Math.max(0, Math.min(100, value))) / 100 * plotHeight;
+            let svg = `<svg class="history-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="最近30天各档观察清单平均得分">`;
+
+            [0, 25, 50, 75, 100].forEach((value) => {
+                const yPos = y(value);
+                svg += `<line class="grid-line" x1="${padding.left}" y1="${yPos}" x2="${width - padding.right}" y2="${yPos}"></line>`;
+                svg += `<text class="axis-label" x="4" y="${yPos + 4}">${value}</text>`;
             });
+
+            Object.entries(colors).forEach(([key, color]) => {
+                const points = historyData.map((item, index) => `${x(index)},${y((item.scores || {})[key] || 0)}`).join(" ");
+                svg += `<polyline class="series" stroke="${color}" points="${points}"></polyline>`;
+                historyData.forEach((item, index) => {
+                    const value = (item.scores || {})[key] || 0;
+                    svg += `<circle cx="${x(index)}" cy="${y(value)}" r="3.5" fill="${color}"><title>${item.date} · ${value}</title></circle>`;
+                });
+            });
+
+            const labelIndexes = [...new Set([0, Math.floor((historyData.length - 1) / 2), historyData.length - 1])];
+            labelIndexes.forEach((index) => {
+                const label = historyData[index].date.slice(5);
+                svg += `<text class="axis-label" text-anchor="middle" x="${x(index)}" y="${height - 8}">${label}</text>`;
+            });
+            svg += "</svg>";
+            container.innerHTML = svg;
         }
 
-        document.querySelectorAll(".tab-btn").forEach((button) => {
-            button.addEventListener("click", () => switchTab(button.dataset.tab));
-        });
-
-        document.querySelectorAll("#ai-section .filter-tab").forEach((button) => {
-            button.addEventListener("click", () => filterAIProjects(button.dataset.filter));
-        });
-
-        document.querySelectorAll("#news-section .filter-tab").forEach((button) => {
-            button.addEventListener("click", () => filterNews(button.dataset.filter));
-        });
-
-        document.addEventListener("DOMContentLoaded", () => {
-            renderChart("ai-chart", aiHistoryData, "#1f8a70");
-            renderChart("news-chart", newsHistoryData, "#b94762");
-            renderHistory();
-        });
+        renderHistoryChart();
     </script>
 </body>
 </html>

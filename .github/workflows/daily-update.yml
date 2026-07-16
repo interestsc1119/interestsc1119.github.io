@@ -1,16 +1,17 @@
-name: Daily AI & News Update
+name: Daily Fund & Market Watch Update
 
 on:
   schedule:
-    # Runs every day at 08:57 Beijing time (00:57 UTC).
-    - cron: '57 0 * * *'
+    # Runs every day at 06:30 Beijing/Hong Kong time (22:30 UTC),
+    # after the previous US close and most mainland fund NAV publications.
+    - cron: '30 22 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-trending:
+  update-funds:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,24 +24,26 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install requests beautifulsoup4 lxml
+        run: pip install requests
 
       - name: Set today's date
         id: date
-        run: echo "TODAY=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+        run: echo "TODAY=$(TZ=Asia/Hong_Kong date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
 
-      - name: Fetch GitHub Trending & News
+      - name: Fetch and score public funds
         id: fetch
-        run: python scripts/fetch_trending.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/fetch_funds.py
 
-      - name: Update index.html with new data
-        run: python scripts/update_html.py
+      - name: Fetch index and Berkshire 13F data
+        run: python scripts/fetch_markets.py
+
+      - name: Render static pages
+        run: |
+          python scripts/render_funds.py
+          python scripts/render_markets.py
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Daily Update - ${{ steps.date.outputs.TODAY }}"
-          file_pattern: 'data/*.json index.html'
+          commit_message: "Daily Fund & Market Update - ${{ steps.date.outputs.TODAY }}"
+          file_pattern: 'data/*.json index.html market.html'
