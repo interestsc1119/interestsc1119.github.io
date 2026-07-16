@@ -1,59 +1,5 @@
 [
   {
-    "date": "2026-06-16",
-    "ai_count": 8,
-    "news_count": 20,
-    "ai_projects": [
-      {
-        "name": "iptv-org/iptv",
-        "stars": "123204",
-        "url": "https://github.com/iptv-org/iptv"
-      },
-      {
-        "name": "teslamate-org/teslamate",
-        "stars": "8292",
-        "url": "https://github.com/teslamate-org/teslamate"
-      },
-      {
-        "name": "Panniantong/Agent-Reach",
-        "stars": "30799",
-        "url": "https://github.com/Panniantong/Agent-Reach"
-      },
-      {
-        "name": "chatwoot/chatwoot",
-        "stars": "31796",
-        "url": "https://github.com/chatwoot/chatwoot"
-      },
-      {
-        "name": "trycua/cua",
-        "stars": "18241",
-        "url": "https://github.com/trycua/cua"
-      }
-    ],
-    "top_news": [
-      {
-        "title": "The time the x86 emulator team",
-        "source": "Hacker News"
-      },
-      {
-        "title": "A backdoor in a LinkedIn job o",
-        "source": "Hacker News"
-      },
-      {
-        "title": "I Could've Rickrolled the FIFA",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Banned Book Library in a Wi-Fi",
-        "source": "Hacker News"
-      },
-      {
-        "title": "Iroh 1.0",
-        "source": "Hacker News"
-      }
-    ]
-  },
-  {
     "date": "2026-06-17",
     "ai_count": 3,
     "news_count": 20,
@@ -1605,6 +1551,60 @@
       },
       {
         "title": "Dependabot version updates int",
+        "source": "Hacker News"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-16",
+    "ai_count": 10,
+    "news_count": 20,
+    "ai_projects": [
+      {
+        "name": "Nutlope/hallmark",
+        "stars": "8935",
+        "url": "https://github.com/Nutlope/hallmark"
+      },
+      {
+        "name": "mattpocock/skills",
+        "stars": "172579",
+        "url": "https://github.com/mattpocock/skills"
+      },
+      {
+        "name": "moeru-ai/airi",
+        "stars": "42585",
+        "url": "https://github.com/moeru-ai/airi"
+      },
+      {
+        "name": "Dicklesworthstone/destructive_command_guard",
+        "stars": "4816",
+        "url": "https://github.com/Dicklesworthstone/destructive_command_guard"
+      },
+      {
+        "name": "HKUDS/Vibe-Trading",
+        "stars": "23805",
+        "url": "https://github.com/HKUDS/Vibe-Trading"
+      }
+    ],
+    "top_news": [
+      {
+        "title": "Inkling: Our Open-Weights Mode",
+        "source": "Hacker News"
+      },
+      {
+        "title": "SQLite should have (Rust-style",
+        "source": "Hacker News"
+      },
+      {
+        "title": "G# – A modern .NET language wi",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Grok Build is open source",
+        "source": "Hacker News"
+      },
+      {
+        "title": "Governments, companies, nonpro",
         "source": "Hacker News"
       }
     ]
