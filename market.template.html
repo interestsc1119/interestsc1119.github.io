@@ -72,7 +72,7 @@
         .index-quote { display: flex; align-items: baseline; gap: 13px; margin-top: 18px; }
         .index-quote > strong { font-family: Georgia,serif; font-size: 2rem; line-height: 1; }
         .index-quote > span { font-weight: 850; }
-        .up { color: var(--green) !important; } .down { color: var(--red) !important; }
+        .up { color: var(--red) !important; } .down { color: var(--green) !important; }
         .flat { color: var(--muted) !important; }
         .spark { display: block; width: 100%; height: 76px; margin: 15px 0; }
         .spark-empty { display: grid; height: 76px; place-items: center; color: var(--muted); font-size: .8rem; }
@@ -140,8 +140,10 @@
         .change-card > p { min-height: 3.9em; color: var(--muted); font-size: .7rem; line-height: 1.3; }
         .change-card > b { margin-top: 10px; font-family: Georgia,serif; font-size: 1.2rem; }
         .change-badge { padding: 3px 8px; border-radius: 999px; font-size: .66rem; font-weight: 850; }
-        .change-badge.new, .change-badge.up { color: var(--green); background: var(--green-soft); }
-        .change-badge.down, .change-badge.exited { color: var(--red); background: var(--red-soft); }
+        .change-badge.new, .change-badge.up { color: var(--red); background: var(--red-soft); }
+        .change-badge.down, .change-badge.exited { color: var(--green); background: var(--green-soft); }
+        .change-card > b.new, .change-card > b.up { color: var(--red); }
+        .change-card > b.down, .change-card > b.exited { color: var(--green); }
         .strategy-section { display: grid; grid-template-columns: .6fr 1fr; gap: 38px; margin-top: 78px; }
         .strategy-intro h2 { margin-top: 7px; font-family: Georgia,"Noto Serif SC",serif;
             font-size: clamp(2rem,4vw,3.2rem); font-weight: 600; line-height: 1.05; }

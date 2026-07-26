@@ -91,7 +91,7 @@ def sparkline_svg(points: list[float], index_name: str) -> str:
         x = padding + position * (width - padding * 2) / (len(points) - 1)
         y = height - padding - (value - low) * (height - padding * 2) / spread
         coords.append(f"{x:.1f},{y:.1f}")
-    tone = "#1e6f54" if points[-1] >= points[0] else "#a6403c"
+    tone = "#a6403c" if points[-1] >= points[0] else "#1e6f54"
     polygon = " ".join([f"{padding},{height - padding}", *coords, f"{width - padding},{height - padding}"])
     return (
         f'<svg class="spark" viewBox="0 0 {width} {height}" role="img" '
@@ -188,7 +188,7 @@ def render_changes(changes: list[dict]) -> str:
             f'<span class="change-badge {css_class}">{label}</span>'
             f'<strong>{safe(item.get("ticker"))}</strong>'
             f'<p>{bilingual_name(item)}</p>'
-            f'<b>{detail}</b>'
+            f'<b class="{css_class}">{detail}</b>'
             '</article>'
         )
     return "".join(cards) or '<p class="empty">本期没有需要展示的显著持股数量变化。</p>'

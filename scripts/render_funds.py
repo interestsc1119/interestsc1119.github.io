@@ -38,6 +38,14 @@ def percent(value: object, digits: int = 1, signed: bool = False) -> str:
     return f"{prefix}{numeric:.{digits}f}%"
 
 
+def direction_tone(value: object) -> str:
+    try:
+        numeric = float(value)
+    except (TypeError, ValueError):
+        return ""
+    return "positive" if numeric > 0 else "negative" if numeric < 0 else ""
+
+
 def metric(label: str, value: str, tone: str = "") -> str:
     tone_class = f" {tone}" if tone else ""
     return (
@@ -66,12 +74,12 @@ def render_fund_card(fund: dict, rank: int) -> str:
 
     metrics = "".join(
         [
-            metric("近1年", percent(fund.get("return_1y"), 1, True), "positive"),
-            metric("三年年化", percent(fund.get("return_3y_annualized"), 1, True), "positive"),
+            metric("近1年", percent(fund.get("return_1y"), 1, True), direction_tone(fund.get("return_1y"))),
+            metric("三年年化", percent(fund.get("return_3y_annualized"), 1, True), direction_tone(fund.get("return_3y_annualized"))),
             metric("年化波动", percent(fund.get("annualized_volatility"), 1)),
-            metric("近1年最大回撤", percent(fund.get("max_drawdown_1y"), 1), "negative"),
+            metric("近1年最大回撤", percent(fund.get("max_drawdown_1y"), 1), direction_tone(fund.get("max_drawdown_1y"))),
             metric("上涨日占比", percent(fund.get("positive_day_ratio"), 1)),
-            metric("最新日涨跌", percent(fund.get("daily_return"), 2, True)),
+            metric("最新日涨跌", percent(fund.get("daily_return"), 2, True), direction_tone(fund.get("daily_return"))),
         ]
     )
 
