@@ -118,5 +118,17 @@
       "growth": 69.7
     },
     "average_return_1y": 130.42
+  },
+  {
+    "date": "2026-07-29",
+    "data_as_of": "2026-07-28",
+    "shortlisted_count": 15,
+    "verified_count": 15,
+    "scores": {
+      "stable": 69.4,
+      "balanced": 66.5,
+      "growth": 72.1
+    },
+    "average_return_1y": 113.2
   }
 ]
