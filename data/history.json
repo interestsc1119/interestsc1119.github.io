@@ -1,17 +1,5 @@
 [
   {
-    "date": "2026-07-23",
-    "data_as_of": "2026-07-22",
-    "shortlisted_count": 15,
-    "verified_count": 15,
-    "scores": {
-      "stable": 65.1,
-      "balanced": 69.9,
-      "growth": 68.1
-    },
-    "average_return_1y": 140.87
-  },
-  {
     "date": "2026-07-24",
     "data_as_of": "2026-07-23",
     "shortlisted_count": 15,
@@ -356,6 +344,18 @@
       "stable": 65.7,
       "balanced": 62.7,
       "growth": 72.7
+    },
+    "average_return_1y": 107.34
+  },
+  {
+    "date": "2026-08-23",
+    "data_as_of": "2026-08-21",
+    "shortlisted_count": 15,
+    "verified_count": 15,
+    "scores": {
+      "stable": 66.0,
+      "balanced": 63.5,
+      "growth": 72.5
     },
     "average_return_1y": 107.34
   }
