@@ -30,6 +30,13 @@ jobs:
         id: date
         run: echo "TODAY=$(TZ=Asia/Hong_Kong date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
 
+      - name: Update Dividend Low Volatility 100
+        run: python scripts/fetch_dividend100.py
+
+      - name: Verify dividend-index calculations
+        id: verify_dividend
+        run: python -m unittest discover -s tests -v
+
       - name: Fetch and score public funds
         id: fetch
         run: python scripts/fetch_funds.py
@@ -38,12 +45,15 @@ jobs:
         run: python scripts/fetch_markets.py
 
       - name: Render static pages
+        id: render
+        if: ${{ !cancelled() && steps.verify_dividend.outcome == 'success' }}
         run: |
           python scripts/render_funds.py
           python scripts/render_markets.py
 
       - name: Commit and push changes
+        if: ${{ !cancelled() && steps.render.outcome == 'success' }}
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Daily Fund & Market Update - ${{ steps.date.outputs.TODAY }}"
-          file_pattern: 'data/*.json index.html market.html'
+          file_pattern: 'data/*.json data/dividend100.md index.html market.html'

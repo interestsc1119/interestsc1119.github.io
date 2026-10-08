@@ -1,0 +1,75 @@
+<section class="dividend-watch" id="dividend100" aria-labelledby="dividend-title">
+    <style>
+        .dividend-watch { margin-bottom: 68px; scroll-margin-top: 24px; }
+        .dividend-banner { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;
+            gap:12px; padding:15px 22px; border-radius:20px 20px 0 0; color:#f7f4ea; background:var(--ink); }
+        .dividend-banner strong { font-size:.9rem; }
+        .dividend-banner span { font-size:.75rem; color:#c2cec7; }
+        .dividend-body { padding:28px; border:1px solid var(--line); border-top:0; border-radius:0 0 24px 24px;
+            background:var(--surface); box-shadow:var(--shadow); }
+        .dividend-facts { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+        .dividend-fact { padding:16px; border:1px solid var(--line); border-radius:16px; background:var(--paper); }
+        .dividend-fact span { display:block; color:var(--muted); font-size:.73rem; }
+        .dividend-fact strong { display:block; margin:6px 0; font-family:Georgia,serif; font-size:1.65rem; line-height:1.1; }
+        .dividend-fact small { color:var(--muted); font-size:.7rem; }
+        .dividend-chart { width:100%; height:auto; display:block; margin-top:14px; }
+        .dividend-chart .chart-label { fill:var(--muted); font-size:11px; }
+        .dividend-chart .grid { stroke:var(--line); stroke-width:1; }
+        .dividend-chart-box { margin-top:24px; padding:20px 14px 12px; border:1px solid var(--line); border-radius:18px; }
+        .dividend-legend { display:flex; gap:22px; flex-wrap:wrap; padding:0 8px; color:var(--muted); font-size:.75rem; }
+        .dividend-legend span { display:inline-flex; align-items:center; gap:7px; }
+        .dividend-legend i { width:18px; height:3px; display:inline-block; border-radius:3px; }
+        .dividend-chart-note { padding:6px 8px 0; color:var(--muted); font-size:.72rem; }
+        .dividend-advice { display:grid; grid-template-columns:.75fr 1.25fr; gap:24px; margin-top:24px;
+            padding:24px; border:1px solid var(--line); border-radius:18px; background:var(--surface-soft); }
+        .dividend-advice h3 { margin:5px 0 12px; font-size:1.25rem; line-height:1.4; }
+        .dividend-advice p { font-size:.85rem; color:#34403b; }
+        .dividend-advice .advice-action { font-size:.92rem; color:var(--ink); font-weight:650; }
+        .dividend-advice .advice-limits { margin-top:12px; color:var(--muted); font-size:.75rem; }
+        .dividend-info { margin-top:18px; padding-top:16px; border-top:1px solid var(--line); }
+        .dividend-info summary { cursor:pointer; color:var(--muted); font-size:.82rem; font-weight:750; }
+        .dividend-info p { margin-top:10px; color:var(--muted); font-size:.8rem; }
+        .dividend-info a { color:var(--green); }
+        .dividend-checks { margin-top:18px; color:var(--muted); font-size:.81rem; }
+        .dividend-checks strong { color:var(--ink); }
+        .dividend-quality { color:var(--green); font-size:.75rem; font-weight:750; }
+        .dividend-quality.pending, .dividend-quality.mismatch, .dividend-quality.stale { color:var(--amber); }
+        @media(max-width:920px) { .dividend-facts { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+        @media(max-width:620px) { .dividend-body { padding:18px 14px; } .dividend-advice { grid-template-columns:1fr; padding:18px; gap:14px; }
+            .dividend-fact { padding:13px 10px; } .dividend-fact strong { font-size:1.4rem; } }
+    </style>
+    <header class="section-head">
+        <div><span class="eyebrow">Focus / 930955</span><h2 id="dividend-title">红利低波100 · 每日观察</h2></div>
+        <p>跟踪中证红利低波动100指数，用年线观察长期趋势，把每日涨跌放回长期配置的背景中。</p>
+    </header>
+    <div class="dividend-banner">
+        <strong>{{DIV_NAME}} · {{DIV_CODE}}</strong>
+        <span>收盘数据：{{DIV_DATE}} · 每日北京时间 06:30 更新</span>
+    </div>
+    <div class="dividend-body">
+        <div class="dividend-facts">
+            <div class="dividend-fact"><span>最近收盘点位</span><strong>{{DIV_CLOSE}}</strong><small class="{{DIV_DAILY_CLASS}}">日涨跌 {{DIV_DAILY}}</small></div>
+            <div class="dividend-fact"><span>年线 · MA250</span><strong>{{DIV_MA250}}</strong><small>250个交易日收盘均值</small></div>
+            <div class="dividend-fact"><span>价格相对年线</span><strong class="{{DIV_DISTANCE_CLASS}}">{{DIV_DISTANCE}}</strong><small>{{DIV_POSITION}}</small></div>
+            <div class="dividend-fact"><span>年线近20日变化</span><strong class="{{DIV_SLOPE_CLASS}}">{{DIV_SLOPE}}</strong><small>观察年线方向</small></div>
+        </div>
+        <p class="method-note">近1月：<b class="{{DIV_MONTH_CLASS}}">{{DIV_MONTH}}</b> · 今年以来：<b class="{{DIV_YTD_CLASS}}">{{DIV_YTD}}</b> · 近1年最大回撤：<b class="down">{{DIV_DRAWDOWN}}</b></p>
+        <div class="dividend-chart-box">
+            <div class="dividend-legend"><span><i style="background:{{DIV_CHART_COLOR}}"></i>指数收盘价</span><span><i style="background:#a86517"></i>250日年线</span></div>
+            {{DIV_CHART}}
+            <p class="dividend-chart-note">{{DIV_CHART_RANGE}} · 同一坐标系比较点位和年线；红涨绿跌。指数点位不是ETF成交价。</p>
+        </div>
+        <section class="dividend-advice" aria-labelledby="dividend-advice-title">
+            <div><span class="eyebrow">今日购买观察</span><h3 id="dividend-advice-title">{{DIV_ADVICE_TITLE}}</h3><p>{{DIV_ADVICE_REASON}}</p></div>
+            <div><p class="advice-action">{{DIV_ADVICE_ACTION}}</p><p class="advice-limits">年线附近参考区间：{{DIV_BAND_LOW}}—{{DIV_BAND_HIGH}} 点（年线±3%）。这是趋势位置参考，不能作为合理估值或固定买入价。</p></div>
+        </section>
+        <p class="dividend-checks"><strong>购买前核对：</strong>基金是否准确跟踪930955、管理及托管费、跟踪误差、成交量与买卖价差、ETF溢价和分红安排。不同“红利低波”指数不可混用。</p>
+        <details class="dividend-info">
+            <summary>查看数据时点与建议规则 <span class="dividend-quality {{DIV_QUALITY_CLASS}}">· {{DIV_QUALITY}}</span></summary>
+            <p>生成时间：{{DIV_UPDATED}} · 主历史源：{{DIV_HISTORY_SOURCE}} · 收盘价差异：{{DIV_CLOSE_ERROR}} · 年线差异：{{DIV_MA_ERROR}} · 核验同日历史：{{DIV_MATCHED_DAYS}} 个交易日。</p>
+            <p>{{DIV_METHOD}}</p>
+            <p>{{DIV_RISK_NOTE}}</p>
+            <p><a href="{{DIV_OFFICIAL_URL}}" target="_blank" rel="noopener">中证官方指数页 ↗</a> · <a href="{{DIV_METHOD_URL}}" target="_blank" rel="noopener">指数编制方案 ↗</a> · <a href="{{DIV_SECONDARY_URL}}" target="_blank" rel="noopener">东方财富行情 ↗</a></p>
+        </details>
+    </div>
+</section>

@@ -7,6 +7,11 @@ from datetime import datetime
 from html import escape
 from pathlib import Path
 
+if __package__:
+    from .render_dividend100 import render_module
+else:
+    from render_dividend100 import render_module
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "market.json"
@@ -229,6 +234,7 @@ def main() -> None:
         "{{INDEX_COUNT}}": str(len(indices)),
         "{{INDEX_VERIFIED}}": str(verification_count),
         "{{INDEX_CARDS}}": render_index_cards(indices),
+        "{{DIVIDEND100_MODULE}}": render_module(),
         "{{REPORT_DATE}}": date_label(berkshire.get("report_date")),
         "{{FILING_DATE}}": date_label(berkshire.get("filing_date")),
         "{{POSITIONS_COUNT}}": str(int(berkshire.get("positions_count") or len(holdings))),
