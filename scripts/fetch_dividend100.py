@@ -1,4 +1,4 @@
-"""Daily CSI Dividend Low Volatility 100 (930955) report and MA250.
+"""Daily CSI Dividend Low Volatility 100 (930955) allocation report.
 
 Keep index points separate from ETF prices. Price-index returns exclude
 reinvested dividends; the moving average is a trend measure, not fair value.
@@ -18,6 +18,10 @@ from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+if __package__:
+    from .dividend_strategy import build_allocation_advice, build_valuation, load_policy
+else:
+    from dividend_strategy import build_allocation_advice, build_valuation, load_policy
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "dividend100.json"
@@ -66,13 +70,22 @@ def clean_rows(rows: list[dict], now: datetime) -> list[dict]:
             close = D(str(row["close"]))
         except (KeyError, ValueError, InvalidOperation):
             continue
-        if not close.is_finite() or close <= 0 or day > now.date():
+        if not close.is_finite() or close <= 0 or day > now.date() or day.weekday() >= 5:
             continue
         if day == now.date() and (now.hour, now.minute) < (15, 10):
             continue
         normalized = {"date": day.isoformat(), "close": str(close)}
+        try:
+            pe = D(str(row.get("pe_ttm")))
+            if pe.is_finite() and pe > 0:
+                normalized["pe_ttm"] = str(pe)
+        except InvalidOperation:
+            pass
         if normalized["date"] in dates and dates[normalized["date"]]["close"] != str(close):
             raise ValueError(f"同一交易日出现不同收盘价：{day}")
+        previous = dates.get(normalized["date"], {})
+        if previous.get("pe_ttm") and normalized.get("pe_ttm") and previous["pe_ttm"] != normalized["pe_ttm"]:
+            raise ValueError(f"同一交易日出现不同滚动PE：{day}")
         dates[normalized["date"]] = normalized
     return [dates[key] for key in sorted(dates)]
 
@@ -86,8 +99,43 @@ def fetch_official(start: str, end: str, now: datetime) -> list[dict]:
             raise ValueError("中证官方返回的指数代码不匹配")
         day = str(row.get("tradeDate") or "")
         if len(day) == 8:
-            rows.append({"date": f"{day[:4]}-{day[4:6]}-{day[6:]}", "close": row.get("close")})
+            rows.append({"date": f"{day[:4]}-{day[4:6]}-{day[6:]}", "close": row.get("close"), "pe_ttm": row.get("peg")})
     return clean_rows(rows, now)
+
+
+def fetch_indicators(start: str, end: str, now: datetime) -> list[dict]:
+    import xlrd
+    url = "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls"
+    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(request, timeout=25) as response:
+        sheet = xlrd.open_workbook(file_contents=response.read()).sheet_by_index(0)
+    if sheet.ncols != 10 or "P/E1" not in str(sheet.cell_value(0, 6)) or "D/P1" not in str(sheet.cell_value(0, 8)):
+        raise ValueError("中证估值表字段发生变化")
+    rows = []
+    for i in range(1, sheet.nrows):
+        row = sheet.row_values(i)
+        if str(row[1]) != CODE:
+            raise ValueError("估值表指数代码不匹配")
+        day = str(row[0])
+        if len(day) != 8:
+            continue
+        parsed = date.fromisoformat(f"{day[:4]}-{day[4:6]}-{day[6:]}")
+        if parsed > now.date() or parsed.weekday() >= 5 or (parsed == now.date() and (now.hour, now.minute) < (15, 10)):
+            continue
+        rows.append({"date": parsed.isoformat(), "pe_total": row[6], "dividend_yield": row[8]})
+    return rows
+
+
+def valuation_reference(policy: dict) -> dict | None:
+    """Only accept an explicitly configured, documented same-basis source."""
+    if policy.get("valuation_reference_url"):
+        result = fetch_json(policy["valuation_reference_url"])
+    else:
+        path = ROOT / "data" / "dividend100_valuation_reference.json"
+        result = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+    if result is not None and not isinstance(result, dict):
+        raise ValueError("估值参照必须为JSON对象")
+    return result
 
 
 def fetch_eastmoney(start: str, end: str, now: datetime) -> list[dict]:
@@ -144,24 +192,13 @@ def verify_sources(primary: list[dict], secondary: list[dict]) -> dict:
     return result
 
 
-def build_advice(metrics: dict, verified: bool, fresh: bool) -> dict:
-    gap, slope = metrics.get("distance_ma250_pct"), metrics.get("ma250_change_20d_pct")
-    if not verified or not fresh or gap is None or slope is None:
-        return {"state": "paused", "title": "数据待核验，暂缓新增买入", "reason": "数据源、日期或历史长度未满足要求，先等待完整收盘数据。", "action": "暂停依据本模块加仓；已持有者按原计划检查基金公告与仓位。"}
-    if gap > 8:
-        return {"state": "wait", "title": "等待回落，避免追涨", "reason": f"收盘价高于年线 {gap:+.2f}%，超过8%的趋势偏离观察阈值。", "action": "新增资金可先保留，等待更靠近年线再评估；已有定投无需因单日上涨临时加倍。"}
-    if gap < -3 and slope < 0:
-        return {"state": "weak", "title": "趋势偏弱，观望为主", "reason": f"收盘价低于年线 {abs(gap):.2f}%，且年线近20个交易日向下。", "action": "先观察能否重新站稳年线；长期定投者可按既定小额计划执行，避免一次性大额抄底。"}
-    if gap < -3:
-        return {"state": "observe", "title": "年线下方，等待企稳", "reason": f"收盘价低于年线 {abs(gap):.2f}%，趋势仍需确认。", "action": "先观察回到年线附近后的表现；准备长期配置的资金可拆分为多期，避免单次押注。"}
-    if slope < 0:
-        return {"state": "observe", "title": "年线仍下行，谨慎分批", "reason": f"当前年线近20个交易日变化 {slope:+.2f}%，长期趋势尚未转强。", "action": "新增配置以观察为主；若已有长期定投计划，控制单期金额并保留后续资金。"}
-    if gap > 5:
-        return {"state": "wait", "title": "温和偏离，放慢新增节奏", "reason": f"收盘价高于年线 {gap:+.2f}%，已超出靠近年线的观察区间。", "action": "优先等待回落或按固定小额定投执行，避免追涨后集中加仓。"}
-    return {"state": "consider", "title": "可考虑小额分批配置", "reason": f"价格相对年线 {gap:+.2f}%，年线近20个交易日变化 {slope:+.2f}%。", "action": "若计划持有至少3年、能承受股票基金回撤，可将计划投入拆成3—6期；先核实跟踪指数、费率、跟踪误差与ETF溢价。"}
+def build_advice(metrics: dict, verified: bool, fresh: bool, valuation: dict | None = None,
+                 policy: dict | None = None) -> dict:
+    return build_allocation_advice(metrics, verified, fresh, valuation, policy)
 
 
-def build_report(rows: list[dict], verification: dict, now: datetime, source: str) -> dict:
+def build_report(rows: list[dict], verification: dict, now: datetime, source: str,
+                 valuation: dict | None = None, policy: dict | None = None) -> dict:
     if len(rows) < 270:
         raise ValueError("需要至少270个交易日计算年线及20日斜率")
     closes = [D(row["close"]) for row in rows]
@@ -198,15 +235,20 @@ def build_report(rows: list[dict], verification: dict, now: datetime, source: st
         "code": CODE, "name": NAME, "updated_at": now.isoformat(timespec="seconds"), "data_as_of": rows[-1]["date"],
         "status": "current" if fresh else "stale", "history_days": len(rows), "history_source": source,
         "metrics": metrics, "verification": verification,
-        "advice": build_advice(metrics, verification.get("status") == "verified", fresh),
+        "valuation": valuation or {}, "strategy": policy or load_policy(),
+        "advice": build_advice(metrics, verification.get("status") == "verified", fresh, valuation, policy),
         "chart": chart[-250:], "sources": {"official": OFFICIAL_URL, "eastmoney": EASTMONEY_URL, "methodology": METHODOLOGY_URL},
-        "methodology": "年线=最近250个交易日（含当日）收盘价的算术平均；年线20日变化用于观察方向。±3%、+5%、+8%为预设趋势观察阈值，并非经回测的收益保证或估值标准。",
+        "methodology": "配置逻辑：行情与估值均核验、PE近5年分位≤预设低位阈值、股息率达到预设下限、点位在250日年线附近或下方，才提示逢低买入一笔。年线下行仅提示风险，不否决买入；每日处于配置区不表示每天加仓。阈值与预算规程是未回测的示例参数，不是官方买卖标准。",
         "risk_note": "本模块使用930955价格指数，涨幅未计入分红再投资；年线不是便宜/昂贵的估值结论，低波动也可能亏损。购买建议只供长期配置参考，需结合自身期限与风险承受能力。",
     }
 
 
 def markdown_summary(report: dict) -> str:
     metrics, advice = report.get("metrics") or {}, report.get("advice") or {}
+    valuation, policy = report.get("valuation") or {}, report.get("strategy") or {}
+    def valuation_value(key: str, suffix: str = "") -> str:
+        number = valuation.get(key)
+        return f"{number:.2f}{suffix}" if number is not None else "待更新"
     def value(key: str, suffix: str = "") -> str:
         number = metrics.get(key)
         return f"{number:,.2f}{suffix}" if number is not None else "待更新"
@@ -216,18 +258,22 @@ def markdown_summary(report: dict) -> str:
         f"| 指标 | 数值 |\n|---|---:|\n| 收盘点位 | {value('close')} |\n"
         f"| 日涨跌 | {value('daily_return', '%')} |\n| 年线 MA250 | {value('ma250')} |\n"
         f"| 相对年线 | {value('distance_ma250_pct', '%')} |\n| 年线20日变化 | {value('ma250_change_20d_pct', '%')} |\n\n"
+        f"估值截至：PE {valuation.get('pe_as_of') or '待更新'} / 股息率 {valuation.get('dividend_as_of') or '待更新'}。\n\n"
+        f"滚动PE：{valuation_value('pe_ttm')}；PE近5年分位：{valuation_value('pe_percentile_5y', '%')}；股息率：{valuation_value('dividend_yield', '%')}。\n\n"
         f"**{advice.get('title', '数据待更新')}**\n\n{advice.get('reason', '')}\n\n{advice.get('action', '')}\n\n"
-        f"核验：{(report.get('verification') or {}).get('label', '待核验')}。\n\n"
+        f"{advice.get('risk', '')}\n\n行情核验：{(report.get('verification') or {}).get('label', '待核验')}；估值核验：{valuation.get('verification', {}).get('label', '待核验')}。\n\n"
+        f"示例参数：PE分位≤{policy.get('pe_low_percentile', 30)}%、股息率≥{policy.get('min_dividend_yield_pct', 4)}%；每笔最多专属预算{policy.get('max_tranche_budget_pct', 20)}%，间隔至少{policy.get('min_days_between_buys', 30)}个自然日。未回测，不是收益保证。\n\n"
         f"[查看每日模块](https://interestsc1119.github.io/market.html#dividend100)\n\n{report.get('risk_note', '')}\n"
     )
 
 
 def main() -> None:
     now = datetime.now(TIMEZONE)
-    start, end = (now.date() - timedelta(days=1200)).strftime("%Y%m%d"), now.strftime("%Y%m%d")
+    policy = load_policy()
+    start, end = (now.date() - timedelta(days=2000)).strftime("%Y%m%d"), now.strftime("%Y%m%d")
     collected: dict[str, list[dict]] = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
-        tasks = {name: pool.submit(fetcher, start, end, now) for name, fetcher in (("official", fetch_official), ("eastmoney", fetch_eastmoney))}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+        tasks = {name: pool.submit(fetcher, start, end, now) for name, fetcher in (("official", fetch_official), ("eastmoney", fetch_eastmoney), ("indicators", fetch_indicators))}
         for name, future in tasks.items():
             try:
                 collected[name] = future.result()
@@ -235,18 +281,25 @@ def main() -> None:
             except Exception as error:
                 print(f"Dividend100 {name} unavailable: {type(error).__name__}", flush=True)
     try:
+        reference = valuation_reference(policy)
+    except Exception as error:
+        reference = None
+        print(f"Dividend100 independent valuation reference unavailable: {type(error).__name__}", flush=True)
+    try:
         use_eastmoney = len(collected.get("eastmoney") or []) >= 270
         primary = collected.get("eastmoney") if use_eastmoney else collected.get("official") or []
         secondary = collected.get("official") if use_eastmoney else []
         source = "东方财富" if use_eastmoney else "中证指数公司"
-        report = build_report(primary, verify_sources(primary, secondary or []), now, source)
+        valuation = build_valuation(collected.get("official") or [], collected.get("indicators") or [], reference, now, primary[-1]["date"] if primary else None)
+        report = build_report(primary, verify_sources(primary, secondary or []), now, source, valuation, policy)
     except ValueError as error:
         try:
             report = json.loads(DATA_PATH.read_text(encoding="utf-8"))
         except (OSError, ValueError):
             report = {"code": CODE, "name": NAME, "metrics": {}, "chart": [], "sources": {"official": OFFICIAL_URL, "eastmoney": EASTMONEY_URL, "methodology": METHODOLOGY_URL}}
         report.update({"status": "stale", "updated_at": now.isoformat(timespec="seconds"), "verification": {"status": "stale", "label": "未取得完整新数据，沿用缓存并暂停建议"}})
-        report["advice"] = build_advice(report.get("metrics") or {}, False, False)
+        report["strategy"] = policy
+        report["advice"] = build_advice(report.get("metrics") or {}, False, False, report.get("valuation"), policy)
         print(f"Dividend100 degraded: {error}", flush=True)
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

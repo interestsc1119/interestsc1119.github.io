@@ -1,0 +1,8 @@
+{
+  "pe_low_percentile": 30,
+  "pe_high_percentile": 70,
+  "min_dividend_yield_pct": 4,
+  "max_tranche_budget_pct": 20,
+  "min_days_between_buys": 30,
+  "valuation_reference_url": null
+}

@@ -1,0 +1,8 @@
+{
+  "code": "930955",
+  "date": "YYYY-MM-DD",
+  "basis": "CSI_PERF_PE_TTM_AND_DP1",
+  "pe_ttm": null,
+  "dividend_yield": null,
+  "source": {"name": "填写可核对的独立估值提供方", "url": "https://example.com/actual-source"}
+}

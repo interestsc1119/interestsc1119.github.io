@@ -1,0 +1,32 @@
+name: Dividend Allocation Checks
+
+on:
+  push:
+    paths:
+      - 'scripts/*dividend*.py'
+      - 'assets/dividend-allocation.js'
+      - 'config/dividend100_strategy.json'
+      - 'dividend100.template.html'
+      - 'tests/**'
+      - '.github/workflows/dividend-checks.yml'
+      - '.github/workflows/daily-update.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - run: pip install xlrd==2.0.2
+      - run: python -m unittest discover -s tests -v
+      - run: node tests/test_dividend_allocation.cjs

@@ -34,13 +34,24 @@
         .dividend-checks strong { color:var(--ink); }
         .dividend-quality { color:var(--green); font-size:.75rem; font-weight:750; }
         .dividend-quality.pending, .dividend-quality.mismatch, .dividend-quality.stale { color:var(--amber); }
+        .dividend-valuations { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:14px; }
+        .dividend-budget { margin-top:20px; padding:22px; border:1px solid var(--line); border-radius:18px; }
+        .dividend-budget h3 { font-size:1.1rem; margin-bottom:8px; }
+        .dividend-budget > p, .dividend-budget form > p { font-size:.8rem; color:var(--muted); margin:10px 0; }
+        .dividend-budget-fields { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+        .dividend-budget label { display:block; color:var(--muted); font-size:.78rem; }
+        .dividend-budget input:not([type=checkbox]) { display:block; margin-top:7px; padding:10px; width:100%; min-width:0;
+            border:1px solid var(--line); border-radius:8px; background:var(--paper); color:var(--ink); font:inherit; }
+        .dividend-budget .budget-confirm { margin:16px 0; line-height:1.7; }
+        .dividend-budget-result { display:block; margin-top:14px; font-size:.86rem; color:var(--ink); }
+        @media(max-width:620px) { .dividend-valuations, .dividend-budget-fields { grid-template-columns:1fr; } .dividend-budget { padding:18px; } }
         @media(max-width:920px) { .dividend-facts { grid-template-columns:repeat(2,minmax(0,1fr)); } }
         @media(max-width:620px) { .dividend-body { padding:18px 14px; } .dividend-advice { grid-template-columns:1fr; padding:18px; gap:14px; }
             .dividend-fact { padding:13px 10px; } .dividend-fact strong { font-size:1.4rem; } }
     </style>
     <header class="section-head">
         <div><span class="eyebrow">Focus / 930955</span><h2 id="dividend-title">红利低波100 · 每日观察</h2></div>
-        <p>跟踪中证红利低波动100指数，用年线观察长期趋势，把每日涨跌放回长期配置的背景中。</p>
+        <p>估值主导、年线辅助、逢低分笔配置；年线下行提示风险，但不直接否决买入。</p>
     </header>
     <div class="dividend-banner">
         <strong>{{DIV_NAME}} · {{DIV_CODE}}</strong>
@@ -53,6 +64,12 @@
             <div class="dividend-fact"><span>价格相对年线</span><strong class="{{DIV_DISTANCE_CLASS}}">{{DIV_DISTANCE}}</strong><small>{{DIV_POSITION}}</small></div>
             <div class="dividend-fact"><span>年线近20日变化</span><strong class="{{DIV_SLOPE_CLASS}}">{{DIV_SLOPE}}</strong><small>观察年线方向</small></div>
         </div>
+        <div class="dividend-valuations" aria-label="估值观察">
+            <div class="dividend-fact"><span>官方滚动 PE</span><strong>{{DIV_PE}}</strong><small>数据日期 {{DIV_PE_DATE}}</small></div>
+            <div class="dividend-fact"><span>PE近5年历史分位</span><strong>{{DIV_PE_PERCENTILE}}</strong><small>越低表示历史相对位置越低；非内在价值</small></div>
+            <div class="dividend-fact"><span>官方股息率 · DP1</span><strong>{{DIV_YIELD}}</strong><small>数据日期 {{DIV_YIELD_DATE}}；非承诺收益</small></div>
+        </div>
+        <p class="method-note">估值核验：{{DIV_VAL_QUALITY}}。PE历史 {{DIV_VAL_HISTORY}} 个交易日；PB尚未接入，不混用等权估值。</p>
         <p class="method-note">近1月：<b class="{{DIV_MONTH_CLASS}}">{{DIV_MONTH}}</b> · 今年以来：<b class="{{DIV_YTD_CLASS}}">{{DIV_YTD}}</b> · 近1年最大回撤：<b class="down">{{DIV_DRAWDOWN}}</b></p>
         <div class="dividend-chart-box">
             <div class="dividend-legend"><span><i style="background:{{DIV_CHART_COLOR}}"></i>指数收盘价</span><span><i style="background:#a86517"></i>250日年线</span></div>
@@ -60,16 +77,34 @@
             <p class="dividend-chart-note">{{DIV_CHART_RANGE}} · 同一坐标系比较点位和年线；红涨绿跌。指数点位不是ETF成交价。</p>
         </div>
         <section class="dividend-advice" aria-labelledby="dividend-advice-title">
-            <div><span class="eyebrow">今日购买观察</span><h3 id="dividend-advice-title">{{DIV_ADVICE_TITLE}}</h3><p>{{DIV_ADVICE_REASON}}</p></div>
-            <div><p class="advice-action">{{DIV_ADVICE_ACTION}}</p><p class="advice-limits">年线附近参考区间：{{DIV_BAND_LOW}}—{{DIV_BAND_HIGH}} 点（年线±3%）。这是趋势位置参考，不能作为合理估值或固定买入价。</p></div>
+            <div><span class="eyebrow">今日逢低配置观察</span><h3 id="dividend-advice-title">{{DIV_ADVICE_TITLE}}</h3><p>{{DIV_ADVICE_REASON}}</p><p class="advice-limits">{{DIV_ADVICE_RISK}}</p></div>
+            <div><p class="advice-action">{{DIV_ADVICE_ACTION}}</p><p class="advice-limits">示例观察条件：PE分位≤{{DIV_PE_LOW}}%、股息率≥{{DIV_YIELD_MIN}}%、点位≤年线，且行情和估值核验通过。参数未回测，并非中证官方买卖标准。年线±3%区间 {{DIV_BAND_LOW}}—{{DIV_BAND_HIGH}} 点仅供看位置，不是固定买入价。</p></div>
+        </section>
+        <section class="dividend-budget" aria-labelledby="dividend-budget-title">
+            <h3 id="dividend-budget-title">分笔预算检查 · 不自动交易</h3>
+            <p>每笔最多专属总预算的{{DIV_TRANCHE}}%，不超过剩余预算；两笔至少间隔{{DIV_INTERVAL}}个自然日。每天出现配置提示不意味着每天买。金额与日期只在本页内存计算，不上传、不保存；请按真实执行记录填写。</p>
+            <form id="dividend-budget-form" data-eligible="{{DIV_ELIGIBLE}}" data-percent="{{DIV_TRANCHE}}" data-interval="{{DIV_INTERVAL}}">
+                <div class="dividend-budget-fields">
+                    <label>红利低波100专属总预算（元）<input name="budget" type="number" min="0.01" step="0.01" required placeholder="不是全部资产"></label>
+                    <label>本轮累计已投入金额（元）<input name="invested" type="number" min="0" step="0.01" required placeholder="首次配置填0"></label>
+                    <label>最近一笔买入日期<input name="lastBuy" type="date"></label>
+                </div>
+                <label class="budget-confirm"><input name="riskConfirmed" type="checkbox"> 我确认使用长期闲置资金、可承受权益回撤，并已核对分红风险和基金费用/溢价。</label>
+                <button class="button secondary" type="submit">检查本笔预算上限</button>
+                <output class="dividend-budget-result" id="dividend-budget-result" aria-live="polite">未填写预算与真实买入记录前，不计算本笔投入上限。</output>
+            </form>
+            <p>{{DIV_MANUAL_CHECKS}}</p>
         </section>
         <p class="dividend-checks"><strong>购买前核对：</strong>基金是否准确跟踪930955、管理及托管费、跟踪误差、成交量与买卖价差、ETF溢价和分红安排。不同“红利低波”指数不可混用。</p>
         <details class="dividend-info">
             <summary>查看数据时点与建议规则 <span class="dividend-quality {{DIV_QUALITY_CLASS}}">· {{DIV_QUALITY}}</span></summary>
             <p>生成时间：{{DIV_UPDATED}} · 主历史源：{{DIV_HISTORY_SOURCE}} · 收盘价差异：{{DIV_CLOSE_ERROR}} · 年线差异：{{DIV_MA_ERROR}} · 核验同日历史：{{DIV_MATCHED_DAYS}} 个交易日。</p>
             <p>{{DIV_METHOD}}</p>
+            <p>{{DIV_VAL_METHOD}}</p>
+            <p>{{DIV_VAL_RISK}}</p>
             <p>{{DIV_RISK_NOTE}}</p>
-            <p><a href="{{DIV_OFFICIAL_URL}}" target="_blank" rel="noopener">中证官方指数页 ↗</a> · <a href="{{DIV_METHOD_URL}}" target="_blank" rel="noopener">指数编制方案 ↗</a> · <a href="{{DIV_SECONDARY_URL}}" target="_blank" rel="noopener">东方财富行情 ↗</a></p>
+            <p><a href="{{DIV_OFFICIAL_URL}}" target="_blank" rel="noopener">中证官方指数页 ↗</a> · <a href="{{DIV_METHOD_URL}}" target="_blank" rel="noopener">指数编制方案 ↗</a> · <a href="{{DIV_SECONDARY_URL}}" target="_blank" rel="noopener">东方财富行情 ↗</a> · <a href="{{DIV_VAL_URL}}" target="_blank" rel="noopener">官方PE与股息率原始表 ↗</a></p>
         </details>
     </div>
 </section>
+<script src="assets/dividend-allocation.js" defer></script>

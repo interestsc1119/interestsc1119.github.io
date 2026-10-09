@@ -24,7 +24,13 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests xlrd==2.0.2
+
+      - name: Set up Node for budget checks
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
 
       - name: Set today's date
         id: date
@@ -35,7 +41,9 @@ jobs:
 
       - name: Verify dividend-index calculations
         id: verify_dividend
-        run: python -m unittest discover -s tests -v
+        run: |
+          python -m unittest discover -s tests -v
+          node tests/test_dividend_allocation.cjs
 
       - name: Fetch and score public funds
         id: fetch

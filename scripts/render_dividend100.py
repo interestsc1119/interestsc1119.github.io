@@ -60,6 +60,8 @@ def render_module(data: dict | None = None) -> str:
         except (OSError, ValueError):
             data = {}
     metrics, advice, verification = data.get("metrics") or {}, data.get("advice") or {}, data.get("verification") or {}
+    valuation, policy = data.get("valuation") or {}, data.get("strategy") or {}
+    valuation_quality = valuation.get("verification") or {}
     sources = data.get("sources") or {}
     rows = data.get("chart") or []
     chart, color = chart_svg(rows)
@@ -74,6 +76,17 @@ def render_module(data: dict | None = None) -> str:
         "{{DIV_CHART_RANGE}}": safe(f"{rows[0]['date']} 至 {rows[-1]['date']}" if rows else "历史待更新"),
         "{{DIV_ADVICE_TITLE}}": safe(advice.get("title") or "等待完整数据"), "{{DIV_ADVICE_REASON}}": safe(advice.get("reason")),
         "{{DIV_ADVICE_ACTION}}": safe(advice.get("action") or "先核对最新收盘数据与基金信息。"),
+        "{{DIV_ADVICE_RISK}}": safe(advice.get("risk")), "{{DIV_MANUAL_CHECKS}}": safe(advice.get("manual_checks")),
+        "{{DIV_ELIGIBLE}}": "true" if advice.get("eligible") is True else "false",
+        "{{DIV_PE}}": number(valuation.get("pe_ttm")), "{{DIV_PE_PERCENTILE}}": number(valuation.get("pe_percentile_5y"), "%"),
+        "{{DIV_YIELD}}": number(valuation.get("dividend_yield"), "%"),
+        "{{DIV_PE_DATE}}": safe(valuation.get("pe_as_of") or "待更新"), "{{DIV_YIELD_DATE}}": safe(valuation.get("dividend_as_of") or "待更新"),
+        "{{DIV_VAL_QUALITY}}": safe(valuation_quality.get("label") or "估值待核验"),
+        "{{DIV_VAL_HISTORY}}": safe(valuation.get("history_days") or 0), "{{DIV_VAL_METHOD}}": safe(valuation.get("methodology")),
+        "{{DIV_VAL_RISK}}": safe(valuation.get("risk_note")),
+        "{{DIV_VAL_URL}}": safe(valuation.get("sources", {}).get("indicator") or "https://www.csindex.com.cn/"),
+        "{{DIV_PE_LOW}}": safe(policy.get("pe_low_percentile", 30)), "{{DIV_YIELD_MIN}}": safe(policy.get("min_dividend_yield_pct", 4)),
+        "{{DIV_TRANCHE}}": safe(policy.get("max_tranche_budget_pct", 20)), "{{DIV_INTERVAL}}": safe(policy.get("min_days_between_buys", 30)),
         "{{DIV_QUALITY_CLASS}}": safe(verification.get("status") or "pending"), "{{DIV_QUALITY}}": safe(verification.get("label") or "数据待核验"),
         "{{DIV_UPDATED}}": safe(data.get("updated_at")), "{{DIV_HISTORY_SOURCE}}": safe(data.get("history_source") or "待更新"),
         "{{DIV_CLOSE_ERROR}}": number(verification.get("latest_close_difference_pct"), "%"), "{{DIV_MA_ERROR}}": number(verification.get("ma250_difference_pct"), "%"),
