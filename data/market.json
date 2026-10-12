@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-11",
-  "updated_at": "2026-10-11T09:09:19+08:00",
+  "date": "2026-10-12",
+  "updated_at": "2026-10-12T09:31:46+08:00",
   "index_data_as_of": "2026-10-09",
   "indices": [
     {
@@ -54,7 +54,7 @@
         "status": "verified",
         "label": "腾讯点位已核验",
         "source": "腾讯行情",
-        "difference_pct": 0.0,
+        "difference_pct": 0.1416,
         "quote_time": ""
       }
     },
@@ -109,7 +109,7 @@
         "status": "verified",
         "label": "腾讯点位已核验",
         "source": "腾讯行情",
-        "difference_pct": 0.0001,
+        "difference_pct": 0.126,
         "quote_time": ""
       }
     },
@@ -164,7 +164,7 @@
         "status": "verified",
         "label": "腾讯点位已核验",
         "source": "腾讯行情",
-        "difference_pct": 0.0,
+        "difference_pct": 0.4427,
         "quote_time": ""
       }
     },
@@ -219,7 +219,7 @@
         "status": "verified",
         "label": "腾讯点位已核验",
         "source": "腾讯行情",
-        "difference_pct": 0.0002,
+        "difference_pct": 0.6381,
         "quote_time": ""
       }
     },
@@ -233,8 +233,8 @@
       "return_1m": -4.21,
       "return_3m": -0.01,
       "return_ytd": -8.08,
-      "return_1y": -9.5,
-      "annualized_volatility": 18.75,
+      "return_1y": -6.48,
+      "annualized_volatility": 18.69,
       "max_drawdown_1y": -18.94,
       "trend": "中期偏弱",
       "sparkline": [
@@ -275,7 +275,7 @@
         "label": "腾讯点位已核验",
         "source": "腾讯行情",
         "difference_pct": 0.0,
-        "quote_time": "2026/10/09 18:31:07"
+        "quote_time": "2026/10/12 09:16:34"
       }
     },
     {
