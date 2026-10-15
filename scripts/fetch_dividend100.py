@@ -31,7 +31,6 @@ CODE = "930955"
 NAME = "中证红利低波动100指数"
 OFFICIAL_URL = "https://www.csindex.com.cn/#/indices/family/detail?indexCode=930955"
 METHODOLOGY_URL = "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/20231208180204-930955_Index_Methodology_cn.pdf"
-EASTMONEY_URL = "https://quote.eastmoney.com/zz/2.930955.html"
 D = Decimal
 
 
@@ -54,7 +53,7 @@ def fetch_json(url: str) -> dict:
     curl = shutil.which("curl.exe") or shutil.which("curl")
     if curl:
         result = subprocess.run(
-            [curl, "-fsSL", "--max-time", "20", "-H", "User-Agent: Mozilla/5.0", "-H", "Referer: https://quote.eastmoney.com/", url],
+            [curl, "-fsSL", "--max-time", "20", "-H", "User-Agent: Mozilla/5.0", "-H", "Referer: https://www.csindex.com.cn/", url],
             capture_output=True, check=True,
         )
         return decode_json(result.stdout)
@@ -126,37 +125,8 @@ def fetch_indicators(start: str, end: str, now: datetime) -> list[dict]:
     return rows
 
 
-def valuation_reference(policy: dict) -> dict | None:
-    """Only accept an explicitly configured, documented same-basis source."""
-    if policy.get("valuation_reference_url"):
-        result = fetch_json(policy["valuation_reference_url"])
-    else:
-        path = ROOT / "data" / "dividend100_valuation_reference.json"
-        result = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
-    if result is not None and not isinstance(result, dict):
-        raise ValueError("估值参照必须为JSON对象")
-    return result
-
-
-def fetch_eastmoney(start: str, end: str, now: datetime) -> list[dict]:
-    query = urllib.parse.urlencode({
-        "secid": "2.930955", "klt": "101", "fqt": "0", "beg": start, "end": end, "lmt": "1000",
-        "fields1": "f1,f2,f3,f4,f5,f6", "fields2": "f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
-    })
-    payload = fetch_json("https://push2his.eastmoney.com/api/qt/stock/kline/get?" + query)
-    data = payload.get("data") or {}
-    if data.get("code") != CODE or data.get("market") != 2:
-        raise ValueError("东方财富返回的指数代码/市场不匹配")
-    rows = [{"date": cells[0], "close": cells[2]} for cells in (item.split(",") for item in data.get("klines") or []) if len(cells) >= 3]
-    return clean_rows(rows, now)
-
-
 def as_number(value: Decimal, places: int = 2) -> float:
     return float(value.quantize(D(1).scaleb(-places)))
-
-
-def difference_pct(first: Decimal, second: Decimal) -> Decimal:
-    return abs(first - second) / first * D(100)
 
 
 def moving_average(rows: list[dict], window: int = 250) -> Decimal:
@@ -165,36 +135,20 @@ def moving_average(rows: list[dict], window: int = 250) -> Decimal:
     return sum((D(row["close"]) for row in rows[-window:]), D(0)) / D(window)
 
 
-def verify_sources(primary: list[dict], secondary: list[dict]) -> dict:
-    result = {"status": "pending", "label": "第二数据源待核验", "sources": ["东方财富", "中证指数公司"]}
-    if not primary or not secondary:
+def official_price_status(rows: list[dict], now: datetime) -> dict:
+    result = {"status": "pending", "label": "官方行情历史不足", "sources": ["中证指数公司"]}
+    if len(rows) < 270:
         return result
-    if primary[-1]["date"] != secondary[-1]["date"]:
-        result["label"] = "两源最新交易日不一致，建议暂停"
-        result["primary_date"], result["secondary_date"] = primary[-1]["date"], secondary[-1]["date"]
+    if not 0 <= (now.date() - date.fromisoformat(rows[-1]["date"])).days <= 7:
+        result["label"] = "官方行情数据已过期或日期无效"
         return result
-    close_error = difference_pct(D(primary[-1]["close"]), D(secondary[-1]["close"]))
-    secondary_map = {row["date"]: D(row["close"]) for row in secondary}
-    errors = [difference_pct(D(row["close"]), secondary_map[row["date"]]) for row in primary[-250:] if row["date"] in secondary_map]
-    result.update({"latest_close_difference_pct": as_number(close_error, 4), "history_matched_days": len(errors)})
-    if len(primary) < 250 or len(secondary) < 250:
-        result["label"] = "年线历史不足，建议暂停"
-        return result
-    ma_error = difference_pct(moving_average(primary), moving_average(secondary))
-    maximum = max(errors, default=D(100))
-    result.update({"ma250_difference_pct": as_number(ma_error, 4), "max_history_difference_pct": as_number(maximum, 4)})
-    if close_error > 1 or ma_error > 1 or maximum > 1:
-        result.update({"status": "mismatch", "label": "两源差异超过1%，建议暂停"})
-    elif len(errors) >= 245:
-        result.update({"status": "verified", "label": "收盘价与250日年线已双源核验"})
-    else:
-        result["label"] = "两源同日历史覆盖不足，建议暂停"
+    result.update({"status": "official_single", "label": "中证官方单源 · 收盘日期与历史检查通过（未独立核验）"})
     return result
 
 
-def build_advice(metrics: dict, verified: bool, fresh: bool, valuation: dict | None = None,
+def build_advice(metrics: dict, price_ready: bool, fresh: bool, valuation: dict | None = None,
                  policy: dict | None = None) -> dict:
-    return build_allocation_advice(metrics, verified, fresh, valuation, policy)
+    return build_allocation_advice(metrics, price_ready, fresh, valuation, policy)
 
 
 def build_report(rows: list[dict], verification: dict, now: datetime, source: str,
@@ -236,9 +190,9 @@ def build_report(rows: list[dict], verification: dict, now: datetime, source: st
         "status": "current" if fresh else "stale", "history_days": len(rows), "history_source": source,
         "metrics": metrics, "verification": verification,
         "valuation": valuation or {}, "strategy": policy or load_policy(),
-        "advice": build_advice(metrics, verification.get("status") == "verified", fresh, valuation, policy),
-        "chart": chart[-250:], "sources": {"official": OFFICIAL_URL, "eastmoney": EASTMONEY_URL, "methodology": METHODOLOGY_URL},
-        "methodology": "配置逻辑：行情与估值均核验、PE近5年分位≤预设低位阈值、股息率达到预设下限、点位在250日年线附近或下方，才提示逢低买入一笔。年线下行仅提示风险，不否决买入；每日处于配置区不表示每天加仓。阈值与预算规程是未回测的示例参数，不是官方买卖标准。",
+        "advice": build_advice(metrics, verification.get("status") == "official_single", fresh, valuation, policy),
+        "chart": chart[-250:], "sources": {"official": OFFICIAL_URL, "methodology": METHODOLOGY_URL},
+        "methodology": "配置逻辑：仅使用中证官方数据，收盘与估值日期一致、历史充足且未过期时计算建议，不依赖第二源。PE近5年分位≤预设低位阈值、股息率达到预设下限、点位在250日年线附近或下方，才提示逢低买入一笔。年线下行仅提示风险，不否决买入；每日处于配置区不表示每天加仓。阈值与预算规程是未回测的示例参数，不是官方买卖标准。",
         "risk_note": "本模块使用930955价格指数，涨幅未计入分红再投资；年线不是便宜/昂贵的估值结论，低波动也可能亏损。购买建议只供长期配置参考，需结合自身期限与风险承受能力。",
     }
 
@@ -246,6 +200,7 @@ def build_report(rows: list[dict], verification: dict, now: datetime, source: st
 def markdown_summary(report: dict) -> str:
     metrics, advice = report.get("metrics") or {}, report.get("advice") or {}
     valuation, policy = report.get("valuation") or {}, report.get("strategy") or {}
+    conditions = "\n".join(f"| {item['label']} | {item['value']} | {'满足' if item['met'] is True else '未满足' if item['met'] is False else '待数据'} |" for item in advice.get("conditions", []))
     def valuation_value(key: str, suffix: str = "") -> str:
         number = valuation.get(key)
         return f"{number:.2f}{suffix}" if number is not None else "待更新"
@@ -261,7 +216,8 @@ def markdown_summary(report: dict) -> str:
         f"估值截至：PE {valuation.get('pe_as_of') or '待更新'} / 股息率 {valuation.get('dividend_as_of') or '待更新'}。\n\n"
         f"滚动PE：{valuation_value('pe_ttm')}；PE近5年分位：{valuation_value('pe_percentile_5y', '%')}；股息率：{valuation_value('dividend_yield', '%')}。\n\n"
         f"**{advice.get('title', '数据待更新')}**\n\n{advice.get('reason', '')}\n\n{advice.get('action', '')}\n\n"
-        f"{advice.get('risk', '')}\n\n行情核验：{(report.get('verification') or {}).get('label', '待核验')}；估值核验：{valuation.get('verification', {}).get('label', '待核验')}。\n\n"
+        f"| 配置条件 | 当日数值 | 结果 |\n|---|---|---|\n{conditions}\n\n"
+        f"{advice.get('risk', '')}\n\n{advice.get('source_note', '')}\n\n行情状态：{(report.get('verification') or {}).get('label', '数据待更新')}；估值状态：{valuation.get('verification', {}).get('label', '数据待更新')}。\n\n"
         f"示例参数：PE分位≤{policy.get('pe_low_percentile', 30)}%、股息率≥{policy.get('min_dividend_yield_pct', 4)}%；每笔最多专属预算{policy.get('max_tranche_budget_pct', 20)}%，间隔至少{policy.get('min_days_between_buys', 30)}个自然日。未回测，不是收益保证。\n\n"
         f"[查看每日模块](https://interestsc1119.github.io/market.html#dividend100)\n\n{report.get('risk_note', '')}\n"
     )
@@ -272,8 +228,8 @@ def main() -> None:
     policy = load_policy()
     start, end = (now.date() - timedelta(days=2000)).strftime("%Y%m%d"), now.strftime("%Y%m%d")
     collected: dict[str, list[dict]] = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-        tasks = {name: pool.submit(fetcher, start, end, now) for name, fetcher in (("official", fetch_official), ("eastmoney", fetch_eastmoney), ("indicators", fetch_indicators))}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+        tasks = {name: pool.submit(fetcher, start, end, now) for name, fetcher in (("official", fetch_official), ("indicators", fetch_indicators))}
         for name, future in tasks.items():
             try:
                 collected[name] = future.result()
@@ -281,23 +237,18 @@ def main() -> None:
             except Exception as error:
                 print(f"Dividend100 {name} unavailable: {type(error).__name__}", flush=True)
     try:
-        reference = valuation_reference(policy)
-    except Exception as error:
-        reference = None
-        print(f"Dividend100 independent valuation reference unavailable: {type(error).__name__}", flush=True)
-    try:
-        use_eastmoney = len(collected.get("eastmoney") or []) >= 270
-        primary = collected.get("eastmoney") if use_eastmoney else collected.get("official") or []
-        secondary = collected.get("official") if use_eastmoney else []
-        source = "东方财富" if use_eastmoney else "中证指数公司"
-        valuation = build_valuation(collected.get("official") or [], collected.get("indicators") or [], reference, now, primary[-1]["date"] if primary else None)
-        report = build_report(primary, verify_sources(primary, secondary or []), now, source, valuation, policy)
+        primary = collected.get("official") or []
+        valuation = build_valuation(primary, collected.get("indicators") or [], now, primary[-1]["date"] if primary else None)
+        report = build_report(primary, official_price_status(primary, now), now, "中证指数公司", valuation, policy)
     except ValueError as error:
         try:
             report = json.loads(DATA_PATH.read_text(encoding="utf-8"))
         except (OSError, ValueError):
-            report = {"code": CODE, "name": NAME, "metrics": {}, "chart": [], "sources": {"official": OFFICIAL_URL, "eastmoney": EASTMONEY_URL, "methodology": METHODOLOGY_URL}}
+            report = {"code": CODE, "name": NAME, "metrics": {}, "chart": [], "sources": {"official": OFFICIAL_URL, "methodology": METHODOLOGY_URL}}
         report.update({"status": "stale", "updated_at": now.isoformat(timespec="seconds"), "verification": {"status": "stale", "label": "未取得完整新数据，沿用缓存并暂停建议"}})
+        if report.get("valuation"):
+            report["valuation"]["status"] = "stale"
+            report["valuation"]["verification"] = {"status": "stale", "label": "沿用缓存估值，等待官方完整新数据"}
         report["strategy"] = policy
         report["advice"] = build_advice(report.get("metrics") or {}, False, False, report.get("valuation"), policy)
         print(f"Dividend100 degraded: {error}", flush=True)

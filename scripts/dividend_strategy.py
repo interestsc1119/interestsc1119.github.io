@@ -11,7 +11,6 @@ import json
 from datetime import date, datetime
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
-from urllib.parse import urlparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,7 +19,7 @@ BASIS = "CSI_PERF_PE_TTM_AND_DP1"
 DEFAULT_POLICY = {
     "pe_low_percentile": 30, "pe_high_percentile": 70,
     "min_dividend_yield_pct": 4, "max_tranche_budget_pct": 20,
-    "min_days_between_buys": 30, "valuation_reference_url": None,
+    "min_days_between_buys": 30,
 }
 
 
@@ -46,9 +45,6 @@ def load_policy() -> dict:
         raise ValueError("每笔预算比例或买入间隔无效")
     if not 0 < policy["min_dividend_yield_pct"] < 30:
         raise ValueError("股息率阈值无效")
-    url = policy.get("valuation_reference_url")
-    if url and urlparse(url).scheme != "https":
-        raise ValueError("估值参照接口必须使用HTTPS")
     return policy
 
 
@@ -64,9 +60,9 @@ def historical_percentile(current: Decimal, history: list[Decimal]) -> Decimal:
     return (D(less) + D(equal) / 2) / D(len(history)) * 100
 
 
-def build_valuation(history: list[dict], indicators: list[dict], reference: dict | None,
-                    now: datetime, as_of: str | None) -> dict:
-    quality = {"status": "pending", "label": "官方估值单源，独立同口径核验待补充"}
+def build_valuation(history: list[dict], indicators: list[dict], now: datetime,
+                    as_of: str | None) -> dict:
+    quality = {"status": "pending", "label": "官方估值数据不足"}
     result = {
         "status": "pending", "verification": quality, "basis": BASIS,
         "pe_ttm": None, "pe_percentile_5y": None, "dividend_yield": None,
@@ -106,40 +102,16 @@ def build_valuation(history: list[dict], indicators: list[dict], reference: dict
     if not 0 <= (now.date() - end).days <= 7:
         quality["label"] = "估值数据已过期，暂停配置提示"
         return result
-    # A second CSI delivery channel is an internal consistency check only.
-    # It must never be mislabeled as independent cross-source verification.
+    # Both channels belong to CSI. Neither is an independent second source.
     pe1 = positive(indicator.get("pe_total"))
     if pe1:
         result["official_channel_pe_difference_pct"] = rounded(abs(current - pe1) / current * 100)
-    if not reference:
-        return result
-    source = reference.get("source") or {}
-    host = (urlparse(str(source.get("url") or "")).hostname or "").lower()
-    valid_source = source.get("name") and host and urlparse(str(source.get("url") or "")).scheme == "https" and host != "example.com" and not (host == "csindex.com.cn" or host.endswith(".csindex.com.cn"))
-    if reference.get("code") != "930955" or reference.get("basis") != BASIS or not valid_source:
-        quality["label"] = "估值参照身份、独立来源或计算口径不匹配"
-        return result
-    result["sources"]["reference"] = source["url"]
-    result["reference_source"] = source["name"]
-    if reference.get("date") != as_of:
-        quality["label"] = "估值参照日期不一致，暂停配置提示"
-        return result
-    reference_pe, reference_dividend = positive(reference.get("pe_ttm")), positive(reference.get("dividend_yield"))
-    if not reference_pe or not reference_dividend:
-        quality["label"] = "第二源PE或股息率缺失，暂停配置提示"
-        return result
-    pe_error = abs(current - reference_pe) / current * 100
-    dividend_error = abs(dividend - reference_dividend) / dividend * 100
-    quality.update({"pe_difference_pct": rounded(pe_error), "dividend_difference_pct": rounded(dividend_error)})
-    if pe_error > 1 or dividend_error > 1:
-        quality.update({"status": "mismatch", "label": "同口径估值两源差异超过1%，暂停配置提示"})
-        return result
-    quality.update({"status": "verified", "label": "PE与股息率已同日同口径独立核验"})
-    result["status"] = "verified"
+    quality.update({"status": "official_single", "label": "中证官方单源 · 日期与历史检查通过（未独立核验）"})
+    result["status"] = "official_single"
     return result
 
 
-def build_allocation_advice(metrics: dict, price_verified: bool, fresh: bool,
+def build_allocation_advice(metrics: dict, price_ready: bool, fresh: bool,
                             valuation: dict | None = None, policy: dict | None = None) -> dict:
     valuation, policy = valuation or {}, policy or DEFAULT_POLICY
     gap = metrics.get("distance_ma250_pct")
@@ -149,13 +121,19 @@ def build_allocation_advice(metrics: dict, price_verified: bool, fresh: bool,
         risk += "目前年线下行，买入后仍可能继续下跌，不因跌幅扩大而自动加倍。"
     common = {"eligible": False, "max_tranche_budget_pct": policy["max_tranche_budget_pct"],
               "min_days_between_buys": policy["min_days_between_buys"], "risk": risk,
+              "source_note": "本次判断仅基于中证官方数据，未做独立来源核验。",
+              "conditions": [
+                  {"label": f"PE近5年分位≤{policy['pe_low_percentile']}%", "value": f"{rank:.2f}%" if rank is not None else "待更新", "met": rank <= policy["pe_low_percentile"] if rank is not None else None},
+                  {"label": f"股息率≥{policy['min_dividend_yield_pct']}%", "value": f"{dividend:.2f}%" if dividend is not None else "待更新", "met": dividend >= policy["min_dividend_yield_pct"] if dividend is not None else None},
+                  {"label": "点位≤250日年线", "value": f"相对年线{gap:+.2f}%" if gap is not None else "待更新", "met": gap <= 0 if gap is not None else None},
+              ],
               "manual_checks": "执行前确认长期闲置资金、能承受权益回撤、分红风险和基金费用/溢价；页面不知道你的真实仓位。"}
     def advice(state: str, title: str, reason: str, action: str, eligible: bool = False) -> dict:
         return {**common, "state": state, "title": title, "reason": reason, "action": action, "eligible": eligible}
-    if not price_verified or not fresh or gap is None:
-        return advice("paused", "行情待核验，暂缓新增配置", "收盘价与年线未通过核验或已过期。", "暂停依据本模块新增投入；不把缺数据解释为指数不值得持有。")
-    if valuation.get("verification", {}).get("status") != "verified" or rank is None or dividend is None:
-        return advice("paused", "估值待核验，暂缓新增配置", valuation.get("verification", {}).get("label") or "尚未取得完整且独立核验的估值。", "可观察年线下方的位置，但不将其直接等同于便宜；等待同口径估值核验。")
+    if not price_ready or not fresh or gap is None:
+        return advice("paused", "官方行情不完整，暂缓新增配置", "收盘价与年线数据不完整或已过期。", "等待官方完整收盘数据；不把缺数据解释为指数不值得持有。")
+    if valuation.get("verification", {}).get("status") != "official_single" or rank is None or dividend is None:
+        return advice("paused", "官方估值数据不完整，暂缓新增配置", valuation.get("verification", {}).get("label") or "尚未取得完整且同日的官方估值。", "等待官方估值日期与收盘日一致、历史长度充足后重新计算。")
     if rank > policy["pe_low_percentile"]:
         state = "wait" if rank >= policy["pe_high_percentile"] else "observe"
         return advice(state, "估值尚未进入低位配置区", f"PE近5年分位{rank:.2f}%，未达到≤{policy['pe_low_percentile']}%的观察阈值；低于年线也不会单独触发买入。", "保留本次计划资金，等待估值改善；不根据单日涨跌改变长期持仓。")

@@ -33,7 +33,15 @@
         .dividend-checks { margin-top:18px; color:var(--muted); font-size:.81rem; }
         .dividend-checks strong { color:var(--ink); }
         .dividend-quality { color:var(--green); font-size:.75rem; font-weight:750; }
-        .dividend-quality.pending, .dividend-quality.mismatch, .dividend-quality.stale { color:var(--amber); }
+        .dividend-quality.pending, .dividend-quality.mismatch, .dividend-quality.stale, .dividend-quality.official_single { color:var(--amber); }
+        .dividend-conditions { list-style:none; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:18px; }
+        .dividend-conditions li { border:1px solid var(--line); border-radius:14px; padding:14px; background:var(--paper); }
+        .dividend-conditions span, .dividend-conditions strong, .dividend-conditions small { display:block; }
+        .dividend-conditions span { color:var(--muted); font-size:.75rem; }
+        .dividend-conditions strong { margin:5px 0; font-size:1rem; }
+        .dividend-conditions small { font-size:.75rem; } .condition-pass { color:var(--green); }
+        .condition-fail, .condition-pending { color:var(--amber); }
+        @media(max-width:620px) { .dividend-conditions { grid-template-columns:1fr; } }
         .dividend-valuations { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:14px; }
         .dividend-budget { margin-top:20px; padding:22px; border:1px solid var(--line); border-radius:18px; }
         .dividend-budget h3 { font-size:1.1rem; margin-bottom:8px; }
@@ -69,16 +77,18 @@
             <div class="dividend-fact"><span>PE近5年历史分位</span><strong>{{DIV_PE_PERCENTILE}}</strong><small>越低表示历史相对位置越低；非内在价值</small></div>
             <div class="dividend-fact"><span>官方股息率 · DP1</span><strong>{{DIV_YIELD}}</strong><small>数据日期 {{DIV_YIELD_DATE}}；非承诺收益</small></div>
         </div>
-        <p class="method-note">估值核验：{{DIV_VAL_QUALITY}}。PE历史 {{DIV_VAL_HISTORY}} 个交易日；PB尚未接入，不混用等权估值。</p>
+        <p class="method-note">估值状态：{{DIV_VAL_QUALITY}}。PE历史 {{DIV_VAL_HISTORY}} 个交易日；PB尚未接入，不混用等权估值。</p>
         <p class="method-note">近1月：<b class="{{DIV_MONTH_CLASS}}">{{DIV_MONTH}}</b> · 今年以来：<b class="{{DIV_YTD_CLASS}}">{{DIV_YTD}}</b> · 近1年最大回撤：<b class="down">{{DIV_DRAWDOWN}}</b></p>
         <div class="dividend-chart-box">
             <div class="dividend-legend"><span><i style="background:{{DIV_CHART_COLOR}}"></i>指数收盘价</span><span><i style="background:#a86517"></i>250日年线</span></div>
             {{DIV_CHART}}
             <p class="dividend-chart-note">{{DIV_CHART_RANGE}} · 同一坐标系比较点位和年线；红涨绿跌。指数点位不是ETF成交价。</p>
         </div>
+        <p class="method-note">本次计算：{{DIV_UPDATED}} · 收盘截至：{{DIV_DATE}} · 中证官方单源。规则每天重新计算，结论可以连续多日相同。</p>
+        <ul class="dividend-conditions" aria-label="当日配置条件">{{DIV_CONDITIONS}}</ul>
         <section class="dividend-advice" aria-labelledby="dividend-advice-title">
             <div><span class="eyebrow">今日逢低配置观察</span><h3 id="dividend-advice-title">{{DIV_ADVICE_TITLE}}</h3><p>{{DIV_ADVICE_REASON}}</p><p class="advice-limits">{{DIV_ADVICE_RISK}}</p></div>
-            <div><p class="advice-action">{{DIV_ADVICE_ACTION}}</p><p class="advice-limits">示例观察条件：PE分位≤{{DIV_PE_LOW}}%、股息率≥{{DIV_YIELD_MIN}}%、点位≤年线，且行情和估值核验通过。参数未回测，并非中证官方买卖标准。年线±3%区间 {{DIV_BAND_LOW}}—{{DIV_BAND_HIGH}} 点仅供看位置，不是固定买入价。</p></div>
+            <div><p class="advice-action">{{DIV_ADVICE_ACTION}}</p><p class="advice-limits">{{DIV_SOURCE_NOTE}}</p><p class="advice-limits">示例观察条件：PE分位≤{{DIV_PE_LOW}}%、股息率≥{{DIV_YIELD_MIN}}%、点位≤年线，且官方数据日期、历史长度和时效检查通过。参数未回测，并非中证官方买卖标准。年线±3%区间 {{DIV_BAND_LOW}}—{{DIV_BAND_HIGH}} 点仅供看位置，不是固定买入价。</p></div>
         </section>
         <section class="dividend-budget" aria-labelledby="dividend-budget-title">
             <h3 id="dividend-budget-title">分笔预算检查 · 不自动交易</h3>
@@ -98,12 +108,12 @@
         <p class="dividend-checks"><strong>购买前核对：</strong>基金是否准确跟踪930955、管理及托管费、跟踪误差、成交量与买卖价差、ETF溢价和分红安排。不同“红利低波”指数不可混用。</p>
         <details class="dividend-info">
             <summary>查看数据时点与建议规则 <span class="dividend-quality {{DIV_QUALITY_CLASS}}">· {{DIV_QUALITY}}</span></summary>
-            <p>生成时间：{{DIV_UPDATED}} · 主历史源：{{DIV_HISTORY_SOURCE}} · 收盘价差异：{{DIV_CLOSE_ERROR}} · 年线差异：{{DIV_MA_ERROR}} · 核验同日历史：{{DIV_MATCHED_DAYS}} 个交易日。</p>
+            <p>生成时间：{{DIV_UPDATED}} · 主历史源：{{DIV_HISTORY_SOURCE}} · 行情历史：{{DIV_HISTORY_DAYS}} 个交易日。该模块不使用第二数据源，不标记为“双源核验”。</p>
             <p>{{DIV_METHOD}}</p>
             <p>{{DIV_VAL_METHOD}}</p>
             <p>{{DIV_VAL_RISK}}</p>
             <p>{{DIV_RISK_NOTE}}</p>
-            <p><a href="{{DIV_OFFICIAL_URL}}" target="_blank" rel="noopener">中证官方指数页 ↗</a> · <a href="{{DIV_METHOD_URL}}" target="_blank" rel="noopener">指数编制方案 ↗</a> · <a href="{{DIV_SECONDARY_URL}}" target="_blank" rel="noopener">东方财富行情 ↗</a> · <a href="{{DIV_VAL_URL}}" target="_blank" rel="noopener">官方PE与股息率原始表 ↗</a></p>
+            <p><a href="{{DIV_OFFICIAL_URL}}" target="_blank" rel="noopener">中证官方指数页 ↗</a> · <a href="{{DIV_METHOD_URL}}" target="_blank" rel="noopener">指数编制方案 ↗</a> · <a href="{{DIV_VAL_URL}}" target="_blank" rel="noopener">官方PE与股息率原始表 ↗</a></p>
         </details>
     </div>
 </section>

@@ -67,6 +67,11 @@ def render_module(data: dict | None = None) -> str:
     chart, color = chart_svg(rows)
     gap = metrics.get("distance_ma250_pct")
     position = "年线上方" if gap is not None and gap > 0 else "年线下方" if gap is not None and gap < 0 else "年线附近" if gap is not None else "位置待更新"
+    conditions = []
+    for item in advice.get("conditions") or []:
+        met = item.get("met")
+        label, tone = ("满足", "pass") if met is True else ("未满足", "fail") if met is False else ("待数据", "pending")
+        conditions.append(f'<li><span>{safe(item.get("label"))}</span><strong>{safe(item.get("value"))}</strong><small class="condition-{tone}">{label}</small></li>')
     replacements = {
         "{{DIV_NAME}}": safe(data.get("name") or "中证红利低波动100指数"), "{{DIV_CODE}}": safe(data.get("code") or "930955"),
         "{{DIV_DATE}}": safe(data.get("data_as_of") or "待更新"), "{{DIV_CLOSE}}": number(metrics.get("close")),
@@ -77,24 +82,24 @@ def render_module(data: dict | None = None) -> str:
         "{{DIV_ADVICE_TITLE}}": safe(advice.get("title") or "等待完整数据"), "{{DIV_ADVICE_REASON}}": safe(advice.get("reason")),
         "{{DIV_ADVICE_ACTION}}": safe(advice.get("action") or "先核对最新收盘数据与基金信息。"),
         "{{DIV_ADVICE_RISK}}": safe(advice.get("risk")), "{{DIV_MANUAL_CHECKS}}": safe(advice.get("manual_checks")),
+        "{{DIV_SOURCE_NOTE}}": safe(advice.get("source_note") or "仅使用中证官方数据，未做独立来源核验。"),
+        "{{DIV_CONDITIONS}}": "".join(conditions),
         "{{DIV_ELIGIBLE}}": "true" if advice.get("eligible") is True else "false",
         "{{DIV_PE}}": number(valuation.get("pe_ttm")), "{{DIV_PE_PERCENTILE}}": number(valuation.get("pe_percentile_5y"), "%"),
         "{{DIV_YIELD}}": number(valuation.get("dividend_yield"), "%"),
         "{{DIV_PE_DATE}}": safe(valuation.get("pe_as_of") or "待更新"), "{{DIV_YIELD_DATE}}": safe(valuation.get("dividend_as_of") or "待更新"),
-        "{{DIV_VAL_QUALITY}}": safe(valuation_quality.get("label") or "估值待核验"),
+        "{{DIV_VAL_QUALITY}}": safe(valuation_quality.get("label") or "官方估值待更新"),
         "{{DIV_VAL_HISTORY}}": safe(valuation.get("history_days") or 0), "{{DIV_VAL_METHOD}}": safe(valuation.get("methodology")),
         "{{DIV_VAL_RISK}}": safe(valuation.get("risk_note")),
         "{{DIV_VAL_URL}}": safe(valuation.get("sources", {}).get("indicator") or "https://www.csindex.com.cn/"),
         "{{DIV_PE_LOW}}": safe(policy.get("pe_low_percentile", 30)), "{{DIV_YIELD_MIN}}": safe(policy.get("min_dividend_yield_pct", 4)),
         "{{DIV_TRANCHE}}": safe(policy.get("max_tranche_budget_pct", 20)), "{{DIV_INTERVAL}}": safe(policy.get("min_days_between_buys", 30)),
-        "{{DIV_QUALITY_CLASS}}": safe(verification.get("status") or "pending"), "{{DIV_QUALITY}}": safe(verification.get("label") or "数据待核验"),
+        "{{DIV_QUALITY_CLASS}}": safe(verification.get("status") or "pending"), "{{DIV_QUALITY}}": safe(verification.get("label") or "官方数据待更新"),
         "{{DIV_UPDATED}}": safe(data.get("updated_at")), "{{DIV_HISTORY_SOURCE}}": safe(data.get("history_source") or "待更新"),
-        "{{DIV_CLOSE_ERROR}}": number(verification.get("latest_close_difference_pct"), "%"), "{{DIV_MA_ERROR}}": number(verification.get("ma250_difference_pct"), "%"),
-        "{{DIV_MATCHED_DAYS}}": safe(verification.get("history_matched_days") or 0), "{{DIV_METHOD}}": safe(data.get("methodology")),
+        "{{DIV_HISTORY_DAYS}}": safe(data.get("history_days") or 0), "{{DIV_METHOD}}": safe(data.get("methodology")),
         "{{DIV_RISK_NOTE}}": safe(data.get("risk_note") or "数据不足时暂停建议；指数仍有下跌风险。"),
         "{{DIV_OFFICIAL_URL}}": safe(sources.get("official") or "https://www.csindex.com.cn/"),
         "{{DIV_METHOD_URL}}": safe(sources.get("methodology") or "https://www.csindex.com.cn/"),
-        "{{DIV_SECONDARY_URL}}": safe(sources.get("eastmoney") or "https://quote.eastmoney.com/zz/2.930955.html"),
     }
     for tag, key in (("DAILY", "daily_return"), ("DISTANCE", "distance_ma250_pct"), ("SLOPE", "ma250_change_20d_pct"), ("MONTH", "return_1m"), ("YTD", "return_ytd"), ("DRAWDOWN", "max_drawdown_1y")):
         replacements[f"{{{{DIV_{tag}}}}}"] = number(metrics.get(key), "%", signed=True)
