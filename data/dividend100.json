@@ -1,22 +1,22 @@
 {
   "code": "930955",
   "name": "中证红利低波动100指数",
-  "updated_at": "2026-10-14T09:18:58+08:00",
-  "data_as_of": "2026-10-13",
+  "updated_at": "2026-10-15T08:39:50+08:00",
+  "data_as_of": "2026-10-14",
   "status": "current",
   "history_days": 1324,
   "history_source": "东方财富",
   "metrics": {
-    "close": 11495.63,
-    "ma250": 11728.84,
-    "daily_return": -0.39,
-    "return_1m": 0.73,
-    "return_ytd": -2.51,
-    "distance_ma250_pct": -1.99,
-    "ma250_change_20d_pct": -0.4,
+    "close": 11590.54,
+    "ma250": 11728.32,
+    "daily_return": 0.83,
+    "return_1m": 2.33,
+    "return_ytd": -1.7,
+    "distance_ma250_pct": -1.17,
+    "ma250_change_20d_pct": -0.38,
     "max_drawdown_1y": -15.42,
-    "reference_band_low": 11376.97,
-    "reference_band_high": 12080.7
+    "reference_band_low": 11376.47,
+    "reference_band_high": 12080.17
   },
   "verification": {
     "status": "verified",
@@ -37,23 +37,23 @@
       "label": "官方估值单源，独立同口径核验待补充"
     },
     "basis": "CSI_PERF_PE_TTM_AND_DP1",
-    "pe_ttm": 8.9,
-    "pe_percentile_5y": 90.1,
-    "dividend_yield": 4.29,
+    "pe_ttm": 8.91,
+    "pe_percentile_5y": 90.35,
+    "dividend_yield": 4.28,
     "pb": null,
     "history_days": 1212,
-    "pe_as_of": "2026-10-13",
-    "dividend_as_of": "2026-10-13",
+    "pe_as_of": "2026-10-14",
+    "dividend_as_of": "2026-10-14",
     "methodology": "PE分位使用中证官方行情滚动PE同一序列，近5年最多1250个有效交易日（至少1000日），以小于当前值的数量加相等数量的一半计算经验分位。股息率单独使用官方DP1总股本口径；不拼接PE2、等权PE或短期股息率分位。PB尚未接入。",
     "risk_note": "历史低分位不等于内在价值低估；股息率不是承诺收益，分红可减少。自动数据不能证明未来分红可持续性，购买前需人工核对基金及成分股公告。",
     "sources": {
       "history": "https://www.csindex.com.cn/#/indices/family/detail?indexCode=930955",
       "indicator": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls"
     },
-    "history_start": "2021-10-13",
-    "history_end": "2026-10-13",
-    "official_pe1": 8.86,
-    "official_channel_pe_difference_pct": 0.45
+    "history_start": "2021-10-14",
+    "history_end": "2026-10-14",
+    "official_pe1": 8.88,
+    "official_channel_pe_difference_pct": 0.34
   },
   "strategy": {
     "pe_low_percentile": 30,
@@ -75,11 +75,6 @@
     "action": "可观察年线下方的位置，但不将其直接等同于便宜；等待同口径估值核验。"
   },
   "chart": [
-    {
-      "date": "2025-09-24",
-      "close": 11718.33,
-      "ma250": 11574.5
-    },
     {
       "date": "2025-09-25",
       "close": 11666.51,
@@ -1324,6 +1319,11 @@
       "date": "2026-10-13",
       "close": 11495.63,
       "ma250": 11728.84
+    },
+    {
+      "date": "2026-10-14",
+      "close": 11590.54,
+      "ma250": 11728.32
     }
   ],
   "sources": {
