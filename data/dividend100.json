@@ -1,22 +1,22 @@
 {
   "code": "930955",
   "name": "中证红利低波动100指数",
-  "updated_at": "2026-10-16T08:31:26+08:00",
-  "data_as_of": "2026-10-15",
+  "updated_at": "2026-10-17T08:38:38+08:00",
+  "data_as_of": "2026-10-16",
   "status": "current",
-  "history_days": 1325,
+  "history_days": 1326,
   "history_source": "中证指数公司",
   "metrics": {
-    "close": 11480.46,
-    "ma250": 11727.58,
-    "daily_return": -0.95,
-    "return_1m": 0.83,
-    "return_ytd": -2.64,
-    "distance_ma250_pct": -2.11,
-    "ma250_change_20d_pct": -0.37,
+    "close": 11522.87,
+    "ma250": 11726.89,
+    "daily_return": 0.37,
+    "return_1m": 1.46,
+    "return_ytd": -2.28,
+    "distance_ma250_pct": -1.74,
+    "ma250_change_20d_pct": -0.36,
     "max_drawdown_1y": -15.42,
-    "reference_band_low": 11375.75,
-    "reference_band_high": 12079.41
+    "reference_band_low": 11375.08,
+    "reference_band_high": 12078.7
   },
   "verification": {
     "status": "official_single",
@@ -33,22 +33,22 @@
     },
     "basis": "CSI_PERF_PE_TTM_AND_DP1",
     "pe_ttm": 8.94,
-    "pe_percentile_5y": 90.92,
+    "pe_percentile_5y": 90.88,
     "dividend_yield": 4.27,
     "pb": null,
     "history_days": 1212,
-    "pe_as_of": "2026-10-15",
-    "dividend_as_of": "2026-10-15",
+    "pe_as_of": "2026-10-16",
+    "dividend_as_of": "2026-10-16",
     "methodology": "PE分位使用中证官方行情滚动PE同一序列，近5年最多1250个有效交易日（至少1000日），以小于当前值的数量加相等数量的一半计算经验分位。股息率单独使用官方DP1总股本口径；不拼接PE2、等权PE或短期股息率分位。PB尚未接入。",
     "risk_note": "历史低分位不等于内在价值低估；股息率不是承诺收益，分红可减少。自动数据不能证明未来分红可持续性，购买前需人工核对基金及成分股公告。",
     "sources": {
       "history": "https://www.csindex.com.cn/#/indices/family/detail?indexCode=930955",
       "indicator": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls"
     },
-    "history_start": "2021-10-15",
-    "history_end": "2026-10-15",
-    "official_pe1": 8.91,
-    "official_channel_pe_difference_pct": 0.34
+    "history_start": "2021-10-18",
+    "history_end": "2026-10-16",
+    "official_pe1": 8.9,
+    "official_channel_pe_difference_pct": 0.45
   },
   "strategy": {
     "pe_low_percentile": 30,
@@ -66,7 +66,7 @@
     "conditions": [
       {
         "label": "PE近5年分位≤30%",
-        "value": "90.92%",
+        "value": "90.88%",
         "met": false
       },
       {
@@ -76,22 +76,17 @@
       },
       {
         "label": "点位≤250日年线",
-        "value": "相对年线-2.11%",
+        "value": "相对年线-1.74%",
         "met": true
       }
     ],
     "manual_checks": "执行前确认长期闲置资金、能承受权益回撤、分红风险和基金费用/溢价；页面不知道你的真实仓位。",
     "state": "wait",
     "title": "估值尚未进入低位配置区",
-    "reason": "PE近5年分位90.92%，未达到≤30%的观察阈值；低于年线也不会单独触发买入。",
+    "reason": "PE近5年分位90.88%，未达到≤30%的观察阈值；低于年线也不会单独触发买入。",
     "action": "保留本次计划资金，等待估值改善；不根据单日涨跌改变长期持仓。"
   },
   "chart": [
-    {
-      "date": "2025-09-26",
-      "close": 11695.16,
-      "ma250": 11590.01
-    },
     {
       "date": "2025-09-29",
       "close": 11723.92,
@@ -1336,6 +1331,11 @@
       "date": "2026-10-15",
       "close": 11480.46,
       "ma250": 11727.58
+    },
+    {
+      "date": "2026-10-16",
+      "close": 11522.87,
+      "ma250": 11726.89
     }
   ],
   "sources": {
