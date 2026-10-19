@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "data_as_of": "2026-10-16",
-  "updated_at": "2026-10-18T08:10:43+08:00",
+  "updated_at": "2026-10-19T08:21:49+08:00",
   "scope": "中国大陆公募开放式基金（非个性化观察清单）",
   "summary": {
     "analyzed_count": 874,
@@ -615,7 +615,7 @@
           "return_ytd": 66.13,
           "return_since_inception": 850.56,
           "inception_date": "2018-06-13",
-          "age_years": 8.3,
+          "age_years": 8.4,
           "fee": "0.15%",
           "url": "https://fund.eastmoney.com/005825.html",
           "pre_score": 94.54,

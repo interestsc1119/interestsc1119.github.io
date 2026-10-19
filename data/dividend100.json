@@ -1,10 +1,10 @@
 {
   "code": "930955",
   "name": "中证红利低波动100指数",
-  "updated_at": "2026-10-18T08:07:26+08:00",
+  "updated_at": "2026-10-19T08:18:59+08:00",
   "data_as_of": "2026-10-16",
   "status": "current",
-  "history_days": 1325,
+  "history_days": 1324,
   "history_source": "中证指数公司",
   "metrics": {
     "close": 11522.87,
