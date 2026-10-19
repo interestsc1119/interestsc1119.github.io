@@ -6,7 +6,7 @@ Personal GitHub Pages dashboard for a daily, rules-based review of mainland Chin
 
 - `index.html`: three risk-bucket fund watchlists with return, volatility, drawdown, and consistency scoring
 - `market.html`: daily A-share, Hong Kong, and US index performance plus Berkshire's latest public Form 13F holdings
-- `market.html#dividend100`: CSI Dividend Low Volatility 100 (930955), MA250, official historical P/E percentile and dividend yield, valuation-first allocation observations, and a manual tranche-budget/cooldown check
+- `market.html#dividend100`: CSI Dividend Low Volatility 100 (930955), MA250, official historical P/E percentile, dividend yield and its observed-history percentile, valuation-first allocation observations, and a manual tranche-budget/cooldown check
 - The former news and trending interface has been removed
 
 ## Daily automation
@@ -37,12 +37,14 @@ Form 13F is quarterly, can be filed up to 45 days after quarter-end, and covers 
 |-- data/
 |   |-- dividend100.json
 |   |-- dividend100.md
+|   |-- dividend100_yield_history.json
 |   |-- funds.json
 |   |-- history.json
 |   |-- market.json
 |   `-- market_history.json
 |-- scripts/
 |   |-- dividend_strategy.py
+|   |-- dividend_yield_history.py
 |   |-- fetch_dividend100.py
 |   |-- render_dividend100.py
 |   |-- fetch_funds.py
@@ -76,6 +78,14 @@ P/E ranks use the same CSI rolling-P/E history series within the preceding five 
 CSI price history and its indicator XLS are two channels from **the same organization**, not independent sources. The page explicitly says **official single source, not independently verified**. There is no independent-reference endpoint, file, or purchase gate. Source availability is distinct from investment eligibility: missing/stale official data still pauses suggestions, but the absence of a second source does not. Different equal-weight/market-cap-weighted P/E or dividend definitions are not mixed.
 
 Each run rebuilds the advice and its three condition results (P/E percentile, dividend yield, and position relative to MA250). The page prominently shows calculation time and underlying trading date. Repeated advice means the conditions have not changed, not that a different conclusion must be manufactured daily. Weekends and holidays retain the latest completed-session date.
+
+### Dividend-yield historical percentile
+
+The dividend-yield card uses **CSI DP1 (total share capital, percentage units)** only. Its empirical percentile is `(count below current + 0.5 × count equal to current) / sample count × 100`, including the current session. A higher percentile means the current dividend yield is higher relative to the observed sample; unlike P/E, a higher rank is the higher-yield direction. It is not a return forecast or a guarantee of dividend sustainability.
+
+The public `930955indicator.xls` currently returns only 20 recent sessions, not a five-year series. Each daily run saves and merges all observed sessions into `data/dividend100_yield_history.json`; it never reconstructs yields from P/E, prices, ETF distributions, or a different weighting method. Prior sessions are retained when they disappear from the rolling XLS. Identical dates count once. Conflicting duplicates within a delivery are rejected; later official revisions replace the old value and are recorded in the revision log. Archive identity, basis, units, and dates are checked before writing, and an invalid archive is not silently overwritten.
+
+With at least 20 valid observations, the card displays an **observed-sample percentile**, its actual date range, session count, and an explicit **not a five-year percentile** warning. Computation uses at most 1,250 observations within the preceding five calendar years. Only after at least 1,000 observations spanning at least four years are collected does it label the result a near-five-year window; actual coverage remains visible. Insufficient history, missing/misaligned current values, stale data, and archive errors do not produce a numeric rank. This indicator is **display-only**: existing purchase conditions and budget rules are unchanged, and a percentile-archive problem does not block otherwise valid allocation observations.
 
 The manual budget check caps each tranche at **20% of the user's dedicated 930955 budget** and at the remaining budget, with at least **30 calendar days** between purchases. This percentage is not of the user's entire portfolio. Users must enter their actual cumulative spending and last purchase date and confirm long-term funds, risk tolerance, and fund/dividend checks. The page does not know real holdings, place orders, or save/upload those entries. A daily allocation-zone signal is not a daily buy instruction. Budget rules can also be adjusted in the strategy configuration after considering personal circumstances.
 

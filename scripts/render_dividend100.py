@@ -61,6 +61,7 @@ def render_module(data: dict | None = None) -> str:
             data = {}
     metrics, advice, verification = data.get("metrics") or {}, data.get("advice") or {}, data.get("verification") or {}
     valuation, policy = data.get("valuation") or {}, data.get("strategy") or {}
+    yield_history = valuation.get("dividend_history") or {}
     valuation_quality = valuation.get("verification") or {}
     sources = data.get("sources") or {}
     rows = data.get("chart") or []
@@ -87,6 +88,13 @@ def render_module(data: dict | None = None) -> str:
         "{{DIV_ELIGIBLE}}": "true" if advice.get("eligible") is True else "false",
         "{{DIV_PE}}": number(valuation.get("pe_ttm")), "{{DIV_PE_PERCENTILE}}": number(valuation.get("pe_percentile_5y"), "%"),
         "{{DIV_YIELD}}": number(valuation.get("dividend_yield"), "%"),
+        "{{DIV_YIELD_PERCENTILE}}": number(yield_history.get("percentile"), "%"),
+        "{{DIV_YIELD_SCOPE}}": safe(yield_history.get("label") or "历史待积累"),
+        "{{DIV_YIELD_SAMPLE_DAYS}}": safe(yield_history.get("sample_days") or 0),
+        "{{DIV_YIELD_START}}": safe(yield_history.get("start") or "待更新"),
+        "{{DIV_YIELD_END}}": safe(yield_history.get("end") or "待更新"),
+        "{{DIV_YIELD_RANK_NOTE}}": safe(yield_history.get("note") or "分位越高，股息率相对样本越高；样本不足时不显示长期分位。"),
+        "{{DIV_YIELD_RANK_METHOD}}": safe(yield_history.get("methodology")),
         "{{DIV_PE_DATE}}": safe(valuation.get("pe_as_of") or "待更新"), "{{DIV_YIELD_DATE}}": safe(valuation.get("dividend_as_of") or "待更新"),
         "{{DIV_VAL_QUALITY}}": safe(valuation_quality.get("label") or "官方估值待更新"),
         "{{DIV_VAL_HISTORY}}": safe(valuation.get("history_days") or 0), "{{DIV_VAL_METHOD}}": safe(valuation.get("methodology")),

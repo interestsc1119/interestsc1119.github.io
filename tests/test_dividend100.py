@@ -168,6 +168,7 @@ class Dividend100Tests(unittest.TestCase):
         with TemporaryDirectory() as directory, patch.dict(os.environ, {"GITHUB_STEP_SUMMARY": ""}), \
              patch("scripts.fetch_dividend100.DATA_PATH", Path(directory) / "report.json"), \
              patch("scripts.fetch_dividend100.REPORT_PATH", Path(directory) / "report.md"), \
+             patch("scripts.fetch_dividend100.YIELD_HISTORY_PATH", Path(directory) / "yield-history.json"), \
              patch("scripts.fetch_dividend100.datetime") as clock, \
              patch("scripts.fetch_dividend100.fetch_official", return_value=rows) as official, \
              patch("scripts.fetch_dividend100.fetch_indicators", return_value=indicators) as indicator:

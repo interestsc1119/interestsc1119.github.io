@@ -12,6 +12,10 @@ from datetime import date, datetime
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 
+if __package__:
+    from .dividend_yield_history import build_yield_percentile
+else:
+    from dividend_yield_history import build_yield_percentile
 
 ROOT = Path(__file__).resolve().parents[1]
 D = Decimal
@@ -61,13 +65,14 @@ def historical_percentile(current: Decimal, history: list[Decimal]) -> Decimal:
 
 
 def build_valuation(history: list[dict], indicators: list[dict], now: datetime,
-                    as_of: str | None) -> dict:
+                    as_of: str | None, dividend_history: list[dict] | None = None) -> dict:
     quality = {"status": "pending", "label": "官方估值数据不足"}
     result = {
         "status": "pending", "verification": quality, "basis": BASIS,
         "pe_ttm": None, "pe_percentile_5y": None, "dividend_yield": None,
         "pb": None, "history_days": 0, "pe_as_of": None, "dividend_as_of": None,
-        "methodology": "PE分位使用中证官方行情滚动PE同一序列，近5年最多1250个有效交易日（至少1000日），以小于当前值的数量加相等数量的一半计算经验分位。股息率单独使用官方DP1总股本口径；不拼接PE2、等权PE或短期股息率分位。PB尚未接入。",
+        "dividend_history": build_yield_percentile([], None, None, None, now),
+        "methodology": "PE分位使用中证官方行情滚动PE同一序列，近5年最多1250个有效交易日（至少1000日），以小于当前值的数量加相等数量的一半计算经验分位。股息率历史使用每日保存的官方DP1同口径观测值，短样本明确标为非5年分位，仅作展示、不改变买入条件。不拼接PE2或其他股息率口径。PB尚未接入。",
         "risk_note": "历史低分位不等于内在价值低估；股息率不是承诺收益，分红可减少。自动数据不能证明未来分红可持续性，购买前需人工核对基金及成分股公告。",
         "sources": {"history": "https://www.csindex.com.cn/#/indices/family/detail?indexCode=930955",
                     "indicator": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls"},
@@ -93,6 +98,7 @@ def build_valuation(history: list[dict], indicators: list[dict], now: datetime,
     dividend = positive(indicator.get("dividend_yield"))
     result.update({"dividend_yield": rounded(dividend) if dividend else None, "dividend_as_of": indicator.get("date"),
                    "official_pe1": indicator.get("pe_total")})
+    result["dividend_history"] = build_yield_percentile(dividend_history or [], dividend, indicator.get("date"), as_of, now)
     if result["pe_as_of"] != as_of or result["dividend_as_of"] != as_of:
         quality["label"] = "估值与收盘日期不一致，暂停配置提示"
         return result

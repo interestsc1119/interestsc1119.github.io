@@ -20,12 +20,15 @@ from zoneinfo import ZoneInfo
 
 if __package__:
     from .dividend_strategy import build_allocation_advice, build_valuation, load_policy
+    from .dividend_yield_history import update_archive
 else:
     from dividend_strategy import build_allocation_advice, build_valuation, load_policy
+    from dividend_yield_history import update_archive
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "dividend100.json"
 REPORT_PATH = ROOT / "data" / "dividend100.md"
+YIELD_HISTORY_PATH = ROOT / "data" / "dividend100_yield_history.json"
 TIMEZONE = ZoneInfo("Asia/Hong_Kong")
 CODE = "930955"
 NAME = "中证红利低波动100指数"
@@ -200,6 +203,9 @@ def build_report(rows: list[dict], verification: dict, now: datetime, source: st
 def markdown_summary(report: dict) -> str:
     metrics, advice = report.get("metrics") or {}, report.get("advice") or {}
     valuation, policy = report.get("valuation") or {}, report.get("strategy") or {}
+    yield_history = valuation.get("dividend_history") or {}
+    yield_rank = yield_history.get("percentile")
+    yield_rank_text = f"{yield_rank:.2f}%" if yield_rank is not None else "待更新"
     conditions = "\n".join(f"| {item['label']} | {item['value']} | {'满足' if item['met'] is True else '未满足' if item['met'] is False else '待数据'} |" for item in advice.get("conditions", []))
     def valuation_value(key: str, suffix: str = "") -> str:
         number = valuation.get(key)
@@ -215,6 +221,8 @@ def markdown_summary(report: dict) -> str:
         f"| 相对年线 | {value('distance_ma250_pct', '%')} |\n| 年线20日变化 | {value('ma250_change_20d_pct', '%')} |\n\n"
         f"估值截至：PE {valuation.get('pe_as_of') or '待更新'} / 股息率 {valuation.get('dividend_as_of') or '待更新'}。\n\n"
         f"滚动PE：{valuation_value('pe_ttm')}；PE近5年分位：{valuation_value('pe_percentile_5y', '%')}；股息率：{valuation_value('dividend_yield', '%')}。\n\n"
+        f"股息率历史分位：{yield_rank_text}；{yield_history.get('label', '历史待积累')}。样本区间：{yield_history.get('start') or '待更新'} 至 {yield_history.get('end') or '待更新'}。\n\n"
+        f"{yield_history.get('note', '')}\n\n"
         f"**{advice.get('title', '数据待更新')}**\n\n{advice.get('reason', '')}\n\n{advice.get('action', '')}\n\n"
         f"| 配置条件 | 当日数值 | 结果 |\n|---|---|---|\n{conditions}\n\n"
         f"{advice.get('risk', '')}\n\n{advice.get('source_note', '')}\n\n行情状态：{(report.get('verification') or {}).get('label', '数据待更新')}；估值状态：{valuation.get('verification', {}).get('label', '数据待更新')}。\n\n"
@@ -236,9 +244,18 @@ def main() -> None:
                 print(f"Dividend100 {name}: {len(collected[name])} daily closes", flush=True)
             except Exception as error:
                 print(f"Dividend100 {name} unavailable: {type(error).__name__}", flush=True)
+    archive_error = None
+    try:
+        dividend_history = update_archive(YIELD_HISTORY_PATH, collected.get("indicators") or [], now)
+    except (OSError, ValueError, TypeError) as error:
+        dividend_history = []
+        archive_error = type(error).__name__
+        print(f"Dividend100 yield-history archive unavailable: {archive_error}", flush=True)
     try:
         primary = collected.get("official") or []
-        valuation = build_valuation(primary, collected.get("indicators") or [], now, primary[-1]["date"] if primary else None)
+        valuation = build_valuation(primary, collected.get("indicators") or [], now, primary[-1]["date"] if primary else None, dividend_history)
+        if archive_error:
+            valuation["dividend_history"].update({"status": "invalid", "percentile": None, "percentile_5y": None, "label": "股息率历史档案异常，暂不显示分位；现有买入条件不受影响"})
         report = build_report(primary, official_price_status(primary, now), now, "中证指数公司", valuation, policy)
     except ValueError as error:
         try:
@@ -249,6 +266,8 @@ def main() -> None:
         if report.get("valuation"):
             report["valuation"]["status"] = "stale"
             report["valuation"]["verification"] = {"status": "stale", "label": "沿用缓存估值，等待官方完整新数据"}
+            if report["valuation"].get("dividend_history"):
+                report["valuation"]["dividend_history"].update({"status": "stale", "percentile": None, "percentile_5y": None, "label": "沿用缓存，本次不显示股息率分位"})
         report["strategy"] = policy
         report["advice"] = build_advice(report.get("metrics") or {}, False, False, report.get("valuation"), policy)
         print(f"Dividend100 degraded: {error}", flush=True)

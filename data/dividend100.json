@@ -1,22 +1,22 @@
 {
   "code": "930955",
   "name": "中证红利低波动100指数",
-  "updated_at": "2026-10-19T08:18:59+08:00",
-  "data_as_of": "2026-10-16",
+  "updated_at": "2026-10-20T00:15:52+08:00",
+  "data_as_of": "2026-10-19",
   "status": "current",
   "history_days": 1324,
   "history_source": "中证指数公司",
   "metrics": {
-    "close": 11522.87,
-    "ma250": 11726.89,
-    "daily_return": 0.37,
-    "return_1m": 1.46,
-    "return_ytd": -2.28,
-    "distance_ma250_pct": -1.74,
-    "ma250_change_20d_pct": -0.36,
+    "close": 11630.21,
+    "ma250": 11726.52,
+    "daily_return": 0.93,
+    "return_1m": 2.5,
+    "return_ytd": -1.37,
+    "distance_ma250_pct": -0.82,
+    "ma250_change_20d_pct": -0.34,
     "max_drawdown_1y": -15.42,
-    "reference_band_low": 11375.08,
-    "reference_band_high": 12078.7
+    "reference_band_low": 11374.72,
+    "reference_band_high": 12078.31
   },
   "verification": {
     "status": "official_single",
@@ -32,23 +32,38 @@
       "label": "中证官方单源 · 日期与历史检查通过（未独立核验）"
     },
     "basis": "CSI_PERF_PE_TTM_AND_DP1",
-    "pe_ttm": 8.94,
-    "pe_percentile_5y": 90.88,
-    "dividend_yield": 4.27,
+    "pe_ttm": 9.07,
+    "pe_percentile_5y": 92.62,
+    "dividend_yield": 4.21,
     "pb": null,
     "history_days": 1212,
-    "pe_as_of": "2026-10-16",
-    "dividend_as_of": "2026-10-16",
-    "methodology": "PE分位使用中证官方行情滚动PE同一序列，近5年最多1250个有效交易日（至少1000日），以小于当前值的数量加相等数量的一半计算经验分位。股息率单独使用官方DP1总股本口径；不拼接PE2、等权PE或短期股息率分位。PB尚未接入。",
+    "pe_as_of": "2026-10-19",
+    "dividend_as_of": "2026-10-19",
+    "dividend_history": {
+      "status": "recent_sample",
+      "percentile": 2.5,
+      "percentile_5y": null,
+      "sample_days": 20,
+      "start": "2026-09-22",
+      "end": "2026-10-19",
+      "as_of": "2026-10-19",
+      "label": "已采集样本 · 20个交易日（非5年分位）",
+      "basis": "CSI_DP1_TOTAL_SHARES_PERCENT",
+      "source": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls",
+      "minimum_sample_days": 20,
+      "methodology": "使用同一官方DP1口径，以（低于当前股息率的样本数＋相等样本数的一半）÷样本数×100计算经验分位，含当前交易日。统计窗口限近5年、最多1250个已采集交易日。",
+      "note": "分位越高，当前股息率相对样本越高，与PE低分位方向相反；短样本不代表长期估值，不是收益承诺，也不参与现有买入条件。"
+    },
+    "methodology": "PE分位使用中证官方行情滚动PE同一序列，近5年最多1250个有效交易日（至少1000日），以小于当前值的数量加相等数量的一半计算经验分位。股息率历史使用每日保存的官方DP1同口径观测值，短样本明确标为非5年分位，仅作展示、不改变买入条件。不拼接PE2或其他股息率口径。PB尚未接入。",
     "risk_note": "历史低分位不等于内在价值低估；股息率不是承诺收益，分红可减少。自动数据不能证明未来分红可持续性，购买前需人工核对基金及成分股公告。",
     "sources": {
       "history": "https://www.csindex.com.cn/#/indices/family/detail?indexCode=930955",
       "indicator": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls"
     },
-    "history_start": "2021-10-18",
-    "history_end": "2026-10-16",
-    "official_pe1": 8.9,
-    "official_channel_pe_difference_pct": 0.45
+    "history_start": "2021-10-19",
+    "history_end": "2026-10-19",
+    "official_pe1": 9.03,
+    "official_channel_pe_difference_pct": 0.44
   },
   "strategy": {
     "pe_low_percentile": 30,
@@ -66,32 +81,27 @@
     "conditions": [
       {
         "label": "PE近5年分位≤30%",
-        "value": "90.88%",
+        "value": "92.62%",
         "met": false
       },
       {
         "label": "股息率≥4%",
-        "value": "4.27%",
+        "value": "4.21%",
         "met": true
       },
       {
         "label": "点位≤250日年线",
-        "value": "相对年线-1.74%",
+        "value": "相对年线-0.82%",
         "met": true
       }
     ],
     "manual_checks": "执行前确认长期闲置资金、能承受权益回撤、分红风险和基金费用/溢价；页面不知道你的真实仓位。",
     "state": "wait",
     "title": "估值尚未进入低位配置区",
-    "reason": "PE近5年分位90.88%，未达到≤30%的观察阈值；低于年线也不会单独触发买入。",
+    "reason": "PE近5年分位92.62%，未达到≤30%的观察阈值；低于年线也不会单独触发买入。",
     "action": "保留本次计划资金，等待估值改善；不根据单日涨跌改变长期持仓。"
   },
   "chart": [
-    {
-      "date": "2025-09-29",
-      "close": 11723.92,
-      "ma250": 11597.57
-    },
     {
       "date": "2025-09-30",
       "close": 11677.91,
@@ -1336,6 +1346,11 @@
       "date": "2026-10-16",
       "close": 11522.87,
       "ma250": 11726.89
+    },
+    {
+      "date": "2026-10-19",
+      "close": 11630.21,
+      "ma250": 11726.52
     }
   ],
   "sources": {

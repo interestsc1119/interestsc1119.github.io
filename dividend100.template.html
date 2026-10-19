@@ -42,7 +42,8 @@
         .dividend-conditions small { font-size:.75rem; } .condition-pass { color:var(--green); }
         .condition-fail, .condition-pending { color:var(--amber); }
         @media(max-width:620px) { .dividend-conditions { grid-template-columns:1fr; } }
-        .dividend-valuations { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:14px; }
+        .dividend-valuations { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-top:14px; }
+        @media(max-width:920px) { .dividend-valuations { grid-template-columns:repeat(2,minmax(0,1fr)); } }
         .dividend-budget { margin-top:20px; padding:22px; border:1px solid var(--line); border-radius:18px; }
         .dividend-budget h3 { font-size:1.1rem; margin-bottom:8px; }
         .dividend-budget > p, .dividend-budget form > p { font-size:.8rem; color:var(--muted); margin:10px 0; }
@@ -76,7 +77,9 @@
             <div class="dividend-fact"><span>官方滚动 PE</span><strong>{{DIV_PE}}</strong><small>数据日期 {{DIV_PE_DATE}}</small></div>
             <div class="dividend-fact"><span>PE近5年历史分位</span><strong>{{DIV_PE_PERCENTILE}}</strong><small>越低表示历史相对位置越低；非内在价值</small></div>
             <div class="dividend-fact"><span>官方股息率 · DP1</span><strong>{{DIV_YIELD}}</strong><small>数据日期 {{DIV_YIELD_DATE}}；非承诺收益</small></div>
+            <div class="dividend-fact"><span>股息率历史分位</span><strong>{{DIV_YIELD_PERCENTILE}}</strong><small>{{DIV_YIELD_SCOPE}}</small></div>
         </div>
+        <p class="method-note">股息率样本：{{DIV_YIELD_START}} 至 {{DIV_YIELD_END}}，{{DIV_YIELD_SAMPLE_DAYS}} 个交易日。{{DIV_YIELD_RANK_NOTE}}</p>
         <p class="method-note">估值状态：{{DIV_VAL_QUALITY}}。PE历史 {{DIV_VAL_HISTORY}} 个交易日；PB尚未接入，不混用等权估值。</p>
         <p class="method-note">近1月：<b class="{{DIV_MONTH_CLASS}}">{{DIV_MONTH}}</b> · 今年以来：<b class="{{DIV_YTD_CLASS}}">{{DIV_YTD}}</b> · 近1年最大回撤：<b class="down">{{DIV_DRAWDOWN}}</b></p>
         <div class="dividend-chart-box">
@@ -111,6 +114,7 @@
             <p>生成时间：{{DIV_UPDATED}} · 主历史源：{{DIV_HISTORY_SOURCE}} · 行情历史：{{DIV_HISTORY_DAYS}} 个交易日。该模块不使用第二数据源，不标记为“双源核验”。</p>
             <p>{{DIV_METHOD}}</p>
             <p>{{DIV_VAL_METHOD}}</p>
+            <p>{{DIV_YIELD_RANK_METHOD}}</p>
             <p>{{DIV_VAL_RISK}}</p>
             <p>{{DIV_RISK_NOTE}}</p>
             <p><a href="{{DIV_OFFICIAL_URL}}" target="_blank" rel="noopener">中证官方指数页 ↗</a> · <a href="{{DIV_METHOD_URL}}" target="_blank" rel="noopener">指数编制方案 ↗</a> · <a href="{{DIV_VAL_URL}}" target="_blank" rel="noopener">官方PE与股息率原始表 ↗</a></p>
