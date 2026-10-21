@@ -4,7 +4,7 @@
   "basis": "CSI_DP1_TOTAL_SHARES_PERCENT",
   "source": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls",
   "unit": "percent",
-  "updated_at": "2026-10-20T09:07:47+08:00",
+  "updated_at": "2026-10-21T08:42:39+08:00",
   "observations": [
     {
       "date": "2026-09-22",
@@ -85,6 +85,10 @@
     {
       "date": "2026-10-19",
       "dividend_yield": "4.21"
+    },
+    {
+      "date": "2026-10-20",
+      "dividend_yield": "4.23"
     }
   ],
   "revisions": []
