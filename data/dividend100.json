@@ -1,22 +1,22 @@
 {
   "code": "930955",
   "name": "中证红利低波动100指数",
-  "updated_at": "2026-10-23T08:46:08+08:00",
-  "data_as_of": "2026-10-22",
+  "updated_at": "2026-10-24T08:52:46+08:00",
+  "data_as_of": "2026-10-23",
   "status": "current",
-  "history_days": 1325,
+  "history_days": 1327,
   "history_source": "中证指数公司",
   "metrics": {
-    "close": 11296.62,
-    "ma250": 11721.67,
-    "daily_return": -0.84,
-    "return_1m": 0.27,
-    "return_ytd": -4.2,
-    "distance_ma250_pct": -3.63,
-    "ma250_change_20d_pct": -0.32,
+    "close": 11292.06,
+    "ma250": 11719.4,
+    "daily_return": -0.04,
+    "return_1m": 0.84,
+    "return_ytd": -4.23,
+    "distance_ma250_pct": -3.65,
+    "ma250_change_20d_pct": -0.31,
     "max_drawdown_1y": -15.42,
-    "reference_band_low": 11370.02,
-    "reference_band_high": 12073.33
+    "reference_band_low": 11367.82,
+    "reference_band_high": 12070.99
   },
   "verification": {
     "status": "official_single",
@@ -32,22 +32,22 @@
       "label": "中证官方单源 · 日期与历史检查通过（未独立核验）"
     },
     "basis": "CSI_PERF_PE_TTM_AND_DP1",
-    "pe_ttm": 8.94,
-    "pe_percentile_5y": 90.68,
-    "dividend_yield": 4.27,
+    "pe_ttm": 8.83,
+    "pe_percentile_5y": 87.42,
+    "dividend_yield": 4.32,
     "pb": null,
     "history_days": 1212,
-    "pe_as_of": "2026-10-22",
-    "dividend_as_of": "2026-10-22",
+    "pe_as_of": "2026-10-23",
+    "dividend_as_of": "2026-10-23",
     "dividend_history": {
       "status": "recent_sample",
-      "percentile": 15.22,
+      "percentile": 39.58,
       "percentile_5y": null,
-      "sample_days": 23,
+      "sample_days": 24,
       "start": "2026-09-22",
-      "end": "2026-10-22",
-      "as_of": "2026-10-22",
-      "label": "已采集样本 · 23个交易日（非5年分位）",
+      "end": "2026-10-23",
+      "as_of": "2026-10-23",
+      "label": "已采集样本 · 24个交易日（非5年分位）",
       "basis": "CSI_DP1_TOTAL_SHARES_PERCENT",
       "source": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls",
       "minimum_sample_days": 20,
@@ -60,9 +60,9 @@
       "history": "https://www.csindex.com.cn/#/indices/family/detail?indexCode=930955",
       "indicator": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls"
     },
-    "history_start": "2021-10-22",
-    "history_end": "2026-10-22",
-    "official_pe1": 8.91,
+    "history_start": "2021-10-25",
+    "history_end": "2026-10-23",
+    "official_pe1": 8.8,
     "official_channel_pe_difference_pct": 0.34
   },
   "strategy": {
@@ -81,32 +81,27 @@
     "conditions": [
       {
         "label": "PE近5年分位≤30%",
-        "value": "90.68%",
+        "value": "87.42%",
         "met": false
       },
       {
         "label": "股息率≥4%",
-        "value": "4.27%",
+        "value": "4.32%",
         "met": true
       },
       {
         "label": "点位≤250日年线",
-        "value": "相对年线-3.63%",
+        "value": "相对年线-3.65%",
         "met": true
       }
     ],
     "manual_checks": "执行前确认长期闲置资金、能承受权益回撤、分红风险和基金费用/溢价；页面不知道你的真实仓位。",
     "state": "wait",
     "title": "估值尚未进入低位配置区",
-    "reason": "PE近5年分位90.68%，未达到≤30%的观察阈值；低于年线也不会单独触发买入。",
+    "reason": "PE近5年分位87.42%，未达到≤30%的观察阈值；低于年线也不会单独触发买入。",
     "action": "保留本次计划资金，等待估值改善；不根据单日涨跌改变长期持仓。"
   },
   "chart": [
-    {
-      "date": "2025-10-13",
-      "close": 11859.96,
-      "ma250": 11625.05
-    },
     {
       "date": "2025-10-14",
       "close": 11978.57,
@@ -1351,6 +1346,11 @@
       "date": "2026-10-22",
       "close": 11296.62,
       "ma250": 11721.67
+    },
+    {
+      "date": "2026-10-23",
+      "close": 11292.06,
+      "ma250": 11719.4
     }
   ],
   "sources": {
