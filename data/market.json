@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-01",
-  "updated_at": "2026-11-01T09:23:12+08:00",
+  "date": "2026-11-02",
+  "updated_at": "2026-11-02T09:42:49+08:00",
   "index_data_as_of": "2026-10-30",
   "indices": [
     {
@@ -54,7 +54,7 @@
         "status": "verified",
         "label": "腾讯点位已核验",
         "source": "腾讯行情",
-        "difference_pct": 0.0001,
+        "difference_pct": 0.2957,
         "quote_time": ""
       }
     },
@@ -109,7 +109,7 @@
         "status": "verified",
         "label": "腾讯点位已核验",
         "source": "腾讯行情",
-        "difference_pct": 0.0,
+        "difference_pct": 0.3567,
         "quote_time": ""
       }
     },
@@ -164,7 +164,7 @@
         "status": "verified",
         "label": "腾讯点位已核验",
         "source": "腾讯行情",
-        "difference_pct": 0.0,
+        "difference_pct": 0.5021,
         "quote_time": ""
       }
     },
@@ -219,7 +219,7 @@
         "status": "verified",
         "label": "腾讯点位已核验",
         "source": "腾讯行情",
-        "difference_pct": 0.0,
+        "difference_pct": 0.7603,
         "quote_time": ""
       }
     },
@@ -233,7 +233,7 @@
       "return_1m": -5.01,
       "return_3m": -10.01,
       "return_ytd": -11.56,
-      "return_1y": -11.37,
+      "return_1y": -10.95,
       "annualized_volatility": 18.46,
       "max_drawdown_1y": -18.94,
       "trend": "中期偏弱",
@@ -274,8 +274,8 @@
         "status": "verified",
         "label": "腾讯点位已核验",
         "source": "腾讯行情",
-        "difference_pct": 0.0,
-        "quote_time": "2026/10/30 18:31:07"
+        "difference_pct": 0.0314,
+        "quote_time": "2026/11/02 09:27:39"
       }
     },
     {
