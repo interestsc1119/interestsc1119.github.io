@@ -4,7 +4,7 @@
   "basis": "CSI_DP1_TOTAL_SHARES_PERCENT",
   "source": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls",
   "unit": "percent",
-  "updated_at": "2026-11-13T10:43:58+08:00",
+  "updated_at": "2026-11-14T10:32:56+08:00",
   "observations": [
     {
       "date": "2026-09-22",
