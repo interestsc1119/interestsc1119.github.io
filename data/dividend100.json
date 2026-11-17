@@ -1,22 +1,22 @@
 {
   "code": "930955",
   "name": "中证红利低波动100指数",
-  "updated_at": "2026-11-16T10:16:42+08:00",
-  "data_as_of": "2026-11-11",
+  "updated_at": "2026-11-17T12:39:47+08:00",
+  "data_as_of": "2026-11-16",
   "status": "current",
-  "history_days": 1325,
+  "history_days": 1327,
   "history_source": "中证指数公司",
   "metrics": {
-    "close": 11623.75,
-    "ma250": 11698.88,
-    "daily_return": -0.84,
-    "return_1m": 1.11,
-    "return_ytd": -1.42,
-    "distance_ma250_pct": -0.64,
-    "ma250_change_20d_pct": -0.25,
+    "close": 11885.07,
+    "ma250": 11694.15,
+    "daily_return": 1.77,
+    "return_1m": 3.14,
+    "return_ytd": 0.8,
+    "distance_ma250_pct": 1.63,
+    "ma250_change_20d_pct": -0.28,
     "max_drawdown_1y": -15.42,
-    "reference_band_low": 11347.92,
-    "reference_band_high": 12049.85
+    "reference_band_low": 11343.33,
+    "reference_band_high": 12044.98
   },
   "verification": {
     "status": "official_single",
@@ -32,22 +32,22 @@
       "label": "中证官方单源 · 日期与历史检查通过（未独立核验）"
     },
     "basis": "CSI_PERF_PE_TTM_AND_DP1",
-    "pe_ttm": 9.04,
-    "pe_percentile_5y": 91.38,
-    "dividend_yield": 4.67,
+    "pe_ttm": 9.42,
+    "pe_percentile_5y": 97.69,
+    "dividend_yield": 4.48,
     "pb": null,
     "history_days": 1212,
-    "pe_as_of": "2026-11-11",
-    "dividend_as_of": "2026-11-11",
+    "pe_as_of": "2026-11-16",
+    "dividend_as_of": "2026-11-16",
     "dividend_history": {
       "status": "recent_sample",
-      "percentile": 95.95,
+      "percentile": 71.25,
       "percentile_5y": null,
-      "sample_days": 37,
+      "sample_days": 40,
       "start": "2026-09-22",
-      "end": "2026-11-11",
-      "as_of": "2026-11-11",
-      "label": "已采集样本 · 37个交易日（非5年分位）",
+      "end": "2026-11-16",
+      "as_of": "2026-11-16",
+      "label": "已采集样本 · 40个交易日（非5年分位）",
       "basis": "CSI_DP1_TOTAL_SHARES_PERCENT",
       "source": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls",
       "minimum_sample_days": 20,
@@ -60,10 +60,10 @@
       "history": "https://www.csindex.com.cn/#/indices/family/detail?indexCode=930955",
       "indicator": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/file/autofile/indicator/930955indicator.xls"
     },
-    "history_start": "2021-11-11",
-    "history_end": "2026-11-11",
-    "official_pe1": 9.03,
-    "official_channel_pe_difference_pct": 0.11
+    "history_start": "2021-11-16",
+    "history_end": "2026-11-16",
+    "official_pe1": 9.4,
+    "official_channel_pe_difference_pct": 0.21
   },
   "strategy": {
     "pe_low_percentile": 30,
@@ -81,42 +81,27 @@
     "conditions": [
       {
         "label": "PE近5年分位≤30%",
-        "value": "91.38%",
+        "value": "97.69%",
         "met": false
       },
       {
         "label": "股息率≥4%",
-        "value": "4.67%",
+        "value": "4.48%",
         "met": true
       },
       {
         "label": "点位≤250日年线",
-        "value": "相对年线-0.64%",
-        "met": true
+        "value": "相对年线+1.63%",
+        "met": false
       }
     ],
     "manual_checks": "执行前确认长期闲置资金、能承受权益回撤、分红风险和基金费用/溢价；页面不知道你的真实仓位。",
     "state": "wait",
     "title": "估值尚未进入低位配置区",
-    "reason": "PE近5年分位91.38%，未达到≤30%的观察阈值；低于年线也不会单独触发买入。",
+    "reason": "PE近5年分位97.69%，未达到≤30%的观察阈值；低于年线也不会单独触发买入。",
     "action": "保留本次计划资金，等待估值改善；不根据单日涨跌改变长期持仓。"
   },
   "chart": [
-    {
-      "date": "2025-10-31",
-      "close": 12022.31,
-      "ma250": 11661.51
-    },
-    {
-      "date": "2025-11-03",
-      "close": 12135.3,
-      "ma250": 11664.32
-    },
-    {
-      "date": "2025-11-04",
-      "close": 12170.56,
-      "ma250": 11667.57
-    },
     {
       "date": "2025-11-05",
       "close": 12193.23,
@@ -1351,6 +1336,21 @@
       "date": "2026-11-11",
       "close": 11623.75,
       "ma250": 11698.88
+    },
+    {
+      "date": "2026-11-12",
+      "close": 11582.33,
+      "ma250": 11697.12
+    },
+    {
+      "date": "2026-11-13",
+      "close": 11678.27,
+      "ma250": 11695.3
+    },
+    {
+      "date": "2026-11-16",
+      "close": 11885.07,
+      "ma250": 11694.15
     }
   ],
   "sources": {
